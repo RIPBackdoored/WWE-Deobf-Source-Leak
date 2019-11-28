@@ -74,9 +74,6 @@ public class AimAssist extends qMIe
                     AimAssist.oYbE = (EntityLivingBase)oYbE;
                 }
             }
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         if (this.FEgb(AimAssist.oYbE)) {
             this.Kvbu((Entity)AimAssist.oYbE, Float.MAX_VALUE, Float.MAX_VALUE);
@@ -92,16 +89,10 @@ public class AimAssist extends qMIe
                 final EntityLivingBase entityLivingBase = next;
                 if (this.FEgb(entityLivingBase) && entityLivingBase != Wrapper.mc.player) {
                     AimAssist.Yhkx.add(entityLivingBase);
-                    if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                        throw null;
-                    }
                 }
                 else if (AimAssist.Yhkx.contains(entityLivingBase)) {
                     AimAssist.Yhkx.remove(entityLivingBase);
                 }
-            }
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
             }
         }
     }
@@ -152,9 +143,6 @@ public class AimAssist extends qMIe
         boolean b;
         if (entity.getDistance((Entity)Wrapper.mc.player) <= this.range.OnGi()) {
             b = true;
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -166,9 +154,6 @@ public class AimAssist extends qMIe
         boolean b;
         if (entity.getDistance((Entity)Wrapper.mc.player) <= this.range.OnGi()) {
             b = true;
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -187,9 +172,6 @@ public class AimAssist extends qMIe
                 if (!(oYbE instanceof EntityPlayerSP) && this.FEgb(oYbE)) {
                     AimAssist.oYbE = oYbE;
                 }
-            }
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
             }
         }
     }
@@ -225,9 +207,6 @@ public class AimAssist extends qMIe
         if (uqzS.MYlK() instanceof CPacketPlayer && this.Gnzx && this.PaSt < 2) {
             uqzS.Ggez(true);
             ++this.PaSt;
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         else if (this.PaSt == 2) {
             this.PaSt = 0;
@@ -254,9 +233,6 @@ public class AimAssist extends qMIe
         if (entity instanceof EntityLivingBase) {
             final EntityLivingBase entityLivingBase = (EntityLivingBase)entity;
             n5 = entityLivingBase.posY + entityLivingBase.getEyeHeight() - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         else {
             n5 = (entity.getEntityBoundingBox().minY + entity.getEntityBoundingBox().maxY) / 2.0 - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
@@ -267,9 +243,6 @@ public class AimAssist extends qMIe
         float n9;
         if (entity instanceof EntityPlayer) {
             n9 = 0.5f;
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         else {
             n9 = 0.0f;
@@ -300,9 +273,6 @@ public class AimAssist extends qMIe
         boolean b;
         if (this.lnip >= this.xlKA + n) {
             b = true;
-            if (AimAssist.\u200f\u2007\u200b\u200b\u200a\u200a\u2009) {
-                throw null;
-            }
         }
         else {
             b = false;
