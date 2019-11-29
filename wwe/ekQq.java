@@ -17,8 +17,8 @@ class ekQq extends Thread
         // Original Bytecode:
         // 
         //     3: return         
-        //     4: invokestatic    wwe/vlwv.wNWV:()V
-        //     7: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+        //     4: invokestatic    wwe/Client.wNWV:()V
+        //     7: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
         //    10: invokevirtual   wwe/sbfc.BBwj:()V
         //    13: getstatic       wwe/ekQq.\u2005\u2004:Z
         //    16: ifeq            26

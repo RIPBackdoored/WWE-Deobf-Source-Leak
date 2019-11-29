@@ -130,7 +130,7 @@ public class Hud extends qMIe
             final double n3 = Math.sqrt(n * n + n2 * n2) * 20.0;
             float axho;
             if (this.bPSTimerSync.OnGi()) {
-                axho = vlwv.Axho;
+                axho = Client.Axho;
             }
             else {
                 axho = 1.0f;

@@ -21,8 +21,8 @@ public class zROp extends GuiScreen
         this.addButton(new GuiButton(3, this.width - 55, this.height - 25, 50, 20, "Back"));
         cJGk cjGk = null;
         int i = 0;
-        while (i < vlwv.kXkt.SoAu.size()) {
-            final cJGk cjGk2 = vlwv.kXkt.SoAu.get(i);
+        while (i < Client.kXkt.SoAu.size()) {
+            final cJGk cjGk2 = Client.kXkt.SoAu.get(i);
             if (cjGk2.URwX.equals(Wrapper.mc.getSession().getUsername())) {
                 cjGk = cjGk2;
                 break;
@@ -66,13 +66,13 @@ public class zROp extends GuiScreen
     
     protected void func_146284_a(final GuiButton guiButton) throws IOException {
         if (guiButton.id == 0) {
-            vlwv.kXkt.DKWU(new Coyk(0));
+            Client.kXkt.DKWU(new Coyk(0));
         }
         if (guiButton.id == 1) {
-            vlwv.kXkt.DKWU(new Coyk(1));
+            Client.kXkt.DKWU(new Coyk(1));
         }
         if (guiButton.id == 2) {
-            vlwv.kXkt.DKWU(new Coyk(2));
+            Client.kXkt.DKWU(new Coyk(2));
         }
         if (guiButton.id == 3) {
             Wrapper.mc.displayGuiScreen(this.AlRz);

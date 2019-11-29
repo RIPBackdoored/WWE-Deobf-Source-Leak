@@ -4,6 +4,7 @@ import wwe.modules.*;
 import wwe.utils.*;
 import net.minecraft.util.text.*;
 import java.util.*;
+import wwe.commands.*;
 import net.minecraft.client.*;
 import wwe.*;
 
@@ -20,8 +21,8 @@ public class IRC extends qMIe
         if (!this.IuiN()) {
             return;
         }
-        if (IRC.FclU && vlwv.IJGi.dzdQ() && vlwv.IJGi.cfKj()) {
-            for (final Jhbg jhbg : vlwv.IJGi.QgjU()) {
+        if (IRC.FclU && Client.IJGi.dzdQ() && Client.IJGi.cfKj()) {
+            for (final Jhbg jhbg : Client.IJGi.QgjU()) {
                 Wrapper.mc.player.sendMessage((ITextComponent)new TextComponentString(TextFormatting.DARK_AQUA + "[IRC] " + TextFormatting.RESET + jhbg.gUTp() + ": " + jhbg.EbtK().replaceAll(">", TextFormatting.GREEN + ">")));
                 jhbg.ihLK(true);
             }
@@ -48,18 +49,18 @@ public class IRC extends qMIe
                 // 
                 //     3: return         
                 //     4: ldc             "Connecting to IRC"
-                //     6: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
+                //     6: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
                 //     9: new             Lwwe/Quvl;
                 //    12: dup            
                 //    13: invokestatic    net/minecraft/client/Minecraft.getMinecraft:()Lnet/minecraft/client/Minecraft;
                 //    16: invokevirtual   net/minecraft/client/Minecraft.getSession:()Lnet/minecraft/util/Session;
                 //    19: invokevirtual   net/minecraft/util/Session.getUsername:()Ljava/lang/String;
                 //    22: invokespecial   wwe/Quvl.<init>:(Ljava/lang/String;)V
-                //    25: putstatic       wwe/vlwv.IJGi:Lwwe/Quvl;
-                //    28: getstatic       wwe/vlwv.IJGi:Lwwe/Quvl;
+                //    25: putstatic       wwe/Client.IJGi:Lwwe/Quvl;
+                //    28: getstatic       wwe/Client.IJGi:Lwwe/Quvl;
                 //    31: invokevirtual   wwe/Quvl.XJrX:()V
                 //    34: ldc             "Connected to IRC use @ + message to chat"
-                //    36: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
+                //    36: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
                 //    39: ldc             1
                 //    41: putstatic       wwe/modules/player/IRC.FclU:Z
                 //    44: getstatic       wwe/VaFK.\u2006\u200c\u200a\u2005:Z
@@ -111,8 +112,8 @@ public class IRC extends qMIe
         //    45: invokevirtual   net/minecraft/client/Minecraft.getSession:()Lnet/minecraft/util/Session;
         //    48: invokevirtual   net/minecraft/util/Session.getUsername:()Ljava/lang/String;
         //    51: invokespecial   wwe/Quvl.<init>:(Ljava/lang/String;)V
-        //    54: putstatic       wwe/vlwv.IJGi:Lwwe/Quvl;
-        //    57: getstatic       wwe/vlwv.IJGi:Lwwe/Quvl;
+        //    54: putstatic       wwe/Client.IJGi:Lwwe/Quvl;
+        //    57: getstatic       wwe/Client.IJGi:Lwwe/Quvl;
         //    60: invokevirtual   wwe/Quvl.XJrX:()V
         //    63: ldc             1
         //    65: putstatic       wwe/modules/player/IRC.FclU:Z
@@ -130,9 +131,9 @@ public class IRC extends qMIe
     
     @Override
     public void qBmy() {
-        if (vlwv.IJGi.dzdQ()) {
-            vlwv.IJGi.JyVG();
-            HAxG.TuzD("Disconnected from IRC");
+        if (Client.IJGi.dzdQ()) {
+            Client.IJGi.JyVG();
+            Command.TuzD("Disconnected from IRC");
             IRC.FclU = false;
         }
         super.qBmy();

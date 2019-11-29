@@ -25,9 +25,9 @@ public class MixinGuiDisconnected extends GuiScreen
     
     @Inject(method = { "initGui" }, at = { @At("RETURN") })
     public void init(final CallbackInfo callbackInfo) {
-        this.buttonList.add(new GuiButton(1, this.width / 2 - 100, this.height / 2 + this.textHeight / 2 + this.fontRenderer.FONT_HEIGHT + 48, "Auto Reconnect " + (vlwv.lHpz ? (TextFormatting.GREEN + "On") : (TextFormatting.RED + "Off"))));
+        this.buttonList.add(new GuiButton(1, this.width / 2 - 100, this.height / 2 + this.textHeight / 2 + this.fontRenderer.FONT_HEIGHT + 48, "Auto Reconnect " + (Client.lHpz ? (TextFormatting.GREEN + "On") : (TextFormatting.RED + "Off"))));
         this.buttonList.add(new GuiButton(2, this.width / 2 - 100, this.height / 2 + this.textHeight / 2 + this.fontRenderer.FONT_HEIGHT + 24, "Reconnect"));
-        if (vlwv.lHpz) {
+        if (Client.lHpz) {
             this.wweTimer = 100;
         }
     }
@@ -35,24 +35,24 @@ public class MixinGuiDisconnected extends GuiScreen
     @Inject(method = { "actionPerformed" }, at = { @At("HEAD") })
     public void actionPerformed(final GuiButton guiButton, final CallbackInfo callbackInfo) {
         if (guiButton.id == 1) {
-            vlwv.lHpz = !vlwv.lHpz;
+            Client.lHpz = !Client.lHpz;
             Wrapper.ypJK().OsgT();
-            if (vlwv.lHpz) {
+            if (Client.lHpz) {
                 this.wweTimer = 100;
             }
             this.buttonList.clear();
             this.initGui();
         }
-        if (guiButton.id == 2 && vlwv.FjUS != null) {
-            this.mc.displayGuiScreen((GuiScreen)new GuiConnecting(yYGD.qgYJ(GuiDisconnected.class.cast(this)), this.mc, vlwv.FjUS));
+        if (guiButton.id == 2 && Client.FjUS != null) {
+            this.mc.displayGuiScreen((GuiScreen)new GuiConnecting(yYGD.qgYJ(GuiDisconnected.class.cast(this)), this.mc, Client.FjUS));
         }
     }
     
     public void func_73876_c() {
-        if (vlwv.lHpz) {
+        if (Client.lHpz) {
             --this.wweTimer;
-            if (this.wweTimer / 20 <= 0 && vlwv.FjUS != null) {
-                this.mc.displayGuiScreen((GuiScreen)new GuiConnecting(yYGD.qgYJ(GuiDisconnected.class.cast(this)), this.mc, vlwv.FjUS));
+            if (this.wweTimer / 20 <= 0 && Client.FjUS != null) {
+                this.mc.displayGuiScreen((GuiScreen)new GuiConnecting(yYGD.qgYJ(GuiDisconnected.class.cast(this)), this.mc, Client.FjUS));
                 this.wweTimer = 100;
             }
             if (this.buttonList.size() >= 1 && this.buttonList.get(1) != null) {

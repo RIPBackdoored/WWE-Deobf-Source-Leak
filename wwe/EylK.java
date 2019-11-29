@@ -55,7 +55,7 @@ public class EylK
     
     public void acXl(final int n, final int n2, final int n3) throws IOException {
         if (this.NgqR(n, n2) && this.rMNe.LTGY(this.CuIi)) {
-            vlwv.kXkt.DKWU(new cjZo(this.CuIi));
+            Client.kXkt.DKWU(new cjZo(this.CuIi));
         }
     }
     

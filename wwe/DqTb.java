@@ -1,6 +1,7 @@
 package wwe;
 
 import org.lwjgl.input.*;
+import wwe.commands.*;
 import net.minecraft.block.*;
 import wwe.utils.*;
 import net.minecraft.client.network.*;
@@ -54,7 +55,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+            for (final qMIe qmIe : Client.hNxW.xRen()) {
                 if (qmIe.IuiN() && qmIe.LXyR()) {
                     bufferedWriter.write(qmIe.czUH());
                     bufferedWriter.write("\r\n");
@@ -77,7 +78,7 @@ public class DqTb
             final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new DataInputStream(new FileInputStream(file.getAbsolutePath()))));
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+                for (final qMIe qmIe : Client.hNxW.xRen()) {
                     if (qmIe.czUH().equals(line)) {
                         qmIe.GDVp();
                         break;
@@ -104,7 +105,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+            for (final qMIe qmIe : Client.hNxW.xRen()) {
                 final int aPjp = qmIe.APjp();
                 if (aPjp <= 114) {
                     bufferedWriter.write(qmIe.czUH().toLowerCase().replace(" ", "") + " " + Keyboard.getKeyName(aPjp));
@@ -116,7 +117,7 @@ public class DqTb
             }
         }
         catch (Exception ex) {
-            HAxG.TuzD("Failed to save keybind!");
+            Command.TuzD("Failed to save keybind!");
         }
     }
     
@@ -133,7 +134,7 @@ public class DqTb
                 final String[] array = line.toLowerCase().trim().split(" ");
                 final String s = array[0];
                 final int keyIndex = Keyboard.getKeyIndex(array[1].toUpperCase());
-                for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+                for (final qMIe qmIe : Client.hNxW.xRen()) {
                     if (s.equalsIgnoreCase(qmIe.czUH().toLowerCase().replace(" ", ""))) {
                         qmIe.hzzk(keyIndex);
                     }
@@ -154,7 +155,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final LdXC ldXC : vlwv.Zqnd().padc) {
+            for (final LdXC ldXC : Client.Zqnd().padc) {
                 bufferedWriter.write(ldXC.CjlP() + " " + ldXC.ugqf());
                 bufferedWriter.write("\r\n");
                 }
@@ -176,7 +177,7 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 final String trim = line.trim();
-                vlwv.Zqnd().kDXm(trim.split(" ")[0], trim.split(" ")[1]);
+                Client.Zqnd().kDXm(trim.split(" ")[0], trim.split(" ")[1]);
                 }
             }
             bufferedReader.close();
@@ -233,7 +234,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final IcRI<Object> icRI : vlwv.tiEw) {
+            for (final IcRI<Object> icRI : Client.tiEw) {
                 if (icRI.wnpo()) {
                     bufferedWriter.write(icRI.lJZv.czUH() + ":" + icRI.VQBN + ":Boolean:" + icRI.OnGi() + "\r\n");
                 }
@@ -267,7 +268,7 @@ public class DqTb
                 final String s2 = line.trim().split(":")[1];
                 final String s3 = line.trim().split(":")[2];
                 final String s4 = line.trim().split(":")[3];
-                for (final IcRI icRI : vlwv.tiEw) {
+                for (final IcRI icRI : Client.tiEw) {
                     if (icRI.lJZv.czUH().equals(s) && icRI.VQBN.equals(s2)) {
                         if (s3.equals("Boolean") && icRI.wnpo()) {
                             ((BooleanValue)icRI).thqV(Boolean.parseBoolean(s4));
@@ -295,19 +296,19 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final FinI finI : vlwv.pRNz.nYFA) {
+            for (final FinI finI : Client.pRNz.nYFA) {
                 bufferedWriter.write(finI.XLez.name() + "=" + finI.kVnf + "=" + finI.CQIZ + "=" + finI.aBNN + "\r\n");
                 }
             }
             final BufferedWriter bufferedWriter2 = bufferedWriter;
             final StringBuilder sb = new StringBuilder();
-            final hEGx prNz = vlwv.pRNz;
+            final hEGx prNz = Client.pRNz;
             final StringBuilder append = sb.append(hEGx.aTlJ.nLkA).append("=");
-            final hEGx prNz2 = vlwv.pRNz;
+            final hEGx prNz2 = Client.pRNz;
             final StringBuilder append2 = append.append(hEGx.aTlJ.OsiI).append("=");
-            final hEGx prNz3 = vlwv.pRNz;
+            final hEGx prNz3 = Client.pRNz;
             final StringBuilder append3 = append2.append(hEGx.aTlJ.zzJD).append("=");
-            final hEGx prNz4 = vlwv.pRNz;
+            final hEGx prNz4 = Client.pRNz;
             bufferedWriter2.write(append3.append(hEGx.aTlJ.wMBz).append("\r\n").toString());
             bufferedWriter.close();
             }
@@ -330,7 +331,7 @@ public class DqTb
                 final String s2 = trim.split("=")[1];
                 final String s3 = trim.split("=")[2];
                 final String s4 = trim.split("=")[3];
-                for (final FinI finI : vlwv.pRNz.nYFA) {
+                for (final FinI finI : Client.pRNz.nYFA) {
                     if (finI.XLez.name().equals(s)) {
                         finI.kVnf = Integer.parseInt(s2);
                         finI.CQIZ = Integer.parseInt(s3);
@@ -338,11 +339,11 @@ public class DqTb
                     }
                     }
                 }
-                final hEGx prNz = vlwv.pRNz;
+                final hEGx prNz = Client.pRNz;
                 hEGx.aTlJ.OsiI = Integer.parseInt(s2);
-                final hEGx prNz2 = vlwv.pRNz;
+                final hEGx prNz2 = Client.pRNz;
                 hEGx.aTlJ.zzJD = Integer.parseInt(s3);
-                final hEGx prNz3 = vlwv.pRNz;
+                final hEGx prNz3 = Client.pRNz;
                 hEGx.aTlJ.wMBz = Boolean.parseBoolean(s4);
                 }
             }
@@ -362,7 +363,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final RCMD rcmd : vlwv.fomn.JNkz) {
+            for (final RCMD rcmd : Client.fomn.JNkz) {
                 bufferedWriter.write(rcmd.VGnY + " " + rcmd.zlwQ + " " + rcmd.elYg + " " + rcmd.Kbjh + "\r\n");
                 }
             }
@@ -387,7 +388,7 @@ public class DqTb
                 final String s2 = trim.split(" ")[1];
                 final String s3 = trim.split(" ")[2];
                 final String s4 = trim.split(" ")[3];
-                for (final RCMD rcmd : vlwv.fomn.JNkz) {
+                for (final RCMD rcmd : Client.fomn.JNkz) {
                     if (rcmd.VGnY.equalsIgnoreCase(s)) {
                         rcmd.zlwQ = Integer.parseInt(s2);
                         rcmd.elYg = Integer.parseInt(s3);
@@ -551,7 +552,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+            for (final qMIe qmIe : Client.hNxW.xRen()) {
                 bufferedWriter.write(qmIe.czUH() + ":" + qmIe.sUHq() + "\r\n");
                 }
             }
@@ -574,7 +575,7 @@ public class DqTb
                 final String trim = line.trim();
                 final String s = trim.split(":")[0];
                 Boolean.parseBoolean(trim.split(":")[1]);
-                for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+                for (final qMIe qmIe : Client.hNxW.xRen()) {
                     if (qmIe.czUH().equals(s)) {
                         final qMIe qmIe2 = qmIe;
                         final boolean b = true;
@@ -598,7 +599,7 @@ public class DqTb
         if (!file.exists()) {
             file.mkdirs();
         }
-        for (final hfst hfst : vlwv.zkER) {
+        for (final hfst hfst : Client.zkER) {
             try {
                 final File file2 = new File(file.getAbsolutePath(), "Modules.txt");
                 if (!file2.exists()) {
@@ -622,7 +623,7 @@ public class DqTb
                     file3.createNewFile();
                 }
                 final BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(file3));
-                for (final IcRI<Object> icRI : vlwv.tiEw) {
+                for (final IcRI<Object> icRI : Client.tiEw) {
                     if (icRI.wnpo()) {
                         bufferedWriter2.write(icRI.lJZv.czUH() + ":" + icRI.VQBN + ":Boolean:" + icRI.OnGi() + "\r\n");
                     }
@@ -673,7 +674,7 @@ public class DqTb
                 list.add(line);
                 }
             }
-            for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+            for (final qMIe qmIe : Client.hNxW.xRen()) {
                 if (list.contains(qmIe.czUH()) && !qmIe.IuiN()) {
                     qmIe.GDVp();
                     }
@@ -701,7 +702,7 @@ public class DqTb
                 final String s3 = line2.trim().split(":")[1];
                 final String s4 = line2.trim().split(":")[2];
                 final String s5 = line2.trim().split(":")[3];
-                for (final IcRI icRI : vlwv.tiEw) {
+                for (final IcRI icRI : Client.tiEw) {
                     if (icRI.lJZv.czUH().equals(s2) && icRI.VQBN.equals(s3)) {
                         if (s4.equals("Boolean") && icRI.wnpo()) {
                             ((BooleanValue)icRI).thqV(Boolean.parseBoolean(s5));
@@ -792,7 +793,7 @@ public class DqTb
         //    54: iload           5
         //    56: aaload         
         //    57: astore          6
-        //    59: getstatic       wwe/vlwv.pRNz:Lwwe/hEGx;
+        //    59: getstatic       wwe/Client.pRNz:Lwwe/hEGx;
         //    62: pop            
         //    63: getstatic       wwe/hEGx.aTlJ:Lwwe/XdhZ;
         //    66: new             Lwwe/hfst;
@@ -851,7 +852,7 @@ public class DqTb
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             final String trim = line.trim();
-            for (final qMIe qmIe : vlwv.hNxW.xRen()) {
+            for (final qMIe qmIe : Client.hNxW.xRen()) {
                 if (qmIe.czUH().equals(trim)) {
                     list.add(qmIe);
                 }
@@ -1301,7 +1302,7 @@ public class DqTb
                 file.createNewFile();
             }
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            bufferedWriter.write("Auto Reconnect:" + vlwv.lHpz + "\r\n");
+            bufferedWriter.write("Auto Reconnect:" + Client.lHpz + "\r\n");
             bufferedWriter.write("Command Preset:" + DhFe.itOx + "\r\n");
             if (bozE.Jfgf != null) {
                 bufferedWriter.write("Custom Font:" + bozE.Jfgf.KtJZ() + "\r\n");
@@ -1330,7 +1331,7 @@ public class DqTb
                 final String s = line.trim().split(":")[0];
                 final String itOx = line.trim().split(":")[1];
                 if (s.equals("Auto Reconnect")) {
-                    vlwv.lHpz = Boolean.parseBoolean(itOx);
+                    Client.lHpz = Boolean.parseBoolean(itOx);
                     }
                 }
                 else if (s.equals("Command Preset")) {
@@ -1433,7 +1434,7 @@ public class DqTb
                     }
                 }
                 file.createNewFile();
-                HAxG.TuzD("You already have a note bot song with the name " + s + " so we are renaming it to, " + s + "_" + n);
+                Command.TuzD("You already have a note bot song with the name " + s + " so we are renaming it to, " + s + "_" + n);
                 }
             }
             else {
@@ -1525,8 +1526,8 @@ public class DqTb
     }
     
     public void HFWe() {
-        if (this.zzbo && !vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN()) {
-            vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).GDVp();
+        if (this.zzbo && !Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN()) {
+            Client.hNxW.qHPF((Class<Hud>)Ijoo.class).GDVp();
         }
     }
 }

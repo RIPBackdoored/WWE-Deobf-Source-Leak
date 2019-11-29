@@ -21,7 +21,7 @@ public class MixinItemMap
     
     @Inject(method = { "addInformation" }, at = { @At("RETURN") }, cancellable = true)
     public void addInformation(final ItemStack itemStack, @Nullable final World world, final List<String> list, final ITooltipFlag tooltipFlag, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<TreasureMapCoords>)ceSU.class).IuiN() && itemStack.hasTagCompound() && itemStack.getTagCompound().hasKey("Decorations", 9)) {
+        if (Client.hNxW.qHPF((Class<TreasureMapCoords>)ceSU.class).IuiN() && itemStack.hasTagCompound() && itemStack.getTagCompound().hasKey("Decorations", 9)) {
             final NBTTagList tagList = itemStack.getTagCompound().getTagList("Decorations", 10);
             for (int i = 0; i < tagList.tagCount(); ++i) {
                 final NBTTagCompound compoundTag = tagList.getCompoundTagAt(i);

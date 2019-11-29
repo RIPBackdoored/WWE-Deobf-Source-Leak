@@ -30,13 +30,13 @@ public class MixinGuiEditSign extends GuiScreen
     
     @Inject(method = { "initGui" }, at = { @At("RETURN") }, cancellable = true)
     public void initGui(final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<AutoSign>)BTPB.class).IuiN() && this.tileSign.signText[0] != null && this.tileSign.signText[1] != null && this.tileSign.signText[2] != null && this.tileSign.signText[3] != null) {
+        if (Client.hNxW.qHPF((Class<AutoSign>)BTPB.class).IuiN() && this.tileSign.signText[0] != null && this.tileSign.signText[1] != null && this.tileSign.signText[2] != null && this.tileSign.signText[3] != null) {
             this.tileSign.signText[0] = AutoSign.ALQZ[0];
             this.tileSign.signText[1] = AutoSign.ALQZ[1];
             this.tileSign.signText[2] = AutoSign.ALQZ[2];
             this.tileSign.signText[3] = AutoSign.ALQZ[3];
         }
-        if (vlwv.hNxW.qHPF((Class<TimeStamp>)uLER.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<TimeStamp>)uLER.class).IuiN()) {
             this.tileSign.signText[3] = (ITextComponent)new TextComponentString(new SimpleDateFormat("MM/dd/yyyy").format(new Date()));
         }
         this.sign = new xhCH(this.tileSign);

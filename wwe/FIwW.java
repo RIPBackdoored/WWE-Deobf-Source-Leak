@@ -39,8 +39,8 @@ public class FIwW
                 final NonNullList withSize = NonNullList.withSize(27, (Object)ItemStack.EMPTY);
                 ItemStackHelper.loadAllItems(compoundTag, withSize);
                 final int n3 = 0;
-                if (((aKVA)vlwv.hNxW.qHPF((Class<Peek>)aKVA.class)).IuiN()) {
-                    if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("Minecraft")) {
+                if (((aKVA)Client.hNxW.qHPF((Class<Peek>)aKVA.class)).IuiN()) {
+                    if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("Minecraft")) {
                         GlStateManager.enableBlend();
                         GlStateManager.disableRescaleNormal();
                         RenderHelper.disableStandardItemLighting();
@@ -51,7 +51,7 @@ public class FIwW
                         Wrapper.mc.ingameGUI.drawTexturedModalRect(n - 8, n2 + 1, 0, 0, 176, 76);
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                     }
-                    if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("WWE")) {
+                    if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("WWE")) {
                         GlStateManager.enableBlend();
                         GlStateManager.disableRescaleNormal();
                         RenderHelper.disableStandardItemLighting();
@@ -88,7 +88,7 @@ public class FIwW
             }
         }
         else {
-            if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("Minecraft")) {
+            if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("Minecraft")) {
                 GlStateManager.enableBlend();
                 GlStateManager.disableRescaleNormal();
                 RenderHelper.disableStandardItemLighting();
@@ -98,7 +98,7 @@ public class FIwW
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                 Wrapper.mc.ingameGUI.drawTexturedModalRect(n - 8, n2 + 1, 0, 0, 176, 76);
             }
-            if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("WWE")) {
+            if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).mode.OnGi().equalsIgnoreCase("WWE")) {
                 if (b) {
                     xtEK();
                 }
@@ -300,7 +300,7 @@ public class FIwW
         if (entityLivingBase instanceof EntityPlayerSP) {
             return false;
         }
-        if (b && entityLivingBase instanceof EntityPlayer && !vlwv.Zqnd().UsVJ(entityLivingBase.getName()) && Wrapper.mc.player.getDistance((Entity)entityLivingBase) <= n && !entityLivingBase.isDead && entityLivingBase.getHealth() > 0.0 && !entityLivingBase.equals((Object)Wrapper.mc.player.getRidingEntity())) {
+        if (b && entityLivingBase instanceof EntityPlayer && !Client.Zqnd().UsVJ(entityLivingBase.getName()) && Wrapper.mc.player.getDistance((Entity)entityLivingBase) <= n && !entityLivingBase.isDead && entityLivingBase.getHealth() > 0.0 && !entityLivingBase.equals((Object)Wrapper.mc.player.getRidingEntity())) {
             return !entityLivingBase.isInvisible() && (b5 || Wrapper.mc.player.canEntityBeSeen((Entity)entityLivingBase));
         }
         if (b2 && entityLivingBase instanceof EntityAnimal && Wrapper.mc.player.getDistance((Entity)entityLivingBase) <= n && !entityLivingBase.isDead && entityLivingBase.getHealth() > 0.0 && !entityLivingBase.equals((Object)Wrapper.mc.player.getRidingEntity())) {

@@ -18,7 +18,7 @@ public class MixinVisGraph
     @Inject(method = { "setOpaqueCube" }, at = { @At("HEAD") }, cancellable = true)
     public void setOpaqueCube(final BlockPos blockPos, final CallbackInfo callbackInfo) {
         try {
-            if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
                 callbackInfo.cancel();
             }
         }

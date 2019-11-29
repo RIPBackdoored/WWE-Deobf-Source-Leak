@@ -16,7 +16,7 @@ public class MixinGuiBossOverlay
     
     @Inject(method = { "renderBossHealth" }, at = { @At("HEAD") }, cancellable = true)
     private void getPlayerCooldownPeriod(final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).wither.OnGi()) {
+        if (Client.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && Client.hNxW.qHPF((Class<NoRender>)myLi.class).wither.OnGi()) {
             callbackInfo.cancel();
         }
     }

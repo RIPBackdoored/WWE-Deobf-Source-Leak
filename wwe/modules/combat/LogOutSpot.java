@@ -7,6 +7,7 @@ import wwe.utils.*;
 import java.awt.*;
 import net.minecraft.client.*;
 import com.mojang.authlib.*;
+import wwe.commands.*;
 import java.util.*;
 import net.minecraft.network.play.server.*;
 import org.lwjgl.opengl.*;
@@ -99,7 +100,7 @@ public class LogOutSpot extends qMIe
                 final double n4 = yEmw.EQEV + 2.0;
                 final double n5 = yEmw.YdCe + 0.25;
                 Color color;
-                if (vlwv.Zqnd().UsVJ(yEmw.AAtC)) {
+                if (Client.Zqnd().UsVJ(yEmw.AAtC)) {
                     color = JIfG.JzFV(0xCC95F7606F75DD1BL ^ 0xCC95F7606F75DD1AL, 1.0f);
                 }
                 else {
@@ -149,7 +150,7 @@ public class LogOutSpot extends qMIe
         while (i < LogOutSpot.zEsy.size()) {
             if ((LogOutSpot.zEsy.get(i).AAtC.equalsIgnoreCase(gameProfile.getName()) || LogOutSpot.zEsy.get(i).TZqL.equals(gameProfile.getId())) && !LogOutSpot.zEsy.get(i).AAtC.equals(Wrapper.mc.player.getName())) {
                 if (this.chat.OnGi()) {
-                    HAxG.TuzD(LogOutSpot.zEsy.get(i).AAtC + " has logged back in, removing log out spot");
+                    Command.TuzD(LogOutSpot.zEsy.get(i).AAtC + " has logged back in, removing log out spot");
                 }
                 LogOutSpot.zEsy.remove(i);
                 --i;
@@ -169,7 +170,7 @@ public class LogOutSpot extends qMIe
                         s = entityPlayer.getName();
                     else {
                         s = gameProfile.getName();
-                    HAxG.TuzD(sb.append(s).append(" has logged out at, X: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getX()).append(TextFormatting.DARK_RED).append(" Y: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getY()).append(TextFormatting.DARK_RED).append(" Z: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getZ()).toString());
+                    Command.TuzD(sb.append(s).append(" has logged out at, X: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getX()).append(TextFormatting.DARK_RED).append(" Y: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getY()).append(TextFormatting.DARK_RED).append(" Z: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getZ()).toString());
                 }
                 LogOutSpot.zEsy.add(new YEmw(entityPlayer.posX, entityPlayer.posY, entityPlayer.posZ, entityPlayer.getName(), entityPlayer.getGameProfile().getId(), entityPlayer, new Date()));
             }
@@ -261,7 +262,7 @@ public class LogOutSpot extends qMIe
         final float n4 = (float)(-n2);
         final float n5 = 11.0f;
         int n6;
-        if (vlwv.Zqnd().UsVJ(yEmw.AAtC)) {
+        if (Client.Zqnd().UsVJ(yEmw.AAtC)) {
             n6 = -16711681;
             }
         }
@@ -269,7 +270,7 @@ public class LogOutSpot extends qMIe
             n6 = -1;
         }
         fontRenderer.drawStringWithShadow(aAtC, n4, n5, n6);
-        if (yEmw.egIB != null && vlwv.xXAB(yEmw.egIB.getName())) {
+        if (yEmw.egIB != null && Client.xXAB(yEmw.egIB.getName())) {
             Wrapper.mc.renderEngine.bindTexture(new ResourceLocation("textures/wwe/wwelogo.png"));
             GlStateManager.pushMatrix();
             GL11.glScalef(0.04f, 0.04f, 0.0f);

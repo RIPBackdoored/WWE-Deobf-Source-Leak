@@ -21,7 +21,7 @@ public class MixinBlockModelRenderer
     @Inject(method = { "renderModel" }, at = { @At("HEAD") }, cancellable = true)
     private void renderModel(final IBlockAccess blockAccess, final IBakedModel bakedModel, final IBlockState blockState, final BlockPos blockPos, final BufferBuilder bufferBuilder, final boolean b, final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
         try {
-            if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN() && !Xray.fNgC(blockState.getBlock())) {
+            if (Client.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN() && !Xray.fNgC(blockState.getBlock())) {
                 callbackInfoReturnable.setReturnValue(false);
                 callbackInfoReturnable.cancel();
             }
@@ -32,7 +32,7 @@ public class MixinBlockModelRenderer
     @ModifyArg(method = { "renderModel(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/client/renderer/block/model/IBakedModel;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/client/renderer/BufferBuilder;ZJ)Z" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/BlockModelRenderer;renderModelFlat(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/client/renderer/block/model/IBakedModel;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/client/renderer/BufferBuilder;ZJ)Z"))
     private boolean renderModelFlat(final boolean b) {
         try {
-            if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
                 return false;
             }
         }
@@ -43,7 +43,7 @@ public class MixinBlockModelRenderer
     @ModifyArg(method = { "renderModel(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/client/renderer/block/model/IBakedModel;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/client/renderer/BufferBuilder;ZJ)Z" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/BlockModelRenderer;renderModelSmooth(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/client/renderer/block/model/IBakedModel;Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/client/renderer/BufferBuilder;ZJ)Z"))
     private boolean renderModelSmooth(final boolean b) {
         try {
-            if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
                 return false;
             }
         }

@@ -136,7 +136,7 @@ public class Zuqu
         final float n15 = (float)n11;
         int rgb;
         if (this.BLjJ || this.SGQw) {
-            rgb = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
+            rgb = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
         }
         else {
             rgb = -1;

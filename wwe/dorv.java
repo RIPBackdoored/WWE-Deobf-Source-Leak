@@ -17,8 +17,8 @@ class dorv extends Thread
         // Original Bytecode:
         // 
         //     3: return         
-        //     4: invokestatic    wwe/vlwv.wNWV:()V
-        //     7: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+        //     4: invokestatic    wwe/Client.wNWV:()V
+        //     7: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
         //    10: invokevirtual   wwe/sbfc.BBwj:()V
         //    13: getstatic       wwe/dorv.\u2007\u2005\u2008\u2000\u200c\u2009:Z
         //    16: ifeq            26

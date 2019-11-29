@@ -93,7 +93,7 @@ public class OutlineESP extends qMIe
                         Tracers.oisD(new Color(-14124001));
                     }
                     else if (entity instanceof EntityPlayer) {
-                        if (vlwv.Zqnd().UsVJ(entity.getName())) {
+                        if (Client.Zqnd().UsVJ(entity.getName())) {
                             Tracers.oisD(JIfG.JzFV(0x3A9F7B9E704B419DL ^ 0x3A9F7B9E704B419CL, 1.0f));
                         else {
                             GL11.glColor3f(1.0f, 0.0f, 0.0f);

@@ -27,11 +27,11 @@ public class MixinPlayerControllerMP
     @Inject(method = { "attackEntity" }, at = { @At("HEAD") }, cancellable = true)
     public void playerAttackEntity(final EntityPlayer entityPlayer, final Entity entity, final CallbackInfo callbackInfo) {
         hSNE.Seqo(new MUMg((Entity)entityPlayer, entity));
-        if (vlwv.hNxW.qHPF((Class<BloodParticles>)XdIl.class).IuiN() && entity instanceof EntityLivingBase) {
+        if (Client.hNxW.qHPF((Class<BloodParticles>)XdIl.class).IuiN() && entity instanceof EntityLivingBase) {
             final Block blockById = Block.getBlockById(Block.getStateId(Blocks.REDSTONE_BLOCK.getDefaultState()) & 0xFFF);
             if (blockById.getDefaultState().getMaterial() != Material.AIR) {
                 final SoundType soundType = blockById.getSoundType(Block.getStateById(Block.getStateId(Blocks.REDSTONE_BLOCK.getDefaultState())), (World)Minecraft.getMinecraft().world, new BlockPos(entity.posX, entity.posY, entity.posZ), (Entity)null);
-                if (vlwv.hNxW.qHPF((Class<BloodParticles>)XdIl.class).sound.OnGi()) {
+                if (Client.hNxW.qHPF((Class<BloodParticles>)XdIl.class).sound.OnGi()) {
                     Minecraft.getMinecraft().world.playSound(new BlockPos(entity.posX, entity.posY, entity.posZ), soundType.getBreakSound(), SoundCategory.BLOCKS, (soundType.getVolume() + 1.0f) / 2.0f, soundType.getPitch() * 0.8f, false);
                 }
             }

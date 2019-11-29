@@ -16,7 +16,7 @@ public class MixinChunk
     
     @Inject(method = { "relightBlock" }, at = { @At("HEAD") }, cancellable = true)
     private void relightBlock(final int n, final int n2, final int n3, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).lightLag.OnGi()) {
+        if (Client.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && Client.hNxW.qHPF((Class<NoRender>)myLi.class).lightLag.OnGi()) {
             callbackInfo.cancel();
         }
     }

@@ -1,14 +1,14 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
 import net.minecraft.util.text.*;
 import net.minecraft.util.text.event.*;
 
-public abstract class HAxG
+public abstract class Command
 {
     private String VFHF;
     
-    public HAxG(final String vfhf) {
+    public Command(final String vfhf) {
         super();
         this.VFHF = vfhf;
     }

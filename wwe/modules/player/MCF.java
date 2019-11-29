@@ -3,8 +3,9 @@ package wwe.modules.player;
 import wwe.modules.*;
 import wwe.utils.*;
 import net.minecraft.entity.player.*;
-import net.minecraft.util.text.*;
 import wwe.*;
+import net.minecraft.util.text.*;
+import wwe.commands.*;
 
 public class MCF extends qMIe
 {
@@ -19,14 +20,14 @@ public class MCF extends qMIe
         }
         if (Wrapper.mc.objectMouseOver != null && Wrapper.mc.objectMouseOver.entityHit instanceof EntityPlayer) {
             final String name = Wrapper.mc.objectMouseOver.entityHit.getName();
-            if (!vlwv.Zqnd().UsVJ(name)) {
-                vlwv.Zqnd().kDXm(name, name);
-                HAxG.TuzD("Added " + TextFormatting.DARK_RED + name + TextFormatting.DARK_RED + " to friend" + TextFormatting.DARK_RED + "s list");
+            if (!Client.Zqnd().UsVJ(name)) {
+                Client.Zqnd().kDXm(name, name);
+                Command.TuzD("Added " + TextFormatting.DARK_RED + name + TextFormatting.DARK_RED + " to friend" + TextFormatting.DARK_RED + "s list");
                 Wrapper.ypJK().pRVY();
             }
             else {
-                vlwv.Zqnd().bSEt(name);
-                HAxG.TuzD("Removed " + TextFormatting.DARK_RED + name + TextFormatting.DARK_RED + " from friend" + TextFormatting.DARK_RED + "s list");
+                Client.Zqnd().bSEt(name);
+                Command.TuzD("Removed " + TextFormatting.DARK_RED + name + TextFormatting.DARK_RED + " from friend" + TextFormatting.DARK_RED + "s list");
                 Wrapper.ypJK().pRVY();
             }
         }

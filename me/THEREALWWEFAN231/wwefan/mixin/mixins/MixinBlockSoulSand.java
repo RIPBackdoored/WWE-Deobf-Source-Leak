@@ -20,7 +20,7 @@ public class MixinBlockSoulSand
     
     @Inject(method = { "onEntityCollision" }, at = { @At("HEAD") }, cancellable = true)
     public void onEntityCollidedWithBlock(final World world, final BlockPos blockPos, final IBlockState blockState, final Entity entity, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<NoSlowDown>)lOiL.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<NoSlowDown>)lOiL.class).IuiN()) {
             callbackInfo.cancel();
         }
     }

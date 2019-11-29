@@ -20,7 +20,7 @@ public class MHOv
     }
     
     public static void ZGAN(final ArrayList<Object> list) {
-        vlwv.kXkt.DKWU(new Citq(list.get(0)));
+        Client.kXkt.DKWU(new Citq(list.get(0)));
     }
     
     public static void PGUO(final ArrayList<Object> list) {
@@ -35,19 +35,19 @@ public class MHOv
         catch (AuthenticationException ex) {
             System.out.println("We have a AuthenticationException exeption but were not going print it, changed are, its a invalid token");
         }
-        vlwv.kXkt.DKWU(new bAHg(newSharedKey, decodePublicKey, (byte[])(Object)list.get(2)));
+        Client.kXkt.DKWU(new bAHg(newSharedKey, decodePublicKey, (byte[])(Object)list.get(2)));
     }
     
     public static void JbkI(final ArrayList<Object> list) {
         if (list.get(0) != 0) {
-            vlwv.kXkt.Ycaq.add((String)list.get(1));
+            Client.kXkt.Ycaq.add((String)list.get(1));
             int n = 50;
-            for (int i = 0; i < vlwv.kXkt.Ycaq.size(); ++i) {
-                final String s = vlwv.kXkt.Ycaq.get(i);
-                for (int j = 0; j < vlwv.kXkt.SoAu.size(); ++j) {
-                    final cJGk cjGk = vlwv.kXkt.SoAu.get(j);
+            for (int i = 0; i < Client.kXkt.Ycaq.size(); ++i) {
+                final String s = Client.kXkt.Ycaq.get(i);
+                for (int j = 0; j < Client.kXkt.SoAu.size(); ++j) {
+                    final cJGk cjGk = Client.kXkt.SoAu.get(j);
                     if (cjGk.URwX.equals(s)) {
-                        vlwv.kXkt.CkvS.add(new Kdwt(cjGk, null, 5, n));
+                        Client.kXkt.CkvS.add(new Kdwt(cjGk, null, 5, n));
                         n += 35;
                         break;
                     }
@@ -64,17 +64,17 @@ public class MHOv
         final String s3 = list.get(3);
         final int intValue = (int)list.get(4);
         final int intValue2 = (int)list.get(5);
-        for (int i = 0; i < vlwv.kXkt.SoAu.size(); ++i) {
-            if (vlwv.kXkt.SoAu.get(i).URwX.equals(s)) {
-                vlwv.kXkt.SoAu.remove(i);
+        for (int i = 0; i < Client.kXkt.SoAu.size(); ++i) {
+            if (Client.kXkt.SoAu.get(i).URwX.equals(s)) {
+                Client.kXkt.SoAu.remove(i);
                 --i;
             }
         }
-        vlwv.kXkt.SoAu.add(new cJGk(s, uuid, s2, s3, intValue, intValue2));
-        for (int j = 0; j < vlwv.kXkt.CkvS.size(); ++j) {
-            final Kdwt kdwt = vlwv.kXkt.CkvS.get(j);
-            for (int k = 0; k < vlwv.kXkt.SoAu.size(); ++k) {
-                final cJGk ukmj = vlwv.kXkt.SoAu.get(k);
+        Client.kXkt.SoAu.add(new cJGk(s, uuid, s2, s3, intValue, intValue2));
+        for (int j = 0; j < Client.kXkt.CkvS.size(); ++j) {
+            final Kdwt kdwt = Client.kXkt.CkvS.get(j);
+            for (int k = 0; k < Client.kXkt.SoAu.size(); ++k) {
+                final cJGk ukmj = Client.kXkt.SoAu.get(k);
                 if (kdwt.uKMJ.umix.equals(ukmj.umix)) {
                     final cJGk ukmj2 = kdwt.uKMJ;
                     kdwt.uKMJ = ukmj;
@@ -86,8 +86,8 @@ public class MHOv
         }
         if (Wrapper.mc.currentScreen instanceof zROp) {
             final zROp zrOp = (zROp)Wrapper.mc.currentScreen;
-            for (int l = 0; l < vlwv.kXkt.SoAu.size(); ++l) {
-                final cJGk ukmj3 = vlwv.kXkt.SoAu.get(l);
+            for (int l = 0; l < Client.kXkt.SoAu.size(); ++l) {
+                final cJGk ukmj3 = Client.kXkt.SoAu.get(l);
                 if (zrOp.iBKN != null && zrOp.iBKN.uKMJ.umix.equals(ukmj3.umix)) {
                     final cJGk ukmj4 = zrOp.iBKN.uKMJ;
                     zrOp.iBKN.uKMJ = ukmj3;
@@ -101,15 +101,15 @@ public class MHOv
     }
     
     public static void GoaD(final ArrayList<Object> list) {
-        vlwv.kXkt.jdqo = list.get(0);
-        vlwv.kXkt.svnA = (String)list.get(1);
+        Client.kXkt.jdqo = list.get(0);
+        Client.kXkt.svnA = (String)list.get(1);
     }
     
     public static void Ujlm(final ArrayList<Object> list) {
         if (list.get(4)) {
             MjBb.cZyl(new TYDL("New chat message from, " + (String)list.get(1)));
         }
-        for (final Kdwt kdwt : vlwv.kXkt.CkvS) {
+        for (final Kdwt kdwt : Client.kXkt.CkvS) {
             if (kdwt.uKMJ.umix.toString().equals(list.get(1)) || (Wrapper.mc.getSession().getProfile().getId().toString().equals(list.get(1)) && kdwt.uKMJ.umix.toString().equals(list.get(0)))) {
                 kdwt.TXHL.add(new iZvY(((String)list.get(1)).equals(Wrapper.mc.getSession().getProfile().getId().toString()) ? null : kdwt.uKMJ, (String)list.get(2), (Long)(Object)list.get(3)));
                 break;
@@ -123,8 +123,8 @@ public class MHOv
     
     public static void KZvi(final ArrayList<Object> list) throws Exception {
         FMLLog.log.info("Socket got disconnected, " + list.get(0));
-        vlwv.kXkt.svnA = list.get(0);
-        vlwv.kXkt.eCZB();
+        Client.kXkt.svnA = list.get(0);
+        Client.kXkt.eCZB();
     }
     
     public static void uBan(final ArrayList<Object> list) throws Exception {

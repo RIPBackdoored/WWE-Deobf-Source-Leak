@@ -18,6 +18,6 @@ public class MixinBlockLiquid
     
     @Inject(method = { "canCollideCheck" }, at = { @At("HEAD") }, cancellable = true)
     public void canCollideCheck(final IBlockState blockState, final boolean b, final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
-        callbackInfoReturnable.setReturnValue((b && (int)blockState.getValue((IProperty)BlockLiquid.LEVEL) == 0) || vlwv.hNxW.qHPF((Class<LiquidInteract>)sBzS.class).IuiN());
+        callbackInfoReturnable.setReturnValue((b && (int)blockState.getValue((IProperty)BlockLiquid.LEVEL) == 0) || Client.hNxW.qHPF((Class<LiquidInteract>)sBzS.class).IuiN());
     }
 }

@@ -27,11 +27,11 @@ public class Timer extends qMIe
             return;
         }
         this.owgW("Timer " + TextFormatting.DARK_GRAY + this.PxbF.format(((IcRI<Object>)this.speed).OnGi()));
-        vlwv.Axho = this.speed.OnGi().floatValue();
+        Client.Axho = this.speed.OnGi().floatValue();
     }
     
     @Override
     public void qBmy() {
-        vlwv.Axho = 1.0f;
+        Client.Axho = 1.0f;
     }
 }

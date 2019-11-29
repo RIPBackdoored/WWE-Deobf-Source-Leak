@@ -31,7 +31,7 @@ public class NoaN extends kUUQ
         final float n4 = (float)(this.TUnV.zzJD + this.jXta + 12);
         int n5;
         if (this.TUnV.sILe == this) {
-            n5 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
+            n5 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
         }
         else if (!this.Pynf) {
             n5 = new Color(15, 15, 15, 215).getRGB();

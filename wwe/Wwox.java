@@ -24,7 +24,7 @@ public class Wwox extends GuiScreen
     
     public void func_73866_w_() {
         Keyboard.enableRepeatEvents(true);
-        final Iterator<Kdwt> iterator = vlwv.kXkt.CkvS.iterator();
+        final Iterator<Kdwt> iterator = Client.kXkt.CkvS.iterator();
         while (iterator.hasNext()) {
             iterator.next().TRqF = this;
         }
@@ -56,8 +56,8 @@ public class Wwox extends GuiScreen
         GL11.glScissor(4 * scaledResolution.getScaleFactor(), 30 * scaledResolution.getScaleFactor(), (39 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 3) * scaledResolution.getScaleFactor(), (this.height - 80) * scaledResolution.getScaleFactor());
         GL11.glEnable(3089);
         int i = 0;
-        while (i < vlwv.kXkt.CkvS.size()) {
-            vlwv.kXkt.CkvS.get(i).FDgX(n, n2, n3);
+        while (i < Client.kXkt.CkvS.size()) {
+            Client.kXkt.CkvS.get(i).FDgX(n, n2, n3);
             ++i;
         }
         GL11.glDisable(3089);
@@ -175,14 +175,14 @@ public class Wwox extends GuiScreen
     }
     
     public void func_73876_c() {
-        if (!vlwv.kXkt.xFrI()) {
+        if (!Client.kXkt.xFrI()) {
             this.mc.displayGuiScreen((GuiScreen)new MkSj(this.xMqg));
         }
         this.xSlq.updateCursorCounter();
     }
     
     public void func_73864_a(final int n, final int n2, final int n3) throws IOException {
-        for (final Kdwt inUT : vlwv.kXkt.CkvS) {
+        for (final Kdwt inUT : Client.kXkt.CkvS) {
             if (n >= inUT.ByAc - 1 && n < inUT.ByAc + 35 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 3 && n2 >= inUT.AzOt - 1 && n2 < inUT.AzOt + 31) {
                 this.inUT = inUT;
                 this.xSlq.setText("");
@@ -199,13 +199,13 @@ public class Wwox extends GuiScreen
     public void func_146274_d() throws IOException {
         final int eventDWheel = Mouse.getEventDWheel();
         if (this.qNrw) {
-            if (eventDWheel > 0 && vlwv.kXkt.CkvS.get(0).AzOt <= new ScaledResolution(Wrapper.mc).getScaledHeight() - 75) {
-                for (final Kdwt kdwt : vlwv.kXkt.CkvS) {
+            if (eventDWheel > 0 && Client.kXkt.CkvS.get(0).AzOt <= new ScaledResolution(Wrapper.mc).getScaledHeight() - 75) {
+                for (final Kdwt kdwt : Client.kXkt.CkvS) {
                     kdwt.AzOt += 10;
                     }
                 }
-            if (eventDWheel < 0 && vlwv.kXkt.CkvS.get(vlwv.kXkt.CkvS.size() - 1).AzOt >= 50) {
-                for (final Kdwt kdwt2 : vlwv.kXkt.CkvS) {
+            if (eventDWheel < 0 && Client.kXkt.CkvS.get(Client.kXkt.CkvS.size() - 1).AzOt >= 50) {
+                for (final Kdwt kdwt2 : Client.kXkt.CkvS) {
                     kdwt2.AzOt -= 10;
                     }
                 }
@@ -223,7 +223,7 @@ public class Wwox extends GuiScreen
     protected void func_73869_a(final char c, final int n) {
         this.xSlq.textboxKeyTyped(c, n);
         if (this.inUT != null && this.xSlq.isFocused() && !this.xSlq.getText().isEmpty() && n == 28) {
-            vlwv.kXkt.DKWU(new UAPS(this.inUT.uKMJ.umix.toString(), this.xSlq.getText()));
+            Client.kXkt.DKWU(new UAPS(this.inUT.uKMJ.umix.toString(), this.xSlq.getText()));
             this.xSlq.setText("");
         }
     }
@@ -239,10 +239,10 @@ public class Wwox extends GuiScreen
             this.mc.displayGuiScreen((GuiScreen)new zROp(this));
         }
         if (guiButton.id == 4) {
-            vlwv.kXkt.DKWU(new zymI());
+            Client.kXkt.DKWU(new zymI());
         }
         if (guiButton.id == 5 && this.inUT != null && !this.xSlq.getText().isEmpty()) {
-            vlwv.kXkt.DKWU(new UAPS(this.inUT.uKMJ.umix.toString(), this.xSlq.getText()));
+            Client.kXkt.DKWU(new UAPS(this.inUT.uKMJ.umix.toString(), this.xSlq.getText()));
             this.xSlq.setText("");
         }
         if (guiButton.id == 6) {

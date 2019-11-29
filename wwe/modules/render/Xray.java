@@ -1,10 +1,11 @@
 package wwe.modules.render;
 
+import wwe.*;
 import java.util.*;
 import net.minecraft.block.*;
 import wwe.modules.*;
 import wwe.utils.*;
-import wwe.*;
+import wwe.commands.*;
 
 public class Xray extends qMIe
 {
@@ -18,7 +19,7 @@ public class Xray extends qMIe
     @Override
     public void LPxx() {
         if (Wrapper.mc.world != null && Wrapper.ypJK().zzbo && !Xray.yolQ) {
-            HAxG.TuzD("Hello! It appears this is your first time loading wwe for 1.12 & toggling xray, So we are going show you how to add blocks to the xray. The command is .xray add/remove blockname, example .xray add diamond_ore, if you type that in chat it will add diamond ore to the xray list!");
+            Command.TuzD("Hello! It appears this is your first time loading wwe for 1.12 & toggling xray, So we are going show you how to add blocks to the xray. The command is .xray add/remove blockname, example .xray add diamond_ore, if you type that in chat it will add diamond ore to the xray list!");
             Xray.yolQ = true;
         }
         Wrapper.mc.renderGlobal.loadRenderers();

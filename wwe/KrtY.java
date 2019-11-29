@@ -12,7 +12,7 @@ public class KrtY
     public static Color DnMA(final long n, final float n2) {
         final float n3 = (System.nanoTime() + n) / 1.0E10f % 1.0f;
         float n4;
-        if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).mode.OnGi().equalsIgnoreCase("Up")) {
+        if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).mode.OnGi().equalsIgnoreCase("Up")) {
             n4 = (System.nanoTime() - n) / 1.0E10f % 1.0f;
         }
         else {

@@ -27,7 +27,7 @@ public abstract class MixinRenderItem
     
     @ModifyArg(method = { "renderEffect" }, at = @At(value = "INVOKE", target = "net/minecraft/client/renderer/RenderItem.renderModel(Lnet/minecraft/client/renderer/block/model/IBakedModel;I)V"), index = 1)
     private int renderEffect(final int n) {
-        return vlwv.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? JIfG.JzFV(1L, 1.0f).getRGB() : n;
+        return Client.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? JIfG.JzFV(1L, 1.0f).getRGB() : n;
     }
     
     @Inject(method = { "renderEffect" }, at = { @At("HEAD") }, cancellable = true)
@@ -52,7 +52,7 @@ public abstract class MixinRenderItem
                 GlStateManager.enableDepth();
                 GlStateManager.enableBlend();
             }
-            if (itemStack.getItem().showDurabilityBar(itemStack) && (!vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() || !vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).hudDurability.OnGi())) {
+            if (itemStack.getItem().showDurabilityBar(itemStack) && (!Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() || !Client.hNxW.qHPF((Class<Hud>)Ijoo.class).hudDurability.OnGi())) {
                 GlStateManager.disableLighting();
                 GlStateManager.disableDepth();
                 GlStateManager.disableTexture2D();
@@ -82,7 +82,7 @@ public abstract class MixinRenderItem
                 GlStateManager.enableLighting();
                 GlStateManager.enableDepth();
             }
-            if (itemStack.getItem().showDurabilityBar(itemStack) && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).hudDurability.OnGi()) {
+            if (itemStack.getItem().showDurabilityBar(itemStack) && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).hudDurability.OnGi()) {
                 GL11.glPushMatrix();
                 GlStateManager.disableDepth();
                 GL11.glScalef(0.5f, 0.5f, 0.5f);

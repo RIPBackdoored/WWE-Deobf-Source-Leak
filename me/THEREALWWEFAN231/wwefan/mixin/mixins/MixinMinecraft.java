@@ -38,15 +38,15 @@ public class MixinMinecraft
     private void onKeyboard(final CallbackInfo callbackInfo) {
         final int n = (Keyboard.getEventKey() == 0) ? (Keyboard.getEventCharacter() + '\u0100') : Keyboard.getEventKey();
         if (!Keyboard.isKeyDown(61) && Keyboard.getEventKeyState()) {
-            for (final qMIe qmIe : vlwv.hNxW.ijZl) {
+            for (final qMIe qmIe : Client.hNxW.ijZl) {
                 if (n == qmIe.APjp()) {
                     qmIe.GDVp();
                 }
             }
-            if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).tabGui.OnGi()) {
-                vlwv.VFOG.MSFO(n);
+            if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).tabGui.OnGi()) {
+                Client.VFOG.MSFO(n);
             }
-            vlwv.hNxW.qHPF((Class<Announcer>)xbUc.class).wZaB(n);
+            Client.hNxW.qHPF((Class<Announcer>)xbUc.class).wZaB(n);
             if (Character.toString(Keyboard.getEventCharacter()).equals(DhFe.itOx)) {
                 Minecraft.getMinecraft().displayGuiScreen((GuiScreen)new GuiChat(DhFe.itOx));
                 callbackInfo.cancel();
@@ -66,7 +66,7 @@ public class MixinMinecraft
     
     @Inject(method = { "middleClickMouse" }, at = { @At("HEAD") })
     private void middleClickMouse(final CallbackInfo callbackInfo) {
-        vlwv.hNxW.KSAz();
+        Client.hNxW.KSAz();
     }
     
     @Inject(method = { "rightClickMouse" }, at = { @At("HEAD") })

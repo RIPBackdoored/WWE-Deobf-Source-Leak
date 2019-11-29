@@ -13,7 +13,7 @@ class eZOX implements pSdr
     
     @Override
     public int Gsgl() {
-        return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
+        return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
     }
     
     @Override

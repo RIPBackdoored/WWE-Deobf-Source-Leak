@@ -1,26 +1,27 @@
-package wwe;
+package wwe.commands;
 
+import wwe.*;
 import wwe.utils.*;
 
-public class LmJc extends HAxG
+public class Prefix extends Command
 {
-    public LmJc() {
+    public Prefix() {
         super("prefix");
     }
     
     @Override
     public void lpzH(final String s, final String[] array) {
         if (array.length < 1) {
-            HAxG.TuzD(this.ZlRY());
+            Command.TuzD(this.ZlRY());
             return;
         }
         if (array[0].length() > 1) {
-            HAxG.TuzD("The prefix cant be more then one character");
+            Command.TuzD("The prefix cant be more then one character");
             return;
         }
         DhFe.itOx = array[0];
         Wrapper.ypJK().OsgT();
-        HAxG.TuzD("Set prefix to, " + array[0]);
+        Command.TuzD("Set prefix to, " + array[0]);
     }
     
     @Override

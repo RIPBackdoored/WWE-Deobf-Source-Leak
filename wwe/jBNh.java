@@ -47,13 +47,13 @@ public class jBNh extends GuiScreen
     protected void func_73869_a(final char c, final int n) {
         this.ySWH.textboxKeyTyped(c, n);
         if (this.ySWH.isFocused() && !this.ySWH.getText().isEmpty() && n == 28) {
-            vlwv.kXkt.DKWU(new yueR(this.ySWH.getText()));
+            Client.kXkt.DKWU(new yueR(this.ySWH.getText()));
         }
     }
     
     protected void func_146284_a(final GuiButton guiButton) throws IOException {
         if (guiButton.id == 1 && !this.ySWH.getText().isEmpty()) {
-            vlwv.kXkt.DKWU(new yueR(this.ySWH.getText()));
+            Client.kXkt.DKWU(new yueR(this.ySWH.getText()));
         }
         if (guiButton.id == 3) {
             Wrapper.mc.displayGuiScreen(this.pFJJ);

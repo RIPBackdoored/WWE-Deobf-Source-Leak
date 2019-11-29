@@ -18,7 +18,7 @@ public class uIsz extends GuiScreen
     
     public void func_73866_w_() {
         int n = 0;
-        for (final RCMD rcmd : vlwv.fomn.JNkz) {
+        for (final RCMD rcmd : Client.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.mQOB) {
                 continue;
             }
@@ -34,7 +34,7 @@ public class uIsz extends GuiScreen
     
     protected void func_146284_a(final GuiButton guiButton) throws IOException {
         int n = 0;
-        for (final RCMD rcmd : vlwv.fomn.JNkz) {
+        for (final RCMD rcmd : Client.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.mQOB) {
                 continue;
             }

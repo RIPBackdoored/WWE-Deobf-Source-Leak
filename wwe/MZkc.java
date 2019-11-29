@@ -10,10 +10,10 @@ public class MZkc
     public MZkc() {
         super();
         hSNE.lyvR(this);
-        if (vlwv.wMQO == null) {
+        if (Client.wMQO == null) {
             return;
         }
-        vlwv.wMQO.BBwj();
+        Client.wMQO.BBwj();
     }
     
     @SubscribeEvent
@@ -35,8 +35,8 @@ public class MZkc
                 // Original Bytecode:
                 // 
                 //     3: return         
-                //     4: invokestatic    wwe/vlwv.wNWV:()V
-                //     7: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+                //     4: invokestatic    wwe/Client.wNWV:()V
+                //     7: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
                 //    10: invokevirtual   wwe/sbfc.BBwj:()V
                 //    13: getstatic       wwe/ekQq.\u2005\u2004:Z
                 //    16: ifeq            26
@@ -89,7 +89,7 @@ public class MZkc
         //    45: nop            
         //    46: nop            
         //    47: athrow         
-        //    48: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+        //    48: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
         //    51: ifnonnull       60
         //    54: return         
         //    55: nop            
@@ -97,9 +97,9 @@ public class MZkc
         //    57: nop            
         //    58: nop            
         //    59: athrow         
-        //    60: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+        //    60: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
         //    63: invokevirtual   wwe/sbfc.gCgh:()V
-        //    66: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+        //    66: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
         //    69: ldc2_w          600000.0
         //    72: invokevirtual   wwe/sbfc.QOXG:(D)Z
         //    75: ifeq            95
@@ -108,7 +108,7 @@ public class MZkc
         //    82: aload_0        
         //    83: invokespecial   wwe/ekQq.<init>:(Lwwe/MZkc;)V
         //    86: invokevirtual   wwe/ekQq.start:()V
-        //    89: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+        //    89: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
         //    92: invokevirtual   wwe/sbfc.BBwj:()V
         //    95: return         
         //    96: nop            

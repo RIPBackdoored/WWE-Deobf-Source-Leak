@@ -23,7 +23,7 @@ public abstract class MixinRenderLivingBase<T extends EntityLivingBase> extends 
     
     @Inject(method = { "doRender" }, at = { @At("HEAD") })
     public void doRender(final T t, final double n, final double n2, final double n3, final float n4, final float n5, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<Chams>)FHxf.class).IuiN() && t instanceof EntityLivingBase) {
+        if (Client.hNxW.qHPF((Class<Chams>)FHxf.class).IuiN() && t instanceof EntityLivingBase) {
             GL11.glEnable(32823);
             GL11.glPolygonOffset(1.0f, -1100000.0f);
         }
@@ -31,7 +31,7 @@ public abstract class MixinRenderLivingBase<T extends EntityLivingBase> extends 
     
     @Inject(method = { "doRender" }, at = { @At("RETURN") })
     public void doRenderlast(final T t, final double n, final double n2, final double n3, final float n4, final float n5, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<Chams>)FHxf.class).IuiN() && t instanceof EntityLivingBase) {
+        if (Client.hNxW.qHPF((Class<Chams>)FHxf.class).IuiN() && t instanceof EntityLivingBase) {
             GL11.glDisable(32823);
             GL11.glPolygonOffset(1.0f, 1100000.0f);
         }

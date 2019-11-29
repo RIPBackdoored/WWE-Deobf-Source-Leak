@@ -54,7 +54,7 @@ public class pVHd extends GuiScreen
         this.WGQA.textboxKeyTyped(c, n);
         if (this.WGQA.isFocused() && !this.WGQA.getText().isEmpty() && n == 28) {
             this.myIP = null;
-            vlwv.kXkt.DKWU(new yjZR(this.WGQA.getText()));
+            Client.kXkt.DKWU(new yjZR(this.WGQA.getText()));
         }
         super.keyTyped(c, n);
     }
@@ -62,7 +62,7 @@ public class pVHd extends GuiScreen
     protected void func_146284_a(final GuiButton guiButton) throws IOException {
         if (guiButton.id == 1 && !this.WGQA.getText().isEmpty()) {
             this.myIP = null;
-            vlwv.kXkt.DKWU(new yjZR(this.WGQA.getText()));
+            Client.kXkt.DKWU(new yjZR(this.WGQA.getText()));
         }
         if (guiButton.id == 3) {
             Wrapper.mc.displayGuiScreen(this.udsY);

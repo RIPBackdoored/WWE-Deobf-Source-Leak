@@ -5,6 +5,7 @@ import java.awt.*;
 import org.lwjgl.opengl.*;
 import wwe.utils.*;
 import net.minecraft.client.gui.*;
+import wwe.commands.*;
 import org.apache.commons.io.*;
 import java.io.*;
 import java.util.*;
@@ -43,8 +44,8 @@ public class XdhZ
         this.wMBz = false;
         this.ioOs = false;
         int ooJc = this.ooJc;
-        for (int i = 0; i < vlwv.zkER.size(); ++i) {
-            this.HSDz.add(new NoaN(vlwv.zkER.get(i).kAWG, this, ooJc));
+        for (int i = 0; i < Client.zkER.size(); ++i) {
+            this.HSDz.add(new NoaN(Client.zkER.get(i).kAWG, this, ooJc));
             ooJc += 12;
         }
     }
@@ -68,9 +69,9 @@ public class XdhZ
             this.OsiI = n - this.dAcA;
             this.zzJD = n2 - this.zuca;
         }
-        gnNa.wQYt((float)this.OsiI, (float)this.zzJD, (float)(this.OsiI + this.zipv), (float)(this.zzJD + this.ooJc), new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB());
+        gnNa.wQYt((float)this.OsiI, (float)this.zzJD, (float)(this.OsiI + this.zipv), (float)(this.zzJD + this.ooJc), new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB());
         if (this.ioOs) {
-            gnNa.wQYt((float)this.OsiI, (float)this.zzJD, (float)(this.OsiI + this.zipv), (float)(this.zzJD + this.ooJc), new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB());
+            gnNa.wQYt((float)this.OsiI, (float)this.zzJD, (float)(this.OsiI + this.zipv), (float)(this.zzJD + this.ooJc), new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB());
         }
         XybC.eTim(this.nLkA, (float)(this.OsiI + 3), (float)(this.zzJD + 2), -1);
         GL11.glPushMatrix();
@@ -82,9 +83,9 @@ public class XdhZ
             final float n9 = (float)(this.zzJD + this.ooJc + n5 + 13);
             int n10;
             if (this.fzpE) {
-                n10 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
+                n10 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
             else {
-                n10 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
+                n10 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
             gnNa.wQYt(n6, n7, n8, n9, n10);
             XybC.eTim("Load", (float)(this.OsiI + 3), (float)(this.zzJD + this.ooJc + n5 + 4), -1);
             final float n11 = (float)(this.OsiI + this.zipv - 27);
@@ -93,9 +94,9 @@ public class XdhZ
             final float n14 = (float)(this.zzJD + this.ooJc + n5 + 13);
             int n15;
             if (this.yasy) {
-                n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
+                n15 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
             else {
-                n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
+                n15 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
             gnNa.wQYt(n11, n12, n13, n14, n15);
             XybC.eTim("-", (float)(this.OsiI + this.zipv - 25), (float)(this.zzJD + this.ooJc + n5 + 4), -1);
             final float n16 = (float)(this.OsiI + this.zipv - 12);
@@ -104,12 +105,12 @@ public class XdhZ
             final float n19 = (float)(this.zzJD + this.ooJc + n5 + 13);
             int n20;
             if (this.fwwC) {
-                n20 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
+                n20 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
             else {
-                n20 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
+                n20 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
             gnNa.wQYt(n16, n17, n18, n19, n20);
             XybC.eTim("+", (float)(this.OsiI + this.zipv - 10), (float)(this.zzJD + this.ooJc + n5 + 4), -1);
-            if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+            if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 final ScaledResolution scaledResolution = new ScaledResolution(Wrapper.mc);
                 final int scaleFactor = scaledResolution.getScaleFactor();
                 GL11.glScissor(0, (int)((scaledResolution.getScaledHeight_double() - this.zzJD - this.ooJc - 60.0) * scaleFactor), (int)(scaledResolution.getScaledWidth_double() * scaleFactor), 60 * scaleFactor);
@@ -118,7 +119,7 @@ public class XdhZ
                 final Iterator<NoaN> iterator = this.HSDz.iterator();
                 while (iterator.hasNext()) {
                     iterator.next().SOOn();
-            if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+            if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 GL11.glDisable(3089);
         }
         GL11.glPopMatrix();
@@ -132,7 +133,7 @@ public class XdhZ
         if (n >= this.OsiI && n <= this.OsiI + this.zipv && n2 >= this.zzJD) {
             final int n3 = this.zzJD + this.ooJc;
             int n4;
-            if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+            if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 if (this.HSDz.size() > 5) {
                     n4 = 60;
                 else {
@@ -167,8 +168,8 @@ public class XdhZ
                 Wrapper.mc.displayGuiScreen((GuiScreen)new IhAb());
             if (this.yasy && this.sILe != null) {
                 int i = 0;
-                while (i < vlwv.zkER.size()) {
-                    final hfst hfst = vlwv.zkER.get(i);
+                while (i < Client.zkER.size()) {
+                    final hfst hfst = Client.zkER.get(i);
                     if (hfst.kAWG == this.sILe.lALN) {
                         this.aFjO(hfst);
                     ++i;
@@ -177,7 +178,7 @@ public class XdhZ
                     Wrapper.ypJK().eTCw(this.sILe.lALN);
                     Wrapper.ypJK().rXPb();
                 catch (Exception ex) {
-                    HAxG.TuzD("It appears something went wrong");
+                    Command.TuzD("It appears something went wrong");
                     ex.printStackTrace();
             if (!this.HSDz.isEmpty()) {
                 final Iterator<NoaN> iterator = this.HSDz.iterator();
@@ -188,13 +189,13 @@ public class XdhZ
     
     public void QWLO(final hfst hfst, final boolean b) {
         int i = 0;
-        while (i < vlwv.zkER.size()) {
-            if (hfst.kAWG == vlwv.zkER.get(i).kAWG) {
-                HAxG.TuzD("It appears that may already be a preset?");
+        while (i < Client.zkER.size()) {
+            if (hfst.kAWG == Client.zkER.get(i).kAWG) {
+                Command.TuzD("It appears that may already be a preset?");
                 return;
             ++i;
         }
-        vlwv.zkER.add(hfst);
+        Client.zkER.add(hfst);
         this.HSDz.add(new NoaN(hfst.kAWG, this, this.HSDz.size() * 12 + 13));
         if (b) {
             Wrapper.ypJK().hziJ(hfst.kAWG);
@@ -202,7 +203,7 @@ public class XdhZ
     }
     
     public void aFjO(final hfst hfst) {
-        vlwv.zkER.remove(hfst);
+        Client.zkER.remove(hfst);
         try {
             FileUtils.deleteDirectory(new File(Wrapper.ypJK().oSNt.getAbsolutePath() + File.separator + this.sILe.lALN));
         }
@@ -211,8 +212,8 @@ public class XdhZ
         }
         this.HSDz.removeAll(this.HSDz);
         int i = 0;
-        while (i < vlwv.zkER.size()) {
-            this.HSDz.add(new NoaN(vlwv.zkER.get(i).kAWG, this, this.HSDz.size() * 12 + 13));
+        while (i < Client.zkER.size()) {
+            this.HSDz.add(new NoaN(Client.zkER.get(i).kAWG, this, this.HSDz.size() * 12 + 13));
             ++i;
         }
     }
@@ -239,7 +240,7 @@ public class XdhZ
     }
     
     public void odQY(final double n) {
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("All")) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("All")) {
             if (n < 0.0) {
                 this.zzJD -= 5;
             else if (n > 0.0) {
@@ -256,7 +257,7 @@ public class XdhZ
             aUlY = 0;
         }
         clamp = MathHelper.clamp(clamp, 1.0, -1.0);
-        if (b && vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+        if (b && Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
             this.AUlY += (int)(clamp * 10.0);
         }
         if (this.AUlY < 0) {

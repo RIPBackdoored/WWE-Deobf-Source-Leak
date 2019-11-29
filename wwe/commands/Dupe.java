@@ -1,4 +1,4 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
 import net.minecraft.init.*;
@@ -7,9 +7,9 @@ import net.minecraft.entity.player.*;
 import net.minecraft.item.*;
 import net.minecraft.client.multiplayer.*;
 
-public class VCSW extends HAxG
+public class Dupe extends Command
 {
-    public VCSW() {
+    public Dupe() {
         super("dupe");
     }
     
@@ -17,7 +17,7 @@ public class VCSW extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             if (array.length < 1) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             if ((boolean)Boolean.parseBoolean(array[0])) {

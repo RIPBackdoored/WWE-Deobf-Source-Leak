@@ -39,7 +39,7 @@ public class PlayerESP extends qMIe
                     final float n3 = (float)((float)entity.lastTickPosZ + (entity.posZ - entity.lastTickPosZ) * yYGD.XgOL().renderPartialTicks);
                     Wrapper.mc.player.getDistance(entity);
                     ((EntityLivingBase)entity).getHealth();
-                    if (!vlwv.Zqnd().UsVJ(entity.getName())) {
+                    if (!Client.Zqnd().UsVJ(entity.getName())) {
                         this.oMUp(entity, n - yYGD.onRX(), n2 - yYGD.UuJK(), n3 - yYGD.LkVR(), 0.0f, 255.0f, 0.0f, 0.0f, -65536);
                     }
                     else {
@@ -53,7 +53,7 @@ public class PlayerESP extends qMIe
             this.owgW("Player ESP" + TextFormatting.DARK_GRAY + " Box");
             for (final Entity entity2 : Wrapper.mc.world.loadedEntityList) {
                 if (entity2 != Wrapper.mc.player && entity2 != null && entity2 instanceof EntityPlayer) {
-                    if (vlwv.Zqnd().UsVJ(entity2.getName())) {
+                    if (Client.Zqnd().UsVJ(entity2.getName())) {
                         BIIV.ITDu(entity2, JIfG.JzFV(0x91BFCEC00E7F7E0BL ^ 0x91BFCEC00E7F7E0AL, 1.0f));
                     }
                     else {

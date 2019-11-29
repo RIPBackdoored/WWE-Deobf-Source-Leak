@@ -17,7 +17,7 @@ public class IcRI<T>
         this.lJZv = ljZv;
         this.qYCS = qycs;
         this.JsAg = jsAg;
-        vlwv.tiEw.add(this);
+        Client.tiEw.add(this);
     }
     
     public boolean MATs() {

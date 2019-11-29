@@ -1,12 +1,13 @@
-package wwe;
+package wwe.commands;
 
+import wwe.*;
 import org.lwjgl.input.*;
 import wwe.utils.*;
 import java.util.*;
 
-public class xdbD extends HAxG
+public class Bind extends Command
 {
-    public xdbD() {
+    public Bind() {
         super("bind");
     }
     
@@ -14,11 +15,11 @@ public class xdbD extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             if (array.length < 2) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             qMIe qmIe = null;
-            for (final qMIe qmIe2 : vlwv.hNxW.ijZl) {
+            for (final qMIe qmIe2 : Client.hNxW.ijZl) {
                 if (qmIe2.czUH().replace(" ", "_").equalsIgnoreCase(array[0])) {
                     qmIe = qmIe2;
                     break;
@@ -29,17 +30,17 @@ public class xdbD extends HAxG
             }
             if (qmIe != null) {
                 qmIe.hzzk(Keyboard.getKeyIndex(array[1].toUpperCase()));
-                HAxG.TuzD(qmIe.czUH() + " bound to: " + Keyboard.getKeyName(qmIe.APjp()));
+                Command.TuzD(qmIe.czUH() + " bound to: " + Keyboard.getKeyName(qmIe.APjp()));
                 Wrapper.ypJK().hUMI();
                 }
             }
             else {
-                HAxG.TuzD("Thats not a module?");
+                Command.TuzD("Thats not a module?");
             }
             }
         }
         catch (Exception ex) {
-            HAxG.TuzD("Maybe try binding in the gui");
+            Command.TuzD("Maybe try binding in the gui");
             this.kVjF(ex);
         }
     }

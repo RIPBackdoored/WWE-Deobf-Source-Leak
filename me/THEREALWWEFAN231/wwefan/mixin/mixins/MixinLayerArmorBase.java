@@ -20,7 +20,7 @@ public class MixinLayerArmorBase
     
     @Redirect(method = { "renderEnchantedGlint" }, at = @At(value = "INVOKE", target = "net/minecraft/client/renderer/GlStateManager.color(FFFF)V", ordinal = 1))
     private static void renderEnchantedGlint(final float n, final float n2, final float n3, final float n4) {
-        GlStateManager.color(vlwv.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getRed()) : n, vlwv.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getGreen()) : n2, vlwv.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getBlue()) : n3, vlwv.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getAlpha()) : n4);
+        GlStateManager.color(Client.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getRed()) : n, Client.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getGreen()) : n2, Client.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getBlue()) : n3, Client.hNxW.qHPF((Class<RainbowEnchant>)rPyL.class).IuiN() ? ((float)JIfG.JzFV(1L, 1.0f).getAlpha()) : n4);
     }
     
     @Inject(method = { "renderEnchantedGlint" }, at = { @At("HEAD") }, cancellable = true)

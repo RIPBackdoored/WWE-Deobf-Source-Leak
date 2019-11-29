@@ -42,20 +42,20 @@ public class IhAb extends GuiScreen
             else {
                 text = this.qDyl.getText();
             }
-            final hfst hfst = new hfst(text, vlwv.hNxW.ijZl);
-            final hEGx prNz = vlwv.pRNz;
+            final hfst hfst = new hfst(text, Client.hNxW.ijZl);
+            final hEGx prNz = Client.pRNz;
             hEGx.aTlJ.QWLO(hfst, true);
-            Wrapper.mc.displayGuiScreen((GuiScreen)vlwv.pRNz);
+            Wrapper.mc.displayGuiScreen((GuiScreen)Client.pRNz);
         }
         if (guiButton.id == 2) {
-            Wrapper.mc.displayGuiScreen((GuiScreen)vlwv.pRNz);
+            Wrapper.mc.displayGuiScreen((GuiScreen)Client.pRNz);
         }
     }
     
     protected void func_73869_a(final char c, final int n) {
         this.qDyl.textboxKeyTyped(c, n);
         if (n == 1) {
-            this.mc.displayGuiScreen((GuiScreen)vlwv.pRNz);
+            this.mc.displayGuiScreen((GuiScreen)Client.pRNz);
         }
     }
     

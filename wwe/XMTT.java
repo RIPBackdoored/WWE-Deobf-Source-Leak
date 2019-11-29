@@ -29,7 +29,7 @@ public class XMTT
         catch (AuthenticationException ex) {
             System.out.println("We have a AuthenticationException exeption but were not going print it, changed are, its a invalid token");
         }
-        vlwv.kXkt.DKWU(new bAHg(newSharedKey, decodePublicKey, (byte[])(Object)list.get(2)));
+        Client.kXkt.DKWU(new bAHg(newSharedKey, decodePublicKey, (byte[])(Object)list.get(2)));
     }
     
     public static void OIIt(final ArrayList<Object> list) {

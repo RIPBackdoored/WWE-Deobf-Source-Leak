@@ -1,11 +1,12 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
 import net.minecraft.client.gui.*;
+import wwe.*;
 
-public class MkWg extends HAxG
+public class F3Spoof extends Command
 {
-    public MkWg() {
+    public F3Spoof() {
         super("F3Spoof");
     }
     

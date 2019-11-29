@@ -1,17 +1,17 @@
-package wwe;
+package wwe.commands;
 
-import wwe.modules.world.*;
 import wwe.utils.*;
 import net.minecraft.util.math.*;
 import net.minecraft.item.*;
 import java.util.*;
 import net.minecraft.client.gui.*;
+import wwe.*;
 
-public class KyAq extends HAxG
+public class WayPoints extends Command
 {
     Xssq cFha;
     
-    public KyAq() {
+    public WayPoints() {
         super("WayPoints");
     }
     
@@ -19,46 +19,46 @@ public class KyAq extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             if (array.length < 1) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             if (array[0].equalsIgnoreCase("list")) {
-                for (final Xssq xssq : WayPoints.COfQ) {
-                    HAxG.TuzD(xssq.CkDS + " X:" + xssq.Nehz.getX() + " Y:" + xssq.Nehz.getY() + " Z:" + xssq.Nehz.getZ());
+                for (final Xssq xssq : wwe.modules.world.WayPoints.COfQ) {
+                    Command.TuzD(xssq.CkDS + " X:" + xssq.Nehz.getX() + " Y:" + xssq.Nehz.getY() + " Z:" + xssq.Nehz.getZ());
                 }
                 return;
             }
             if (array.length < 2) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             if (array[0].equalsIgnoreCase("add")) {
-                final Iterator<Xssq> iterator2 = WayPoints.COfQ.iterator();
+                final Iterator<Xssq> iterator2 = wwe.modules.world.WayPoints.COfQ.iterator();
                 while (iterator2.hasNext()) {
                     if (iterator2.next().CkDS.equalsIgnoreCase(array[1])) {
-                        HAxG.TuzD(array[1] + " is already a way point?");
+                        Command.TuzD(array[1] + " is already a way point?");
                         return;
                 }
-                WayPoints.VlSt(new Xssq(array[1], new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ), EnumDyeColor.RED, true, false, false));
-                HAxG.TuzD("Added waypoint " + array[1]);
+                wwe.modules.world.WayPoints.VlSt(new Xssq(array[1], new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ), EnumDyeColor.RED, true, false, false));
+                Command.TuzD("Added waypoint " + array[1]);
                 Wrapper.ypJK().VLak();
                 }
             }
             else if (this.wJNH(array[0])) {
-                for (final Xssq xssq2 : WayPoints.COfQ) {
+                for (final Xssq xssq2 : wwe.modules.world.WayPoints.COfQ) {
                     if (xssq2.CkDS.equalsIgnoreCase(array[1])) {
-                        WayPoints.COfQ.remove(xssq2);
-                        HAxG.TuzD("Removed way point " + array[1]);
+                        wwe.modules.world.WayPoints.COfQ.remove(xssq2);
+                        Command.TuzD("Removed way point " + array[1]);
                         Wrapper.ypJK().VLak();
                         break;
                     else {
-                        HAxG.TuzD(array[1] + " isent a way point?");
+                        Command.TuzD(array[1] + " isent a way point?");
                         continue;
                 }
                 }
             }
             else if (array[0].equalsIgnoreCase("edit")) {
-                for (final Xssq cFha : WayPoints.COfQ) {
+                for (final Xssq cFha : wwe.modules.world.WayPoints.COfQ) {
                     if (cFha.CkDS.equalsIgnoreCase(array[1])) {
                         this.cFha = cFha;
                         hSNE.lyvR(this);
@@ -69,7 +69,7 @@ public class KyAq extends HAxG
                 }
             }
             else {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
             }
             }
         }

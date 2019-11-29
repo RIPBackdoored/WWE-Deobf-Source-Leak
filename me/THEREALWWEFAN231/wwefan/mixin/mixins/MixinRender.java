@@ -23,14 +23,14 @@ public abstract class MixinRender<T extends Entity>
     
     @Inject(method = { "renderLivingLabel" }, at = { @At("HEAD") }, cancellable = true)
     public void renderLivingLabel(final T t, final String s, final double n, final double n2, final double n3, final int n4, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<NameTags>)tdNb.class).IuiN() && t instanceof EntityPlayer && t != Wrapper.mc.getRenderViewEntity() && t.isEntityAlive() && !t.getName().startsWith("Body #")) {
+        if (Client.hNxW.qHPF((Class<NameTags>)tdNb.class).IuiN() && t instanceof EntityPlayer && t != Wrapper.mc.getRenderViewEntity() && t.isEntityAlive() && !t.getName().startsWith("Body #")) {
             callbackInfo.cancel();
         }
     }
     
     @Redirect(method = { "doRender" }, at = @At(value = "FIELD", target = "Lnet/minecraft/client/renderer/entity/Render;renderOutlines:Z"))
     public boolean doRender(final Render render) {
-        return vlwv.hNxW.qHPF((Class<OutlineESP>)bOmb.class).IuiN() && OutlineESP.krOE;
+        return Client.hNxW.qHPF((Class<OutlineESP>)bOmb.class).IuiN() && OutlineESP.krOE;
     }
     
     @Inject(method = { "getTeamColor" }, at = { @At("RETURN") }, cancellable = true, locals = LocalCapture.CAPTURE_FAILHARD)

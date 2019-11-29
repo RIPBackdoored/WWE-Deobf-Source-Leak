@@ -19,7 +19,7 @@ public class MixinBlockFluidRenderer
     
     @Inject(method = { "renderFluid" }, at = { @At("HEAD") }, cancellable = true)
     public void renderFluid(final IBlockAccess blockAccess, final IBlockState blockState, final BlockPos blockPos, final BufferBuilder bufferBuilder, final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN() && !Xray.fNgC(blockState.getBlock())) {
+        if (Client.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN() && !Xray.fNgC(blockState.getBlock())) {
             callbackInfoReturnable.setReturnValue(false);
             callbackInfoReturnable.cancel();
         }

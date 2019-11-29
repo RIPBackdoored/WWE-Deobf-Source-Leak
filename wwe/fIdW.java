@@ -3,6 +3,7 @@ package wwe;
 import net.minecraft.client.*;
 import java.io.*;
 import wwe.utils.*;
+import wwe.gui.*;
 import net.minecraft.client.gui.*;
 import net.minecraft.util.*;
 
@@ -62,7 +63,7 @@ public class fIdW extends GuiScreen
             ex.printStackTrace();
         }
         if (guiButton.id == 1) {
-            this.mc.displayGuiScreen((GuiScreen)new weQP(this));
+            this.mc.displayGuiScreen((GuiScreen)new AddAlt(this));
         }
         if (guiButton.id == 2) {
             try {

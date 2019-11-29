@@ -17,21 +17,21 @@ public class MixinGuiIngame
     
     @Inject(method = { "renderPotionEffects" }, at = { @At("HEAD") }, cancellable = true)
     private void potions(final CallbackInfo callbackInfo) {
-        if ((vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).potions.OnGi()) || (vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).potionIcon.OnGi())) {
+        if ((Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).potions.OnGi()) || (Client.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && Client.hNxW.qHPF((Class<NoRender>)myLi.class).potionIcon.OnGi())) {
             callbackInfo.cancel();
         }
     }
     
     @Inject(method = { "renderPortal" }, at = { @At("HEAD") }, cancellable = true)
     protected void renderPortal(final float n, final ScaledResolution scaledResolution, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).portalOverLay.OnGi()) {
+        if (Client.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && Client.hNxW.qHPF((Class<NoRender>)myLi.class).portalOverLay.OnGi()) {
             callbackInfo.cancel();
         }
     }
     
     @Inject(method = { "renderScoreboard" }, at = { @At("HEAD") }, cancellable = true)
     protected void renderScoreboard(final ScoreObjective scoreObjective, final ScaledResolution scaledResolution, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && vlwv.hNxW.qHPF((Class<NoRender>)myLi.class).scoreBoard.OnGi()) {
+        if (Client.hNxW.qHPF((Class<NoRender>)myLi.class).IuiN() && Client.hNxW.qHPF((Class<NoRender>)myLi.class).scoreBoard.OnGi()) {
             callbackInfo.cancel();
         }
     }

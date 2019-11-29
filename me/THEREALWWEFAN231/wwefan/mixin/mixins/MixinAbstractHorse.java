@@ -16,7 +16,7 @@ public class MixinAbstractHorse
     
     @Inject(method = { "isHorseSaddled" }, at = { @At("HEAD") }, cancellable = true)
     private void isHorseSaddled(final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<EntityRide>)ASkY.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<EntityRide>)ASkY.class).IuiN()) {
             callbackInfoReturnable.setReturnValue(true);
         }
     }

@@ -16,9 +16,9 @@ public class MixinWorldClient
     
     @Inject(method = { "sendQuittingDisconnectingPacket" }, at = { @At("RETURN") }, cancellable = true)
     public void sendQuittingDisconnectingPacket(final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<JoinLeavemsgs>)JibK.class).IuiN()) {
-            vlwv.hNxW.qHPF((Class<JoinLeavemsgs>)JibK.class).GDVp();
+        if (Client.hNxW.qHPF((Class<JoinLeavemsgs>)JibK.class).IuiN()) {
+            Client.hNxW.qHPF((Class<JoinLeavemsgs>)JibK.class).GDVp();
         }
-        vlwv.hNxW.qHPF((Class<Announcer>)xbUc.class).eydA();
+        Client.hNxW.qHPF((Class<Announcer>)xbUc.class).eydA();
     }
 }

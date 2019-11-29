@@ -17,7 +17,7 @@ public class MixinRenderManager
     
     @Redirect(method = { "renderDebugBoundingBox" }, at = @At(value = "INVOKE", target = "net/minecraft/entity/Entity.getEntityBoundingBox()Lnet/minecraft/util/math/AxisAlignedBB;"))
     public AxisAlignedBB renderDebugBoundingBox(final Entity entity) {
-        final double doubleValue = vlwv.hNxW.qHPF((Class<HitBoxes>)QiaY.class).hitBoxSize.OnGi();
-        return (vlwv.hNxW.qHPF((Class<HitBoxes>)QiaY.class).IuiN() && vlwv.hNxW.qHPF((Class<HitBoxes>)QiaY.class).entityBox.OnGi()) ? entity.getEntityBoundingBox().grow(doubleValue, doubleValue, doubleValue) : entity.getEntityBoundingBox();
+        final double doubleValue = Client.hNxW.qHPF((Class<HitBoxes>)QiaY.class).hitBoxSize.OnGi();
+        return (Client.hNxW.qHPF((Class<HitBoxes>)QiaY.class).IuiN() && Client.hNxW.qHPF((Class<HitBoxes>)QiaY.class).entityBox.OnGi()) ? entity.getEntityBoundingBox().grow(doubleValue, doubleValue, doubleValue) : entity.getEntityBoundingBox();
     }
 }

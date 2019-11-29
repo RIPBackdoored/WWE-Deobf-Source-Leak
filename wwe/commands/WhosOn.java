@@ -1,8 +1,10 @@
-package wwe;
+package wwe.commands;
 
-public class LPjy extends HAxG
+import wwe.*;
+
+public class WhosOn extends Command
 {
-    public LPjy() {
+    public WhosOn() {
         super("WhosOn");
     }
     
@@ -10,9 +12,9 @@ public class LPjy extends HAxG
     public void lpzH(final String s, final String[] array) {
         class vFmD extends Thread
         {
-            final LPjy PmVv;
+            final WhosOn PmVv;
             
-            vFmD(final LPjy pmVv) {
+            vFmD(final WhosOn pmVv) {
                 this.PmVv = pmVv;
                 super();
             }
@@ -26,25 +28,25 @@ public class LPjy extends HAxG
                 // 
                 //     3: return         
                 //     4: ldc             "Checking whos online..."
-                //     6: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
-                //     9: invokestatic    wwe/vlwv.wNWV:()V
-                //    12: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+                //     6: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
+                //     9: invokestatic    wwe/Client.wNWV:()V
+                //    12: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
                 //    15: ifnull          24
-                //    18: getstatic       wwe/vlwv.wMQO:Lwwe/sbfc;
+                //    18: getstatic       wwe/Client.wMQO:Lwwe/sbfc;
                 //    21: invokevirtual   wwe/sbfc.BBwj:()V
-                //    24: getstatic       wwe/vlwv.uPqc:Ljava/util/ArrayList;
+                //    24: getstatic       wwe/Client.uPqc:Ljava/util/ArrayList;
                 //    27: invokevirtual   java/util/ArrayList.isEmpty:()Z
                 //    30: ifeq            43
                 //    33: ldc             "No one):"
-                //    35: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
+                //    35: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
                 //    38: return         
                 //    39: nop            
                 //    40: nop            
                 //    41: nop            
                 //    42: athrow         
                 //    43: ldc             "Theses people are on/have been on within the last 15 minutes"
-                //    45: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
-                //    48: getstatic       wwe/vlwv.uPqc:Ljava/util/ArrayList;
+                //    45: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
+                //    48: getstatic       wwe/Client.uPqc:Ljava/util/ArrayList;
                 //    51: invokevirtual   java/util/ArrayList.iterator:()Ljava/util/Iterator;
                 //    54: astore_1       
                 //    55: aload_1        
@@ -55,7 +57,7 @@ public class LPjy extends HAxG
                 //    66: checkcast       Ljava/lang/String;
                 //    69: astore_2       
                 //    70: aload_2        
-                //    71: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
+                //    71: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
                 //    74: getstatic       wwe/vFmD.\u2006\u200c\u2003\u2008\u200d\u2008\u2004\u2001:Z
                 //    77: ifeq            55
                 //    80: aconst_null    
@@ -76,7 +78,7 @@ public class LPjy extends HAxG
                 //   101: nop            
                 //   102: nop            
                 //   103: athrow         
-                //    StackMapTable: 00 0B FE 00 03 00 00 01 00 13 FF 00 0E 00 00 00 01 07 00 0F FF 00 03 00 04 07 00 02 00 00 01 00 00 FF 00 0B 00 04 07 00 02 07 00 41 00 01 00 00 FF 00 1A 00 00 00 01 07 00 0F FF 00 03 00 04 07 00 02 07 00 41 00 01 00 00 FF 00 07 00 04 07 00 02 00 00 01 00 01 07 00 17 FF 00 04 00 04 07 00 02 07 00 53 00 01 00 00 FF 00 00 00 00 00 01 07 00 0F
+                //    StackMapTable: 00 0B FE 00 03 00 00 01 00 13 FF 00 0E 00 00 00 01 07 00 0F FF 00 03 00 04 07 00 02 00 00 01 00 00 FF 00 0B 00 04 07 00 02 07 00 43 00 01 00 00 FF 00 1A 00 00 00 01 07 00 0F FF 00 03 00 04 07 00 02 07 00 43 00 01 00 00 FF 00 07 00 04 07 00 02 00 00 01 00 01 07 00 19 FF 00 04 00 04 07 00 02 07 00 55 00 01 00 00 FF 00 00 00 00 00 01 07 00 0F
                 //    Exceptions:
                 //  Try           Handler
                 //  Start  End    Start  End    Type                 
@@ -98,8 +100,8 @@ public class LPjy extends HAxG
         //     6: ldc             1
         //     8: if_icmplt       23
         //    11: aload_0        
-        //    12: invokevirtual   wwe/LPjy.ZlRY:()Ljava/lang/String;
-        //    15: invokestatic    wwe/HAxG.TuzD:(Ljava/lang/Object;)V
+        //    12: invokevirtual   wwe/commands/WhosOn.ZlRY:()Ljava/lang/String;
+        //    15: invokestatic    wwe/commands/Command.TuzD:(Ljava/lang/Object;)V
         //    18: return         
         //    19: nop            
         //    20: nop            
@@ -108,14 +110,14 @@ public class LPjy extends HAxG
         //    23: new             Lwwe/vFmD;
         //    26: dup            
         //    27: aload_0        
-        //    28: invokespecial   wwe/vFmD.<init>:(Lwwe/LPjy;)V
+        //    28: invokespecial   wwe/vFmD.<init>:(Lwwe/commands/WhosOn;)V
         //    31: invokevirtual   wwe/vFmD.start:()V
         //    34: return         
         //    35: nop            
         //    36: nop            
         //    37: nop            
         //    38: athrow         
-        //    StackMapTable: 00 05 FC 00 03 01 00 FF 00 0E 00 00 00 01 07 00 0A FF 00 03 00 04 07 00 02 07 00 1C 07 00 1E 01 00 00 FF 00 0B 00 00 00 01 07 00 0A
+        //    StackMapTable: 00 05 FF 00 03 00 04 07 00 13 07 00 15 07 00 17 01 00 00 00 FF 00 0E 00 00 00 01 07 00 0B FF 00 03 00 04 07 00 13 07 00 15 07 00 17 01 00 00 FF 00 0B 00 00 00 01 07 00 0B
         // 
         throw new IllegalStateException("An error occurred while decompiling this method.");
     }

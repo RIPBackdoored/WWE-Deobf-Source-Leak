@@ -2,6 +2,7 @@ package wwe.modules.player;
 
 import wwe.modules.*;
 import wwe.utils.*;
+import wwe.commands.*;
 import net.minecraft.network.play.client.*;
 import net.minecraft.network.*;
 import net.minecraft.item.*;
@@ -44,7 +45,7 @@ public class ItemSaver extends qMIe
                 }
             }
             if (currentItem == -1) {
-                HAxG.TuzD("Couldent find any slots with more then " + ((IcRI<Object>)this.durabilityamount).OnGi() + " durability, throwing current item out");
+                Command.TuzD("Couldent find any slots with more then " + ((IcRI<Object>)this.durabilityamount).OnGi() + " durability, throwing current item out");
                 Wrapper.mc.player.dropItem(false);
                 }
             }

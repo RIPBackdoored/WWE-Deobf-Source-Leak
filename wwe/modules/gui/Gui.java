@@ -38,7 +38,7 @@ public class Gui extends qMIe
         if (!this.IuiN()) {
             return;
         }
-        Wrapper.mc.displayGuiScreen((GuiScreen)vlwv.pRNz);
+        Wrapper.mc.displayGuiScreen((GuiScreen)Client.pRNz);
         this.GDVp();
     }
 }

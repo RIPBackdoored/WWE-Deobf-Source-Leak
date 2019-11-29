@@ -60,10 +60,10 @@ public class uQsp extends kUUQ
         final float n14 = (float)(this.SvfS.rhHA.CQIZ + this.jXta + 12);
         int n15;
         if (this.vwqN) {
-            n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB();
+            n15 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB();
         }
         else {
-            n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
+            n15 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
         }
         gnNa.wQYt(n10, n11, n13, n14, n15);
         gnNa.wQYt((float)this.SvfS.rhHA.kVnf, (float)(this.SvfS.rhHA.CQIZ + this.jXta), (float)this.SvfS.rhHA.kVnf, (float)(this.SvfS.rhHA.CQIZ + this.jXta + 12), -15658735);

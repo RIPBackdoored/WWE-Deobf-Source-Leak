@@ -100,7 +100,7 @@ public class cRUT
         //    83: ldc             12
         //    85: iadd           
         //    86: i2f            
-        //    87: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //    87: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //    90: getfield        wwe/flSi.mMom:Lwwe/RCMD;
         //    93: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //    96: invokevirtual   java/awt/Color.getRGB:()I
@@ -141,7 +141,7 @@ public class cRUT
         //   153: iload           4
         //   155: imul           
         //   156: ldc             1
-        //   158: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //   158: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //   161: getfield        wwe/flSi.xeZd:Lwwe/RCMD;
         //   164: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //   167: invokevirtual   java/awt/Color.getRGB:()I
@@ -201,7 +201,7 @@ public class cRUT
         //   279: dup            
         //   280: invokespecial   java/util/ArrayList.<init>:()V
         //   283: astore          6
-        //   285: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   285: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   288: invokevirtual   wwe/eOnJ.xRen:()Ljava/util/ArrayList;
         //   291: invokevirtual   java/util/ArrayList.iterator:()Ljava/util/Iterator;
         //   294: astore          7
@@ -329,7 +329,7 @@ public class cRUT
         //   509: ldc             12
         //   511: iadd           
         //   512: i2f            
-        //   513: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //   513: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //   516: getfield        wwe/flSi.iJuB:Lwwe/RCMD;
         //   519: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //   522: invokevirtual   java/awt/Color.getRGB:()I
@@ -389,7 +389,7 @@ public class cRUT
         //   608: iload           4
         //   610: imul           
         //   611: ldc             1
-        //   613: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //   613: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //   616: getfield        wwe/flSi.xeZd:Lwwe/RCMD;
         //   619: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //   622: invokevirtual   java/awt/Color.getRGB:()I
@@ -443,7 +443,7 @@ public class cRUT
         //   716: ldc             12
         //   718: iadd           
         //   719: i2f            
-        //   720: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //   720: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //   723: getfield        wwe/flSi.xeZd:Lwwe/RCMD;
         //   726: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //   729: invokevirtual   java/awt/Color.getRGB:()I
@@ -586,7 +586,7 @@ public class cRUT
         //   960: ldc             12
         //   962: iadd           
         //   963: i2f            
-        //   964: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //   964: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //   967: getfield        wwe/flSi.UPVq:Lwwe/RCMD;
         //   970: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //   973: invokevirtual   java/awt/Color.getRGB:()I
@@ -637,7 +637,7 @@ public class cRUT
         //  1045: iload           4
         //  1047: imul           
         //  1048: ldc             1
-        //  1050: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //  1050: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //  1053: getfield        wwe/flSi.qgqp:Lwwe/RCMD;
         //  1056: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //  1059: invokevirtual   java/awt/Color.getRGB:()I
@@ -692,7 +692,7 @@ public class cRUT
         //  1139: ldc             12
         //  1141: iadd           
         //  1142: i2f            
-        //  1143: getstatic       wwe/vlwv.fomn:Lwwe/flSi;
+        //  1143: getstatic       wwe/Client.fomn:Lwwe/flSi;
         //  1146: getfield        wwe/flSi.UPVq:Lwwe/RCMD;
         //  1149: invokevirtual   wwe/RCMD.JqMr:()Ljava/awt/Color;
         //  1152: invokevirtual   java/awt/Color.getRGB:()I
@@ -1100,7 +1100,7 @@ public class cRUT
         //     8: dup            
         //     9: invokespecial   java/util/ArrayList.<init>:()V
         //    12: astore_2       
-        //    13: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    13: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    16: invokevirtual   wwe/eOnJ.xRen:()Ljava/util/ArrayList;
         //    19: invokevirtual   java/util/ArrayList.iterator:()Ljava/util/Iterator;
         //    22: astore_3       
@@ -1150,7 +1150,7 @@ public class cRUT
     
     public ArrayList<IcRI> LtmJ(final qMIe qmIe) {
         final ArrayList<IcRI> list = new ArrayList<IcRI>();
-        for (final IcRI icRI : vlwv.tiEw) {
+        for (final IcRI icRI : Client.tiEw) {
             if (icRI.lJZv.equals(qmIe)) {
                 list.add(icRI);
             }

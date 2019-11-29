@@ -5,6 +5,7 @@ import wwe.utils.*;
 import net.minecraft.util.*;
 import net.minecraft.init.*;
 import net.minecraft.client.audio.*;
+import wwe.commands.*;
 import java.util.*;
 import wwe.modules.movement.*;
 import net.minecraft.client.renderer.*;
@@ -60,7 +61,7 @@ public class yCCn extends GuiScreen
             }
             for (final ajLR.wwe/ABpb wwe/ABpb : this.duNU.nOsS) {
                 if (wwe/ABpb.RZpY == this.vKBT) {
-                    HAxG.TuzD(wwe/ABpb.MSAn);
+                    Command.TuzD(wwe/ABpb.MSAn);
                 }
                 }
             }

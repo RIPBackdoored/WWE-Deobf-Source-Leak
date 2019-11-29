@@ -1,5 +1,6 @@
 package wwe;
 
+import wwe.commands.*;
 import java.util.*;
 
 public class DhFe
@@ -10,33 +11,33 @@ public class DhFe
     public DhFe() {
         super();
         DhFe.ACXD.clear();
-        DhFe.ACXD.add(new YRhC());
-        DhFe.ACXD.add(new KryP());
-        DhFe.ACXD.add(new xdbD());
-        DhFe.ACXD.add(new THBI());
-        DhFe.ACXD.add(new LVuv());
-        DhFe.ACXD.add(new qCQk());
-        DhFe.ACXD.add(new lRpE());
-        DhFe.ACXD.add(new heAY());
-        DhFe.ACXD.add(new MLmK());
-        DhFe.ACXD.add(new KyAq());
-        DhFe.ACXD.add(new FHaQ());
-        DhFe.ACXD.add(new ytfU());
-        DhFe.ACXD.add(new PbYr());
-        DhFe.ACXD.add(new lRvb());
-        DhFe.ACXD.add(new MkWg());
+        DhFe.ACXD.add((HAxG)new Help());
+        DhFe.ACXD.add((HAxG)new Toggle());
+        DhFe.ACXD.add((HAxG)new Bind());
+        DhFe.ACXD.add((HAxG)new Friend());
+        DhFe.ACXD.add((HAxG)new Peek());
+        DhFe.ACXD.add((HAxG)new Xray());
+        DhFe.ACXD.add((HAxG)new LogOutSpot());
+        DhFe.ACXD.add((HAxG)new InventoryCleaner());
+        DhFe.ACXD.add((HAxG)new T());
+        DhFe.ACXD.add((HAxG)new WayPoints());
+        DhFe.ACXD.add((HAxG)new Value());
+        DhFe.ACXD.add((HAxG)new Mobowner());
+        DhFe.ACXD.add((HAxG)new Customfont());
+        DhFe.ACXD.add((HAxG)new Search());
+        DhFe.ACXD.add((HAxG)new F3Spoof());
         if (!Boolean.parseBoolean(System.getProperty("disablebaritone"))) {
-            DhFe.ACXD.add(new vmmZ());
+            DhFe.ACXD.add((HAxG)new B());
         }
-        DhFe.ACXD.add(new BcuG());
-        DhFe.ACXD.add(new Tmzv());
-        DhFe.ACXD.add(new ddkD());
-        DhFe.ACXD.add(new LmJc());
-        DhFe.ACXD.add(new WhjY());
-        DhFe.ACXD.add(new Bjuw());
-        DhFe.ACXD.add(new leIC());
-        DhFe.ACXD.add(new VCSW());
-        DhFe.ACXD.add(new pOnu());
+        DhFe.ACXD.add((HAxG)new Pathfinder());
+        DhFe.ACXD.add((HAxG)new Randombook());
+        DhFe.ACXD.add((HAxG)new Nuker());
+        DhFe.ACXD.add((HAxG)new Prefix());
+        DhFe.ACXD.add((HAxG)new Guireset());
+        DhFe.ACXD.add((HAxG)new Notebot());
+        DhFe.ACXD.add((HAxG)new Clip());
+        DhFe.ACXD.add((HAxG)new Dupe());
+        DhFe.ACXD.add((HAxG)new Vanish());
     }
     
     public void RRWX(final String s) {
@@ -61,14 +62,14 @@ public class DhFe
             array = new String[0];
         }
         final String[] array2 = array;
-        for (final HAxG hAxG : DhFe.ACXD) {
-            if (hAxG.thqu().trim().equalsIgnoreCase(s2.trim())) {
-                hAxG.lpzH(trim, array2);
+        for (final Command command : DhFe.ACXD) {
+            if (command.thqu().trim().equalsIgnoreCase(s2.trim())) {
+                command.lpzH(trim, array2);
                 break;
             else {
                 continue;
         }
-        HAxG.TuzD("Invalid command. Try .help for a list of commands.");
+        Command.TuzD("Invalid command. Try .help for a list of commands.");
     }
     
     static {

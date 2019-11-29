@@ -16,6 +16,6 @@ class luCt implements pSdr
     
     @Override
     public void Hrqs(final int n) {
-        vlwv.VFOG.zeZm(3, n);
+        Client.VFOG.zeZm(3, n);
     }
 }

@@ -21,7 +21,7 @@ public class ohwW
         this.rhHA = rhHA;
         this.yQtC = yQtC;
         int n = yQtC + 12;
-        for (final IcRI icRI : vlwv.tiEw) {
+        for (final IcRI icRI : Client.tiEw) {
             if (icRI.lJZv != lJcE) {
                 continue;
             }
@@ -67,14 +67,14 @@ public class ohwW
         int n8;
         if (this.xecA) {
             if (this.lJcE.IuiN()) {
-                n8 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB();
+                n8 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB();
             }
             else {
                 n8 = new Color(15, 15, 15, 245).getRGB();
             }
         }
         else if (this.lJcE.IuiN()) {
-            n8 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
+            n8 = new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
             }
         }
         else {

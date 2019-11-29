@@ -1,10 +1,11 @@
-package wwe;
+package wwe.commands;
 
+import wwe.*;
 import java.util.*;
 
-public class KryP extends HAxG
+public class Toggle extends Command
 {
-    public KryP() {
+    public Toggle() {
         super("toggle");
     }
     
@@ -12,11 +13,11 @@ public class KryP extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             if (array.length < 1) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             qMIe qmIe = null;
-            for (final qMIe qmIe2 : vlwv.hNxW.ijZl) {
+            for (final qMIe qmIe2 : Client.hNxW.ijZl) {
                 if (qmIe2.czUH().replace(" ", "_").equalsIgnoreCase(array[0])) {
                     qmIe = qmIe2;
                     break;
@@ -35,11 +36,11 @@ public class KryP extends HAxG
                 else {
                     s2 = "off";
                 }
-                HAxG.TuzD(append.append(s2).append(")").toString());
+                Command.TuzD(append.append(s2).append(")").toString());
                 }
             }
             else {
-                HAxG.TuzD("Thats not a module?");
+                Command.TuzD("Thats not a module?");
             }
             }
         }

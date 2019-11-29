@@ -25,19 +25,19 @@ public abstract class MixinEntityPlayer
     
     @Inject(method = { "getCooldownPeriod" }, at = { @At("HEAD") }, cancellable = true)
     private void getPlayerCooldownPeriod(final CallbackInfoReturnable<Float> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<TpsSync>)cNBO.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<TpsSync>)cNBO.class).IuiN()) {
             callbackInfoReturnable.setReturnValue((float)(1.0 / EntityPlayer.class.cast(this).getEntityAttribute(SharedMonsterAttributes.ATTACK_SPEED).getAttributeValue() * 20.0 * (20.0f / PJxY.Npqe)));
             callbackInfoReturnable.cancel();
         }
-        else if (vlwv.hNxW.qHPF((Class<Timer>)lXGb.class).IuiN()) {
-            callbackInfoReturnable.setReturnValue((float)(1.0 / EntityPlayer.class.cast(this).getEntityAttribute(SharedMonsterAttributes.ATTACK_SPEED).getAttributeValue() * 20.0 * vlwv.hNxW.qHPF((Class<Timer>)lXGb.class).speed.OnGi().floatValue() + 2.0));
+        else if (Client.hNxW.qHPF((Class<Timer>)lXGb.class).IuiN()) {
+            callbackInfoReturnable.setReturnValue((float)(1.0 / EntityPlayer.class.cast(this).getEntityAttribute(SharedMonsterAttributes.ATTACK_SPEED).getAttributeValue() * 20.0 * Client.hNxW.qHPF((Class<Timer>)lXGb.class).speed.OnGi().floatValue() + 2.0));
             callbackInfoReturnable.cancel();
         }
     }
     
     @Inject(method = { "isPushedByWater" }, at = { @At("HEAD") }, cancellable = true)
     private void isPushedByWater(final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<AntiKnockback>)RWsP.class).IuiN() || vlwv.hNxW.qHPF((Class<NoPush>)jsGp.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<AntiKnockback>)RWsP.class).IuiN() || Client.hNxW.qHPF((Class<NoPush>)jsGp.class).IuiN()) {
             callbackInfoReturnable.setReturnValue(false);
         }
     }
@@ -45,7 +45,7 @@ public abstract class MixinEntityPlayer
     @ModifyConstant(method = { "attackTargetEntityWithCurrentItem" }, constant = { @Constant(doubleValue = 0.6) })
     private double multiplyMotion(final double n) {
         try {
-            if (vlwv.hNxW.qHPF((Class<Sprint>)dbwp.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<Sprint>)dbwp.class).IuiN()) {
                 return 1.0;
             }
         }
@@ -55,7 +55,7 @@ public abstract class MixinEntityPlayer
     
     @Inject(method = { "isEntityInsideOpaqueBlock" }, at = { @At("HEAD") }, cancellable = true)
     public void isEntityInsideOpaqueBlock(final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<Freecam>)ZTVf.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<Freecam>)ZTVf.class).IuiN()) {
             callbackInfoReturnable.setReturnValue(false);
         }
     }

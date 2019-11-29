@@ -21,7 +21,7 @@ public class ssGO extends GuiScreen
     
     public void func_73863_a(final int n, final int n2, final float n3) {
         this.drawBackground(1);
-        Wrapper.fontRenderer.drawString("WWE currently has " + vlwv.hNxW.ijZl.size() + " modules", this.width / 2 - Wrapper.fontRenderer.getStringWidth("WWE currently has " + vlwv.hNxW.ijZl.size() + " modules") / 2, this.height / 4 - this.height / 8, -1);
+        Wrapper.fontRenderer.drawString("WWE currently has " + Client.hNxW.ijZl.size() + " modules", this.width / 2 - Wrapper.fontRenderer.getStringWidth("WWE currently has " + Client.hNxW.ijZl.size() + " modules") / 2, this.height / 4 - this.height / 8, -1);
         Wrapper.fontRenderer.drawString("WWE Mod's website, wweclient.com", this.width / 2 - Wrapper.fontRenderer.getStringWidth("WWE Mod's website, wweclient.com") / 2, this.height / 4 - this.height / 8 + 10, -1);
         Wrapper.fontRenderer.drawStringWithShadow("Join discord for help", (float)(this.width / 2 - Wrapper.fontRenderer.getStringWidth("Join discord for help") / 2), (float)(this.height / 4 + 144), -1);
         super.drawScreen(n, n2, n3);

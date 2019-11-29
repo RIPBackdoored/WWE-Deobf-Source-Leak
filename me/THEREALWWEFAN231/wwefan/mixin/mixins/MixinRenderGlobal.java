@@ -19,7 +19,7 @@ public class MixinRenderGlobal
     
     @Inject(method = { "renderEntities" }, at = { @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/RenderGlobal;preRenderDamagedBlocks()V", shift = At.Shift.BEFORE) })
     public void renderEntities(final Entity entity, final ICamera camera, final float n, final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<OutlineESP>)bOmb.class).IuiN() && vlwv.hNxW.qHPF((Class<OutlineESP>)bOmb.class).mode.OnGi().equalsIgnoreCase("Outline")) {
+        if (Client.hNxW.qHPF((Class<OutlineESP>)bOmb.class).IuiN() && Client.hNxW.qHPF((Class<OutlineESP>)bOmb.class).mode.OnGi().equalsIgnoreCase("Outline")) {
             GL11.glPushMatrix();
             OutlineESP.uuKQ(n);
             SWNL.VZWQ();
@@ -32,7 +32,7 @@ public class MixinRenderGlobal
             SWNL.VdOT();
             GL11.glPopMatrix();
         }
-        if (vlwv.hNxW.qHPF((Class<ChestESP>)zDFA.class).IuiN() && vlwv.hNxW.qHPF((Class<ChestESP>)zDFA.class).mode.OnGi().equalsIgnoreCase("Outline")) {
+        if (Client.hNxW.qHPF((Class<ChestESP>)zDFA.class).IuiN() && Client.hNxW.qHPF((Class<ChestESP>)zDFA.class).mode.OnGi().equalsIgnoreCase("Outline")) {
             ChestESP.AUkB(n);
             SWNL.VZWQ();
             ChestESP.AUkB(n);

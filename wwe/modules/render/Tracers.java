@@ -137,7 +137,7 @@ public class Tracers extends qMIe
                     final double n7 = entity3.lastTickPosX + (entity3.posX - entity3.lastTickPosX) * yYGD.XgOL().renderPartialTicks - yYGD.onRX();
                     final double n8 = entity3.lastTickPosY + (entity3.posY - entity3.lastTickPosY) * yYGD.XgOL().renderPartialTicks - yYGD.UuJK();
                     final double n9 = entity3.lastTickPosZ + (entity3.posZ - entity3.lastTickPosZ) * yYGD.XgOL().renderPartialTicks - yYGD.LkVR();
-                    if (!vlwv.Zqnd().UsVJ(entity3.getName())) {
+                    if (!Client.Zqnd().UsVJ(entity3.getName())) {
                         oisD(Color.red);
                     }
                     else {

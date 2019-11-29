@@ -1,12 +1,13 @@
-package wwe;
+package wwe.commands;
 
 import wwe.modules.world.*;
 import wwe.utils.*;
 import net.minecraft.client.gui.*;
+import wwe.*;
 
-public class Bjuw extends HAxG
+public class Notebot extends Command
 {
-    public Bjuw() {
+    public Notebot() {
         super("notebot");
     }
     
@@ -19,13 +20,13 @@ public class Bjuw extends HAxG
             if (array[0].equalsIgnoreCase("stealer")) {
                 if (array.length > 1) {
                     NoteBotStealer.zTtz = array[1];
-                    HAxG.TuzD("Set note bot stealer file name to " + array[1]);
+                    Command.TuzD("Set note bot stealer file name to " + array[1]);
                 }
                 else {
-                    HAxG.TuzD(this.ZlRY());
+                    Command.TuzD(this.ZlRY());
                 }
             else {
-                HAxG.TuzD("Please use the argument stealer, or dont use one at all");
+                Command.TuzD("Please use the argument stealer, or dont use one at all");
         }
     }
     

@@ -1,10 +1,10 @@
-package wwe;
+package wwe.commands;
 
 import wwe.modules.world.*;
 
-public class BcuG extends HAxG
+public class Pathfinder extends Command
 {
-    public BcuG() {
+    public Pathfinder() {
         super("pathfinder");
     }
     
@@ -12,15 +12,15 @@ public class BcuG extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             if (array.length < 1) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             if (array[0].equalsIgnoreCase("clear")) {
                 PathFinder.LpTn.clear();
-                HAxG.TuzD("Clearing path finder");
+                Command.TuzD("Clearing path finder");
             }
             else {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
             }
             }
         }

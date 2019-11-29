@@ -74,6 +74,7 @@ public class AimAssist extends qMIe
                     AimAssist.oYbE = (EntityLivingBase)oYbE;
                 }
             }
+            }
         }
         if (this.FEgb(AimAssist.oYbE)) {
             this.Kvbu((Entity)AimAssist.oYbE, Float.MAX_VALUE, Float.MAX_VALUE);
@@ -94,13 +95,14 @@ public class AimAssist extends qMIe
                     AimAssist.Yhkx.remove(entityLivingBase);
                 }
             }
+            }
         }
     }
     
     public boolean FEgb(final EntityLivingBase entityLivingBase) {
         if (this.players.OnGi() && entityLivingBase instanceof EntityPlayer && this.tYaC((Entity)entityLivingBase) && ((EntityPlayer)entityLivingBase).getHealth() > 0.0f && !entityLivingBase.isDead) {
-            vlwv.Zqnd();
-            if (!vlwv.Zqnd().UsVJ(entityLivingBase.getName()) && !entityLivingBase.getName().startsWith("Body #")) {
+            Client.Zqnd();
+            if (!Client.Zqnd().UsVJ(entityLivingBase.getName()) && !entityLivingBase.getName().startsWith("Body #")) {
                 if (this.walls.OnGi()) {
                     return this.insvibles.OnGi() || !entityLivingBase.isInvisible();
                 }
@@ -112,26 +114,22 @@ public class AimAssist extends qMIe
         }
         if (this.mobs.OnGi()) {
             if (entityLivingBase instanceof EntityLivingBase && !(entityLivingBase instanceof EntityPlayer) && this.QqsU((Entity)entityLivingBase) && entityLivingBase.getHealth() > 0.0f && !entityLivingBase.isDead) {
-                vlwv.Zqnd();
-                if (!vlwv.Zqnd().UsVJ(entityLivingBase.getName()) && !entityLivingBase.getName().startsWith("Body #")) {
+                Client.Zqnd();
+                if (!Client.Zqnd().UsVJ(entityLivingBase.getName()) && !entityLivingBase.getName().startsWith("Body #")) {
                     if (this.walls.OnGi()) {
                         return this.insvibles.OnGi() || !entityLivingBase.isInvisible();
-                    }
                     if (!this.insvibles.OnGi()) {
                         return !entityLivingBase.isInvisible();
-                    }
                     return entityLivingBase.canEntityBeSeen((Entity)Wrapper.mc.player);
                 }
             }
             if (entityLivingBase instanceof EntityLivingBase && !(entityLivingBase instanceof EntityPlayer) && this.QqsU((Entity)entityLivingBase) && entityLivingBase.getHealth() > 0.0f && !entityLivingBase.isDead) {
-                vlwv.Zqnd();
-                if (!vlwv.Zqnd().UsVJ(entityLivingBase.getName()) && !entityLivingBase.getName().startsWith("Body #")) {
+                Client.Zqnd();
+                if (!Client.Zqnd().UsVJ(entityLivingBase.getName()) && !entityLivingBase.getName().startsWith("Body #")) {
                     if (this.walls.OnGi()) {
                         return this.insvibles.OnGi() || !entityLivingBase.isInvisible();
-                    }
                     if (!this.insvibles.OnGi()) {
                         return !entityLivingBase.isInvisible();
-                    }
                     return entityLivingBase.canEntityBeSeen((Entity)Wrapper.mc.player);
                 }
             }
@@ -143,6 +141,7 @@ public class AimAssist extends qMIe
         boolean b;
         if (entity.getDistance((Entity)Wrapper.mc.player) <= this.range.OnGi()) {
             b = true;
+            }
         }
         else {
             b = false;
@@ -154,6 +153,7 @@ public class AimAssist extends qMIe
         boolean b;
         if (entity.getDistance((Entity)Wrapper.mc.player) <= this.range.OnGi()) {
             b = true;
+            }
         }
         else {
             b = false;
@@ -172,6 +172,7 @@ public class AimAssist extends qMIe
                 if (!(oYbE instanceof EntityPlayerSP) && this.FEgb(oYbE)) {
                     AimAssist.oYbE = oYbE;
                 }
+            }
             }
         }
     }
@@ -207,6 +208,7 @@ public class AimAssist extends qMIe
         if (uqzS.MYlK() instanceof CPacketPlayer && this.Gnzx && this.PaSt < 2) {
             uqzS.Ggez(true);
             ++this.PaSt;
+            }
         }
         else if (this.PaSt == 2) {
             this.PaSt = 0;
@@ -233,6 +235,7 @@ public class AimAssist extends qMIe
         if (entity instanceof EntityLivingBase) {
             final EntityLivingBase entityLivingBase = (EntityLivingBase)entity;
             n5 = entityLivingBase.posY + entityLivingBase.getEyeHeight() - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
+            }
         }
         else {
             n5 = (entity.getEntityBoundingBox().minY + entity.getEntityBoundingBox().maxY) / 2.0 - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
@@ -243,6 +246,7 @@ public class AimAssist extends qMIe
         float n9;
         if (entity instanceof EntityPlayer) {
             n9 = 0.5f;
+            }
         }
         else {
             n9 = 0.0f;
@@ -273,6 +277,7 @@ public class AimAssist extends qMIe
         boolean b;
         if (this.lnip >= this.xlKA + n) {
             b = true;
+            }
         }
         else {
             b = false;

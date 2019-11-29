@@ -20,7 +20,7 @@ public class MixinGuiChat
     
     @Inject(method = { "initGui" }, at = { @At("RETURN") }, cancellable = true)
     public void initGui(final CallbackInfo callbackInfo) {
-        if (vlwv.hNxW.qHPF((Class<InfiniteChatLength>)PECw.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<InfiniteChatLength>)PECw.class).IuiN()) {
             this.inputField.setMaxStringLength(0);
         }
         this.commandHelper = new lHwY(this.inputField);

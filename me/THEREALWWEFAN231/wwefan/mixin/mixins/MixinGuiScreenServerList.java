@@ -16,7 +16,7 @@ public class MixinGuiScreenServerList extends GuiScreen
     @Inject(method = { "actionPerformed" }, at = { @At("HEAD") })
     public void actionPerformed(final GuiButton guiButton, final CallbackInfo callbackInfo) {
         if (guiButton.id == 0) {
-            vlwv.FjUS = yYGD.gpTU(GuiScreenServerList.class.cast(this));
+            Client.FjUS = yYGD.gpTU(GuiScreenServerList.class.cast(this));
         }
     }
 }

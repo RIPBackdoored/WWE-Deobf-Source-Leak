@@ -91,7 +91,7 @@ public class MixinGuiOverlayDebug
     }
     
     public boolean shouldChange(final int n) {
-        return vlwv.hNxW.qHPF((Class<F3Spoofer>)FZwI.class).IuiN() && !F3Spoofer.HHRM.get(n).wgqj;
+        return Client.hNxW.qHPF((Class<F3Spoofer>)FZwI.class).IuiN() && !F3Spoofer.HHRM.get(n).wgqj;
     }
     
     public String getValue(final int n, final String s) {

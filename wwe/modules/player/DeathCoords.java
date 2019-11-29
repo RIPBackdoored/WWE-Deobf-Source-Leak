@@ -1,8 +1,9 @@
 package wwe.modules.player;
 
+import wwe.*;
 import wwe.modules.*;
 import wwe.utils.*;
-import wwe.*;
+import wwe.commands.*;
 
 public class DeathCoords extends qMIe
 {
@@ -21,7 +22,7 @@ public class DeathCoords extends qMIe
         if (Wrapper.mc.player.getHealth() == 0.0f) {
             ++this.OJXa;
             if (this.OJXa == 1) {
-                HAxG.TuzD(Math.round(Wrapper.mc.player.posX) + " " + Math.round(Wrapper.mc.player.posY) + " " + Math.round(Wrapper.mc.player.posZ));
+                Command.TuzD(Math.round(Wrapper.mc.player.posX) + " " + Math.round(Wrapper.mc.player.posY) + " " + Math.round(Wrapper.mc.player.posZ));
             }
         }
         if (Wrapper.mc.player.getHealth() > 5.0f) {

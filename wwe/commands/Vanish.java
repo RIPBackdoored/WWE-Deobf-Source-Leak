@@ -1,27 +1,28 @@
-package wwe;
+package wwe.commands;
 
 import net.minecraft.entity.*;
 import wwe.utils.*;
 import net.minecraft.network.play.client.*;
 import net.minecraft.network.*;
+import wwe.*;
 
-public class pOnu extends HAxG
+public class Vanish extends Command
 {
     public Entity FDBx;
     public boolean zqQw;
     
-    public pOnu() {
+    public Vanish() {
         super("vanish");
     }
     
     @Override
     public void lpzH(final String s, final String[] array) {
         if (array.length < 1) {
-            HAxG.TuzD(this.ZlRY());
+            Command.TuzD(this.ZlRY());
             return;
         }
         if (!array[0].equalsIgnoreCase("dismount") && !array[0].equalsIgnoreCase("remount")) {
-            HAxG.TuzD(this.ZlRY());
+            Command.TuzD(this.ZlRY());
             return;
         }
         if (array[0].equalsIgnoreCase("dismount")) {
@@ -29,7 +30,7 @@ public class pOnu extends HAxG
         }
         else {
             if (!array[0].equalsIgnoreCase("remount")) {
-                HAxG.TuzD("dismount or remount, not " + array[0]);
+                Command.TuzD("dismount or remount, not " + array[0]);
                 return;
             this.zqQw = false;
         }
@@ -73,7 +74,7 @@ public class pOnu extends HAxG
                 Wrapper.mc.player.connection.sendPacket((Packet)new CPacketVehicleMove(this.FDBx));
         }
         catch (Exception ex) {
-            HAxG.TuzD("This really shouldent be happening):");
+            Command.TuzD("This really shouldent be happening):");
         }
     }
 }

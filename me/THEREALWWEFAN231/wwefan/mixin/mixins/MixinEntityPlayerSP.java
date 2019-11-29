@@ -29,7 +29,7 @@ public class MixinEntityPlayerSP extends MixinEntityLivingBase
     @Inject(method = { "onUpdate" }, at = { @At("HEAD") }, cancellable = true)
     private void onUpdatePre(final CallbackInfo callbackInfo) {
         if (Wrapper.mc.world.isBlockLoaded(new BlockPos(Wrapper.mc.player.posX, 0.0, Wrapper.mc.player.posZ))) {
-            final Iterator<qMIe> iterator = vlwv.hNxW.ijZl.iterator();
+            final Iterator<qMIe> iterator = Client.hNxW.ijZl.iterator();
             while (iterator.hasNext()) {
                 iterator.next().hPRw();
             }
@@ -94,10 +94,10 @@ public class MixinEntityPlayerSP extends MixinEntityLivingBase
     @Inject(method = { "sendChatMessage" }, at = { @At("HEAD") }, cancellable = true)
     public void IsendChatMessage(final String s, final CallbackInfo callbackInfo) {
         if (IRC.FclU && s.startsWith("@")) {
-            if (vlwv.IJGi.dzdQ()) {
-                vlwv.IJGi.FTQd("#WWEHackedClient", s.replace("@", ""));
-                vlwv.IJGi.qQcR().add(new Jhbg(vlwv.IJGi.mxjl(true), s.replace("@", ""), Wrapper.mc.getSession().getUsername(), false));
-                vlwv.IJGi.zdMA(true);
+            if (Client.IJGi.dzdQ()) {
+                Client.IJGi.FTQd("#WWEHackedClient", s.replace("@", ""));
+                Client.IJGi.qQcR().add(new Jhbg(Client.IJGi.mxjl(true), s.replace("@", ""), Wrapper.mc.getSession().getUsername(), false));
+                Client.IJGi.zdMA(true);
             }
             else {
                 Wrapper.mc.player.sendMessage((ITextComponent)new TextComponentString(TextFormatting.DARK_AQUA + "[IRC] " + TextFormatting.RESET + "Not connected to IRC?"));
@@ -105,7 +105,7 @@ public class MixinEntityPlayerSP extends MixinEntityLivingBase
             callbackInfo.cancel();
         }
         else if (s.startsWith(DhFe.itOx)) {
-            vlwv.YNBy.RRWX(s);
+            Client.YNBy.RRWX(s);
             callbackInfo.cancel();
         }
     }
@@ -120,33 +120,33 @@ public class MixinEntityPlayerSP extends MixinEntityLivingBase
     
     @Inject(method = { "pushOutOfBlocks" }, at = { @At("HEAD") }, cancellable = true)
     public void pushOutOfBlocks(final double n, final double n2, final double n3, final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<Freecam>)ZTVf.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<Freecam>)ZTVf.class).IuiN()) {
             callbackInfoReturnable.setReturnValue(false);
         }
     }
     
     @Redirect(method = { "onLivingUpdate" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/client/entity/EntityPlayerSP;closeScreen()V"))
     public void portalChat(final EntityPlayerSP entityPlayerSP) {
-        if (!vlwv.hNxW.qHPF((Class<Portal>)SXfA.class).IuiN() || !vlwv.hNxW.qHPF((Class<Portal>)SXfA.class).portalChat.OnGi()) {
+        if (!Client.hNxW.qHPF((Class<Portal>)SXfA.class).IuiN() || !Client.hNxW.qHPF((Class<Portal>)SXfA.class).portalChat.OnGi()) {
             Minecraft.getMinecraft().player.closeScreen();
         }
     }
     
     @Redirect(method = { "onLivingUpdate" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;displayGuiScreen(Lnet/minecraft/client/gui/GuiScreen;)V"))
     public void PortalChat(final Minecraft minecraft, final GuiScreen guiScreen) {
-        if (!vlwv.hNxW.qHPF((Class<Portal>)SXfA.class).IuiN() || !vlwv.hNxW.qHPF((Class<Portal>)SXfA.class).portalChat.OnGi()) {
+        if (!Client.hNxW.qHPF((Class<Portal>)SXfA.class).IuiN() || !Client.hNxW.qHPF((Class<Portal>)SXfA.class).portalChat.OnGi()) {
             Minecraft.getMinecraft().displayGuiScreen((GuiScreen)null);
         }
     }
     
     @Override
     public boolean func_184613_cA() {
-        return (!vlwv.hNxW.qHPF((Class<Elytra>)vkFD.class).IuiN() || !vlwv.hNxW.qHPF((Class<Elytra>)vkFD.class).mode.OnGi().equalsIgnoreCase("Packet")) && super.isElytraFlying();
+        return (!Client.hNxW.qHPF((Class<Elytra>)vkFD.class).IuiN() || !Client.hNxW.qHPF((Class<Elytra>)vkFD.class).mode.OnGi().equalsIgnoreCase("Packet")) && super.isElytraFlying();
     }
     
     @Redirect(method = { "onLivingUpdate" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/client/entity/EntityPlayerSP;setSprinting(Z)V", ordinal = 2))
     public void onLivingUpdate(final EntityPlayerSP entityPlayerSP, final boolean sprinting) {
-        if (Sprint.vqpo() && (EntityPlayerSP.class.cast(this).movementInput.moveForward != 0.0f || EntityPlayerSP.class.cast(this).movementInput.moveStrafe != 0.0f) && vlwv.hNxW.qHPF((Class<Sprint>)dbwp.class).IuiN() && vlwv.hNxW.qHPF((Class<Sprint>)dbwp.class).mode.OnGi().equalsIgnoreCase("Multi-Directional")) {
+        if (Sprint.vqpo() && (EntityPlayerSP.class.cast(this).movementInput.moveForward != 0.0f || EntityPlayerSP.class.cast(this).movementInput.moveStrafe != 0.0f) && Client.hNxW.qHPF((Class<Sprint>)dbwp.class).IuiN() && Client.hNxW.qHPF((Class<Sprint>)dbwp.class).mode.OnGi().equalsIgnoreCase("Multi-Directional")) {
             entityPlayerSP.setSprinting(true);
         }
         else {
@@ -159,7 +159,7 @@ public class MixinEntityPlayerSP extends MixinEntityLivingBase
         final double motionX = EntityPlayerSP.class.cast(this).motionX;
         final double motionZ = EntityPlayerSP.class.cast(this).motionZ;
         super.jump();
-        if (vlwv.hNxW.qHPF((Class<Sprint>)dbwp.class).IuiN() && vlwv.hNxW.qHPF((Class<Sprint>)dbwp.class).mode.OnGi().equalsIgnoreCase("Multi-Directional")) {
+        if (Client.hNxW.qHPF((Class<Sprint>)dbwp.class).IuiN() && Client.hNxW.qHPF((Class<Sprint>)dbwp.class).mode.OnGi().equalsIgnoreCase("Multi-Directional")) {
             final MovementInput movementInput = Wrapper.mc.player.movementInput;
             float moveForward = movementInput.moveForward;
             float moveStrafe = movementInput.moveStrafe;

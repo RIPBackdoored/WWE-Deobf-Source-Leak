@@ -119,7 +119,7 @@ public class CrystalAura extends qMIe
                 final ArrayList<EntityPlayer> list = new ArrayList<EntityPlayer>();
                 for (final EntityPlayer entityPlayer : Wrapper.mc.world.playerEntities) {
                     if (!(list instanceof EntityPlayerSP)) {
-                        if (vlwv.Zqnd().UsVJ(entityPlayer.getName())) {
+                        if (Client.Zqnd().UsVJ(entityPlayer.getName())) {
                             continue;
                         else {
                             list.add(entityPlayer);

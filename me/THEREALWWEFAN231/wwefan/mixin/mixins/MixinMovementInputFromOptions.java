@@ -72,13 +72,13 @@ public class MixinMovementInputFromOptions extends MovementInput
     }
     
     public boolean isKeyDown(final KeyBinding keyBinding) {
-        if (vlwv.hNxW.qHPF((Class<AutoWalk>)NESr.class).IuiN() && keyBinding.equals(Wrapper.mc.gameSettings.keyBindForward)) {
+        if (Client.hNxW.qHPF((Class<AutoWalk>)NESr.class).IuiN() && keyBinding.equals(Wrapper.mc.gameSettings.keyBindForward)) {
             return true;
         }
-        if ((!vlwv.hNxW.qHPF((Class<InventoryWalk>)yorN.class).chat.OnGi() && Wrapper.mc.currentScreen instanceof GuiChat) || (!vlwv.hNxW.qHPF((Class<InventoryWalk>)yorN.class).chat.OnGi() && Wrapper.mc.currentScreen instanceof GuiEditSign)) {
+        if ((!Client.hNxW.qHPF((Class<InventoryWalk>)yorN.class).chat.OnGi() && Wrapper.mc.currentScreen instanceof GuiChat) || (!Client.hNxW.qHPF((Class<InventoryWalk>)yorN.class).chat.OnGi() && Wrapper.mc.currentScreen instanceof GuiEditSign)) {
             return false;
         }
-        if (vlwv.hNxW.qHPF((Class<InventoryWalk>)yorN.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<InventoryWalk>)yorN.class).IuiN()) {
             return Keyboard.isKeyDown(keyBinding.getKeyCode());
         }
         return keyBinding.isKeyDown();

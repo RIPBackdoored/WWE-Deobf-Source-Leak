@@ -16,11 +16,11 @@ public class MixinGuiNewChat
     
     @Redirect(method = { "setChatLine" }, at = @At(value = "INVOKE", target = "Ljava/util/List;size()I", ordinal = 0))
     public int setChatLine0(final List list) {
-        return vlwv.hNxW.qHPF((Class<InfiniteChatLength>)PECw.class).IuiN() ? -2147483647 : list.size();
+        return Client.hNxW.qHPF((Class<InfiniteChatLength>)PECw.class).IuiN() ? -2147483647 : list.size();
     }
     
     @Redirect(method = { "setChatLine" }, at = @At(value = "INVOKE", target = "Ljava/util/List;size()I", ordinal = 2))
     public int setChatLine2(final List list) {
-        return vlwv.hNxW.qHPF((Class<InfiniteChatLength>)PECw.class).IuiN() ? -2147483647 : list.size();
+        return Client.hNxW.qHPF((Class<InfiniteChatLength>)PECw.class).IuiN() ? -2147483647 : list.size();
     }
 }

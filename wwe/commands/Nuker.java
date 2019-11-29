@@ -1,12 +1,11 @@
-package wwe;
+package wwe.commands;
 
 import net.minecraft.block.*;
-import wwe.modules.world.*;
 import wwe.utils.*;
 
-public class ddkD extends HAxG
+public class Nuker extends Command
 {
-    public ddkD() {
+    public Nuker() {
         super("nuker");
     }
     
@@ -14,43 +13,43 @@ public class ddkD extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             if (array.length < 2) {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
                 return;
             }
             if (array[0].equalsIgnoreCase("add")) {
                 if (Block.getBlockFromName(array[1]) != null) {
-                    if (Nuker.mTio.contains(Block.getBlockFromName(array[1]))) {
-                        HAxG.TuzD("Thats already in the nuker list");
+                    if (wwe.modules.world.Nuker.mTio.contains(Block.getBlockFromName(array[1]))) {
+                        Command.TuzD("Thats already in the nuker list");
                         return;
                     }
-                    Nuker.mTio.add(Block.getBlockFromName(array[1]));
-                    HAxG.TuzD("Added " + array[1] + " to the nuker list");
+                    wwe.modules.world.Nuker.mTio.add(Block.getBlockFromName(array[1]));
+                    Command.TuzD("Added " + array[1] + " to the nuker list");
                     Wrapper.ypJK().pRYs();
                     }
                 }
                 else {
-                    HAxG.TuzD("Thats not a block?");
+                    Command.TuzD("Thats not a block?");
                     }
                 }
             }
             else if (this.wJNH(array[0])) {
                 if (Block.getBlockFromName(array[1]) != null) {
-                    if (!Nuker.mTio.contains(Block.getBlockFromName(array[1]))) {
-                        HAxG.TuzD("Thats not in the nuker list");
+                    if (!wwe.modules.world.Nuker.mTio.contains(Block.getBlockFromName(array[1]))) {
+                        Command.TuzD("Thats not in the nuker list");
                         return;
                     }
-                    Nuker.mTio.remove(Block.getBlockFromName(array[1]));
-                    HAxG.TuzD("Removed " + array[1] + " from the nuker list");
+                    wwe.modules.world.Nuker.mTio.remove(Block.getBlockFromName(array[1]));
+                    Command.TuzD("Removed " + array[1] + " from the nuker list");
                     Wrapper.ypJK().pRYs();
                     }
                 }
                 else {
-                    HAxG.TuzD("Thats not a block?");
+                    Command.TuzD("Thats not a block?");
                     }
                 }
             }
             else {
-                HAxG.TuzD(this.ZlRY());
+                Command.TuzD(this.ZlRY());
             }
             }
         }

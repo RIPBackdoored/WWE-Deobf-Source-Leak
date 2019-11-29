@@ -70,7 +70,7 @@ public class Speed extends qMIe
             if ((Wrapper.mc.player.movementInput.moveForward != 0.0f || Wrapper.mc.player.movementInput.moveStrafe != 0.0f) && !Wrapper.mc.player.collidedHorizontally && Wrapper.mc.player.ticksExisted % 2 != 0) {
                 omqH.XNxu = Wrapper.mc.player.posY + 0.4;
             }
-            vlwv.Axho = this.timer.OnGi().floatValue();
+            Client.Axho = this.timer.OnGi().floatValue();
             double n3;
             if (Wrapper.mc.player.ticksExisted % 2 == 0) {
                 n3 = 2.1;
@@ -125,12 +125,12 @@ public class Speed extends qMIe
             }
             this.XNTM = xntm;
             if (this.XNTM) {
-                vlwv.Axho = 1.0f;
+                Client.Axho = 1.0f;
                 this.AdRJ = 0;
                 return;
             }
             if (this.AdRJ <= 0) {
-                vlwv.Axho = 1.0f;
+                Client.Axho = 1.0f;
                 final CPacketPlayer.Position position = new CPacketPlayer.Position(Wrapper.mc.player.posX, Wrapper.mc.player.posY - 999.0, Wrapper.mc.player.posZ, Wrapper.mc.player.onGround);
                 this.NWrw.add((CPacketPlayer)position);
                 Wrapper.mc.player.connection.sendPacket((Packet)position);
@@ -234,7 +234,7 @@ public class Speed extends qMIe
                 return;
             }
             if (Wrapper.mc.player.movementInput.moveForward != 0.0f || Wrapper.mc.player.movementInput.moveStrafe != 0.0f) {
-                vlwv.Axho = 1.0f;
+                Client.Axho = 1.0f;
                 if (rhii(Wrapper.mc.player.posY - (int)Wrapper.mc.player.posY, 3) == rhii(0.138, 3)) {
                     final EntityPlayerSP player6 = Wrapper.mc.player;
                     player6.motionY -= 0.08;
@@ -400,7 +400,7 @@ public class Speed extends qMIe
     
     @Override
     public void LPxx() {
-        vlwv.Axho = 1.0f;
+        Client.Axho = 1.0f;
         this.mLMb = 1;
         double eabb;
         if (Wrapper.mc.player == null) {
@@ -424,7 +424,7 @@ public class Speed extends qMIe
     
     @Override
     public void qBmy() {
-        vlwv.Axho = 1.0f;
+        Client.Axho = 1.0f;
         this.mLMb = 1;
         double eabb;
         if (Wrapper.mc.player == null) {

@@ -1,6 +1,7 @@
 package wwe.modules.world;
 
 import wwe.modules.*;
+import wwe.commands.*;
 import net.minecraft.block.*;
 import wwe.utils.*;
 import java.util.*;
@@ -46,7 +47,7 @@ public class NoteBot extends qMIe
     @oqrr
     public void leGN(final omqH omqH) {
         if (NoteBot.DbuO == null && !this.tune.OnGi()) {
-            HAxG.TuzD("No song is loaded, use the command .notebot");
+            Command.TuzD("No song is loaded, use the command .notebot");
             this.GDVp();
             return;
         }

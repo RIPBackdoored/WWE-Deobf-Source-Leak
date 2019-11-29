@@ -17,7 +17,7 @@ public class MixinTimer
     
     @Redirect(method = { "updateTimer" }, at = @At(value = "FIELD", target = "Lnet/minecraft/util/Timer;elapsedPartialTicks:F", ordinal = 0))
     private void updateTimer(final Timer timer, final float n) {
-        final float n2 = n * vlwv.Axho;
+        final float n2 = n * Client.Axho;
         this.elapsedPartialTicks = ((n2 <= 0.0f) ? 0.1f : n2);
     }
 }

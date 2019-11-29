@@ -17,7 +17,7 @@ public class MixinEntityLlama
     @Inject(method = { "canBeSteered" }, at = { @At("HEAD") }, cancellable = true)
     public void canBeSteered(final CallbackInfoReturnable<Boolean> callbackInfoReturnable) {
         try {
-            if (vlwv.hNxW.qHPF((Class<EntityRide>)ASkY.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<EntityRide>)ASkY.class).IuiN()) {
                 callbackInfoReturnable.setReturnValue(true);
             }
         }

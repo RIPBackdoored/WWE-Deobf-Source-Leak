@@ -135,7 +135,7 @@ public class NameTags extends qMIe
             }
             this.lywF(entityPlayer, n8, hHoe + n9);
         }
-        if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).shulker.OnGi() && entityPlayer.getHeldItemMainhand().getItem() instanceof ItemShulkerBox) {
+        if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && Client.hNxW.qHPF((Class<Peek>)aKVA.class).shulker.OnGi() && entityPlayer.getHeldItemMainhand().getItem() instanceof ItemShulkerBox) {
             GL11.glPushMatrix();
             GlStateManager.scale(0.5f, 0.5f, 0.0f);
             final ItemStack heldItemMainhand = entityPlayer.getHeldItemMainhand();
@@ -151,7 +151,7 @@ public class NameTags extends qMIe
             FIwW.SitR(heldItemMainhand, (World)world, n10, n11 + this.HHoe(entityPlayer) - 50, false);
             GL11.glPopMatrix();
         }
-        if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).map.OnGi() && entityPlayer.getHeldItemMainhand().getItem() instanceof ItemMap) {
+        if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && Client.hNxW.qHPF((Class<Peek>)aKVA.class).map.OnGi() && entityPlayer.getHeldItemMainhand().getItem() instanceof ItemMap) {
             final MapData mapData = ((ItemMap)entityPlayer.getHeldItemMainhand().getItem()).getMapData(entityPlayer.getHeldItemMainhand(), (World)Wrapper.mc.world);
             final int n12 = -94;
             int n13;
@@ -180,7 +180,7 @@ public class NameTags extends qMIe
         }
         rrxl(-n5 - 2, 10, n5 + 1, 20, 0.2f, 1610612736, 1610612736);
         Wrapper.fontRenderer.drawStringWithShadow(wzxj, (float)(-n5), 11.0f, this.wdUs((EntityLivingBase)entityPlayer));
-        if (vlwv.xXAB(entityPlayer.getName())) {
+        if (Client.xXAB(entityPlayer.getName())) {
             Wrapper.mc.renderEngine.bindTexture(new ResourceLocation("textures/wwe/wwelogo.png"));
             GlStateManager.pushMatrix();
             GL11.glScalef(0.04f, 0.04f, 0.0f);
@@ -255,7 +255,7 @@ public class NameTags extends qMIe
     }
     
     public int wdUs(final EntityLivingBase entityLivingBase) {
-        if (vlwv.Zqnd().UsVJ(entityLivingBase.getName())) {
+        if (Client.Zqnd().UsVJ(entityLivingBase.getName())) {
             return -16711681;
         }
         if (entityLivingBase.isInvisible()) {

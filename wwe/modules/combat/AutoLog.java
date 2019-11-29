@@ -36,16 +36,16 @@ public class AutoLog extends qMIe
         }
         if (this.autoLog.OnGi() && Wrapper.mc.player.getHealth() <= this.health.OnGi()) {
             Wrapper.mc.player.connection.getNetworkManager().closeChannel((ITextComponent)this.QQsS("Aborting mission, you were at " + Wrapper.mc.player.getHealth() + " health"));
-            vlwv.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
+            Client.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
         }
         if (this.entities.OnGi() && Wrapper.mc.player.getRidingEntity() != null && Wrapper.mc.player.getRidingEntity() instanceof EntityLivingBase && ((EntityLivingBase)Wrapper.mc.player.getRidingEntity()).getHealth() <= this.health.OnGi()) {
             Wrapper.mc.player.connection.getNetworkManager().closeChannel((ITextComponent)this.QQsS("Aborting mission, the entity you were riding was at " + Wrapper.mc.player.getHealth() + " health"));
-            vlwv.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
+            Client.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
         }
         for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
             if (this.crystalLog.OnGi() && entity instanceof EntityEnderCrystal && Wrapper.mc.player.getDistance(entity) <= this.crystalRange.OnGi()) {
                 Wrapper.mc.player.connection.getNetworkManager().closeChannel((ITextComponent)this.QQsS("Aborting mission, Ender crystal " + Wrapper.mc.player.getDistance(entity) + " away from you"));
-                vlwv.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
+                Client.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
             }
             }
         }

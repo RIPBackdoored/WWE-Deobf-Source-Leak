@@ -1,11 +1,11 @@
-package wwe;
+package wwe.commands;
 
 import baritone.api.event.events.*;
 import baritone.api.*;
 
-public class vmmZ extends HAxG
+public class B extends Command
 {
-    public vmmZ() {
+    public B() {
         super("b");
     }
     
@@ -36,7 +36,7 @@ public class vmmZ extends HAxG
         final ChatEvent chatEvent = new ChatEvent(String.join(" ", (CharSequence[])array));
         BaritoneAPI.getProvider().getPrimaryBaritone().getGameEventHandler().onSendChatMessage(chatEvent);
         if (!chatEvent.isCancelled() && !array[0].equals("damn")) {
-            HAxG.TuzD("Invalid baritone command, try .b help");
+            Command.TuzD("Invalid baritone command, try .b help");
         }
         chatControl.value = booleanValue;
     }

@@ -5,6 +5,7 @@ import net.minecraft.block.*;
 import java.awt.*;
 import wwe.modules.*;
 import wwe.utils.*;
+import wwe.commands.*;
 import java.util.*;
 import wwe.*;
 import org.lwjgl.opengl.*;
@@ -32,7 +33,7 @@ public class Search extends qMIe
     public void LPxx() {
         hSNE.lyvR(this);
         if (Wrapper.mc.world != null) {
-            HAxG.TuzD("This may lag some computers");
+            Command.TuzD("This may lag some computers");
         }
         Wrapper.mc.renderGlobal.loadRenderers();
         super.LPxx();

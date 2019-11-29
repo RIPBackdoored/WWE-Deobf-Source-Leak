@@ -49,22 +49,22 @@ public class qMIe
     
     public int UUxj() {
         if (this.ayOm == Category.COMBAT) {
-            return vlwv.fomn.Jnvr.JqMr().getRGB();
+            return Client.fomn.Jnvr.JqMr().getRGB();
         }
         if (this.ayOm == Category.PLAYER) {
-            return vlwv.fomn.CBaw.JqMr().getRGB();
+            return Client.fomn.CBaw.JqMr().getRGB();
         }
         if (this.ayOm == Category.MOVEMENT) {
-            return vlwv.fomn.REhN.JqMr().getRGB();
+            return Client.fomn.REhN.JqMr().getRGB();
         }
         if (this.ayOm == Category.RENDER) {
-            return vlwv.fomn.Fkzu.JqMr().getRGB();
+            return Client.fomn.Fkzu.JqMr().getRGB();
         }
         if (this.ayOm == Category.EXPLOITS) {
-            return vlwv.fomn.fELe.JqMr().getRGB();
+            return Client.fomn.fELe.JqMr().getRGB();
         }
         if (this.ayOm == Category.WORLD) {
-            return vlwv.fomn.gonM.JqMr().getRGB();
+            return Client.fomn.gonM.JqMr().getRGB();
         }
         if (this.ayOm == Category.GUI) {
             return -16777216;

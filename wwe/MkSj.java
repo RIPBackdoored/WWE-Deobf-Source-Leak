@@ -21,9 +21,9 @@ public class MkSj extends GuiScreen
     
     public void func_73863_a(final int n, final int n2, final float n3) {
         this.drawDefaultBackground();
-        final String string = "Reason: " + vlwv.kXkt.svnA;
+        final String string = "Reason: " + Client.kXkt.svnA;
         Wrapper.fontRenderer.drawString("Not connected to the WWE server", (float)(this.width / 2 - Wrapper.fontRenderer.getStringWidth("Not connected to the WWE server") / 2), 50.0f, -1, true);
-        if (vlwv.kXkt.svnA != null && !vlwv.kXkt.svnA.equalsIgnoreCase("None")) {
+        if (Client.kXkt.svnA != null && !Client.kXkt.svnA.equalsIgnoreCase("None")) {
             Wrapper.fontRenderer.drawString(string, (float)(this.width / 2 - Wrapper.fontRenderer.getStringWidth(string) / 2), 60.0f, -1, true);
         }
         super.drawScreen(n, n2, n3);
@@ -34,7 +34,7 @@ public class MkSj extends GuiScreen
     }
     
     public void func_73876_c() {
-        if (vlwv.kXkt.svnA != null && vlwv.kXkt.svnA.equalsIgnoreCase("None")) {
+        if (Client.kXkt.svnA != null && Client.kXkt.svnA.equalsIgnoreCase("None")) {
             this.mc.displayGuiScreen((GuiScreen)new Wwox(this.GzOH));
             return;
         }
@@ -51,7 +51,7 @@ public class MkSj extends GuiScreen
     
     protected void func_146284_a(final GuiButton guiButton) throws IOException {
         if (guiButton.id == 2) {
-            vlwv.kXkt.AByw();
+            Client.kXkt.AByw();
         }
         if (guiButton.id == 3) {
             this.mc.displayGuiScreen(this.GzOH);

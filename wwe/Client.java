@@ -12,7 +12,7 @@ import java.io.*;
 import net.minecraft.util.*;
 
 @Mod(modid = "wwe", name = "wwe", version = "2.7.2", acceptableRemoteVersions = "*")
-public class vlwv
+public class Client
 {
     public static final String FXtG = "WWE";
     public static final String dlOH = "2.7.2";
@@ -32,7 +32,7 @@ public class vlwv
     public static ArrayList<IcRI> tiEw;
     public static sbfc wMQO;
     
-    public vlwv() {
+    public Client() {
         super();
     }
     
@@ -40,17 +40,17 @@ public class vlwv
     public void JHOS(final FMLInitializationEvent fmlInitializationEvent) {
         final ProgressManager.ProgressBar push = ProgressManager.push("WWE", 7, true);
         push.step("Setting Up");
-        vlwv.tiEw = new ArrayList<IcRI>();
-        vlwv.hNxW = new eOnJ();
-        vlwv.YNBy = new DhFe();
-        vlwv.zkER = new ArrayList<hfst>();
-        vlwv.pRNz = new hEGx();
-        vlwv.fomn = new flSi();
+        Client.tiEw = new ArrayList<IcRI>();
+        Client.hNxW = new eOnJ();
+        Client.YNBy = new DhFe();
+        Client.zkER = new ArrayList<hfst>();
+        Client.pRNz = new hEGx();
+        Client.fomn = new flSi();
         Display.setTitle("WWE Version 2.7.2");
         bozE.JduO();
-        vlwv.uPqc = new ArrayList<String>();
-        vlwv.VFOG = new cRUT();
-        vlwv.wMQO = new sbfc();
+        Client.uPqc = new ArrayList<String>();
+        Client.VFOG = new cRUT();
+        Client.wMQO = new sbfc();
         Wrapper.ypJK().YTps();
         Wrapper.ypJK().YiMl();
         Wrapper.ypJK().CXTl();
@@ -100,21 +100,21 @@ public class vlwv
     }
     
     public static void XHpH() {
-        final Iterator<qMIe> iterator = vlwv.hNxW.xRen().iterator();
+        final Iterator<qMIe> iterator = Client.hNxW.xRen().iterator();
         while (iterator.hasNext()) {
             iterator.next().qHNm();
         }
     }
     
     public static DhFe oYtq() {
-        return vlwv.YNBy;
+        return Client.YNBy;
     }
     
     public static rpiY Zqnd() {
-        if (vlwv.jXAD == null) {
-            vlwv.jXAD = new rpiY();
+        if (Client.jXAD == null) {
+            Client.jXAD = new rpiY();
         }
-        return vlwv.jXAD;
+        return Client.jXAD;
     }
     
     public static void wNWV() {
@@ -131,7 +131,7 @@ public class vlwv
             while ((line = bufferedReader.readLine()) != null) {
                 uPqc.add(line);
             bufferedReader.close();
-            vlwv.uPqc = uPqc;
+            Client.uPqc = uPqc;
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -150,6 +150,6 @@ public class vlwv
     }
     
     static {
-        vlwv.Axho = 1.0f;
+        Client.Axho = 1.0f;
     }
 }

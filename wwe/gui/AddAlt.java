@@ -1,17 +1,18 @@
-package wwe;
+package wwe.gui;
 
 import org.lwjgl.input.*;
 import net.minecraft.client.gui.*;
 import java.io.*;
+import wwe.*;
 import wwe.utils.*;
 
-public class weQP extends GuiScreen
+public class AddAlt extends GuiScreen
 {
     private GuiScreen BWUL;
     public GuiTextField QpcW;
     public PQVr fMxz;
     
-    public weQP(final GuiScreen bwul) {
+    public AddAlt(final GuiScreen bwul) {
         super();
         this.BWUL = bwul;
     }

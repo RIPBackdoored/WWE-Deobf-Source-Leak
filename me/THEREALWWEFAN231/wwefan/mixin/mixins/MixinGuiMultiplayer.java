@@ -32,6 +32,6 @@ public class MixinGuiMultiplayer extends GuiScreen
     
     @Inject(method = { "connectToServer" }, at = { @At("RETURN") })
     private void connectToServer(final ServerData fjUS, final CallbackInfo callbackInfo) {
-        vlwv.FjUS = fjUS;
+        Client.FjUS = fjUS;
     }
 }

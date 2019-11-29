@@ -76,7 +76,7 @@ public class SWNL
         if (entityLivingBase.isSneaking() && !entityLivingBase.isInvisible()) {
             GL11.glColor3f(0.0f, 0.0f, 1.0f);
         }
-        if (vlwv.Zqnd().UsVJ(entityLivingBase.getName())) {
+        if (Client.Zqnd().UsVJ(entityLivingBase.getName())) {
             GL11.glColor3f(255.0f, 137.0f, 0.0f);
         }
     }

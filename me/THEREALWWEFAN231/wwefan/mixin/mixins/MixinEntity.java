@@ -33,8 +33,8 @@ public class MixinEntity
     
     @Inject(method = { "getCollisionBorderSize" }, at = { @At("RETURN") }, cancellable = true)
     public void onGetCollisionBorderSize(final CallbackInfoReturnable<Float> callbackInfoReturnable) {
-        if (vlwv.hNxW.qHPF((Class<HitBoxes>)QiaY.class).IuiN()) {
-            callbackInfoReturnable.setReturnValue(vlwv.hNxW.qHPF((Class<HitBoxes>)QiaY.class).hitBoxSize.OnGi().floatValue());
+        if (Client.hNxW.qHPF((Class<HitBoxes>)QiaY.class).IuiN()) {
+            callbackInfoReturnable.setReturnValue(Client.hNxW.qHPF((Class<HitBoxes>)QiaY.class).hitBoxSize.OnGi().floatValue());
         }
     }
 }

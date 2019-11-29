@@ -13,7 +13,7 @@ class SxyY implements pSdr
     
     @Override
     public int Gsgl() {
-        return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).pxFw;
+        return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).pxFw;
     }
     
     @Override

@@ -15,6 +15,6 @@ public class MixinBlockPortal extends Block
     }
     
     public boolean func_176209_a(final IBlockState blockState, final boolean b) {
-        return !vlwv.hNxW.qHPF((Class<Portal>)SXfA.class).IuiN() || !vlwv.hNxW.qHPF((Class<Portal>)SXfA.class).hitBox.OnGi();
+        return !Client.hNxW.qHPF((Class<Portal>)SXfA.class).IuiN() || !Client.hNxW.qHPF((Class<Portal>)SXfA.class).hitBox.OnGi();
     }
 }

@@ -1,11 +1,12 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
 import net.minecraft.client.gui.*;
+import wwe.*;
 
-public class PbYr extends HAxG
+public class Customfont extends Command
 {
-    public PbYr() {
+    public Customfont() {
         super("customfont");
     }
     

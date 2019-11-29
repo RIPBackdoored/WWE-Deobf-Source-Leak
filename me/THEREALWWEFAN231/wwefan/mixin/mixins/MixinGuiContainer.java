@@ -26,11 +26,11 @@ public class MixinGuiContainer
     @Inject(method = { "renderHoveredToolTip" }, at = { @At("HEAD") }, cancellable = true)
     public void renderHoveredToolTip(final int n, final int n2, final CallbackInfo callbackInfo) {
         if (Wrapper.mc.player.inventory.getItemStack().isEmpty() && this.hoveredSlot != null && this.hoveredSlot.getHasStack()) {
-            if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).shulker.OnGi() && this.hoveredSlot.getStack().getItem() instanceof ItemShulkerBox) {
+            if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && Client.hNxW.qHPF((Class<Peek>)aKVA.class).shulker.OnGi() && this.hoveredSlot.getStack().getItem() instanceof ItemShulkerBox) {
                 FIwW.SitR(this.hoveredSlot.getStack(), (World)Wrapper.mc.world, Mouse.getX() * new ScaledResolution(Wrapper.mc).getScaledWidth() / Wrapper.mc.displayWidth, new ScaledResolution(Wrapper.mc).getScaledHeight() - Mouse.getY() * new ScaledResolution(Wrapper.mc).getScaledHeight() / Wrapper.mc.displayHeight - 90, true);
                 callbackInfo.cancel();
             }
-            else if (vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && vlwv.hNxW.qHPF((Class<Peek>)aKVA.class).map.OnGi() && this.hoveredSlot.getStack().getItem() instanceof ItemMap) {
+            else if (Client.hNxW.qHPF((Class<Peek>)aKVA.class).IuiN() && Client.hNxW.qHPF((Class<Peek>)aKVA.class).map.OnGi() && this.hoveredSlot.getStack().getItem() instanceof ItemMap) {
                 try {
                     FIwW.rRds(((ItemMap)this.hoveredSlot.getStack().getItem()).getMapData(this.hoveredSlot.getStack(), (World)Wrapper.mc.world), Mouse.getX() * new ScaledResolution(Wrapper.mc).getScaledWidth() / Wrapper.mc.displayWidth, new ScaledResolution(Wrapper.mc).getScaledHeight() - Mouse.getY() * new ScaledResolution(Wrapper.mc).getScaledHeight() / Wrapper.mc.displayHeight - 90, true);
                     callbackInfo.cancel();

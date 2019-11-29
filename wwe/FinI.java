@@ -57,7 +57,7 @@ public class FinI
         //    43: aload_0        
         //    44: aload_1        
         //    45: putfield        wwe/FinI.XLez:Lwwe/modules/Category;
-        //    48: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    48: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    51: getfield        wwe/eOnJ.ijZl:Ljava/util/ArrayList;
         //    54: astore_2       
         //    55: aload_2        
@@ -69,7 +69,7 @@ public class FinI
         //    67: aload_0        
         //    68: getfield        wwe/FinI.vjbx:I
         //    71: istore_3       
-        //    72: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    72: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    75: invokevirtual   wwe/eOnJ.xRen:()Ljava/util/ArrayList;
         //    78: invokevirtual   java/util/ArrayList.iterator:()Ljava/util/Iterator;
         //    81: astore          4
@@ -120,7 +120,7 @@ public class FinI
         GL11.glPushMatrix();
         final int n4 = (int)((scaledResolution.getScaledHeight_double() - this.CQIZ - this.vjbx - 240.0) * scaleFactor);
         final int n5 = 240 * scaleFactor;
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
             GL11.glScissor(0, n4, (int)(scaledResolution.getScaledWidth_double() * scaleFactor), n5);
             GL11.glEnable(3089);
         }
@@ -130,16 +130,16 @@ public class FinI
                 iterator.next().kUCc(n, n2, n3);
             }
         }
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
             GL11.glDisable(3089);
         }
         GL11.glPopMatrix();
-        gnNa.wQYt((float)this.kVnf, (float)this.CQIZ, (float)(this.kVnf + this.dedb), (float)(this.CQIZ + this.vjbx), new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB());
+        gnNa.wQYt((float)this.kVnf, (float)this.CQIZ, (float)(this.kVnf + this.dedb), (float)(this.CQIZ + this.vjbx), new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB());
         if (this.oBaW) {
-            gnNa.wQYt((float)this.kVnf, (float)this.CQIZ, (float)(this.kVnf + this.dedb), (float)(this.CQIZ + this.vjbx), new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB());
+            gnNa.wQYt((float)this.kVnf, (float)this.CQIZ, (float)(this.kVnf + this.dedb), (float)(this.CQIZ + this.vjbx), new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB());
         }
         XybC.eTim(this.XLez.name(), (float)(this.kVnf + 3), (float)(this.CQIZ + 2), -1);
-        if (this.aBNN && vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).toolTips.OnGi()) {
+        if (this.aBNN && Client.hNxW.qHPF((Class<Gui>)PAPd.class).toolTips.OnGi()) {
             for (final ohwW ohwW : this.UfJC) {
                 if (ohwW.xecA && this.iWnD) {
                     gnNa.dYaT(2.0f, (float)(scaledResolution.getScaledHeight() - 13), (float)(XybC.wKEb().getStringWidth("  " + ohwW.lJcE.GDCZ()) + 2), (float)(scaledResolution.getScaledHeight() + 19), 1.0f, new Color(15, 15, 15).getRGB(), -1);
@@ -160,7 +160,7 @@ public class FinI
     }
     
     public void XzAP(final double n) {
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("All")) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("All")) {
             if (n < 0.0) {
                 this.CQIZ -= 5;
             }
@@ -284,7 +284,7 @@ public class FinI
             if (!this.aBNN) {
                 n6 = 0;
             }
-            else if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+            else if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 n6 = 20;
             }
             else {
@@ -321,7 +321,7 @@ public class FinI
             final int n4 = this.CQIZ + this.vjbx;
             final int n5 = 12;
             int n6;
-            if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+            if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 n6 = 20;
             }
             else {
@@ -341,7 +341,7 @@ public class FinI
             n = 0;
         }
         clamp = MathHelper.clamp(clamp, 1.0, -1.0);
-        if (b && vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
+        if (b && Client.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
             this.EJcl += (int)(clamp * 10.0);
         }
         if (this.EJcl < 0) {

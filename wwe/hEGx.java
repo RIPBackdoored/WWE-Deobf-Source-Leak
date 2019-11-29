@@ -37,7 +37,7 @@ public class hEGx extends GuiScreen
     }
     
     public void func_73863_a(final int n, final int n2, final float n3) {
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
             this.mwSh.drawTextBox();
         }
         int i = 0;
@@ -53,7 +53,7 @@ public class hEGx extends GuiScreen
     }
     
     public void func_73876_c() {
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
             this.mwSh.updateCursorCounter();
         }
         super.updateScreen();
@@ -115,7 +115,7 @@ public class hEGx extends GuiScreen
                 }
         }
         hEGx.aTlJ.KolI(n, n2, n3);
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
             this.mwSh.mouseClicked(n, n2, n3);
         }
     }
@@ -162,13 +162,13 @@ public class hEGx extends GuiScreen
                 iterator2.next().WwPa(n);
                 }
         }
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi() && this.mwSh.textboxKeyTyped(c, n)) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi() && this.mwSh.textboxKeyTyped(c, n)) {
             this.neJc(false);
         }
     }
     
     public void func_146281_b() {
-        if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
             this.neJc(true);
         }
         Wrapper.ypJK().VvWw();
@@ -237,7 +237,7 @@ public class hEGx extends GuiScreen
         //    43: aload_3        
         //    44: getfield        wwe/FinI.vjbx:I
         //    47: istore          4
-        //    49: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    49: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    52: getfield        wwe/eOnJ.ijZl:Ljava/util/ArrayList;
         //    55: astore          5
         //    57: aload           5
@@ -249,11 +249,11 @@ public class hEGx extends GuiScreen
         //    70: ldc             0
         //    72: istore          6
         //    74: iload           6
-        //    76: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    76: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    79: invokevirtual   wwe/eOnJ.xRen:()Ljava/util/ArrayList;
         //    82: invokevirtual   java/util/ArrayList.size:()I
         //    85: if_icmpge       245
-        //    88: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    88: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    91: invokevirtual   wwe/eOnJ.xRen:()Ljava/util/ArrayList;
         //    94: iload           6
         //    96: invokevirtual   java/util/ArrayList.get:(I)Ljava/lang/Object;

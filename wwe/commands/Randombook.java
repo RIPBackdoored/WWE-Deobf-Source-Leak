@@ -1,8 +1,9 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
 import net.minecraft.init.*;
 import java.util.*;
+import wwe.*;
 import java.util.function.*;
 import java.util.stream.*;
 import net.minecraft.nbt.*;
@@ -11,20 +12,20 @@ import net.minecraft.network.play.client.*;
 import net.minecraft.network.*;
 import net.minecraft.command.*;
 
-public class Tmzv extends HAxG
+public class Randombook extends Command
 {
-    public Tmzv() {
+    public Randombook() {
         super("randombook");
     }
     
     @Override
     public void lpzH(final String s, final String[] array) {
         if (Wrapper.mc.player.getHeldItemMainhand().getItem() != Items.WRITABLE_BOOK) {
-            HAxG.TuzD("You have to hold a writable book");
+            Command.TuzD("You have to hold a writable book");
             return;
         }
         if (array.length < 1) {
-            HAxG.TuzD(this.ZlRY());
+            Command.TuzD(this.ZlRY());
             return;
         }
         int ibdf;
@@ -82,7 +83,7 @@ public class Tmzv extends HAxG
                 }
                 break;
             default: {
-                HAxG.TuzD("Either got to pick, fill, random or ascii");
+                Command.TuzD("Either got to pick, fill, random or ascii");
                 return;
         }
         final String s3 = intStream.limit(0x45CD60DFCD806DACL ^ 0x45CD60DFCD8044A8L).mapToObj((IntFunction<?>)Tmzv::dgZm).collect((Collector<? super Object, ?, String>)Collectors.joining());
@@ -101,7 +102,7 @@ public class Tmzv extends HAxG
         final PacketBuffer packetBuffer = new PacketBuffer(Unpooled.buffer());
         packetBuffer.writeItemStack(Wrapper.mc.player.getHeldItemMainhand());
         Wrapper.mc.player.connection.sendPacket((Packet)new CPacketCustomPayload("MC|BEdit", packetBuffer));
-        HAxG.TuzD("Successfully edited your book");
+        Command.TuzD("Successfully edited your book");
     }
     
     @Override

@@ -76,7 +76,7 @@ public class kmYZ extends kUUQ
         GL11.glPopMatrix();
         gnNa.Pgxp((float)(this.SvfS.rhHA.kVnf + 8), (float)(this.SvfS.rhHA.CQIZ + this.jXta + 6), 3.0f, 1.0f, -1);
         if (this.BAIk.OnGi()) {
-            gnNa.ILFo((float)(this.SvfS.rhHA.kVnf + 8), (float)(this.SvfS.rhHA.CQIZ + this.jXta + 6), 3.0f, new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB());
+            gnNa.ILFo((float)(this.SvfS.rhHA.kVnf + 8), (float)(this.SvfS.rhHA.CQIZ + this.jXta + 6), 3.0f, new Color(Client.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), Client.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB());
         }
         if (this.BAIk.OnGi()) {
             final Iterator<kUUQ> iterator = this.CYJH.iterator();

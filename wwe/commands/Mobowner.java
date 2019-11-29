@@ -1,14 +1,15 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
 import java.net.*;
 import java.io.*;
 import com.google.gson.*;
 import net.minecraft.entity.passive.*;
+import wwe.*;
 
-public class ytfU extends HAxG
+public class Mobowner extends Command
 {
-    public ytfU() {
+    public Mobowner() {
         super("mobowner");
     }
     
@@ -45,12 +46,12 @@ public class ytfU extends HAxG
                     }
                     final String asString = new JsonParser().parse(sb.toString().trim()).getAsJsonArray().get(new JsonParser().parse(sb.toString().trim()).getAsJsonArray().size() - 1).getAsJsonObject().get("name").getAsString();
                     bufferedReader.close();
-                    HAxG.TuzD("Thats " + asString + "'s " + ((EntityTameable)Wrapper.mc.objectMouseOver.entityHit).getName());
+                    Command.TuzD("Thats " + asString + "'s " + ((EntityTameable)Wrapper.mc.objectMouseOver.entityHit).getName());
                     }
                 }
                 catch (Exception ex) {
                     ex.printStackTrace();
-                    HAxG.TuzD("We have a problem...");
+                    Command.TuzD("We have a problem...");
                 }
             if (Wrapper.mc.objectMouseOver.entityHit instanceof AbstractHorse) {
                 try {
@@ -62,12 +63,12 @@ public class ytfU extends HAxG
                     }
                     final String asString2 = new JsonParser().parse(sb2.toString().trim()).getAsJsonArray().get(new JsonParser().parse(sb2.toString().trim()).getAsJsonArray().size() - 1).getAsJsonObject().get("name").getAsString();
                     bufferedReader2.close();
-                    HAxG.TuzD("Thats " + asString2 + "'s " + ((AbstractHorse)Wrapper.mc.objectMouseOver.entityHit).getName());
+                    Command.TuzD("Thats " + asString2 + "'s " + ((AbstractHorse)Wrapper.mc.objectMouseOver.entityHit).getName());
                     }
                 }
                 catch (Exception ex2) {
                     ex2.printStackTrace();
-                    HAxG.TuzD("We have a problem...");
+                    Command.TuzD("We have a problem...");
                 }
         }
         hSNE.kduK(this);

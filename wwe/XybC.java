@@ -28,6 +28,7 @@ import net.minecraft.entity.item.*;
 import java.util.*;
 import net.minecraft.util.math.*;
 import net.minecraft.init.*;
+import wwe.commands.*;
 
 public class XybC
 {
@@ -54,30 +55,30 @@ public class XybC
             this.rtlW();
             this.ntBz(scaledResolution);
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).armorHUD.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).armorHUD.OnGi()) {
             this.JRPa();
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN()) {
             MjBb.EPsz();
         }
     }
     
     public void qGPs(int n) {
-        final ArrayList<qMIe> ijZl = vlwv.hNxW.ijZl;
-        if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN()) {
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
+        final ArrayList<qMIe> ijZl = Client.hNxW.ijZl;
+        if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
                 ijZl.sort(XybC::PzRn);
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
                 ijZl.sort(XybC::MSNW);
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
                 ijZl.sort(XybC::RkaO);
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
                 ijZl.sort(XybC::IFuU);
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom") && bozE.Jfgf != null) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom") && bozE.Jfgf != null) {
                 ijZl.sort(XybC::gvpI);
             }
         }
@@ -88,46 +89,46 @@ public class XybC
         int n2 = 1;
         final ArrayList<Integer[][]> list = new ArrayList<Integer[][]>();
         final ArrayList<Integer> list2 = new ArrayList<Integer>();
-        vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe = 0;
-        for (final qMIe qmIe : vlwv.hNxW.ijZl) {
+        Client.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe = 0;
+        for (final qMIe qmIe : Client.hNxW.ijZl) {
             qmIe.qHNm();
             if (qmIe.IuiN() && !qmIe.jrFS(Category.GUI) && qmIe.sUHq()) {
-                final Hud hud = vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class);
+                final Hud hud = Client.hNxW.qHPF((Class<Hud>)Ijoo.class);
                 hud.wkYe += 10;
                 final int rgb = nuRU(n2 * (0xE7E4C7BCF422AAA1L ^ 0xE7E4C7BCE9EFCFA1L), 1.0f).getRGB();
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rects.OnGi() || vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).coolerRects.OnGi()) {
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).rects.OnGi() || Client.hNxW.qHPF((Class<Hud>)Ijoo.class).coolerRects.OnGi()) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                         gnNa.wQYt(0.0f, (float)(n - 1), (float)(4 + wKEb().getStringWidth(qmIe.Odlv())), (float)(n + 9), -1728053248);
                     }
                     else {
                         gnNa.wQYt((float)(scaledResolution.getScaledWidth() - wKEb().getStringWidth(qmIe.Odlv()) - 4), (float)(n - 1), (float)scaledResolution.getScaledWidth(), (float)(n + 9), -1728053248);
                     }
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rects.OnGi()) {
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).rects.OnGi()) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                         final double n3 = 0.0;
                         final double n4 = n - 1;
-                        final double n5 = 0.0 + vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rectslength.OnGi();
+                        final double n5 = 0.0 + Client.hNxW.qHPF((Class<Hud>)Ijoo.class).rectslength.OnGi();
                         final double n6 = n + 9;
                         int uUxj;
-                        if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+                        if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                             uUxj = rgb;
                         else {
                             uUxj = qmIe.UUxj();
                         gnNa.OKXQ(n3, n4, n5, n6, uUxj);
                     }
                     else {
-                        final double n7 = scaledResolution.getScaledWidth() - vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rectslength.OnGi();
+                        final double n7 = scaledResolution.getScaledWidth() - Client.hNxW.qHPF((Class<Hud>)Ijoo.class).rectslength.OnGi();
                         final double n8 = n - 1;
                         final double n9 = scaledResolution.getScaledWidth();
                         final double n10 = n + 9;
                         int uUxj2;
-                        if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+                        if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                             uUxj2 = rgb;
                         else {
                             uUxj2 = qmIe.UUxj();
                         gnNa.OKXQ(n7, n8, n9, n10, uUxj2);
                     }
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                     final ArrayList<Integer[][]> list3 = list;
                     final Integer[][] array = new Integer[2][];
                     final int n11 = 0;
@@ -135,7 +136,7 @@ public class XybC
                     final int n12 = 1;
                     final int n13 = n;
                     int n14;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n14 = 0;
                     }
                     else {
@@ -148,7 +149,7 @@ public class XybC
                     final int n16 = 1;
                     final int n17 = n;
                     int n18;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n18 = 9;
                     }
                     else {
@@ -166,7 +167,7 @@ public class XybC
                     final int n20 = 1;
                     final int n21 = n;
                     int n22;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
                         n22 = 0;
                     }
                     else {
@@ -179,7 +180,7 @@ public class XybC
                     final int n24 = 1;
                     final int n25 = n;
                     int n26;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
                         n26 = 9;
                     }
                     else {
@@ -188,12 +189,12 @@ public class XybC
                     array6[n24] = n25 + n26;
                     array4[n23] = array6;
                     list4.add(array4);
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                     final String odlv = qmIe.Odlv();
                     final float n27 = 3.0f;
                     final float n28 = (float)n;
                     int uUxj3;
-                    if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+                    if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                         uUxj3 = rgb;
                     }
                     else {
@@ -206,7 +207,7 @@ public class XybC
                     final float n29 = (float)(scaledResolution.getScaledWidth() - wKEb().getStringWidth(qmIe.Odlv()) - 2);
                     final float n30 = (float)n;
                     int uUxj4;
-                    if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+                    if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                         uUxj4 = rgb;
                     }
                     else {
@@ -215,7 +216,7 @@ public class XybC
                     eTim(odlv2, n29, n30, uUxj4);
                 list2.add(qmIe.UUxj());
                 int n31;
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                     n31 = n + 10;
                     }
                 else {
@@ -226,12 +227,12 @@ public class XybC
             }
         }
         int scaledWidth = scaledResolution.getScaledWidth();
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
             scaledWidth = 0;
         }
         final int n32 = n;
         int n33;
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
             n33 = 0;
             }
         }
@@ -240,7 +241,7 @@ public class XybC
         }
         final int n34 = n32 + n33;
         list.add(new Integer[][] { { scaledWidth, n34 }, { scaledWidth, n34 } });
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).coolerRects.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).coolerRects.OnGi()) {
             int n35 = 0;
             int n36 = 0;
             Integer[] array7 = null;
@@ -249,7 +250,7 @@ public class XybC
                 final int n37 = array8[0][0] + 1;
                 final int intValue = array8[0][1];
                 int n38;
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                     n38 = -1;
                     }
                 else {
@@ -258,14 +259,14 @@ public class XybC
                 final int intValue2 = array8[1][0];
                 final int intValue3 = array8[1][1];
                 int n40;
-                if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                     n40 = 0;
                     }
                 else {
                     n40 = 7;
                 final int n41 = intValue3 + n40;
                 int intValue4;
-                if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+                if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                     intValue4 = rgb2;
                     }
                 else {
@@ -278,7 +279,7 @@ public class XybC
                     final int n42 = min - 1;
                     final int intValue5 = array7[1];
                     int n43;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n43 = 0;
                     }
                     else {
@@ -288,7 +289,7 @@ public class XybC
                     final int n45 = max;
                     final int intValue6 = array8[0][1];
                     int n46;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n46 = 0;
                     }
                     else {
@@ -296,7 +297,7 @@ public class XybC
                     }
                     final int n47 = intValue6 + n46;
                     int n48;
-                    if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+                    if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                         n48 = rgb2;
                     }
                     else if (n36 == list.size() - 1) {
@@ -403,19 +404,19 @@ public class XybC
         final int n4 = n + n3;
         final int n5 = n2 + n3;
         GL11.glPushMatrix();
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Radar")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Radar")) {
             GL11.glTranslated((double)n4, (double)n5, 0.0);
             GL11.glRotated((double)(Wrapper.mc.player.rotationYaw + 180.0f), 0.0, 0.0, -1.0);
             GL11.glTranslated((double)(-n4), (double)(-n5), 0.0);
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarLines.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarLines.OnGi()) {
             gnNa.pABc(n4 - 0.5, n5 - n3 * 0.3, n4 + 0.5, n5 + n3 * 0.3, new Color(0, 0, 0, 175).getRGB());
             gnNa.pABc(n4 - n3 * 0.3, n5 - 0.5, n4 + n3 * 0.3, n5 + 0.5, new Color(0, 0, 0, 175).getRGB());
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle")) {
             gnNa.QtkP(n4, n5, n3, new Color(0, 0, 0, 75).getRGB(), new Color(189, 0, 0).getRGB());
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
             gnNa.dYaT((float)(n4 - n3), (float)(n5 - n3), (float)(n4 + n3), (float)(n5 + n3), 1.0f, new Color(0, 0, 0, 75).getRGB(), new Color(189, 0, 0).getRGB());
         }
         eTim("X-", (float)(n + 2), (float)(n2 + n3), -1);
@@ -424,11 +425,11 @@ public class XybC
         eTim("Z+", (float)(n + n3), (float)(n2 + n3 + n3 - 9), -1);
         for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
             Label_1167: {
-                if ((entity instanceof EntityLivingBase || entity instanceof EntityEnderCrystal) && entity != Wrapper.mc.player && (!vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle") || FIwW.WwmM(entity) <= n3 - 1)) {
+                if ((entity instanceof EntityLivingBase || entity instanceof EntityEnderCrystal) && entity != Wrapper.mc.player && (!Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle") || FIwW.WwmM(entity) <= n3 - 1)) {
                     int n6 = n4 + (int)(entity.posX - Wrapper.mc.player.posX);
                     int n7 = n5 + (int)(entity.posZ - Wrapper.mc.player.posZ);
-                    if (!vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle") || FIwW.WwmM(entity) >= n3 - 1) {}
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
+                    if (!Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle") || FIwW.WwmM(entity) >= n3 - 1) {}
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
                         if (n6 > n4 + n3) {
                             n6 = n4 + n3;
                         else if (n6 < n4 - n3) {
@@ -443,7 +444,7 @@ public class XybC
                             Wrapper.mc.getTextureManager().bindTexture(((AbstractClientPlayer)entity).getLocationSkin());
                             GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                             GL11.glPushMatrix();
-                            if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Radar")) {
+                            if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Radar")) {
                                 GL11.glTranslated((double)n6, (double)n7, 0.0);
                                 GL11.glRotated((double)(-Wrapper.mc.player.rotationYaw + 180.0f), 0.0, 0.0, -1.0);
                                 GL11.glTranslated((double)(-n6), (double)(-n7), 0.0);
@@ -459,22 +460,22 @@ public class XybC
                             break Label_1167;
                     }
                     final int n8 = 2;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Squares")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Squares")) {
                         gnNa.wQYt((float)(n6 - n8 / 2), (float)(n7 - n8 / 2), (float)(n6 + n8 / 2), (float)(n7 + n8 / 2), this.JFLL(entity));
                     }
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Circles")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Circles")) {
                         gnNa.oQBi(n6, n7, n8, this.JFLL(entity));
                     }
             }
             }
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarChests.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarChests.OnGi()) {
             for (final TileEntity tileEntity : Wrapper.mc.world.loadedTileEntityList) {
-                if ((tileEntity instanceof TileEntityChest || tileEntity instanceof TileEntityEnderChest || tileEntity instanceof TileEntityShulkerBox) && (!vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle") || FIwW.tLFP(tileEntity) <= n3 - 1)) {
+                if ((tileEntity instanceof TileEntityChest || tileEntity instanceof TileEntityEnderChest || tileEntity instanceof TileEntityShulkerBox) && (!Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle") || FIwW.tLFP(tileEntity) <= n3 - 1)) {
                     int n9 = n4 + (int)(tileEntity.getPos().getX() - Wrapper.mc.player.posX);
                     int n10 = n5 + (int)(tileEntity.getPos().getZ() - Wrapper.mc.player.posZ);
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle")) {}
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Circle")) {}
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
                         if (n9 > n4 + n3) {
                             n9 = n4 + n3;
                         else if (n9 < n4 - n3) {
@@ -485,7 +486,7 @@ public class XybC
                             n10 = n5 - n3;
                     }
                     final int n11 = 2;
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Squares")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Squares")) {
                         final float n12 = (float)(n9 - n11 / 2);
                         final float n13 = (float)(n10 - n11 / 2);
                         final float n14 = (float)(n9 + n11 / 2);
@@ -501,7 +502,7 @@ public class XybC
                             n16 = -1;
                         gnNa.wQYt(n12, n13, n14, n15, n16);
                     }
-                    if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Circles")) {
+                    if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Circles")) {
                         final int n17 = n9;
                         final int n18 = n10;
                         final double n19 = n11;
@@ -519,12 +520,12 @@ public class XybC
             }
         }
         GL11.glPopMatrix();
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarIndicator.OnGi().equalsIgnoreCase("Minecraft")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarIndicator.OnGi().equalsIgnoreCase("Minecraft")) {
             Wrapper.mc.getTextureManager().bindTexture(new ResourceLocation("textures/map/map_icons.png"));
             GL11.glPushMatrix();
             GL11.glScalef(0.2f, 0.2f, 0.0f);
             GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-            if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Indicator")) {
+            if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Indicator")) {
                 GL11.glTranslated((double)(n4 * 5), (double)(n5 * 5), 0.0);
                 GL11.glRotated((double)(Wrapper.mc.player.rotationYaw + 180.0f), 0.0, 0.0, 1.0);
                 GL11.glTranslated((double)(-(n4 * 5)), (double)(-(n5 * 5)), 0.0);
@@ -532,9 +533,9 @@ public class XybC
             tdNb.wAtb((double)(n4 * 5 - 35), (double)(n5 * 5 - 30), 0, 0, 70, 70);
             GL11.glPopMatrix();
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarIndicator.OnGi().equalsIgnoreCase("WWE")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarIndicator.OnGi().equalsIgnoreCase("WWE")) {
             GL11.glPushMatrix();
-            if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Indicator")) {
+            if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarRotation.OnGi().equalsIgnoreCase("Indicator")) {
                 GL11.glTranslated((double)n4, (double)n5, 0.0);
                 GL11.glRotated((double)(Wrapper.mc.player.rotationYaw + 180.0f), 0.0, 0.0, 1.0);
                 GL11.glTranslated((double)(-n4), (double)(-n5), 0.0);
@@ -561,7 +562,7 @@ public class XybC
     }
     
     public int JFLL(final Entity entity) {
-        if (entity instanceof EntityPlayer && vlwv.Zqnd().UsVJ(entity.getName())) {
+        if (entity instanceof EntityPlayer && Client.Zqnd().UsVJ(entity.getName())) {
             return KrtY.DnMA(0x370B23EF1584EE36L ^ 0x370B23EF1E6F2C36L, 1.0f).getRGB();
         }
         if (entity instanceof EntityPlayer) {
@@ -587,7 +588,7 @@ public class XybC
         for (final PotionEffect potionEffect : Wrapper.mc.player.getActivePotionEffects()) {
             eTim(I18n.format(potionEffect.getEffectName(), new Object[0]) + " " + potionEffect.getAmplifier() + " : " + Potion.getPotionDurationString(potionEffect, 1.0f), (float)(scaledResolution.getScaledWidth() - wKEb().getStringWidth(I18n.format(potionEffect.getEffectName(), new Object[0]) + " " + potionEffect.getAmplifier() + " : " + Potion.getPotionDurationString(potionEffect, 1.0f)) - 2), (float)n, potionEffect.getPotion().getLiquidColor());
             int n2;
-            if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
+            if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
                 n2 = n - 10;
             }
             else {
@@ -615,7 +616,7 @@ public class XybC
             
             @Override
             public void Hrqs(final int n) {
-                vlwv.VFOG.zeZm(3, n);
+                Client.VFOG.zeZm(3, n);
             }
         }
         class eZOX implements pSdr
@@ -629,7 +630,7 @@ public class XybC
             
             @Override
             public int Gsgl() {
-                return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
+                return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
             }
             
             @Override
@@ -648,12 +649,12 @@ public class XybC
             
             @Override
             public int Gsgl() {
-                return (int)(vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarScale.OnGi() * 2.0 + 3.0);
+                return (int)(Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarScale.OnGi() * 2.0 + 3.0);
             }
             
             @Override
             public void Hrqs(final int n) {
-                this.hILD.eUwe(3, n, vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarScale.OnGi().intValue());
+                this.hILD.eUwe(3, n, Client.hNxW.qHPF((Class<Hud>)Ijoo.class).radarScale.OnGi().intValue());
             }
         }
         class SxyY implements pSdr
@@ -667,7 +668,7 @@ public class XybC
             
             @Override
             public int Gsgl() {
-                return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).pxFw;
+                return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).pxFw;
             }
             
             @Override
@@ -719,7 +720,7 @@ public class XybC
         //    35: invokevirtual   wwe/XybC.UNzQ:()Lwwe/Eiby;
         //    38: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //    41: pop            
-        //    42: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    42: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    45: ldc             Lwwe/Ijoo;.class
         //    47: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    50: checkcast       Lwwe/modules/render/Hud;
@@ -815,13 +816,13 @@ public class XybC
         //   249: invokevirtual   wwe/XybC.VeEy:()Lwwe/Eiby;
         //   252: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   255: pop            
-        //   256: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   256: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   259: ldc             Lwwe/Ijoo;.class
         //   261: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   264: checkcast       Lwwe/modules/render/Hud;
         //   267: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   270: ifeq            327
-        //   273: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   273: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   276: ldc             Lwwe/Ijoo;.class
         //   278: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   281: checkcast       Lwwe/modules/render/Hud;
@@ -844,13 +845,13 @@ public class XybC
         //   320: invokespecial   wwe/Eiby.<init>:(Ljava/lang/String;ILwwe/pSdr;)V
         //   323: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   326: pop            
-        //   327: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   327: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   330: ldc             Lwwe/Ijoo;.class
         //   332: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   335: checkcast       Lwwe/modules/render/Hud;
         //   338: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   341: ifeq            427
-        //   344: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   344: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   347: ldc             Lwwe/Ijoo;.class
         //   349: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   352: checkcast       Lwwe/modules/render/Hud;
@@ -859,7 +860,7 @@ public class XybC
         //   361: checkcast       Ljava/lang/Boolean;
         //   364: invokevirtual   java/lang/Boolean.booleanValue:()Z
         //   367: ifeq            427
-        //   370: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   370: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   373: ldc             Lwwe/Ijoo;.class
         //   375: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   378: checkcast       Lwwe/modules/render/Hud;
@@ -883,13 +884,13 @@ public class XybC
         //   420: invokespecial   wwe/Eiby.<init>:(Ljava/lang/String;ILwwe/pSdr;)V
         //   423: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   426: pop            
-        //   427: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   427: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   430: ldc             Lwwe/Ijoo;.class
         //   432: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   435: checkcast       Lwwe/modules/render/Hud;
         //   438: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   441: ifeq            498
-        //   444: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   444: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   447: ldc             Lwwe/Ijoo;.class
         //   449: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   452: checkcast       Lwwe/modules/render/Hud;
@@ -920,13 +921,13 @@ public class XybC
         //   507: invokevirtual   wwe/XybC.GQOK:()Lwwe/Eiby;
         //   510: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   513: pop            
-        //   514: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   514: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   517: ldc             Lwwe/Ijoo;.class
         //   519: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   522: checkcast       Lwwe/modules/render/Hud;
         //   525: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   528: ifeq            585
-        //   531: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   531: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   534: ldc             Lwwe/Ijoo;.class
         //   536: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   539: checkcast       Lwwe/modules/render/Hud;
@@ -949,7 +950,7 @@ public class XybC
         //   578: invokespecial   wwe/Eiby.<init>:(Ljava/lang/String;ILwwe/pSdr;)V
         //   581: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   584: pop            
-        //   585: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   585: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   588: ldc_w           Lwwe/fhLu;.class
         //   591: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   594: checkcast       Lwwe/modules/combat/CombatInfo;
@@ -1058,7 +1059,7 @@ public class XybC
             
             @Override
             public int Gsgl() {
-                return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
+                return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
             }
             
             @Override
@@ -1083,13 +1084,13 @@ public class XybC
         //    22: astore_2       
         //    23: ldc             1
         //    25: istore_3       
-        //    26: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    26: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    29: ldc             Lwwe/Ijoo;.class
         //    31: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    34: checkcast       Lwwe/modules/render/Hud;
         //    37: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //    40: ifeq            126
-        //    43: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    43: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    46: ldc             Lwwe/Ijoo;.class
         //    48: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    51: checkcast       Lwwe/modules/render/Hud;
@@ -1098,7 +1099,7 @@ public class XybC
         //    60: checkcast       Ljava/lang/Boolean;
         //    63: invokevirtual   java/lang/Boolean.booleanValue:()Z
         //    66: ifeq            126
-        //    69: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    69: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    72: ldc             Lwwe/Ijoo;.class
         //    74: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    77: checkcast       Lwwe/modules/render/Hud;
@@ -1122,7 +1123,7 @@ public class XybC
         //   119: invokespecial   wwe/Eiby.<init>:(Ljava/lang/String;ILwwe/pSdr;)V
         //   122: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   125: pop            
-        //   126: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   126: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   129: ldc             Lwwe/Ijoo;.class
         //   131: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   134: checkcast       Lwwe/modules/render/Hud;
@@ -1218,13 +1219,13 @@ public class XybC
         //   333: invokevirtual   wwe/XybC.VeEy:()Lwwe/Eiby;
         //   336: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   339: pop            
-        //   340: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   340: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   343: ldc             Lwwe/Ijoo;.class
         //   345: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   348: checkcast       Lwwe/modules/render/Hud;
         //   351: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   354: ifeq            440
-        //   357: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   357: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   360: ldc             Lwwe/Ijoo;.class
         //   362: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   365: checkcast       Lwwe/modules/render/Hud;
@@ -1233,7 +1234,7 @@ public class XybC
         //   374: checkcast       Ljava/lang/Boolean;
         //   377: invokevirtual   java/lang/Boolean.booleanValue:()Z
         //   380: ifeq            440
-        //   383: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   383: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   386: ldc             Lwwe/Ijoo;.class
         //   388: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   391: checkcast       Lwwe/modules/render/Hud;
@@ -1336,7 +1337,7 @@ public class XybC
             
             @Override
             public int Gsgl() {
-                return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
+                return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
             }
             
             @Override
@@ -1390,7 +1391,7 @@ public class XybC
         //    27: ldc_w           10
         //    30: isub           
         //    31: istore_3       
-        //    32: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    32: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    35: ldc             Lwwe/Ijoo;.class
         //    37: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    40: checkcast       Lwwe/modules/render/Hud;
@@ -1486,13 +1487,13 @@ public class XybC
         //   239: invokevirtual   wwe/XybC.VeEy:()Lwwe/Eiby;
         //   242: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   245: pop            
-        //   246: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   246: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   249: ldc             Lwwe/Ijoo;.class
         //   251: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   254: checkcast       Lwwe/modules/render/Hud;
         //   257: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   260: ifeq            346
-        //   263: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   263: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   266: ldc             Lwwe/Ijoo;.class
         //   268: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   271: checkcast       Lwwe/modules/render/Hud;
@@ -1501,7 +1502,7 @@ public class XybC
         //   280: checkcast       Ljava/lang/Boolean;
         //   283: invokevirtual   java/lang/Boolean.booleanValue:()Z
         //   286: ifeq            346
-        //   289: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   289: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   292: ldc             Lwwe/Ijoo;.class
         //   294: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   297: checkcast       Lwwe/modules/render/Hud;
@@ -1619,7 +1620,7 @@ public class XybC
             
             @Override
             public int Gsgl() {
-                return vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
+                return Client.hNxW.qHPF((Class<Hud>)Ijoo.class).wkYe + 2;
             }
             
             @Override
@@ -1678,13 +1679,13 @@ public class XybC
         //    38: instanceof      Lnet/minecraft/client/gui/GuiChat;
         //    41: ifeq            47
         //    44: iinc            3, -13
-        //    47: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    47: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    50: ldc             Lwwe/Ijoo;.class
         //    52: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    55: checkcast       Lwwe/modules/render/Hud;
         //    58: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //    61: ifeq            147
-        //    64: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    64: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    67: ldc             Lwwe/Ijoo;.class
         //    69: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    72: checkcast       Lwwe/modules/render/Hud;
@@ -1693,7 +1694,7 @@ public class XybC
         //    81: checkcast       Ljava/lang/Boolean;
         //    84: invokevirtual   java/lang/Boolean.booleanValue:()Z
         //    87: ifeq            147
-        //    90: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //    90: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //    93: ldc             Lwwe/Ijoo;.class
         //    95: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //    98: checkcast       Lwwe/modules/render/Hud;
@@ -1717,7 +1718,7 @@ public class XybC
         //   140: invokespecial   wwe/Eiby.<init>:(Ljava/lang/String;ILwwe/pSdr;)V
         //   143: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   146: pop            
-        //   147: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   147: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   150: ldc             Lwwe/Ijoo;.class
         //   152: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   155: checkcast       Lwwe/modules/render/Hud;
@@ -1813,13 +1814,13 @@ public class XybC
         //   354: invokevirtual   wwe/XybC.VeEy:()Lwwe/Eiby;
         //   357: invokevirtual   java/util/ArrayList.add:(Ljava/lang/Object;)Z
         //   360: pop            
-        //   361: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   361: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   364: ldc             Lwwe/Ijoo;.class
         //   366: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   369: checkcast       Lwwe/modules/render/Hud;
         //   372: invokevirtual   wwe/modules/render/Hud.IuiN:()Z
         //   375: ifeq            461
-        //   378: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   378: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   381: ldc             Lwwe/Ijoo;.class
         //   383: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   386: checkcast       Lwwe/modules/render/Hud;
@@ -1828,7 +1829,7 @@ public class XybC
         //   395: checkcast       Ljava/lang/Boolean;
         //   398: invokevirtual   java/lang/Boolean.booleanValue:()Z
         //   401: ifeq            461
-        //   404: getstatic       wwe/vlwv.hNxW:Lwwe/eOnJ;
+        //   404: getstatic       wwe/Client.hNxW:Lwwe/eOnJ;
         //   407: ldc             Lwwe/Ijoo;.class
         //   409: invokevirtual   wwe/eOnJ.qHPF:(Ljava/lang/Class;)Lwwe/qMIe;
         //   412: checkcast       Lwwe/modules/render/Hud;
@@ -1952,14 +1953,14 @@ public class XybC
     }
     
     public Eiby UNzQ() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).waterMark.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).waterMark.OnGi()) {
             final String s = "WWE Version 2.7.2";
             int n;
-            if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                 n = nuRU(0x441E3A091259B80DL ^ 0x441E3A090F94DD0DL, 1.0f).getRGB();
             }
             else {
-                n = vlwv.fomn.LvCB.JqMr().getRGB();
+                n = Client.fomn.LvCB.JqMr().getRGB();
             }
             return new Eiby(s, n, null);
         }
@@ -1967,40 +1968,40 @@ public class XybC
     }
     
     public Eiby SDNi() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).fps.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).fps.OnGi()) {
             final StringBuilder append = new StringBuilder().append("FPS: ");
             final Minecraft mc = Wrapper.mc;
-            return new Eiby(append.append(Minecraft.getDebugFPS()).toString(), vlwv.fomn.bNiH.JqMr().getRGB(), null);
+            return new Eiby(append.append(Minecraft.getDebugFPS()).toString(), Client.fomn.bNiH.JqMr().getRGB(), null);
         }
         return null;
     }
     
     public Eiby Cvit() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).overworldCoords.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).overworldCoords.OnGi()) {
             if (Wrapper.mc.player.dimension == 0 || Wrapper.mc.player.dimension == 1) {
-                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ), vlwv.fomn.VQLP.JqMr().getRGB(), null);
+                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ), Client.fomn.VQLP.JqMr().getRGB(), null);
             }
             if (Wrapper.mc.player.dimension == -1) {
-                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX * 8.0) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ * 8.0), vlwv.fomn.VQLP.JqMr().getRGB(), null);
+                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX * 8.0) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ * 8.0), Client.fomn.VQLP.JqMr().getRGB(), null);
             }
         }
         return null;
     }
     
     public Eiby pejA() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).netherCoords.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).netherCoords.OnGi()) {
             if (Wrapper.mc.player.dimension == -1) {
-                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ), vlwv.fomn.agTY.JqMr().getRGB(), null);
+                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ), Client.fomn.agTY.JqMr().getRGB(), null);
             }
             if (Wrapper.mc.player.dimension == 0 || Wrapper.mc.player.dimension == 1) {
-                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX / 8.0) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ / 8.0), vlwv.fomn.agTY.JqMr().getRGB(), null);
+                return new Eiby("X:Y:Z: " + this.yOZV.format(Wrapper.mc.player.posX / 8.0) + " " + this.yOZV.format(Wrapper.mc.player.posY) + " " + this.yOZV.format(Wrapper.mc.player.posZ / 8.0), Client.fomn.agTY.JqMr().getRGB(), null);
             }
         }
         return null;
     }
     
     public Eiby Rlmo() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).tps.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).tps.OnGi()) {
             return new Eiby("TPS: " + PJxY.Npqe, this.WRhv(), null);
         }
         return null;
@@ -2008,45 +2009,45 @@ public class XybC
     
     public int WRhv() {
         if (PJxY.Npqe > 15.0f) {
-            return vlwv.fomn.JOgm.JqMr().getRGB();
+            return Client.fomn.JOgm.JqMr().getRGB();
         }
         if (PJxY.Npqe > 10.0f) {
-            return vlwv.fomn.kGoP.JqMr().getRGB();
+            return Client.fomn.kGoP.JqMr().getRGB();
         }
         if (PJxY.Npqe > 5.0f) {
-            return vlwv.fomn.TAnK.JqMr().getRGB();
+            return Client.fomn.TAnK.JqMr().getRGB();
         }
         if (PJxY.Npqe >= 0.0f) {
-            return vlwv.fomn.SfWP.JqMr().getRGB();
+            return Client.fomn.SfWP.JqMr().getRGB();
         }
         return -1;
     }
     
     public Eiby uocS() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).bps.OnGi()) {
-            return new Eiby("BPS: " + XybC.MvaJ.format(Hud.CwjD()), vlwv.fomn.qpge.JqMr().getRGB(), null);
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).bps.OnGi()) {
+            return new Eiby("BPS: " + XybC.MvaJ.format(Hud.CwjD()), Client.fomn.qpge.JqMr().getRGB(), null);
         }
         return null;
     }
     
     public Eiby TdhW() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).lagMeter.OnGi()) {
-            vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.gCgh();
-            if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.QOXG(1000.0)) {
-                return new Eiby("Server has been lagging for " + vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.KBDH() / (0x3F360B846FEC2057L ^ 0x3F360B846FEC23BFL) + " seconds", -1, null);
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).lagMeter.OnGi()) {
+            Client.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.gCgh();
+            if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.QOXG(1000.0)) {
+                return new Eiby("Server has been lagging for " + Client.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.KBDH() / (0x3F360B846FEC2057L ^ 0x3F360B846FEC23BFL) + " seconds", -1, null);
             }
         }
         else {
-            vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.BBwj();
+            Client.hNxW.qHPF((Class<Hud>)Ijoo.class).Xijd.BBwj();
         }
         return null;
     }
     
     public int GvWQ(final String s, final ScaledResolution scaledResolution) {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Top Left") || vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Bottom Left")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Top Left") || Client.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Bottom Left")) {
             return 3;
         }
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Top Right") || vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Bottom Right")) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Top Right") || Client.hNxW.qHPF((Class<Hud>)Ijoo.class).information.OnGi().equalsIgnoreCase("Bottom Right")) {
             return scaledResolution.getScaledWidth() - wKEb().getStringWidth(s);
         }
         return 3;
@@ -2061,7 +2062,7 @@ public class XybC
         for (final EntityPlayer next : Wrapper.mc.world.loadedEntityList) {
             if (next instanceof EntityPlayer) {
                 final EntityPlayer entityPlayer = next;
-                if (Wrapper.mc.player.getDistance((Entity)entityPlayer) < vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).range.OnGi() && !entityPlayer.getName().equals(Wrapper.mc.player.getName())) {
+                if (Wrapper.mc.player.getDistance((Entity)entityPlayer) < Client.hNxW.qHPF((Class<CombatInfo>)fhLu.class).range.OnGi() && !entityPlayer.getName().equals(Wrapper.mc.player.getName())) {
                     final int ceil = MathHelper.ceil(entityPlayer.getAbsorptionAmount());
                     final float n4 = (float)entityPlayer.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).getAttributeValue();
                     final int max = Math.max(10 - (MathHelper.ceil((n4 + ceil) / 2.0f / 10.0f) - 2), 3);
@@ -2099,9 +2100,9 @@ public class XybC
                                 Wrapper.mc.ingameGUI.drawTexturedModalRect(n10, n11, n7 + 45, 9 * n12, 9, 9);
                         --i;
                     }
-                    if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).names.OnGi()) {
+                    if (Client.hNxW.qHPF((Class<CombatInfo>)fhLu.class).names.OnGi()) {
                         int n13;
-                        if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).coords.OnGi()) {
+                        if (Client.hNxW.qHPF((Class<CombatInfo>)fhLu.class).coords.OnGi()) {
                             n13 = 10;
                         else {
                             n13 = 0;
@@ -2113,7 +2114,7 @@ public class XybC
                             n15 = 0;
                         eTim(entityPlayer.getName(), 55.0f, (float)(n3 - n14 - n15), -1);
                     }
-                    if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).coords.OnGi()) {
+                    if (Client.hNxW.qHPF((Class<CombatInfo>)fhLu.class).coords.OnGi()) {
                         int n16;
                         if (entityPlayer.getAbsorptionAmount() >= 1.0f) {
                             n16 = 10;
@@ -2122,7 +2123,7 @@ public class XybC
                         eTim("X:Y:Z: " + this.yOZV.format(entityPlayer.posX) + " " + this.yOZV.format(entityPlayer.posY) + " " + this.yOZV.format(entityPlayer.posZ), 55.0f, (float)(n3 - n16), -1);
                     }
                     n3 += 50;
-                    if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).heads.OnGi()) {
+                    if (Client.hNxW.qHPF((Class<CombatInfo>)fhLu.class).heads.OnGi()) {
                         try {
                             Wrapper.mc.getTextureManager().bindTexture(((AbstractClientPlayer)entityPlayer).getLocationSkin());
                             final GuiIngame ingameGUI = Wrapper.mc.ingameGUI;
@@ -2168,16 +2169,16 @@ public class XybC
                 continue;
             }
         }
-        vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).pxFw = hashMap.size() * 10;
+        Client.hNxW.qHPF((Class<Hud>)Ijoo.class).pxFw = hashMap.size() * 10;
         for (final Map.Entry<String, Integer> entry : hashMap.entrySet()) {
-            eTim(entry.getKey() + ":" + entry.getValue(), (float)n, (float)n2, vlwv.fomn.JQor.JqMr().getRGB());
+            eTim(entry.getKey() + ":" + entry.getValue(), (float)n, (float)n2, Client.fomn.JQor.JqMr().getRGB());
             n2 += 10;
             }
         }
     }
     
     public Eiby lHll() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).ping.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).ping.OnGi()) {
             final StringBuilder append = new StringBuilder().append("Ping: ");
             long pingToServer;
             if (Wrapper.mc.isSingleplayer()) {
@@ -2186,20 +2187,20 @@ public class XybC
             else {
                 pingToServer = Wrapper.mc.getCurrentServerData().pingToServer;
             }
-            return new Eiby(append.append(pingToServer).toString(), vlwv.fomn.LsTY.JqMr().getRGB(), null);
+            return new Eiby(append.append(pingToServer).toString(), Client.fomn.LsTY.JqMr().getRGB(), null);
         }
         return null;
     }
     
     public Eiby GQOK() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).itemDurability.OnGi() && Wrapper.mc.player.getHeldItemMainhand().isItemStackDamageable()) {
-            return new Eiby("Item Durability: " + (Wrapper.mc.player.getHeldItemMainhand().getMaxDamage() - Wrapper.mc.player.getHeldItemMainhand().getItemDamage()) + " / " + Wrapper.mc.player.getHeldItemMainhand().getMaxDamage(), vlwv.fomn.EDSc.JqMr().getRGB(), null);
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).itemDurability.OnGi() && Wrapper.mc.player.getHeldItemMainhand().isItemStackDamageable()) {
+            return new Eiby("Item Durability: " + (Wrapper.mc.player.getHeldItemMainhand().getMaxDamage() - Wrapper.mc.player.getHeldItemMainhand().getItemDamage()) + " / " + Wrapper.mc.player.getHeldItemMainhand().getMaxDamage(), Client.fomn.EDSc.JqMr().getRGB(), null);
         }
         return null;
     }
     
     public Eiby tvFf() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).lavaWarning.OnGi()) {
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).lavaWarning.OnGi()) {
             int i = 0;
             while (i < 11) {
                 if (Wrapper.mc.world.getBlockState(new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ).add(0, -i, 0)).getBlock() == Blocks.LAVA || Wrapper.mc.world.getBlockState(new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ).add(0, -i, 0)).getBlock() == Blocks.FLOWING_LAVA) {
@@ -2211,8 +2212,8 @@ public class XybC
     }
     
     public Eiby VeEy() {
-        if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).biome.OnGi()) {
-            return new Eiby("Biome: " + Wrapper.mc.world.getBiome(new BlockPos((Entity)Wrapper.mc.player)).getBiomeName(), vlwv.fomn.CZsW.JqMr().getRGB(), null);
+        if (Client.hNxW.qHPF((Class<Hud>)Ijoo.class).IuiN() && Client.hNxW.qHPF((Class<Hud>)Ijoo.class).biome.OnGi()) {
+            return new Eiby("Biome: " + Wrapper.mc.world.getBiome(new BlockPos((Entity)Wrapper.mc.player)).getBiomeName(), Client.fomn.CZsW.JqMr().getRGB(), null);
         }
         return null;
     }
@@ -2220,7 +2221,7 @@ public class XybC
     public static Color nuRU(final long n, final float n2) {
         final float n3 = (System.nanoTime() + n) / 1.0E10f % 1.0f;
         float n4;
-        if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).mode.OnGi().equalsIgnoreCase("Up")) {
+        if (Client.hNxW.qHPF((Class<ColorList>)VWdz.class).mode.OnGi().equalsIgnoreCase("Up")) {
             n4 = (System.nanoTime() - n) / 1.0E10f % 1.0f;
             }
         }
@@ -2260,24 +2261,24 @@ public class XybC
     }
     
     public static FontRenderer wKEb() {
-        if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN()) {
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
+        if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN()) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
                 return bozE.dRQq;
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
                 return bozE.SpUn;
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
                 return bozE.VuaG;
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
                 return bozE.gHdT;
             }
-            if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
+            if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
                 if (bozE.Jfgf != null) {
                     return bozE.Jfgf;
-                HAxG.TuzD("It Appears you dident set a custom font yet, do .customfont NameOfFont");
-                vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.NdCc("Comfortaa");
+                Command.TuzD("It Appears you dident set a custom font yet, do .customfont NameOfFont");
+                Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.NdCc("Comfortaa");
             }
         }
         return Wrapper.fontRenderer;
@@ -2286,53 +2287,53 @@ public class XybC
     public static void eTim(final String s, final float n, final float n2, final int n3) {
         final FontRenderer wkEb = wKEb();
         float n4;
-        if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
+        if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
             n4 = 1.0f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
             n4 = 2.0f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
             n4 = 3.0f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
             n4 = 2.5f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
-            n4 = (float)vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).height.OnGi().intValue();
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
+            n4 = (float)Client.hNxW.qHPF((Class<CustomFont>)krYX.class).height.OnGi().intValue();
             }
         }
         else {
             n4 = 0.0f;
         }
-        wkEb.drawString(s, n, n2 - n4, n3, (boolean)vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).textShadow.OnGi());
+        wkEb.drawString(s, n, n2 - n4, n3, (boolean)Client.hNxW.qHPF((Class<Hud>)Ijoo.class).textShadow.OnGi());
     }
     
     public static void dWXO(final String s, final float n, final float n2, final int n3) {
         final FontRenderer wkEb = wKEb();
         float n4;
-        if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
+        if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
             n4 = 1.0f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
             n4 = 2.0f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
             n4 = 3.0f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
             n4 = 2.5f;
             }
         }
-        else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
-            n4 = (float)vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).height.OnGi().intValue();
+        else if (Client.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && Client.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
+            n4 = (float)Client.hNxW.qHPF((Class<CustomFont>)krYX.class).height.OnGi().intValue();
             }
         }
         else {

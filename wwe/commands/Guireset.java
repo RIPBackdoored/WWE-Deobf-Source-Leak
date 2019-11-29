@@ -1,61 +1,62 @@
-package wwe;
+package wwe.commands;
 
 import wwe.utils.*;
+import wwe.*;
 
-public class WhjY extends HAxG
+public class Guireset extends Command
 {
-    public WhjY() {
+    public Guireset() {
         super("guireset");
     }
     
     @Override
     public void lpzH(final String s, final String[] array) {
         if (array.length < 1) {
-            HAxG.TuzD(this.ZlRY());
+            Command.TuzD(this.ZlRY());
             return;
         }
         if (array[0].equalsIgnoreCase("preset") || array[0].equalsIgnoreCase("presets")) {
-            final hEGx prNz = vlwv.pRNz;
+            final hEGx prNz = Client.pRNz;
             final XdhZ aTlJ = hEGx.aTlJ;
-            final hEGx prNz2 = vlwv.pRNz;
+            final hEGx prNz2 = Client.pRNz;
             aTlJ.OsiI = hEGx.aTlJ.KyWB;
-            final hEGx prNz3 = vlwv.pRNz;
+            final hEGx prNz3 = Client.pRNz;
             final XdhZ aTlJ2 = hEGx.aTlJ;
-            final hEGx prNz4 = vlwv.pRNz;
+            final hEGx prNz4 = Client.pRNz;
             aTlJ2.zzJD = hEGx.aTlJ.PVCD;
             Wrapper.ypJK().VvWw();
-            HAxG.TuzD("Reset the position of the frame presets");
+            Command.TuzD("Reset the position of the frame presets");
             return;
         }
         if (array[0].equalsIgnoreCase("all")) {
             int i = 0;
-            while (i < vlwv.pRNz.nYFA.size()) {
-                final FinI finI = vlwv.pRNz.nYFA.get(i);
+            while (i < Client.pRNz.nYFA.size()) {
+                final FinI finI = Client.pRNz.nYFA.get(i);
                 finI.kVnf = finI.ypmq;
                 finI.CQIZ = finI.noHS;
                 Wrapper.ypJK().VvWw();
                 ++i;
             }
-            final hEGx prNz5 = vlwv.pRNz;
+            final hEGx prNz5 = Client.pRNz;
             final XdhZ aTlJ3 = hEGx.aTlJ;
-            final hEGx prNz6 = vlwv.pRNz;
+            final hEGx prNz6 = Client.pRNz;
             aTlJ3.OsiI = hEGx.aTlJ.KyWB;
-            final hEGx prNz7 = vlwv.pRNz;
+            final hEGx prNz7 = Client.pRNz;
             final XdhZ aTlJ4 = hEGx.aTlJ;
-            final hEGx prNz8 = vlwv.pRNz;
+            final hEGx prNz8 = Client.pRNz;
             aTlJ4.zzJD = hEGx.aTlJ.PVCD;
             Wrapper.ypJK().VvWw();
-            HAxG.TuzD("Reset positions of all frames");
+            Command.TuzD("Reset positions of all frames");
             return;
         }
         int j = 0;
-        while (j < vlwv.pRNz.nYFA.size()) {
-            final FinI finI2 = vlwv.pRNz.nYFA.get(j);
+        while (j < Client.pRNz.nYFA.size()) {
+            final FinI finI2 = Client.pRNz.nYFA.get(j);
             if (finI2.XLez.name().equalsIgnoreCase(array[0])) {
                 finI2.kVnf = finI2.ypmq;
                 finI2.CQIZ = finI2.noHS;
                 Wrapper.ypJK().VvWw();
-                HAxG.TuzD("Reset the position of the frame " + finI2.XLez.name());
+                Command.TuzD("Reset the position of the frame " + finI2.XLez.name());
                 return;
             }
             ++j;

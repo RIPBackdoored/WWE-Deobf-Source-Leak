@@ -19,7 +19,7 @@ public class rJxT extends GuiScreen
     public void func_73866_w_() {
         int n = 0;
         int n2 = 0;
-        for (final RCMD rcmd : vlwv.fomn.JNkz) {
+        for (final RCMD rcmd : Client.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.UyOo) {
                 continue;
             }
@@ -50,7 +50,7 @@ public class rJxT extends GuiScreen
     
     protected void func_146284_a(final GuiButton guiButton) throws IOException {
         int n = 0;
-        for (final RCMD rcmd : vlwv.fomn.JNkz) {
+        for (final RCMD rcmd : Client.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.UyOo) {
                 continue;
             }
