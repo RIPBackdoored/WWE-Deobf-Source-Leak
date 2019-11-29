@@ -44,8 +44,6 @@ public class AutoArmor extends qMIe
             }
             array[i] = -1;
             ++i;
-            if (AutoArmor.\u200e\u2002\u200c\u200e\u200d) {
-                throw null;
             }
         }
         int j = 0;
@@ -61,8 +59,6 @@ public class AutoArmor extends qMIe
                 }
             }
             ++j;
-            if (AutoArmor.\u200e\u2002\u200c\u200e\u200d) {
-                throw null;
             }
         }
         int k = 0;
@@ -76,15 +72,11 @@ public class AutoArmor extends qMIe
                 Wrapper.mc.playerController.windowClick(0, 8 - k, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                 Wrapper.mc.playerController.windowClick(0, n, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                 Wrapper.mc.playerController.windowClick(0, 8 - k, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
-                if (AutoArmor.\u200e\u2002\u200c\u200e\u200d) {
-                    throw null;
                 }
                 break;
             }
             else {
                 ++k;
-                if (AutoArmor.\u200e\u2002\u200c\u200e\u200d) {
-                    throw null;
                 }
                 continue;
             }
@@ -100,8 +92,6 @@ public class AutoArmor extends qMIe
         boolean b;
         if (itemStack == null || itemStack.getItem() instanceof ItemAir) {
             b = true;
-            if (AutoArmor.\u200e\u2002\u200c\u200e\u200d) {
-                throw null;
             }
         }
         else {

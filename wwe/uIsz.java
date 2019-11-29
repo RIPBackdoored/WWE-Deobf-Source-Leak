@@ -20,17 +20,11 @@ public class uIsz extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.mQOB) {
-                if (uIsz.\u200e) {
-                    throw null;
-                }
                 continue;
             }
             else {
                 this.buttonList.add(new GuiButton(this.buttonList.size(), this.width / 2 - 100, this.height / 4 + n, rcmd.cpTz));
                 n += 25;
-                if (uIsz.\u200e) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -42,23 +36,14 @@ public class uIsz extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.mQOB) {
-                if (uIsz.\u200e) {
-                    throw null;
-                }
                 continue;
             }
             else if (guiButton.id == n) {
                 this.mc.displayGuiScreen((GuiScreen)new oBqx(rcmd));
-                if (uIsz.\u200e) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++n;
-                if (uIsz.\u200e) {
-                    throw null;
-                }
                 continue;
             }
         }

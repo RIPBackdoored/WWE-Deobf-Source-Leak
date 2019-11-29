@@ -34,8 +34,6 @@ public class jtnJ$xkKY
         final char[] charArray = s.toCharArray();
         final StringBuilder sb = new StringBuilder();
         int i = 0;
-        if (jtnJ$xkKY.\u200d\u2007\u2007\u2008\u2005\u200a\u2008\u2002) {
-            throw null;
         }
         while (i < charArray.length) {
             sb.append((char)(charArray[i] ^ n));

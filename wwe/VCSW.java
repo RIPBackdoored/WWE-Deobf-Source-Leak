@@ -30,9 +30,6 @@ public class VCSW extends HAxG
                         int n2;
                         if (i < 9) {
                             n2 = i + 36;
-                            if (VCSW.\u2006\u200a\u200c\u200e) {
-                                throw null;
-                            }
                         }
                         else {
                             n2 = i;
@@ -40,20 +37,14 @@ public class VCSW extends HAxG
                         playerController.windowClick(n, n2, 1, ClickType.THROW, (EntityPlayer)Wrapper.mc.player);
                     }
                     ++i;
-                    if (VCSW.\u2006\u200a\u200c\u200e) {
-                        throw null;
                     }
                 }
-                if (VCSW.\u2006\u200a\u200c\u200e) {
-                    throw null;
                 }
             }
             else {
                 Wrapper.mc.player.dropItem(true);
             }
             Wrapper.mc.world.sendQuittingDisconnectingPacket();
-            if (VCSW.\u2006\u200a\u200c\u200e) {
-                throw null;
             }
         }
         catch (Exception ex) {

@@ -35,16 +35,11 @@ public class lRvb extends HAxG
                     HAxG.TuzD("Added " + array[1] + " to the search list");
                     if (((QSTh)vlwv.hNxW.qHPF((Class<Search>)QSTh.class)).IuiN()) {
                         Wrapper.mc.renderGlobal.loadRenderers();
-                        if (lRvb.\u2006\u200e\u2005\u2005\u2009\u2003\u2003\u2006\u200f) {
-                            throw null;
-                        }
                     }
                 }
                 else {
                     HAxG.TuzD("Thats not a block?");
                 }
-                if (lRvb.\u2006\u200e\u2005\u2005\u2009\u2003\u2003\u2006\u200f) {
-                    throw null;
                 }
             }
             else if (this.wJNH(array[0])) {
@@ -57,10 +52,6 @@ public class lRvb extends HAxG
                     for (final Map.Entry<Block, Color> entry : Search.Hxmz.entrySet()) {
                         if (entry.getKey() != Block.getBlockFromName(array[1])) {
                             hxmz.put(entry.getKey(), entry.getValue());
-                        }
-                        if (lRvb.\u2006\u200e\u2005\u2005\u2009\u2003\u2003\u2006\u200f) {
-                            throw null;
-                        }
                     }
                     Search.Hxmz = (HashMap<Block, Color>)hxmz;
                     Wrapper.ypJK().JDPi();
@@ -69,22 +60,16 @@ public class lRvb extends HAxG
                     if (((QSTh)vlwv.hNxW.qHPF((Class<Search>)QSTh.class)).IuiN()) {
                         Wrapper.mc.renderGlobal.loadRenderers();
                     }
-                    if (lRvb.\u2006\u200e\u2005\u2005\u2009\u2003\u2003\u2006\u200f) {
-                        throw null;
                     }
                 }
                 else {
                     HAxG.TuzD("Thats not a block?");
-                    if (lRvb.\u2006\u200e\u2005\u2005\u2009\u2003\u2003\u2006\u200f) {
-                        throw null;
                     }
                 }
             }
             else {
                 HAxG.TuzD(this.ZlRY());
             }
-            if (lRvb.\u2006\u200e\u2005\u2005\u2009\u2003\u2003\u2006\u200f) {
-                throw null;
             }
         }
         catch (Exception ex) {

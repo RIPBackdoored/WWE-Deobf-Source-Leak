@@ -36,9 +36,6 @@ public class XwHe extends kUUQ
         int n8;
         if (this.vwqN) {
             n8 = new Color(15, 15, 15, 245).getRGB();
-            if (XwHe.\u200c\u200f\u2003\u2000\u2001\u200c\u2000\u2008) {
-                throw null;
-            }
         }
         else {
             n8 = new Color(15, 15, 15, 215).getRGB();
@@ -51,9 +48,6 @@ public class XwHe extends kUUQ
         int n13;
         if (this.vwqN) {
             n13 = new Color(15, 15, 15, 245).getRGB();
-            if (XwHe.\u200c\u200f\u2003\u2000\u2001\u200c\u2000\u2008) {
-                throw null;
-            }
         }
         else {
             n13 = new Color(15, 15, 15, 215).getRGB();
@@ -77,13 +71,8 @@ public class XwHe extends kUUQ
         if (this.aXbq(n, n2) && Desktop.isDesktopSupported()) {
             try {
                 Desktop.getDesktop().browse(this.HTYR.toURI());
-                if (XwHe.\u200c\u200f\u2003\u2000\u2001\u200c\u2000\u2008) {
-                    throw null;
-                }
-            }
             catch (Exception ex) {
                 ex.printStackTrace();
-            }
         }
     }
     

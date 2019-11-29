@@ -26,19 +26,12 @@ public class pOnu extends HAxG
         }
         if (array[0].equalsIgnoreCase("dismount")) {
             this.zqQw = true;
-            if (pOnu.\u200a\u200b\u2003\u200a\u200a) {
-                throw null;
-            }
         }
         else {
             if (!array[0].equalsIgnoreCase("remount")) {
                 HAxG.TuzD("dismount or remount, not " + array[0]);
                 return;
-            }
             this.zqQw = false;
-            if (pOnu.\u200a\u200b\u2003\u200a\u200a) {
-                throw null;
-            }
         }
         if (Wrapper.mc.player.getRidingEntity() != null && this.zqQw) {
             Wrapper.mc.renderGlobal.loadRenderers();
@@ -46,9 +39,6 @@ public class pOnu extends HAxG
             Wrapper.mc.player.dismountRidingEntity();
             Wrapper.mc.world.removeEntity(this.FDBx);
             hSNE.lyvR(this);
-            if (pOnu.\u200a\u200b\u2003\u200a\u200a) {
-                throw null;
-            }
         }
         else if (!this.zqQw) {
             this.FDBx.isDead = false;
@@ -74,19 +64,13 @@ public class pOnu extends HAxG
         try {
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 this.FDBx = null;
-            }
             if (this.FDBx == null && Wrapper.mc.player.getRidingEntity() != null) {
                 this.FDBx = Wrapper.mc.player.getRidingEntity();
                 Wrapper.mc.player.dismountRidingEntity();
                 Wrapper.mc.world.removeEntity(this.FDBx);
-            }
             if (this.FDBx != null) {
                 this.FDBx.setPosition(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ);
                 Wrapper.mc.player.connection.sendPacket((Packet)new CPacketVehicleMove(this.FDBx));
-            }
-            if (pOnu.\u200a\u200b\u2003\u200a\u200a) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             HAxG.TuzD("This really shouldent be happening):");

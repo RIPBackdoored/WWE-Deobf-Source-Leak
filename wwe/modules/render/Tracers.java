@@ -68,8 +68,6 @@ public class Tracers extends qMIe
                     }
                     GL11.glEnd();
                 }
-                if (Tracers.\u200d\u200d\u200f\u2001\u2006\u2001) {
-                    throw null;
                 }
             }
             GL11.glDisable(3042);
@@ -110,8 +108,6 @@ public class Tracers extends qMIe
                     }
                     GL11.glEnd();
                 }
-                if (Tracers.\u200d\u200d\u200f\u2001\u2006\u2001) {
-                    throw null;
                 }
             }
             GL11.glDisable(3042);
@@ -143,9 +139,6 @@ public class Tracers extends qMIe
                     final double n9 = entity3.lastTickPosZ + (entity3.posZ - entity3.lastTickPosZ) * yYGD.XgOL().renderPartialTicks - yYGD.LkVR();
                     if (!vlwv.Zqnd().UsVJ(entity3.getName())) {
                         oisD(Color.red);
-                        if (Tracers.\u200d\u200d\u200f\u2001\u2006\u2001) {
-                            throw null;
-                        }
                     }
                     else {
                         oisD(JIfG.JzFV(0xEE0089D9FBF91658L ^ 0xEE0089D9FBF91659L, 1.0f));
@@ -160,8 +153,6 @@ public class Tracers extends qMIe
                     }
                     GL11.glEnd();
                 }
-                if (Tracers.\u200d\u200d\u200f\u2001\u2006\u2001) {
-                    throw null;
                 }
             }
             GL11.glDisable(3042);
@@ -202,8 +193,6 @@ public class Tracers extends qMIe
                     }
                     GL11.glEnd();
                 }
-                if (Tracers.\u200d\u200d\u200f\u2001\u2006\u2001) {
-                    throw null;
                 }
             }
             GL11.glDisable(3042);

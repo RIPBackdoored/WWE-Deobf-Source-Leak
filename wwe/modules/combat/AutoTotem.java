@@ -45,8 +45,6 @@ public class AutoTotem extends qMIe
                     ++n;
                 }
                 ++i;
-                if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                    throw null;
                 }
             }
             if (itemStackFromSlot.getItem() != Items.TOTEM_OF_UNDYING) {
@@ -58,24 +56,17 @@ public class AutoTotem extends qMIe
                         int n3;
                         if (j < 9) {
                             n3 = j + 36;
-                            if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                                throw null;
-                            }
                         }
                         else {
                             n3 = j;
                         }
                         playerController.windowClick(n2, n3, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                         Wrapper.mc.playerController.windowClick(0, 45, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
-                        if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                            throw null;
                         }
                         break;
                     }
                     else {
                         ++j;
-                        if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                            throw null;
                         }
                         continue;
                     }
@@ -89,15 +80,11 @@ public class AutoTotem extends qMIe
             while (k < mainInventory.size()) {
                 if (mainInventory.get(k) != ItemStack.EMPTY && (itemStackFromSlot2 == null || itemStackFromSlot2.getItem() != Items.TOTEM_OF_UNDYING) && ((ItemStack)mainInventory.get(k)).getItem() == Items.TOTEM_OF_UNDYING) {
                     this.WCGE(k);
-                    if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                        throw null;
                     }
                     break;
                 }
                 else {
                     ++k;
-                    if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                        throw null;
                     }
                     continue;
                 }
@@ -112,8 +99,6 @@ public class AutoTotem extends qMIe
             int n3;
             if (n < 9) {
                 n3 = n + 36;
-                if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                    throw null;
                 }
             }
             else {
@@ -126,8 +111,6 @@ public class AutoTotem extends qMIe
             int n5;
             if (n < 9) {
                 n5 = n + 36;
-                if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                    throw null;
                 }
             }
             else {
@@ -148,8 +131,6 @@ public class AutoTotem extends qMIe
                 n += Wrapper.mc.player.inventory.getStackInSlot(i).getCount();
             }
             ++i;
-            if (AutoTotem.\u200c\u200e\u2008\u2006\u2005\u2001) {
-                throw null;
             }
         }
         return n;

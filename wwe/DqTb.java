@@ -59,13 +59,9 @@ public class DqTb
                     bufferedWriter.write(qmIe.czUH());
                     bufferedWriter.write("\r\n");
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -84,25 +80,15 @@ public class DqTb
                 for (final qMIe qmIe : vlwv.hNxW.xRen()) {
                     if (qmIe.czUH().equals(line)) {
                         qmIe.GDVp();
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         continue;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -124,13 +110,9 @@ public class DqTb
                     bufferedWriter.write(qmIe.czUH().toLowerCase().replace(" ", "") + " " + Keyboard.getKeyName(aPjp));
                     bufferedWriter.write("\r\n");
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -155,17 +137,11 @@ public class DqTb
                     if (s.equalsIgnoreCase(qmIe.czUH().toLowerCase().replace(" ", ""))) {
                         qmIe.hzzk(keyIndex);
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -181,13 +157,9 @@ public class DqTb
             for (final LdXC ldXC : vlwv.Zqnd().padc) {
                 bufferedWriter.write(ldXC.CjlP() + " " + ldXC.ugqf());
                 bufferedWriter.write("\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -205,13 +177,9 @@ public class DqTb
             while ((line = bufferedReader.readLine()) != null) {
                 final String trim = line.trim();
                 vlwv.Zqnd().kDXm(trim.split(" ")[0], trim.split(" ")[1]);
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -228,13 +196,9 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final Block block : Xray.dMba) {
                 bufferedWriter.write(Block.getIdFromBlock(block) + ":" + block.getLocalizedName().replaceAll("\\s+", "_") + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -251,13 +215,9 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 Xray.dMba.add(Block.getBlockById(Integer.parseInt(line.trim().split(":")[0])));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -283,13 +243,9 @@ public class DqTb
                 if (icRI.MATs()) {
                     bufferedWriter.write(icRI.lJZv.czUH() + ":" + icRI.VQBN + ":Double:" + icRI.OnGi() + "\r\n");
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -315,31 +271,16 @@ public class DqTb
                     if (icRI.lJZv.czUH().equals(s) && icRI.VQBN.equals(s2)) {
                         if (s3.equals("Boolean") && icRI.wnpo()) {
                             ((BooleanValue)icRI).thqV(Boolean.parseBoolean(s4));
-                            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                                throw null;
-                            }
-                        }
                         else if (s3.equals("String") && icRI.dTln()) {
                             ((ModeValue)icRI).thqV(s4);
-                            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                                throw null;
-                            }
-                        }
                         else if (s3.equals("Double") && icRI.MATs()) {
                             ((NumberValue)icRI).thqV(Double.parseDouble(s4));
-                        }
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -356,8 +297,6 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final FinI finI : vlwv.pRNz.nYFA) {
                 bufferedWriter.write(finI.XLez.name() + "=" + finI.kVnf + "=" + finI.CQIZ + "=" + finI.aBNN + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             final BufferedWriter bufferedWriter2 = bufferedWriter;
@@ -371,8 +310,6 @@ public class DqTb
             final hEGx prNz4 = vlwv.pRNz;
             bufferedWriter2.write(append3.append(hEGx.aTlJ.wMBz).append("\r\n").toString());
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -399,8 +336,6 @@ public class DqTb
                         finI.CQIZ = Integer.parseInt(s3);
                         finI.aBNN = Boolean.parseBoolean(s4);
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 final hEGx prNz = vlwv.pRNz;
@@ -409,13 +344,9 @@ public class DqTb
                 hEGx.aTlJ.zzJD = Integer.parseInt(s3);
                 final hEGx prNz3 = vlwv.pRNz;
                 hEGx.aTlJ.wMBz = Boolean.parseBoolean(s4);
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -433,13 +364,9 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final RCMD rcmd : vlwv.fomn.JNkz) {
                 bufferedWriter.write(rcmd.VGnY + " " + rcmd.zlwQ + " " + rcmd.elYg + " " + rcmd.Kbjh + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -466,17 +393,11 @@ public class DqTb
                         rcmd.elYg = Integer.parseInt(s3);
                         rcmd.Kbjh = Integer.parseInt(s4);
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -495,13 +416,9 @@ public class DqTb
             final Iterator<Item> iterator = InventoryCleaner.KtLJ.iterator();
             while (iterator.hasNext()) {
                 bufferedWriter.write(Item.getIdFromItem((Item)iterator.next()) + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -518,13 +435,9 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 InventoryCleaner.KtLJ.add(Item.getItemById(Integer.parseInt(line)));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -546,8 +459,6 @@ public class DqTb
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             list.add(line);
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         bufferedReader.close();
@@ -567,8 +478,6 @@ public class DqTb
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             list.add(line.replaceAll("!p", networkPlayerInfo.getGameProfile().getName()));
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         bufferedReader.close();
@@ -588,8 +497,6 @@ public class DqTb
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             list.add(line.replaceAll("!p", networkPlayerInfo.getGameProfile().getName()));
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         bufferedReader.close();
@@ -606,13 +513,9 @@ public class DqTb
             for (final Xssq xssq : WayPoints.COfQ) {
                 bufferedWriter.write(xssq.CkDS + ":" + xssq.Nehz.getX() + ":" + xssq.Nehz.getY() + ":" + xssq.Nehz.getZ() + ":" + xssq.rnCG.getDyeDamage() + ":" + xssq.ADFS + ":" + xssq.kKMJ + ":" + xssq.MUAZ);
                 bufferedWriter.write("\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -630,13 +533,9 @@ public class DqTb
             while ((line = bufferedReader.readLine()) != null) {
                 final String trim = line.trim();
                 WayPoints.VlSt(new Xssq(trim.split(":")[0], new BlockPos(Integer.parseInt(trim.split(":")[1]), Integer.parseInt(trim.split(":")[2]), Integer.parseInt(trim.split(":")[3])), EnumDyeColor.byDyeDamage(Integer.parseInt(trim.split(":")[4])), Boolean.parseBoolean(trim.split(":")[5]), Boolean.parseBoolean(trim.split(":")[6]), Boolean.parseBoolean(trim.split(":")[7])));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -654,13 +553,9 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final qMIe qmIe : vlwv.hNxW.xRen()) {
                 bufferedWriter.write(qmIe.czUH() + ":" + qmIe.sUHq() + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -683,22 +578,13 @@ public class DqTb
                     if (qmIe.czUH().equals(s)) {
                         final qMIe qmIe2 = qmIe;
                         final boolean b = true;
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         qmIe2.FSRf(b);
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -724,13 +610,9 @@ public class DqTb
                         bufferedWriter.write(qmIe.czUH());
                         bufferedWriter.write("\r\n");
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 bufferedWriter.close();
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             catch (Exception ex) {}
@@ -750,13 +632,9 @@ public class DqTb
                     if (icRI.MATs()) {
                         bufferedWriter2.write(icRI.lJZv.czUH() + ":" + icRI.VQBN + ":Double:" + icRI.OnGi() + "\r\n");
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 bufferedWriter2.close();
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             catch (Exception ex2) {}
@@ -768,18 +646,12 @@ public class DqTb
                 final BufferedWriter bufferedWriter3 = new BufferedWriter(new FileWriter(file4));
                 for (final Block block : Xray.dMba) {
                     bufferedWriter3.write(Block.getIdFromBlock(block) + ":" + block.getLocalizedName().replaceAll("\\s+", "_") + "\r\n");
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 bufferedWriter3.close();
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             catch (Exception ex3) {}
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
     }
@@ -799,27 +671,19 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 list.add(line);
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             for (final qMIe qmIe : vlwv.hNxW.xRen()) {
                 if (list.contains(qmIe.czUH()) && !qmIe.IuiN()) {
                     qmIe.GDVp();
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else if (!list.contains(qmIe.czUH()) && qmIe.IuiN()) {
                     qmIe.GDVp();
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -841,31 +705,16 @@ public class DqTb
                     if (icRI.lJZv.czUH().equals(s2) && icRI.VQBN.equals(s3)) {
                         if (s4.equals("Boolean") && icRI.wnpo()) {
                             ((BooleanValue)icRI).thqV(Boolean.parseBoolean(s5));
-                            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                                throw null;
-                            }
-                        }
                         else if (s4.equals("String") && icRI.dTln()) {
                             ((ModeValue)icRI).thqV(s5);
-                            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                                throw null;
-                            }
-                        }
                         else if (s4.equals("Double") && icRI.MATs()) {
                             ((NumberValue)icRI).thqV(Double.parseDouble(s5));
-                        }
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader2.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex2) {
@@ -881,14 +730,10 @@ public class DqTb
             String line3;
             while ((line3 = bufferedReader3.readLine()) != null) {
                 dMba.add(Block.getBlockById(Integer.parseInt(line3.trim().split(":")[0])));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             Xray.dMba = dMba;
             bufferedReader3.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex3) {
@@ -1010,12 +855,8 @@ public class DqTb
                 if (qmIe.czUH().equals(trim)) {
                     list.add(qmIe);
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         bufferedReader.close();
@@ -1031,13 +872,9 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final Map.Entry<Block, Color> entry : Search.Hxmz.entrySet()) {
                 bufferedWriter.write(Block.getIdFromBlock((Block)entry.getKey()) + ":" + entry.getKey().getLocalizedName().replaceAll("\\s+", "_") + ":" + entry.getValue().getRed() + ":" + entry.getValue().getGreen() + ":" + entry.getValue().getBlue() + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -1054,13 +891,9 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 Search.Hxmz.put(Block.getBlockById(Integer.parseInt(line.trim().split(":")[0])), new Color(Integer.parseInt(line.trim().split(":")[2]), Integer.parseInt(line.trim().split(":")[3]), Integer.parseInt(line.trim().split(":")[4])));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1081,8 +914,6 @@ public class DqTb
             bufferedWriter.write("3:" + AutoSign.ALQZ[2].getUnformattedText() + "\r\n");
             bufferedWriter.write("4:" + AutoSign.ALQZ[3].getUnformattedText() + "\r\n");
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -1112,13 +943,9 @@ public class DqTb
                 if (s.equals("4")) {
                     AutoSign.ALQZ[3] = (ITextComponent)new TextComponentString(s2);
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1139,21 +966,15 @@ public class DqTb
                 String plwx;
                 if (wwe/DqTb.Plwx.equals("") || wwe/DqTb.Plwx == null) {
                     plwx = "WWEnothing";
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else {
                     plwx = wwe/DqTb.Plwx;
                 }
                 bufferedWriter2.write(append.append(plwx).append("\r\n").toString());
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -1177,19 +998,12 @@ public class DqTb
                         wwe/DqTb.wgqj = Boolean.parseBoolean(s2);
                         if (!plwx.equals("WWEnothing")) {
                             wwe/DqTb.Plwx = plwx;
-                        }
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -1205,13 +1019,9 @@ public class DqTb
             for (final YEmw yEmw : LogOutSpot.zEsy) {
                 bufferedWriter.write(yEmw.AAtC + ":" + yEmw.Yhqv + ":" + yEmw.EQEV + ":" + yEmw.YdCe + ":" + yEmw.TZqL + ":" + yEmw.AepW.getTime());
                 bufferedWriter.write("\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -1229,13 +1039,9 @@ public class DqTb
             while ((line = bufferedReader.readLine()) != null) {
                 final String trim = line.trim();
                 LogOutSpot.zEsy.add(new YEmw(Double.parseDouble(trim.split(":")[1]), Double.parseDouble(trim.split(":")[2]), Double.parseDouble(trim.split(":")[3]), trim.split(":")[0], UUID.fromString(trim.split(":")[4]), null, new Date(Long.parseLong(trim.split(":")[5]))));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1251,17 +1057,12 @@ public class DqTb
                 if (mpCo != null) {
                     if (qdlI.JTTe.size() > qdlI.GHWo) {
                         qdlI.JTTe.set(qdlI.JTTe.size() - 1, mpCo);
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                     }
                     else {
                         qdlI.JTTe.add(mpCo);
                     }
                 }
             }
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1290,8 +1091,6 @@ public class DqTb
                 while (i < "To edit   theses    symbols   go to your.minecraftfolder,   then wwe  then edit the Sign  Symbols.txt   file. Replace   sign".length()) {
                     bufferedWriter.write("To edit   theses    symbols   go to your.minecraftfolder,   then wwe  then edit the Sign  Symbols.  txt file. Replace   sign".charAt(i) + "\r\n");
                     ++i;
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 bufferedWriter.close();
@@ -1300,13 +1099,9 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 list.add(line);
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1324,13 +1119,9 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final Block block : Nuker.mTio) {
                 bufferedWriter.write(Block.getIdFromBlock(block) + ":" + block.getLocalizedName().replaceAll("\\s+", "_") + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -1347,13 +1138,9 @@ public class DqTb
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 Nuker.mTio.add(Block.getBlockById(Integer.parseInt(line.trim().split(":")[0])));
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1379,15 +1166,10 @@ public class DqTb
                     while (j < length2) {
                         sb.append("\"" + otco[j] + "\",");
                         ++j;
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                     }
                     final String string = sb.toString();
                     bufferedWriter.write(wwe/DqTb.XGUi + ":" + string.substring(0, string.length() - 1) + "\r\n");
                     ++i;
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 bufferedWriter.close();
@@ -1406,16 +1188,10 @@ public class DqTb
                     final UUBS.wwe/DqTb wwe/DqTb3 = array2[k];
                     if (wwe/DqTb3.XGUi.equalsIgnoreCase(s)) {
                         wwe/DqTb2 = wwe/DqTb3;
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
                         ++k;
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         continue;
                     }
                 }
@@ -1424,13 +1200,8 @@ public class DqTb
                     final ArrayList<String> list = new ArrayList<String>();
                     while (matcher.find()) {
                         list.add(matcher.group(1));
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                     }
                     wwe/DqTb2.xlWb = list.toArray(new String[list.size()]);
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else {
@@ -1438,19 +1209,12 @@ public class DqTb
                     final ArrayList<String> list2 = new ArrayList<String>();
                     while (matcher2.find()) {
                         list2.add(matcher2.group(1));
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                     }
                     ChatBot.aVmP.add(new UUBS.wwe/DqTb(s, (String[])list2.toArray(new String[list2.size()])));
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1471,8 +1235,6 @@ public class DqTb
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             list.add(line);
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         bufferedReader.close();
@@ -1492,14 +1254,9 @@ public class DqTb
                     while (i < length) {
                         sb.append("\"" + qfVg[i] + "\",");
                         ++i;
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                     }
                     final String string = sb.toString();
                     bufferedWriter.write(wwe/DqTb.zVOT + ":" + string.substring(0, string.length() - 1) + "\r\n");
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 bufferedWriter.close();
@@ -1513,15 +1270,9 @@ public class DqTb
                 for (final xbUc.wwe/DqTb wwe/DqTb3 : announcer.objE) {
                     if (wwe/DqTb3.zVOT.equalsIgnoreCase(s)) {
                         wwe/DqTb2 = wwe/DqTb3;
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                         continue;
                     }
                 }
@@ -1530,19 +1281,12 @@ public class DqTb
                     final ArrayList<String> list = new ArrayList<String>();
                     while (matcher.find()) {
                         list.add(matcher.group(1));
-                        if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                            throw null;
-                        }
                     }
                     wwe/DqTb2.ACbc = list.toArray(new String[list.size()]);
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1566,8 +1310,6 @@ public class DqTb
             bufferedWriter.write("Use WWE Menu:" + ssGO.jMLq + "\r\n");
             bufferedWriter.write("Main Menu Picture Cycle:" + qdlI.bppf);
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1589,20 +1331,14 @@ public class DqTb
                 final String itOx = line.trim().split(":")[1];
                 if (s.equals("Auto Reconnect")) {
                     vlwv.lHpz = Boolean.parseBoolean(itOx);
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else if (s.equals("Command Preset")) {
                     DhFe.itOx = itOx;
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else if (s.equals("Custom Font")) {
                     bozE.Jfgf = new giQz(new Font(itOx.trim(), 0, 36), true, 8);
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else if (s.equals("Main Menu Index")) {
@@ -1610,26 +1346,18 @@ public class DqTb
                     if (int1 < qdlI.JTTe.size()) {
                         qdlI.kbXN = int1;
                     }
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else if (s.equals("Use WWE Menu")) {
                     ssGO.jMLq = Boolean.parseBoolean(itOx);
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else if (s.equals("Main Menu Picture Cycle")) {
                     qdlI.bppf = Boolean.parseBoolean(itOx);
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1648,13 +1376,9 @@ public class DqTb
             final Iterator<aRkr> iterator = wGez.VkYf.iterator();
             while (iterator.hasNext()) {
                 bufferedWriter.write(iterator.next().poph() + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1675,22 +1399,16 @@ public class DqTb
                 if (line.contains(":")) {
                     final String[] array = line.split(":", 0);
                     wGez.VkYf.add(new aRkr(array[0], array[1]));
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                     continue;
                 }
                 else {
                     wGez.VkYf.add(new aRkr(line.trim()));
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                     continue;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1704,8 +1422,6 @@ public class DqTb
             File file = new File(this.aClN.getAbsolutePath(), s + ".txt");
             if (!file.exists()) {
                 file.createNewFile();
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             else if (file.exists()) {
@@ -1714,14 +1430,10 @@ public class DqTb
                 while (file.exists()) {
                     file = new File(this.aClN.getAbsolutePath(), s + "_" + n + ".txt");
                     ++n;
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 file.createNewFile();
                 HAxG.TuzD("You already have a note bot song with the name " + s + " so we are renaming it to, " + s + "_" + n);
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             else {
@@ -1730,19 +1442,13 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             for (final ajLR.wwe/ABpb wwe/ABpb : ajLR.nOsS) {
                 bufferedWriter.write("lyric:" + wwe/ABpb.RZpY + ":" + wwe/ABpb.MSAn + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             for (final ajLR.wwe/WkII wwe/WkII : ajLR.FgWb) {
                 bufferedWriter.write(wwe/WkII.cCcA + ":" + wwe/WkII.fljR + ":" + wwe/WkII.eEsY + "\r\n");
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1766,8 +1472,6 @@ public class DqTb
                 final String s4 = trim.split(":")[2];
                 if (s2.equals("lyric")) {
                     ajLR.nOsS.add(new ajLR.wwe/ABpb(Integer.parseInt(s3), s4));
-                    if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                        throw null;
                     }
                 }
                 else {
@@ -1777,13 +1481,9 @@ public class DqTb
                     }
                     ajLR.FgWb.add(new ajLR.wwe/WkII(Integer.parseInt(s2), Integer.parseInt(s3), int1));
                 }
-                if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                    throw null;
                 }
             }
             bufferedReader.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -1803,8 +1503,6 @@ public class DqTb
                 list.add(file);
             }
             ++i;
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         return list;
@@ -1819,8 +1517,6 @@ public class DqTb
             final BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file, true));
             bufferedWriter.write(s);
             bufferedWriter.close();
-            if (DqTb.\u200d\u2007\u2001\u2004\u2006\u2001\u2002\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {

@@ -31,9 +31,6 @@ public class BiVj extends kUUQ
         int n8;
         if (this.vwqN) {
             n8 = new Color(15, 15, 15, 245).getRGB();
-            if (BiVj.\u200f\u2009\u200c\u2006\u2003) {
-                throw null;
-            }
         }
         else {
             n8 = new Color(15, 15, 15, 215).getRGB();
@@ -46,9 +43,6 @@ public class BiVj extends kUUQ
         int n13;
         if (this.vwqN) {
             n13 = new Color(15, 15, 15, 245).getRGB();
-            if (BiVj.\u200f\u2009\u200c\u2006\u2003) {
-                throw null;
-            }
         }
         else {
             n13 = new Color(15, 15, 15, 215).getRGB();

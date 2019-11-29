@@ -28,9 +28,6 @@ public class nxlz extends GuiSlot
         boolean b;
         if (this.bsOT == n) {
             b = true;
-            if (nxlz.\u200b) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -51,9 +48,6 @@ public class nxlz extends GuiSlot
         this.Inrt.drawString(this.Inrt.qLsH(), aRkr.dcDV(), n2, n3 + 1, 16777215);
         if (aRkr.RZeI()) {
             this.Inrt.drawString(this.Inrt.qLsH(), "Premium", n2, n3 + 12, 65280);
-            if (nxlz.\u200b) {
-                throw null;
-            }
         }
         else {
             this.Inrt.drawString(this.Inrt.qLsH(), "§mPremium", n2, n3 + 12, 10027008);

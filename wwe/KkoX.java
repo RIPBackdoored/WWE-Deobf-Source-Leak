@@ -39,9 +39,6 @@ public class KkoX
         boolean uiHu;
         if (n > this.RDoM && n < this.RDoM + n4 && n2 > this.VEXW - 1 && n2 < this.VEXW + n5) {
             uiHu = true;
-            if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                throw null;
-            }
         }
         else {
             uiHu = false;
@@ -54,15 +51,9 @@ public class KkoX
         int n8;
         if (this.eaRR.Ezsz != null && this.eaRR.Ezsz == this) {
             n8 = new Color(0, 120, 215, 100).getRGB();
-            if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                throw null;
-            }
         }
         else if (this.UIHu) {
             n8 = new Color(0, 120, 215, 50).getRGB();
-            if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                throw null;
-            }
         }
         else {
             n8 = -1;
@@ -72,9 +63,6 @@ public class KkoX
         String s;
         if (this.EGLp == null) {
             s = this.mxzj;
-            if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                throw null;
-            }
         }
         else {
             s = this.EGLp.getName();
@@ -89,10 +77,6 @@ public class KkoX
                 final gbIL eaRR = this.eaRR;
                 final gbIL eaRR2 = this.eaRR;
                 eaRR.iekf = new File(gbIL.yUUB.getAbsolutePath().replaceAll("\\.", ""));
-                if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                    throw null;
-                }
-            }
             final gbIL eaRR3 = this.eaRR;
             gbIL.yUUB = this.eaRR.iekf;
             this.eaRR.Ezsz = null;
@@ -104,24 +88,14 @@ public class KkoX
                 this.eaRR.iekf = this.eaRR.Ezsz.EGLp;
                 this.eaRR.Ezsz = null;
                 this.eaRR.initGui();
-                if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                    throw null;
-                }
-            }
             else if (this.eaRR.Ezsz.EGLp.isFile()) {
                 if (this.eaRR.YMUh(this.eaRR.Ezsz.EGLp)) {
                     this.eaRR.WmnF.gyPG(this.eaRR.Ezsz.EGLp);
                     this.eaRR.initGui();
                     this.eaRR.mc.displayGuiScreen(this.eaRR.MRWv);
-                    if (KkoX.\u200e\u200f\u2001\u200e\u2008\u2001\u200a) {
-                        throw null;
-                    }
-                }
                 else {
                     this.eaRR.iHDa = TextFormatting.RED + "Incorrect file type";
-                }
                 this.eaRR.Ezsz = null;
-            }
             return true;
         }
         if (this.UIHu) {

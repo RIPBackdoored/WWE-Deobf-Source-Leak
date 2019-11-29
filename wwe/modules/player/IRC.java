@@ -24,9 +24,6 @@ public class IRC extends qMIe
             for (final Jhbg jhbg : vlwv.IJGi.QgjU()) {
                 Wrapper.mc.player.sendMessage((ITextComponent)new TextComponentString(TextFormatting.DARK_AQUA + "[IRC] " + TextFormatting.RESET + jhbg.gUTp() + ": " + jhbg.EbtK().replaceAll(">", TextFormatting.GREEN + ">")));
                 jhbg.ihLK(true);
-                if (IRC.\u2000\u200b\u200a\u200e) {
-                    throw null;
-                }
             }
         }
     }

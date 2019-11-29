@@ -62,8 +62,6 @@ public class Step extends qMIe
                 if (axisAlignedBB.maxY > maxY) {
                     maxY = axisAlignedBB.maxY;
                 }
-                if (Step.\u200a\u200d\u2002\u200a\u200f\u2004) {
-                    throw null;
                 }
             }
             final double n = maxY - player.posY;
@@ -84,8 +82,6 @@ public class Step extends qMIe
                 if (axisAlignedBB2.maxY > maxY2) {
                     maxY2 = axisAlignedBB2.maxY;
                 }
-                if (Step.\u200a\u200d\u2002\u200a\u200f\u2004) {
-                    throw null;
                 }
             }
             final double n2 = maxY2 - player.posY;

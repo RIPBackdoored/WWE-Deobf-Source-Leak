@@ -976,8 +976,6 @@ public class cRUT
             if (n == 205) {
                 this.YJKE = 1;
                 this.qSwY = 0;
-                if (cRUT.\u2000\u200d\u200c) {
-                    throw null;
                 }
             }
         }
@@ -1002,8 +1000,6 @@ public class cRUT
             }
             if (n == 28) {
                 this.wHKN((Category)((AzzV[])Category.fgCR())[this.tMKv]).get(this.qSwY).GDVp();
-                if (cRUT.\u2000\u200d\u200c) {
-                    throw null;
                 }
             }
         }
@@ -1015,9 +1011,6 @@ public class cRUT
                         boolean b;
                         if (!this.LtmJ(this.wHKN((Category)((AzzV[])Category.fgCR())[this.tMKv]).get(this.qSwY)).get(this.Jqfu).OnGi()) {
                             b = true;
-                            if (cRUT.\u2000\u200d\u200c) {
-                                throw null;
-                            }
                         }
                         else {
                             b = false;
@@ -1044,9 +1037,6 @@ public class cRUT
                         boolean b2;
                         if (!this.LtmJ(this.wHKN((Category)((AzzV[])Category.fgCR())[this.tMKv]).get(this.qSwY)).get(this.Jqfu).OnGi()) {
                             b2 = true;
-                            if (cRUT.\u2000\u200d\u200c) {
-                                throw null;
-                            }
                         }
                         else {
                             b2 = false;
@@ -1164,8 +1154,6 @@ public class cRUT
             if (icRI.lJZv.equals(qmIe)) {
                 list.add(icRI);
             }
-            if (cRUT.\u2000\u200d\u200c) {
-                throw null;
             }
         }
         return (ArrayList<IcRI>)list;
@@ -1183,14 +1171,10 @@ public class cRUT
                 }
                 else {
                     ++i;
-                    if (cRUT.\u2000\u200d\u200c) {
-                        throw null;
                     }
                     continue;
                 }
             }
-            if (cRUT.\u2000\u200d\u200c) {
-                throw null;
             }
         }
         else {
@@ -1204,8 +1188,6 @@ public class cRUT
                 }
                 else {
                     ++j;
-                    if (cRUT.\u2000\u200d\u200c) {
-                        throw null;
                     }
                     continue;
                 }

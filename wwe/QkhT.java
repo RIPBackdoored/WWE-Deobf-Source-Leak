@@ -31,9 +31,6 @@ public class QkhT extends GuiScreen
         while (iterator.hasNext()) {
             this.EqPG.add(new Deoo(this, iterator.next(), this.width / 2 - n2 / 2, n, n2, 10));
             n += 12;
-            if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                throw null;
-            }
         }
         this.addButton(new GuiButton(0, this.width / 2 - 25, this.height - 25, 50, 20, "Back"));
         this.addButton(new GuiButton(1, this.width / 2 - 80, this.height - 25, 50, 20, "Edit"));
@@ -45,15 +42,9 @@ public class QkhT extends GuiScreen
     public void func_73863_a(final int n, final int n2, final float n3) {
         if (this.EqPG.size() < (this.height - 70) / 12) {
             this.VgRj = 0;
-            if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                throw null;
-            }
         }
         else if (this.VgRj > 0) {
             this.VgRj = 0;
-            if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                throw null;
-            }
         }
         else if (Math.abs(this.VgRj) > this.EqPG.size() * 12 - (this.height - 70)) {
             this.VgRj = -(this.EqPG.size() * 12 - (this.height - 70));
@@ -65,9 +56,6 @@ public class QkhT extends GuiScreen
         while (i < this.EqPG.size()) {
             this.EqPG.get(i).mmCA(n, n2, n3);
             ++i;
-            if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                throw null;
-            }
         }
         GL11.glDisable(3089);
         GL11.glPopMatrix();
@@ -88,19 +76,12 @@ public class QkhT extends GuiScreen
             if (wtTS.VUFK) {
                 if (this.wtTS == wtTS) {
                     this.wtTS = null;
-                    if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                        throw null;
-                    }
                 }
                 else {
                     this.wtTS = wtTS;
                 }
                 return;
-            }
             ++i;
-            if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                throw null;
-            }
         }
         this.wtTS = null;
         this.rbTn.mouseClicked(n, n2, n3);
@@ -144,10 +125,7 @@ public class QkhT extends GuiScreen
                     this.EqPG.add(new Deoo(this, file, this.width / 2 - n3 / 2, n2, n3, 10));
                     n2 += 12;
                 }
-                if (QkhT.\u2003\u200d\u200d\u200c\u2000\u2004\u200a\u200c) {
-                    throw null;
                 }
-            }
         }
     }
 }

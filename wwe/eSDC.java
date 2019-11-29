@@ -39,9 +39,6 @@ public class eSDC extends GuiScreen
         while (i < eSDC.ybni.size()) {
             eSDC.ybni.get(i).xvET(n, n2, n3);
             ++i;
-            if (eSDC.\u200f\u2002\u2009\u2006\u200b\u2003\u2001\u200d) {
-                throw null;
-            }
         }
         super.drawScreen(n, n2, n3);
     }
@@ -56,9 +53,6 @@ public class eSDC extends GuiScreen
             lnec.XMpd = lnec.Bcna + scaledResolution.getScaledWidth() / 2;
             lnec.ZwCC = lnec.uvzZ + scaledResolution.getScaledHeight() / 2;
             ++i;
-            if (eSDC.\u200f\u2002\u2009\u2006\u200b\u2003\u2001\u200d) {
-                throw null;
-            }
         }
         this.updateScreen();
     }
@@ -84,19 +78,13 @@ public class eSDC extends GuiScreen
                 if (dWheel > 0) {
                     final Lnec lnec2 = lnec;
                     lnec2.ZwCC += 50;
-                    if (eSDC.\u200f\u2002\u2009\u2006\u200b\u2003\u2001\u200d) {
-                        throw null;
-                    }
                 }
                 else if (dWheel < 0) {
                     final Lnec lnec3 = lnec;
                     lnec3.ZwCC -= 50;
                 }
                 ++i;
-                if (eSDC.\u200f\u2002\u2009\u2006\u200b\u2003\u2001\u200d) {
-                    throw null;
                 }
-            }
         }
         super.handleMouseInput();
     }
@@ -106,9 +94,6 @@ public class eSDC extends GuiScreen
         ResourceLocation dkaH = null;
         try {
             dkaH = FIwW.dkaH(Lnec.tCKN(ImageIO.read(eSDC.class.getResourceAsStream("/assets/minecraft/textures/wwe/unknown.png")), 500), "wweunknown");
-            if (eSDC.\u200f\u2002\u2009\u2006\u200b\u2003\u2001\u200d) {
-                throw null;
-            }
         }
         catch (IOException ex) {
             ex.printStackTrace();
@@ -143,16 +128,12 @@ public class eSDC extends GuiScreen
             if (i % 4 == 0) {
                 zwCC += 120;
                 xMpd = n;
-            }
             xMpd += 120;
             lnec.XMpd = xMpd;
             lnec.ZwCC = zwCC;
             lnec.Bcna = xMpd - scaledResolution.getScaledWidth() / 2;
             lnec.uvzZ = zwCC - scaledResolution.getScaledHeight() / 2;
             ++i;
-            if (eSDC.\u200f\u2002\u2009\u2006\u200b\u2003\u2001\u200d) {
-                throw null;
-            }
         }
     }
 }

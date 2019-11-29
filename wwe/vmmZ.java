@@ -13,9 +13,6 @@ public class vmmZ extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             RaoI(array);
-            if (vmmZ.\u2000\u2009\u2004\u200c\u2000\u200a\u200d\u200b\u200b) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             this.kVjF(ex);

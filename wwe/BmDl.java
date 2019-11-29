@@ -31,9 +31,6 @@ public class BmDl extends GuiScreen
                 char c2;
                 if (new Random().nextBoolean()) {
                     c2 = Character.toLowerCase(c);
-                    if (BmDl.\u200f\u200b\u2009) {
-                        throw null;
-                    }
                 }
                 else {
                     c2 = Character.toUpperCase(c);
@@ -41,8 +38,6 @@ public class BmDl extends GuiScreen
                 this.LXGm = append.append(c2).toString();
             }
             ++i;
-            if (BmDl.\u200f\u200b\u2009) {
-                throw null;
             }
         }
         Keyboard.enableRepeatEvents(true);
@@ -75,8 +70,6 @@ public class BmDl extends GuiScreen
             if (!this.djtH.getText().isEmpty() || this.djtH.getText() != null) {
                 yYGD.VHzJ(new Session(this.djtH.getText(), session.getPlayerID(), session.getToken(), "LEGACY"));
             }
-            if (BmDl.\u200f\u200b\u2009) {
-                throw null;
             }
         }
         else if (guiButton.id == 2) {

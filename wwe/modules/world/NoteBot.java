@@ -64,9 +64,6 @@ public class NoteBot extends qMIe
                     int n;
                     if (abs > 2) {
                         n = 0;
-                        if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                            throw null;
-                        }
                     }
                     else {
                         n = 2;
@@ -76,37 +73,25 @@ public class NoteBot extends qMIe
                         omqH.prFd = WFux.PMvk(this.bGhe.get(0).getX() + 0.5, this.bGhe.get(0).getY() + 0.5, this.bGhe.get(0).getZ() + 0.5)[0];
                         omqH.OjyD = WFux.PMvk(this.bGhe.get(0).getX() + 0.5, this.bGhe.get(0).getY() + 0.5, this.bGhe.get(0).getZ() + 0.5)[1];
                         this.fbZI = 0;
-                        if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
                         ++this.fbZI;
-                        if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                            throw null;
-                        }
                         break;
                     }
                 }
                 else {
                     ++i;
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                     continue;
                 }
             }
-            if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                throw null;
             }
         }
         else {
             int n2 = 0;
             for (final ajLR.wwe/WkII wwe/WkII : NoteBot.DbuO.FgWb) {
                 if (n2 >= this.maxNotes.OnGi()) {
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                     break;
                 }
@@ -118,8 +103,6 @@ public class NoteBot extends qMIe
                                     if (psqP2.lUAg != wwe/WkII.fljR) {
                                         break Label_0578;
                                     }
-                                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                                        throw null;
                                     }
                                 }
                                 else if (psqP2.lUAg != wwe/WkII.fljR || wwe/WkII.eEsY != psqP2.CPyB) {
@@ -129,14 +112,9 @@ public class NoteBot extends qMIe
                                     this.bGhe.add(psqP2.maCT);
                                 }
                             }
-                            if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                                throw null;
                             }
-                        }
                         ++n2;
                     }
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                     continue;
                 }
@@ -145,15 +123,9 @@ public class NoteBot extends qMIe
                 for (final ajLR.wwe/ABpb wwe/ABpb : NoteBot.DbuO.nOsS) {
                     if (wwe/ABpb.RZpY == this.mbRf && wwe/ABpb.MSAn != "") {
                         Wrapper.mc.player.sendChatMessage(wwe/ABpb.MSAn);
-                        if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
-                        if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                            throw null;
-                        }
                         continue;
                     }
                 }
@@ -162,16 +134,12 @@ public class NoteBot extends qMIe
                 for (final BlockPos blockPos : this.bGhe) {
                     omqH.prFd = WFux.PMvk(blockPos.getX() + 0.5, blockPos.getY() + 1, blockPos.getZ() + 0.5)[0];
                     omqH.OjyD = WFux.PMvk(blockPos.getX() + 0.5, blockPos.getY() + 1, blockPos.getZ() + 0.5)[1];
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                 }
             }
         }
         if (!this.tune.OnGi()) {
             ++this.mbRf;
-            if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                throw null;
             }
         }
         else {
@@ -186,16 +154,12 @@ public class NoteBot extends qMIe
                 if (this.tune.OnGi()) {
                     Wrapper.mc.playerController.processRightClickBlock(Wrapper.mc.player, Wrapper.mc.world, blockPos, EnumFacing.UP, new Vec3d(0.5, 0.5, 0.5), EnumHand.MAIN_HAND);
                     LKsL.LInL();
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                 }
                 else {
                     Wrapper.mc.playerController.clickBlock(blockPos, EnumFacing.UP);
                     LKsL.LInL();
                 }
-                if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                    throw null;
                 }
             }
         }
@@ -210,8 +174,6 @@ public class NoteBot extends qMIe
             final Iterator<BlockPos> iterator = this.bGhe.iterator();
             while (iterator.hasNext()) {
                 BIIV.zIBn(iterator.next(), Color.red, 1.0, 1.0);
-                if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                    throw null;
                 }
             }
         }
@@ -229,8 +191,6 @@ public class NoteBot extends qMIe
                 GL11.glDisable(2929);
                 if (psqP.SKIQ == psqP.lUAg) {
                     Wrapper.fontRenderer.drawString(psqP.SKIQ + "", 0, 0, -11141291);
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                 }
                 else {
@@ -242,8 +202,6 @@ public class NoteBot extends qMIe
                 GL11.glDepthMask(true);
                 GL11.glDisable(3042);
                 GL11.glPopMatrix();
-                if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                    throw null;
                 }
             }
             GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
@@ -258,14 +216,10 @@ public class NoteBot extends qMIe
                     psqP.SKIQ = jWya.GFhL;
                     this.fbZI = 0;
                     this.PEaL = 0;
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                     break;
                 }
                 else {
-                    if (NoteBot.\u2003\u200f\u2004\u2004\u200d) {
-                        throw null;
                     }
                     continue;
                 }

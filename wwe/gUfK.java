@@ -16,9 +16,6 @@ public class gUfK extends GuiScreen
         while (i < F3Spoofer.HHRM.size()) {
             this.buttonList.add(new bdJV(i, this.width / 2 - this.width / 4 + 5 + i % 3 * 100, this.height / 2 - this.height / 4 + 5 + i / 3 * 12, XybC.wKEb().getStringWidth(F3Spoofer.HHRM.get(i).NKEQ) + 2, 10, F3Spoofer.HHRM.get(i)));
             ++i;
-            if (gUfK.\u200b\u200c\u2009\u200a\u2007\u2005\u2008\u2005\u200f) {
-                throw null;
-            }
         }
         super.initGui();
     }

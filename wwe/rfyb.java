@@ -89,9 +89,6 @@ public abstract class rfyb implements BKlt
         if (this.tSCI() != null) {
             inputStreamReader = new InputStreamReader(socket.getInputStream(), this.tSCI());
             outputStreamWriter = new OutputStreamWriter(socket.getOutputStream(), this.tSCI());
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             inputStreamReader = new InputStreamReader(socket.getInputStream());
@@ -115,9 +112,6 @@ public abstract class rfyb implements BKlt
             if (index2 >= 0) {
                 final String substring = line.substring(index + 1, index2);
                 if (substring.equals("004")) {
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else if (substring.equals("433")) {
@@ -125,29 +119,18 @@ public abstract class rfyb implements BKlt
                         socket.close();
                         this.bPov = null;
                         throw new woMI(line);
-                    }
                     ++n;
                     s = this.TvmU() + n;
                     BFWw.CjuN(this, bufferedWriter, "NICK " + s);
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (substring.equals("439")) {
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (substring.startsWith("5") || substring.startsWith("4")) {
                     socket.close();
                     this.bPov = null;
                     throw new ltaQ("Could not log into the IRC server: " + line);
                 }
-            }
             this.JsSH(s);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         this.jgkl("*** Logged onto server.");
         socket.setSoTimeout(300000);
@@ -291,9 +274,6 @@ public abstract class rfyb implements BKlt
     public final void vaui(final String s) {
         if (s == null) {
             this.qOaH("LIST");
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             this.qOaH("LIST " + s);
@@ -318,45 +298,29 @@ public abstract class rfyb implements BKlt
             final int[] array = this.uWMi();
             if (array == null) {
                 serverSocket = new ServerSocket(0);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else {
                 int i = 0;
                 while (i < array.length) {
                     try {
                         serverSocket = new ServerSocket(array[i]);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     catch (Exception ex) {
                         ++i;
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                     break;
                 }
                 if (serverSocket == null) {
                     throw new IOException("All ports returned by getDccPorts() are in use.");
                 }
-            }
             serverSocket.setSoTimeout(soTimeout);
             final int localPort = serverSocket.getLocalPort();
             InetAddress inetAddress = this.gKrV();
             if (inetAddress == null) {
                 inetAddress = this.JKrK();
-            }
             this.oYmD(s, "DCC CHAT chat " + this.EavP(inetAddress.getAddress()) + " " + localPort);
             final Socket accept = serverSocket.accept();
             serverSocket.close();
             dcJR = new dcJR(this, s, accept);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex2) {}
         return dcJR;
@@ -399,12 +363,8 @@ public abstract class rfyb implements BKlt
                     if (index3 > 0) {
                         this.CDRv.add(new Jhbg(this.KBvr++, s.substring(index3 + s4.length()), s2, false));
                         this.Rtwr = true;
-                    }
                 }
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else {
                 if (!stringTokenizer.hasMoreTokens()) {
                     this.JPzM(s);
@@ -414,9 +374,6 @@ public abstract class rfyb implements BKlt
                 int int1 = -1;
                 try {
                     int1 = Integer.parseInt(s5);
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 catch (NumberFormatException ex) {}
                 if (int1 != -1) {
@@ -425,10 +382,7 @@ public abstract class rfyb implements BKlt
                 }
                 s2 = nextToken;
                 s3 = s5;
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
         }
         final String upperCase = nextToken2.toUpperCase();
         if (s2.startsWith(":")) {
@@ -444,145 +398,82 @@ public abstract class rfyb implements BKlt
             final String substring3 = s.substring(s.indexOf(":\u0001") + 2, s.length() - 1);
             if (substring3.equals("VERSION")) {
                 this.NcSH(s2, substring, substring2, s3);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else if (substring3.startsWith("ACTION ")) {
                 this.vKDC(s2, substring, substring2, s3, substring3.substring(7));
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else if (substring3.startsWith("PING ")) {
                 this.IOcN(s2, substring, substring2, s3, substring3.substring(5));
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else if (substring3.equals("TIME")) {
                 this.rKgw(s2, substring, substring2, s3);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else if (substring3.equals("FINGER")) {
                 this.Rtlp(s2, substring, substring2, s3);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else {
                 final StringTokenizer stringTokenizer2;
                 if ((stringTokenizer2 = new StringTokenizer(substring3)).countTokens() >= 5 && stringTokenizer2.nextToken().equals("DCC")) {
                     this.Plsg.QZnJ(s2, substring, substring2, substring3);
                     this.JPzM(s);
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     this.JPzM(s);
                 }
-            }
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("PRIVMSG") && this.hWrF.indexOf(s3.charAt(0)) >= 0) {
             this.tJiz(s3, s2, substring, substring2, s.substring(s.indexOf(" :") + 2));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("PRIVMSG")) {
             this.RTRa(s2, substring, substring2, s.substring(s.indexOf(" :") + 2));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("JOIN")) {
             final String s6 = s3;
             this.STkm(s6, new CjbW("", s2));
             this.bTrM(s6, s2, substring, substring2);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("PART")) {
             this.sIdF(s3, s2);
             if (s2.equals(this.hpqY())) {
                 this.kuLh(s3);
-            }
             this.shbh(s3, s2, substring, substring2);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("NICK")) {
             final String s7 = s3;
             this.LEYn(s2, s7);
             if (s2.equals(this.hpqY())) {
                 this.JsSH(s7);
-            }
             this.smWU(s2, substring, substring2, s7);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("NOTICE")) {
             this.AGbJ(s2, substring, substring2, s3, s.substring(s.indexOf(" :") + 2));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("QUIT")) {
             if (s2.equals(this.hpqY())) {
                 this.ZvJv();
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else {
                 this.tgYS(s2);
-            }
             this.Kzyh(s2, substring, substring2, s.substring(s.indexOf(" :") + 2));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("KICK")) {
             final String nextToken3 = stringTokenizer.nextToken();
             if (nextToken3.equals(this.hpqY())) {
                 this.kuLh(s3);
-            }
             this.sIdF(s3, nextToken3);
             this.jCFl(s3, s2, substring, substring2, nextToken3, s.substring(s.indexOf(" :") + 2));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("MODE")) {
             String s8 = s.substring(s.indexOf(s3, 2) + s3.length() + 1);
             if (s8.startsWith(":")) {
                 s8 = s8.substring(1);
-            }
             this.HQaz(s3, s2, substring, substring2, s8);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("TOPIC")) {
             this.vIjD(s3, s.substring(s.indexOf(" :") + 2), s2, System.currentTimeMillis(), true);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (upperCase.equals("INVITE")) {
             this.CaHt(s3, s2, substring, substring2, s.substring(s.indexOf(" :") + 2));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             this.JPzM(s);
@@ -605,15 +496,9 @@ public abstract class rfyb implements BKlt
             int int1 = 0;
             try {
                 int1 = Integer.parseInt(s.substring(index2 + 1, index3));
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             catch (NumberFormatException ex) {}
             this.WIwU(substring, int1, s.substring(index4 + 1));
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (n == 332) {
             final int index5 = s.indexOf(32);
@@ -623,9 +508,6 @@ public abstract class rfyb implements BKlt
             final String substring3 = s.substring(index7 + 1);
             this.lHME.put(substring2, substring3);
             this.XKgT(substring2, substring3);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (n == 333) {
             final StringTokenizer stringTokenizer = new StringTokenizer(s);
@@ -635,17 +517,11 @@ public abstract class rfyb implements BKlt
             long n2 = 0x61B08FB4F0E2308CL ^ 0x61B08FB4F0E2308CL;
             try {
                 n2 = Long.parseLong(stringTokenizer.nextToken()) * (0x2BAB86C70EF3327BL ^ 0x2BAB86C70EF33193L);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             catch (NumberFormatException ex2) {}
             final String s2 = this.lHME.get(nextToken);
             this.lHME.remove(nextToken);
             this.vIjD(nextToken, s2, nextToken2, n2, false);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (n == 353) {
             final int index8 = s.indexOf(" :");
@@ -656,27 +532,15 @@ public abstract class rfyb implements BKlt
                 String s3 = "";
                 if (nextToken3.startsWith("@")) {
                     s3 = "@";
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (nextToken3.startsWith("+")) {
                     s3 = "+";
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (nextToken3.startsWith(".")) {
                     s3 = ".";
                 }
                 this.STkm(substring4, new CjbW(s3, nextToken3.substring(s3.length())));
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else if (n == 366) {
             final String substring5 = s.substring(s.indexOf(32) + 1, s.indexOf(" :"));
@@ -736,10 +600,7 @@ public abstract class rfyb implements BKlt
             while (stringTokenizer.hasMoreTokens()) {
                 array[n] = stringTokenizer.nextToken();
                 ++n;
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             int n2 = 32;
             int n3 = 1;
             int i = 0;
@@ -747,179 +608,85 @@ public abstract class rfyb implements BKlt
                 final char char1 = array[0].charAt(i);
                 if (char1 == '+' || char1 == '-') {
                     n2 = char1;
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (char1 == 'o') {
                     if (n2 == 43) {
                         this.kPMe(s, 1, array[n3]);
                         this.sgGk(s, s2, s3, s4, array[n3]);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.kPMe(s, 2, array[n3]);
                         this.AgKg(s, s2, s3, s4, array[n3]);
-                    }
                     ++n3;
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (char1 == 'v') {
                     if (n2 == 43) {
                         this.kPMe(s, 3, array[n3]);
                         this.AvZo(s, s2, s3, s4, array[n3]);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.kPMe(s, 4, array[n3]);
                         this.cZiR(s, s2, s3, s4, array[n3]);
-                    }
                     ++n3;
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (char1 == 'k') {
                     if (n2 == 43) {
                         this.PSsy(s, s2, s3, s4, array[n3]);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.coCk(s, s2, s3, s4, array[n3]);
-                    }
                     ++n3;
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (char1 == 'l') {
                     if (n2 == 43) {
                         this.fbBo(s, s2, s3, s4, Integer.parseInt(array[n3]));
                         ++n3;
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.CnRZ(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                 }
                 else if (char1 == 'b') {
                     if (n2 == 43) {
                         this.PBIb(s, s2, s3, s4, array[n3]);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.ZszD(s, s2, s3, s4, array[n3]);
-                    }
                     ++n3;
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
                 else if (char1 == 't') {
                     if (n2 == 43) {
                         this.CVOW(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.STJL(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                 }
                 else if (char1 == 'n') {
                     if (n2 == 43) {
                         this.nxWU(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.DdXs(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                 }
                 else if (char1 == 'i') {
                     if (n2 == 43) {
                         this.FmDo(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.QGBm(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                 }
                 else if (char1 == 'm') {
                     if (n2 == 43) {
                         this.NPed(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.MbvJ(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                 }
                 else if (char1 == 'p') {
                     if (n2 == 43) {
                         this.CGIb(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.fyFg(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                 }
                 else if (char1 == 's') {
                     if (n2 == 43) {
                         this.sMIZ(s, s2, s3, s4);
-                        if (rfyb.\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.LVpp(s, s2, s3, s4);
-                    }
                 }
                 ++i;
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             this.NBSR(s, s2, s3, s4, s5);
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             this.oIva(s, s2, s3, s4, s5);
@@ -1089,9 +856,6 @@ public abstract class rfyb implements BKlt
         boolean b;
         if (this.bPov != null && this.bPov.mZgA()) {
             b = true;
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -1137,9 +901,6 @@ public abstract class rfyb implements BKlt
             array[i] = (int)(n % (0xBFEBD1C928B38F24L ^ 0xBFEBD1C928B38E24L));
             n /= (0x329242B40572788FL ^ 0x329242B40572798FL);
             --i;
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         return array;
     }
@@ -1155,9 +916,6 @@ public abstract class rfyb implements BKlt
             n += (array[i] + 256) % 256 * n2;
             n2 *= (0x10EEAAB078376B39L ^ 0x10EEAAB078376A39L);
             --i;
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         return n;
     }
@@ -1193,9 +951,6 @@ public abstract class rfyb implements BKlt
     public void EzNa(final int[] array) {
         if (array == null || array.length == 0) {
             this.MPej = null;
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             this.MPej = array.clone();
@@ -1208,13 +963,9 @@ public abstract class rfyb implements BKlt
             boolean b;
             if (o == this) {
                 b = true;
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else {
                 b = false;
-            }
             return b;
         }
         return false;
@@ -1242,15 +993,8 @@ public abstract class rfyb implements BKlt
                 while (i < array.length) {
                     array[i] = elements.nextElement();
                     ++i;
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
-            }
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         return array;
     }
@@ -1264,14 +1008,8 @@ public abstract class rfyb implements BKlt
             while (i < array.length) {
                 array[i] = keys.nextElement();
                 ++i;
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         return array;
     }
@@ -1288,12 +1026,8 @@ public abstract class rfyb implements BKlt
             if (hashtable == null) {
                 hashtable = new Hashtable<CjbW, CjbW>();
                 this.pQVz.put(lowerCase, hashtable);
-            }
             hashtable.put(cjbW, cjbW);
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
     }
     
@@ -1304,11 +1038,7 @@ public abstract class rfyb implements BKlt
             final Hashtable<Object, CjbW> hashtable = this.pQVz.get(lowerCase);
             if (hashtable != null) {
                 return hashtable.remove(cjbW);
-            }
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         return null;
     }
@@ -1318,14 +1048,8 @@ public abstract class rfyb implements BKlt
             final Enumeration<String> keys = this.pQVz.keys();
             while (keys.hasMoreElements()) {
                 this.sIdF(keys.nextElement(), s);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
     }
     
@@ -1338,14 +1062,8 @@ public abstract class rfyb implements BKlt
                 if (sIdF != null) {
                     this.STkm(s3, new CjbW(sIdF.xvkx(), s2));
                 }
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
     }
     
@@ -1354,18 +1072,12 @@ public abstract class rfyb implements BKlt
         synchronized (this.pQVz) {
             this.pQVz.remove(lowerCase);
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
     }
     
     private final void ZvJv() {
         synchronized (this.pQVz) {
             // monitorexit(this.pQVz = new Hashtable())
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
     }
     
@@ -1382,76 +1094,39 @@ public abstract class rfyb implements BKlt
                         if (n == 1) {
                             if (cjbW2.YNVZ()) {
                                 cjbW = new CjbW("@+", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
                             else {
                                 cjbW = new CjbW("@", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
-                        }
                         else if (n == 2) {
                             if (cjbW2.YNVZ()) {
                                 cjbW = new CjbW("+", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
                             else {
                                 cjbW = new CjbW("", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
-                        }
                         else if (n == 3) {
                             if (cjbW2.JPHc()) {
                                 cjbW = new CjbW("@+", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
                             else {
                                 cjbW = new CjbW("+", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
-                        }
                         else if (n == 4) {
                             if (cjbW2.JPHc()) {
                                 cjbW = new CjbW("@", s);
-                                if (rfyb.\u2007) {
-                                    throw null;
-                                }
                             }
                             else {
                                 cjbW = new CjbW("", s);
                             }
-                        }
-                    }
-                    if (rfyb.\u2007) {
-                        throw null;
-                    }
                 }
-            }
             if (cjbW != null) {
                 hashtable.put(cjbW, cjbW);
-                if (rfyb.\u2007) {
-                    throw null;
                 }
-            }
             else {
                 final CjbW cjbW3 = new CjbW("", s);
                 hashtable.put(cjbW3, cjbW3);
-            }
             // monitorexit(this.pQVz)
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
     }
     
@@ -1465,9 +1140,6 @@ public abstract class rfyb implements BKlt
             final int kBvr = n = this.KBvr;
             this.KBvr = kBvr + 1;
             this.KBvr = kBvr;
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         else {
             n = this.KBvr;
@@ -1484,10 +1156,6 @@ public abstract class rfyb implements BKlt
         for (final Jhbg jhbg : this.CDRv) {
             if (!jhbg.sjmW()) {
                 list.add(jhbg);
-            }
-            if (rfyb.\u2007) {
-                throw null;
-            }
         }
         this.Rtwr = false;
         return list;

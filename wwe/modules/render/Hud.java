@@ -131,9 +131,6 @@ public class Hud extends qMIe
             float axho;
             if (this.bPSTimerSync.OnGi()) {
                 axho = vlwv.Axho;
-                if (Hud.\u2002\u2006\u2001\u200b\u2003\u200f) {
-                    throw null;
-                }
             }
             else {
                 axho = 1.0f;
@@ -170,8 +167,6 @@ public class Hud extends qMIe
         boolean b;
         if (this.arrayListMode.OnGi().equalsIgnoreCase("Top Left") || this.arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
             b = true;
-            if (Hud.\u2002\u2006\u2001\u200b\u2003\u200f) {
-                throw null;
             }
         }
         else {
@@ -184,8 +179,6 @@ public class Hud extends qMIe
         boolean b;
         if (this.arrayListMode.OnGi().equalsIgnoreCase("Bottom Left") || this.arrayListMode.OnGi().equalsIgnoreCase("Bottom Right")) {
             b = true;
-            if (Hud.\u2002\u2006\u2001\u200b\u2003\u200f) {
-                throw null;
             }
         }
         else {
@@ -198,8 +191,6 @@ public class Hud extends qMIe
         boolean b;
         if (this.arrayListMode.OnGi().equalsIgnoreCase("Top Left") || this.arrayListMode.OnGi().equalsIgnoreCase("Bottom Left")) {
             b = true;
-            if (Hud.\u2002\u2006\u2001\u200b\u2003\u200f) {
-                throw null;
             }
         }
         else {
@@ -212,8 +203,6 @@ public class Hud extends qMIe
         boolean b;
         if (this.arrayListMode.OnGi().equalsIgnoreCase("Top Right") || this.arrayListMode.OnGi().equalsIgnoreCase("Bottom Right")) {
             b = true;
-            if (Hud.\u2002\u2006\u2001\u200b\u2003\u200f) {
-                throw null;
             }
         }
         else {

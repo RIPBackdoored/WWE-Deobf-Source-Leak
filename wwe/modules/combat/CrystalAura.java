@@ -102,67 +102,38 @@ public class CrystalAura extends qMIe
             this.mgWw = null;
             if (!(Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemEndCrystal)) {
                 this.HSgN.BBwj();
-                if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                    throw null;
-                }
             }
             else {
                 for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
                     if (!(entity instanceof EntityEnderCrystal)) {
-                        if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                            throw null;
-                        }
                         continue;
                     }
                     else if (Wrapper.mc.player.getDistance(entity) <= this.range.OnGi()) {
-                        if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
-                        if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                            throw null;
-                        }
                         continue;
                     }
-                }
                 this.HSgN.gCgh();
                 final List<BlockPos> gtui = this.gTUI();
                 final ArrayList<EntityPlayer> list = new ArrayList<EntityPlayer>();
                 for (final EntityPlayer entityPlayer : Wrapper.mc.world.playerEntities) {
                     if (!(list instanceof EntityPlayerSP)) {
                         if (vlwv.Zqnd().UsVJ(entityPlayer.getName())) {
-                            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                throw null;
-                            }
                             continue;
-                        }
                         else {
                             list.add(entityPlayer);
-                            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                throw null;
-                            }
                             continue;
-                        }
                     }
-                }
                 BlockPos mgWw = null;
                 double n = 0.5;
                 for (final EntityPlayer entityPlayer2 : list) {
                     if (!(entityPlayer2 instanceof EntityPlayerSP)) {
                         if (entityPlayer2.getHealth() <= 0.0f) {
-                            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                throw null;
-                            }
                             continue;
-                        }
                         else {
                             for (final BlockPos blockPos : gtui) {
                                 if (entityPlayer2.getDistanceSq(blockPos) >= 169.0) {
-                                    if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                        throw null;
-                                    }
                                     continue;
                                 }
                                 else {
@@ -173,35 +144,19 @@ public class CrystalAura extends qMIe
                                             continue;
                                         }
                                         if (n3 - 0.5 > Wrapper.mc.player.getHealth()) {
-                                            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                                throw null;
-                                            }
                                             continue;
                                         }
                                         else {
                                             n = n2;
                                             mgWw = blockPos;
                                         }
-                                    }
-                                    if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                        throw null;
-                                    }
                                     continue;
                                 }
-                            }
-                            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                throw null;
-                            }
                             continue;
-                        }
                     }
-                }
                 if (n == 0.5) {
                     this.mgWw = null;
-                    if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                        throw null;
                     }
-                }
                 else {
                     this.mgWw = mgWw;
                     if (this.rotationType.OnGi().equalsIgnoreCase("Stay")) {
@@ -210,34 +165,25 @@ public class CrystalAura extends qMIe
                     if (this.HSgN.QOXG(this.placeDelay.OnGi() * 1000.0)) {
                         if (this.rotationType.OnGi().equalsIgnoreCase("Snap")) {
                             this.TpPT(this.mgWw.getX() + 0.5, this.mgWw.getY() - 0.5, this.mgWw.getZ() + 0.5, (EntityPlayer)Wrapper.mc.player, omqH);
-                        }
                         if (this.event.OnGi().equalsIgnoreCase("Pre")) {
                             if (this.mgWw != null && this.eatting.OnGi().equalsIgnoreCase("Stop eatting") && Wrapper.mc.player.isHandActive()) {
                                 Wrapper.mc.player.stopActiveHand();
                                 Wrapper.mc.player.connection.sendPacket((Packet)new CPacketPlayerDigging(CPacketPlayerDigging.Action.RELEASE_USE_ITEM, new BlockPos(0, 0, 0), EnumFacing.DOWN));
-                            }
                             final RayTraceResult rayTraceBlocks = Wrapper.mc.world.rayTraceBlocks(new Vec3d(Wrapper.mc.player.posX, Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight(), Wrapper.mc.player.posZ), new Vec3d(this.mgWw.getX() + 0.5, this.mgWw.getY() - 0.5, this.mgWw.getZ() + 0.5));
                             final NetHandlerPlayClient connection = Wrapper.mc.player.connection;
                             final BlockPos mgWw2 = this.mgWw;
                             EnumFacing enumFacing;
                             if (rayTraceBlocks == null || rayTraceBlocks.sideHit == null) {
                                 enumFacing = EnumFacing.UP;
-                                if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                    throw null;
                                 }
-                            }
                             else {
                                 enumFacing = rayTraceBlocks.sideHit;
-                            }
                             connection.sendPacket((Packet)new CPacketPlayerTryUseItemOnBlock(mgWw2, enumFacing, OffHand.txLa(), 0.0f, 0.0f, 0.0f));
                             OffHand.LInL();
                             this.HSgN.BBwj();
-                        }
                         if (this.placeBreak.OnGi()) {
                             return;
-                        }
                     }
-                }
             }
         }
         if (this.priority.OnGi().equalsIgnoreCase("Closest")) {
@@ -249,10 +195,6 @@ public class CrystalAura extends qMIe
                         doubleValue = Wrapper.mc.player.getDistance((Entity)inMa);
                         this.INMa = inMa;
                     }
-                }
-                if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                    throw null;
-                }
             }
         }
         if (this.priority.OnGi().equalsIgnoreCase("Random")) {
@@ -260,10 +202,6 @@ public class CrystalAura extends qMIe
             for (final Entity entity3 : Wrapper.mc.world.loadedEntityList) {
                 if (entity3 instanceof EntityEnderCrystal && Wrapper.mc.player.getDistance(entity3) < this.range.OnGi()) {
                     this.umql.add((EntityEnderCrystal)entity3);
-                }
-                if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                    throw null;
-                }
             }
             this.INMa = this.umql.get(new Random().nextInt(this.umql.size()));
         }
@@ -281,7 +219,6 @@ public class CrystalAura extends qMIe
                 if (this.rotationType.OnGi().equalsIgnoreCase("Snap")) {
                     omqH.prFd = this.xIdp((Entity)this.INMa, Float.MAX_VALUE, Float.MAX_VALUE)[0];
                     omqH.OjyD = this.xIdp((Entity)this.INMa, Float.MAX_VALUE, Float.MAX_VALUE)[1];
-                }
                 if (this.event.OnGi().equalsIgnoreCase("Pre")) {
                     if (new Random().nextInt(100) < this.hitchance.OnGi()) {
                         Wrapper.mc.playerController.attackEntity((EntityPlayer)Wrapper.mc.player, (Entity)this.INMa);
@@ -289,7 +226,6 @@ public class CrystalAura extends qMIe
                     OffHand.LInL();
                     Wrapper.mc.player.resetCooldown();
                     this.Xijd.BBwj();
-                }
             }
         }
         if (this.mode.OnGi().equalsIgnoreCase("Packet")) {
@@ -302,14 +238,12 @@ public class CrystalAura extends qMIe
                 if (this.rotationType.OnGi().equalsIgnoreCase("Snap")) {
                     omqH.prFd = this.xIdp((Entity)this.INMa, Float.MAX_VALUE, Float.MAX_VALUE)[0];
                     omqH.OjyD = this.xIdp((Entity)this.INMa, Float.MAX_VALUE, Float.MAX_VALUE)[1];
-                }
                 if (this.event.OnGi().equalsIgnoreCase("Pre")) {
                     if (new Random().nextInt(100) < this.hitchance.OnGi()) {
                         Wrapper.mc.player.connection.sendPacket((Packet)new CPacketUseEntity((Entity)this.INMa));
                     }
                     OffHand.LInL();
                     this.Xijd.BBwj();
-                }
             }
         }
     }
@@ -321,31 +255,24 @@ public class CrystalAura extends qMIe
                 if (this.mgWw != null && this.eatting.OnGi().equalsIgnoreCase("Stop eatting") && Wrapper.mc.player.isHandActive()) {
                     Wrapper.mc.player.stopActiveHand();
                     Wrapper.mc.player.connection.sendPacket((Packet)new CPacketPlayerDigging(CPacketPlayerDigging.Action.RELEASE_USE_ITEM, new BlockPos(0, 0, 0), EnumFacing.DOWN));
-                }
                 final RayTraceResult rayTraceBlocks = Wrapper.mc.world.rayTraceBlocks(new Vec3d(Wrapper.mc.player.posX, Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight(), Wrapper.mc.player.posZ), new Vec3d(this.mgWw.getX() + 0.5, this.mgWw.getY() - 0.5, this.mgWw.getZ() + 0.5));
                 final NetHandlerPlayClient connection = Wrapper.mc.player.connection;
                 final BlockPos mgWw = this.mgWw;
                 EnumFacing enumFacing;
                 if (rayTraceBlocks == null || rayTraceBlocks.sideHit == null) {
                     enumFacing = EnumFacing.UP;
-                    if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                        throw null;
                     }
-                }
                 else {
                     enumFacing = rayTraceBlocks.sideHit;
-                }
                 connection.sendPacket((Packet)new CPacketPlayerTryUseItemOnBlock(mgWw, enumFacing, OffHand.txLa(), 0.0f, 0.0f, 0.0f));
                 OffHand.LInL();
                 this.HSgN.BBwj();
                 if (this.placeBreak.OnGi()) {
                     return;
-                }
             }
             if (this.mode.OnGi().equalsIgnoreCase("Normal") && this.Xijd.QOXG(this.attackDelay.OnGi() * 1000.0) && this.INMa != null && Wrapper.mc.player.getDistance((Entity)this.INMa) <= this.range.OnGi() && Math.abs(Wrapper.mc.player.posY - this.INMa.posY) >= this.yDifference.OnGi()) {
                 if (new Random().nextInt(100) < this.hitchance.OnGi()) {
                     Wrapper.mc.playerController.attackEntity((EntityPlayer)Wrapper.mc.player, (Entity)this.INMa);
-                }
                 OffHand.LInL();
                 Wrapper.mc.player.resetCooldown();
                 this.Xijd.BBwj();
@@ -353,7 +280,6 @@ public class CrystalAura extends qMIe
             if (this.mode.OnGi().equalsIgnoreCase("Packet") && this.Xijd.QOXG(this.attackDelay.OnGi() * 1000.0) && this.INMa != null && Wrapper.mc.player.getDistance((Entity)this.INMa) <= this.range.OnGi() && Math.abs(Wrapper.mc.player.posY - this.INMa.posY) >= this.yDifference.OnGi()) {
                 if (new Random().nextInt(100) < this.hitchance.OnGi()) {
                     Wrapper.mc.player.connection.sendPacket((Packet)new CPacketUseEntity((Entity)this.INMa));
-                }
                 OffHand.LInL();
                 this.Xijd.BBwj();
             }
@@ -367,8 +293,6 @@ public class CrystalAura extends qMIe
         if (entity instanceof EntityLivingBase) {
             final EntityLivingBase entityLivingBase = (EntityLivingBase)entity;
             n5 = entityLivingBase.posY + entityLivingBase.getEyeHeight() - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
-            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                throw null;
             }
         }
         else {
@@ -380,8 +304,6 @@ public class CrystalAura extends qMIe
         float n9;
         if (entity instanceof EntityPlayer) {
             n9 = 0.5f;
-            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                throw null;
             }
         }
         else {
@@ -460,22 +382,15 @@ public class CrystalAura extends qMIe
                 int n6;
                 if (b2) {
                     n6 = y - (int)n;
-                    if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                        throw null;
                     }
-                }
                 else {
                     n6 = y;
-                }
                 int n7 = n6;
                 do {
                     final float n8 = (float)n7;
                     float n9;
                     if (b2) {
                         n9 = y + n;
-                        if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                            throw null;
-                        }
                     }
                     else {
                         n9 = (float)(y + n2);
@@ -485,32 +400,20 @@ public class CrystalAura extends qMIe
                         int n11;
                         if (b2) {
                             n11 = (y - n7) * (y - n7);
-                            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                                throw null;
-                            }
-                        }
                         else {
                             n11 = 0;
-                        }
                         final double n12 = n10 + n11;
                         if (n12 < n * n && (!b || n12 >= (n - 1.0f) * (n - 1.0f))) {
                             list.add(new BlockPos(n4, n7 + n3, n5));
-                        }
                         ++n7;
                     }
                     else {
                         ++n5;
-                        if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                            throw null;
-                        }
                         continue Label_0058;
                     }
                 } while (!CrystalAura.\u2001\u200e\u200e\u2003);
-                throw null;
             }
             ++n4;
-            if (CrystalAura.\u2001\u200e\u200e\u2003) {
-                throw null;
             }
         }
         return list;
@@ -546,8 +449,6 @@ public class CrystalAura extends qMIe
     private static float HTgA(final float n) {
         Wrapper.mc.world.getDifficulty().getId();
         final float n2 = 0.0f;
-        if (CrystalAura.\u2001\u200e\u200e\u2003) {
-            throw null;
         }
         return n * n2;
     }

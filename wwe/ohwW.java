@@ -54,8 +54,6 @@ public class ohwW
         boolean xecA;
         if (n > this.rhHA.kVnf && n < this.rhHA.kVnf + this.rhHA.dedb && n2 > this.rhHA.CQIZ + this.yQtC - 1 && n2 < this.rhHA.CQIZ + 12 + this.yQtC && this.rhHA.iWnD) {
             xecA = true;
-            if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                throw null;
             }
         }
         else {
@@ -70,21 +68,13 @@ public class ohwW
         if (this.xecA) {
             if (this.lJcE.IuiN()) {
                 n8 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB();
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
             else {
                 n8 = new Color(15, 15, 15, 245).getRGB();
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
         }
         else if (this.lJcE.IuiN()) {
             n8 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
-            if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                throw null;
             }
         }
         else {
@@ -97,8 +87,6 @@ public class ohwW
         int n11;
         if (this.lJcE.IuiN()) {
             n11 = -1;
-            if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                throw null;
             }
         }
         else {
@@ -109,9 +97,6 @@ public class ohwW
             for (final kUUQ kuuq : this.znxP) {
                 kuuq.JyWl(n, n2, n3);
                 kuuq.QdjS(n, n2);
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
         }
     }
@@ -124,9 +109,6 @@ public class ohwW
             boolean fzNA;
             if (!this.fzNA) {
                 fzNA = true;
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
             else {
                 fzNA = false;
@@ -137,9 +119,6 @@ public class ohwW
             final Iterator<kUUQ> iterator = this.znxP.iterator();
             while (iterator.hasNext()) {
                 iterator.next().rVom((int)n, (int)n2, n3);
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
         }
     }
@@ -149,9 +128,6 @@ public class ohwW
             final Iterator<kUUQ> iterator = this.znxP.iterator();
             while (iterator.hasNext()) {
                 iterator.next().XrGT((int)n, (int)n2, n3);
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
         }
     }
@@ -161,9 +137,6 @@ public class ohwW
             final Iterator<kUUQ> iterator = this.znxP.iterator();
             while (iterator.hasNext()) {
                 iterator.next().WwPa(n);
-                if (ohwW.\u2008\u2004\u2001\u2002\u2004\u2001\u200a) {
-                    throw null;
-                }
             }
         }
     }

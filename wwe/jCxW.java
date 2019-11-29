@@ -52,16 +52,10 @@ public class jCxW extends GuiScreen
         final int n4 = this.height / 2 - this.height / 4;
         if (n >= this.width / 2 - 16 && n2 >= n4 + 3 && n < this.width / 2 + 16 && n2 < n4 + 3 + 31) {
             this.Qlum();
-            if (jCxW.\u2007\u2001\u200b\u200d\u200a\u200a\u2008\u200d\u2004) {
-                throw null;
-            }
         }
         else if (n >= this.width / 2 - this.width / 4 + 2 && n < this.width / 2 - 2 && n2 >= this.height / 2 - this.height / 4 + 2 && n2 < this.height / 2 + this.height / 4 - 2) {
             Wrapper.mc.displayGuiScreen((GuiScreen)new QkhT(this));
             Wrapper.mc.getSoundHandler().playSound((ISound)PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0f));
-            if (jCxW.\u2007\u2001\u200b\u200d\u200a\u200a\u2008\u200d\u2004) {
-                throw null;
-            }
         }
         else if (n >= this.width / 2 + 2 && n < this.width / 2 + this.width / 4 - 2 && n2 >= this.height / 2 - this.height / 4 + 2 && n2 < this.height / 2 + this.height / 4 - 2) {
             Wrapper.mc.displayGuiScreen((GuiScreen)new faUw(this));

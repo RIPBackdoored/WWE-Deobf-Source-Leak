@@ -54,8 +54,6 @@ public class AntiLevitate extends qMIe
                         AntiLevitate.uLQg = ulQg;
                     }
                 }
-                if (AntiLevitate.\u2002\u200f\u2009) {
-                    throw null;
                 }
             }
             if (AntiLevitate.uLQg != null) {
@@ -80,8 +78,6 @@ public class AntiLevitate extends qMIe
         if (entity instanceof EntityLivingBase) {
             final EntityLivingBase entityLivingBase = (EntityLivingBase)entity;
             n5 = entityLivingBase.posY + entityLivingBase.getEyeHeight() - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
-            if (AntiLevitate.\u2002\u200f\u2009) {
-                throw null;
             }
         }
         else {
@@ -93,8 +89,6 @@ public class AntiLevitate extends qMIe
         float n9;
         if (entity instanceof EntityPlayer) {
             n9 = 0.5f;
-            if (AntiLevitate.\u2002\u200f\u2009) {
-                throw null;
             }
         }
         else {

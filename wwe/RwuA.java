@@ -33,9 +33,6 @@ public class RwuA extends kUUQ
         int n8;
         if (this.vwqN) {
             n8 = new Color(15, 15, 15, 245).getRGB();
-            if (RwuA.\u2009\u200c\u2008\u2002) {
-                throw null;
-            }
         }
         else {
             n8 = new Color(15, 15, 15, 215).getRGB();
@@ -48,9 +45,6 @@ public class RwuA extends kUUQ
         int n13;
         if (this.vwqN) {
             n13 = new Color(15, 15, 15, 245).getRGB();
-            if (RwuA.\u2009\u200c\u2008\u2002) {
-                throw null;
-            }
         }
         else {
             n13 = new Color(15, 15, 15, 215).getRGB();
@@ -80,13 +74,8 @@ public class RwuA extends kUUQ
             boolean b;
             if (!this.MKDa.OnGi()) {
                 b = true;
-                if (RwuA.\u2009\u200c\u2008\u2002) {
-                    throw null;
-                }
-            }
             else {
                 b = false;
-            }
             mkDa.NdCc(b);
         }
     }

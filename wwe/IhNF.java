@@ -31,9 +31,6 @@ public class IhNF extends kUUQ
         int n8;
         if (this.vwqN) {
             n8 = new Color(15, 15, 15, 245).getRGB();
-            if (IhNF.\u200c\u2002) {
-                throw null;
-            }
         }
         else {
             n8 = new Color(15, 15, 15, 215).getRGB();
@@ -46,9 +43,6 @@ public class IhNF extends kUUQ
         int n13;
         if (this.vwqN) {
             n13 = new Color(15, 15, 15, 245).getRGB();
-            if (IhNF.\u200c\u2002) {
-                throw null;
-            }
         }
         else {
             n13 = new Color(15, 15, 15, 215).getRGB();
@@ -59,9 +53,6 @@ public class IhNF extends kUUQ
         String string;
         if (this.sfhJ) {
             string = "Listening";
-            if (IhNF.\u200c\u2002) {
-                throw null;
-            }
         }
         else {
             string = "Bind : " + Keyboard.getKeyName(this.SvfS.lJcE.APjp());
@@ -83,13 +74,8 @@ public class IhNF extends kUUQ
             boolean sfhJ;
             if (!this.sfhJ) {
                 sfhJ = true;
-                if (IhNF.\u200c\u2002) {
-                    throw null;
-                }
-            }
             else {
                 sfhJ = false;
-            }
             this.sfhJ = sfhJ;
         }
     }
@@ -100,14 +86,9 @@ public class IhNF extends kUUQ
             if (n == 211) {
                 this.SvfS.lJcE.hzzk(0);
                 Wrapper.ypJK().hUMI();
-                if (IhNF.\u200c\u2002) {
-                    throw null;
-                }
-            }
             else {
                 this.SvfS.lJcE.hzzk(n);
                 Wrapper.ypJK().hUMI();
-            }
             this.sfhJ = false;
         }
     }

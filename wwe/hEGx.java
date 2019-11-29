@@ -44,17 +44,11 @@ public class hEGx extends GuiScreen
         while (i < this.nYFA.size()) {
             this.nYFA.get(i).Lkys(n, n2, n3);
             ++i;
-            if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                throw null;
-            }
         }
         hEGx.aTlJ.OQea(n, n2, n3);
         final Iterator<NoaN> iterator = hEGx.aTlJ.HSDz.iterator();
         while (iterator.hasNext()) {
             iterator.next().QdjS(n, n2);
-            if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                throw null;
-            }
         }
     }
     
@@ -72,11 +66,7 @@ public class hEGx extends GuiScreen
             final FinI finI2 = this.nYFA.get(i);
             if (finI2.MgxK(n, n2)) {
                 finI = finI2;
-            }
             ++i;
-            if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                throw null;
-            }
         }
         if (finI != null) {
             final ArrayList<FinI> nyfa = new ArrayList<FinI>();
@@ -84,10 +74,7 @@ public class hEGx extends GuiScreen
                 if (finI3 != finI) {
                     nyfa.add(finI3);
                 }
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
-            }
             nyfa.add(finI);
             this.nYFA = nyfa;
         }
@@ -96,18 +83,12 @@ public class hEGx extends GuiScreen
         while (j >= 0) {
             if (this.nYFA.get(j).dEfG(n, n2)) {
                 n4 = j;
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
                 break;
-            }
             else {
                 --j;
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
                 continue;
-            }
         }
         if (n4 != -1) {
             final FinI finI4 = this.nYFA.get(n4);
@@ -115,36 +96,23 @@ public class hEGx extends GuiScreen
                 finI4.oBaW = true;
                 finI4.eMSV = n - finI4.kVnf;
                 finI4.Uuyo = n2 - finI4.CQIZ;
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
-            }
             else if (finI4.MgxK(n, n2) && n3 == 1) {
                 final FinI finI5 = finI4;
                 boolean abnn;
                 if (!finI4.aBNN) {
                     abnn = true;
-                    if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                        throw null;
-                    }
                 }
                 else {
                     abnn = false;
                 }
                 finI5.aBNN = abnn;
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
-            }
             else if (finI4.aBNN && !finI4.UfJC.isEmpty()) {
                 final Iterator<ohwW> iterator2 = finI4.UfJC.iterator();
                 while (iterator2.hasNext()) {
                     iterator2.next().PFLg(n, n2, n3);
-                    if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                        throw null;
-                    }
                 }
-            }
         }
         hEGx.aTlJ.KolI(n, n2, n3);
         if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi()) {
@@ -161,25 +129,15 @@ public class hEGx extends GuiScreen
                 final Iterator<ohwW> iterator = finI.UfJC.iterator();
                 while (iterator.hasNext()) {
                     iterator.next().EDua(n, n2, n3);
-                    if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                        throw null;
-                    }
                 }
-            }
             ++i;
-            if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                throw null;
-            }
         }
         hEGx.aTlJ.ioOs = false;
         if (hEGx.aTlJ.wMBz && !hEGx.aTlJ.HSDz.isEmpty()) {
             final Iterator<NoaN> iterator2 = hEGx.aTlJ.HSDz.iterator();
             while (iterator2.hasNext()) {
                 iterator2.next().XrGT(n, n2, n3);
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
-            }
         }
     }
     
@@ -195,24 +153,14 @@ public class hEGx extends GuiScreen
                 final Iterator<ohwW> iterator = finI.UfJC.iterator();
                 while (iterator.hasNext()) {
                     iterator.next().WRUj(n);
-                    if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                        throw null;
-                    }
                 }
-            }
             ++i;
-            if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                throw null;
-            }
         }
         if (hEGx.aTlJ.wMBz && n != 1 && !hEGx.aTlJ.HSDz.isEmpty()) {
             final Iterator<NoaN> iterator2 = hEGx.aTlJ.HSDz.iterator();
             while (iterator2.hasNext()) {
                 iterator2.next().WwPa(n);
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
-            }
         }
         if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).search.OnGi() && this.mwSh.textboxKeyTyped(c, n)) {
             this.neJc(false);
@@ -237,16 +185,9 @@ public class hEGx extends GuiScreen
                     final Iterator<ohwW> iterator = finI.UfJC.iterator();
                     while (iterator.hasNext()) {
                         iterator.next().XBgs(dWheel);
-                        if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                            throw null;
-                        }
-                    }
                 }
                 ++i;
-                if (hEGx.\u2008\u2007\u2006\u2002\u200d) {
-                    throw null;
                 }
-            }
             hEGx.aTlJ.odQY(dWheel);
         }
         super.handleMouseInput();
@@ -260,16 +201,13 @@ public class hEGx extends GuiScreen
             cbMC(final hEGx qLlg) {
                 this.qLlg = qLlg;
                 super();
-            }
             
             public int XTrG(final qMIe qmIe, final qMIe qmIe2) {
                 return qmIe.czUH().compareTo(qmIe2.czUH());
-            }
             
             @Override
             public int compare(final Object o, final Object o2) {
                 return this.XTrG((qMIe)o, (qMIe)o2);
-            }
         }
         // 
         // This method could not be decompiled.

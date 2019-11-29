@@ -127,9 +127,6 @@ public class oBqx extends GuiScreen
         Color color;
         if (new Color(value, value2, value3) == null) {
             color = new Color(this.tIMq.RzMj, this.tIMq.IzwG, this.tIMq.RzMj);
-            if (oBqx.\u200b\u2005\u200e) {
-                throw null;
-            }
         }
         else {
             color = new Color(value, value2, value3);

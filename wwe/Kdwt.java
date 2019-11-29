@@ -69,16 +69,11 @@ public class Kdwt
             int n8;
             if (((Wwox)this.TRqF).inUT == this) {
                 n8 = new Color(0, 0, 0).getRGB();
-                if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                    throw null;
-                }
             }
             else {
                 n8 = new Color(0, 0, 0, 100).getRGB();
             }
             gnNa.wQYt(n4, n5, n6, n7, n8);
-            if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                throw null;
             }
         }
         else {
@@ -95,20 +90,14 @@ public class Kdwt
         int n12;
         if (this.uKMJ.PqmF == 0) {
             n12 = -7895161;
-            if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                throw null;
             }
         }
         else if (this.uKMJ.PqmF == 1) {
             n12 = -3727585;
-            if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                throw null;
             }
         }
         else if (this.uKMJ.PqmF == 2) {
             n12 = -14301409;
-            if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                throw null;
             }
         }
         else {
@@ -127,15 +116,9 @@ public class Kdwt
             String s;
             if (this.uKMJ.smby == 1) {
                 s = TextFormatting.YELLOW + "Donator";
-                if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                    throw null;
-                }
             }
             else if (this.uKMJ.smby == 2) {
                 s = TextFormatting.RED + "Developer";
-                if (Kdwt.\u2002\u2009\u2004\u200d\u2003\u2000\u200d\u2009\u2005) {
-                    throw null;
-                }
             }
             else {
                 s = "";

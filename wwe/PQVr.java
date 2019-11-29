@@ -62,9 +62,6 @@ public class PQVr extends Gui
         if (this.iBRc.apply(bvSU)) {
             if (bvSU.length() > this.Khba) {
                 this.bvSU = bvSU.substring(0, this.Khba);
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 this.bvSU = bvSU;
@@ -81,8 +78,6 @@ public class PQVr extends Gui
         int n;
         if (this.nQvb < this.pKai) {
             n = this.nQvb;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -92,8 +87,6 @@ public class PQVr extends Gui
         int n3;
         if (this.nQvb < this.pKai) {
             n3 = this.pKai;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -112,8 +105,6 @@ public class PQVr extends Gui
         int n;
         if (this.nQvb < this.pKai) {
             n = this.nQvb;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -123,8 +114,6 @@ public class PQVr extends Gui
         int n3;
         if (this.nQvb < this.pKai) {
             n3 = this.pKai;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -140,8 +129,6 @@ public class PQVr extends Gui
         if (n5 < filterAllowedCharacters.length()) {
             bvSU = string + filterAllowedCharacters.substring(0, n5);
             length = n5;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -168,9 +155,6 @@ public class PQVr extends Gui
         if (!this.bvSU.isEmpty()) {
             if (this.pKai != this.nQvb) {
                 this.FBRk("");
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 this.vdET(this.qlpZ(n) - this.nQvb);
@@ -182,58 +166,36 @@ public class PQVr extends Gui
         if (!this.bvSU.isEmpty()) {
             if (this.pKai != this.nQvb) {
                 this.FBRk("");
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 boolean b;
                 if (n < 0) {
                     b = true;
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     b = false;
-                }
                 final boolean b2 = b;
                 int nQvb;
                 if (b2) {
                     nQvb = this.nQvb + n;
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     nQvb = this.nQvb;
-                }
                 final int n2 = nQvb;
                 int nQvb2;
                 if (b2) {
                     nQvb2 = this.nQvb;
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     nQvb2 = this.nQvb + n;
-                }
                 final int n3 = nQvb2;
                 String bvSU = "";
                 if (n2 >= 0) {
                     bvSU = this.bvSU.substring(0, n2);
-                }
                 if (n3 < this.bvSU.length()) {
                     bvSU += this.bvSU.substring(n3);
-                }
                 if (this.iBRc.apply(bvSU)) {
                     this.bvSU = bvSU;
                     if (b2) {
                         this.Wwxn(n);
-                    }
                     this.afCQ(this.ofoi, this.bvSU);
-                }
             }
         }
     }
@@ -253,8 +215,6 @@ public class PQVr extends Gui
     public int vrkY(final int n, final int n2, final boolean b) {
         int index = n2;
         if (n < 0) {
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         final int abs = Math.abs(n);
@@ -264,24 +224,13 @@ public class PQVr extends Gui
             index = this.bvSU.indexOf(32, index);
             if (index == -1) {
                 index = length;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 while (b && index < length && this.bvSU.charAt(index) == ' ') {
                     ++index;
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
             }
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
             ++i;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         return index;
@@ -335,113 +284,61 @@ public class PQVr extends Gui
                 if (GuiScreen.isCtrlKeyDown()) {
                     if (this.TFCV) {
                         this.BJNy(-1);
-                        if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                            throw null;
-                        }
-                    }
-                }
                 else if (this.TFCV) {
                     this.vdET(-1);
-                }
                 return true;
             }
             case 199: {
                 if (GuiScreen.isShiftKeyDown()) {
                     this.GycT(0);
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     this.uRPp();
-                }
                 return true;
             }
             case 203: {
                 if (GuiScreen.isShiftKeyDown()) {
                     if (GuiScreen.isCtrlKeyDown()) {
                         this.GycT(this.YCEU(-1, this.hGrN()));
-                        if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.GycT(this.hGrN() - 1);
-                        if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                            throw null;
-                        }
-                    }
-                }
                 else if (GuiScreen.isCtrlKeyDown()) {
                     this.MBxR(this.qlpZ(-1));
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     this.Wwxn(-1);
-                }
                 return true;
             }
             case 205: {
                 if (GuiScreen.isShiftKeyDown()) {
                     if (GuiScreen.isCtrlKeyDown()) {
                         this.GycT(this.YCEU(1, this.hGrN()));
-                        if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.GycT(this.hGrN() + 1);
-                        if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                            throw null;
-                        }
-                    }
-                }
                 else if (GuiScreen.isCtrlKeyDown()) {
                     this.MBxR(this.qlpZ(1));
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     this.Wwxn(1);
-                }
                 return true;
             }
             case 207: {
                 if (GuiScreen.isShiftKeyDown()) {
                     this.GycT(this.bvSU.length());
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     this.FUtr();
-                }
                 return true;
             }
             case 211: {
                 if (GuiScreen.isCtrlKeyDown()) {
                     if (this.TFCV) {
                         this.BJNy(1);
-                        if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                            throw null;
-                        }
-                    }
-                }
                 else if (this.TFCV) {
                     this.vdET(1);
-                }
                 return true;
             }
             default: {
                 if (ChatAllowedCharacters.isAllowedCharacter(c)) {
                     if (this.TFCV) {
                         this.FBRk(Character.toString(c));
-                    }
                     return true;
-                }
                 return false;
             }
         }
@@ -451,8 +348,6 @@ public class PQVr extends Gui
         boolean b;
         if (n >= this.vfNB && n < this.vfNB + this.hGZK && n2 >= this.UPTf && n2 < this.UPTf + this.Rjof) {
             b = true;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -480,9 +375,6 @@ public class PQVr extends Gui
             int n;
             if (this.TFCV) {
                 n = this.cyTH;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 n = this.omsv;
@@ -494,9 +386,6 @@ public class PQVr extends Gui
             boolean b;
             if (n3 >= 0 && n3 <= trimStringToWidth.length()) {
                 b = true;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 b = false;
@@ -505,9 +394,6 @@ public class PQVr extends Gui
             boolean b3;
             if (this.eZDl && this.haCx / 6 % 2 == 0 && b2) {
                 b3 = true;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 b3 = false;
@@ -516,9 +402,6 @@ public class PQVr extends Gui
             int vfNB;
             if (this.DkzG) {
                 vfNB = this.vfNB + 4;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 vfNB = this.vfNB;
@@ -527,9 +410,6 @@ public class PQVr extends Gui
             int upTf;
             if (this.DkzG) {
                 upTf = this.UPTf + (this.Rjof - 8) / 2;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 upTf = this.UPTf;
@@ -543,21 +423,13 @@ public class PQVr extends Gui
                 String substring;
                 if (b2) {
                     substring = trimStringToWidth.substring(0, n3);
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     substring = trimStringToWidth;
-                }
                 drawStringWithShadow = this.HTCH.drawStringWithShadow(substring.replaceAll("(?s).", "*"), (float)n4, (float)n5, n2);
             }
             boolean b5;
             if (this.nQvb < this.bvSU.length() || this.bvSU.length() >= this.PoHu()) {
                 b5 = true;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 b5 = false;
@@ -566,16 +438,11 @@ public class PQVr extends Gui
             int n6;
             if (n3 > 0) {
                 n6 = n4 + this.hGZK;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else {
                 n6 = n4;
             }
             final int n7 = n6;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
             if (!trimStringToWidth.isEmpty() && b2 && n3 < trimStringToWidth.length()) {
                 this.HTCH.drawStringWithShadow(trimStringToWidth.substring(n3), (float)drawStringWithShadow, (float)n5, n2);
@@ -583,13 +450,8 @@ public class PQVr extends Gui
             if (b4) {
                 if (b6) {
                     Gui.drawRect(n7, n5 - 1, n7 + 1, n5 + 1 + this.HTCH.FONT_HEIGHT, -3092272);
-                    if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                        throw null;
-                    }
-                }
                 else {
                     this.HTCH.drawStringWithShadow("_", (float)n7, (float)n5, n2);
-                }
             }
             if (length != n3) {
                 this.kTbU(n7, n5 - 1, n4 + this.HTCH.getStringWidth(trimStringToWidth.substring(0, length)) - 1, n5 + 1 + this.HTCH.FONT_HEIGHT);
@@ -684,8 +546,6 @@ public class PQVr extends Gui
         int hgzk;
         if (this.XvLy()) {
             hgzk = this.hGZK - 8;
-            if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                throw null;
             }
         }
         else {
@@ -714,9 +574,6 @@ public class PQVr extends Gui
             }
             if (pKai > n) {
                 this.bxJC += pKai - n;
-                if (PQVr.\u200d\u2006\u2003\u200c\u2003) {
-                    throw null;
-                }
             }
             else if (pKai <= this.bxJC) {
                 this.bxJC -= this.bxJC - pKai;

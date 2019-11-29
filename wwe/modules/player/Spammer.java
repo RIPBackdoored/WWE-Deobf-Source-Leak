@@ -38,9 +38,6 @@ public class Spammer extends qMIe
             String string;
             if (this.random.OnGi()) {
                 string = " " + new Random().nextInt();
-                if (Spammer.\u200f\u2007\u2005\u200c\u2004\u2003\u200a) {
-                    throw null;
-                }
             }
             else {
                 string = "";
@@ -54,8 +51,6 @@ public class Spammer extends qMIe
     public void LPxx() {
         try {
             Spammer.AGlV = Wrapper.ypJK().fmny();
-            if (Spammer.\u200f\u2007\u2005\u200c\u2004\u2003\u200a) {
-                throw null;
             }
         }
         catch (IOException ex) {

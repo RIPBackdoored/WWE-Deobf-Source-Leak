@@ -66,34 +66,22 @@ public class Jesus extends qMIe
                 if (Wrapper.mc.player.motionY < 0.03 && this.VpUa) {
                     final EntityPlayerSP player = Wrapper.mc.player;
                     player.motionY += 0.06713;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.motionY <= 0.05 && this.VpUa) {
                     final EntityPlayerSP player2 = Wrapper.mc.player;
                     player2.motionY *= 1.20000000999;
                     final EntityPlayerSP player3 = Wrapper.mc.player;
                     player3.motionY += 0.06;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.motionY <= 0.08 && this.VpUa) {
                     final EntityPlayerSP player4 = Wrapper.mc.player;
                     player4.motionY *= 1.20000003;
                     final EntityPlayerSP player5 = Wrapper.mc.player;
                     player5.motionY += 0.055;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.motionY <= 0.112 && this.VpUa) {
                     final EntityPlayerSP player6 = Wrapper.mc.player;
                     player6.motionY += 0.0535;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (this.VpUa) {
                     final EntityPlayerSP player7 = Wrapper.mc.player;
@@ -133,30 +121,18 @@ public class Jesus extends qMIe
                 if (Wrapper.mc.player.motionY < 0.03 && this.VpUa) {
                     final EntityPlayerSP player10 = Wrapper.mc.player;
                     player10.motionY += 0.06713;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.motionY <= 0.05 && this.VpUa) {
                     final EntityPlayerSP player11 = Wrapper.mc.player;
                     player11.motionY += 0.06;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.motionY <= 0.08 && this.VpUa) {
                     final EntityPlayerSP player12 = Wrapper.mc.player;
                     player12.motionY += 0.055;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.motionY <= 0.112 && this.VpUa) {
                     final EntityPlayerSP player13 = Wrapper.mc.player;
                     player13.motionY += 0.0535;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 else if (this.VpUa) {
                     final EntityPlayerSP player14 = Wrapper.mc.player;
@@ -196,8 +172,6 @@ public class Jesus extends qMIe
             if (FoCK((Entity)Wrapper.mc.player, true) && !yPGD((Entity)Wrapper.mc.player) && !heyv((Entity)Wrapper.mc.player)) {
                 final int n = Wrapper.mc.player.ticksExisted % 2;
                 yYGD.NXja((CPacketPlayer)uqzS.MYlK(), yYGD.Oixl((CPacketPlayer)uqzS.MYlK()) + 0.02);
-                if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                    throw null;
                 }
             }
         }
@@ -248,13 +222,9 @@ public class Jesus extends qMIe
                     return true;
                 }
                 ++j;
-                if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                    throw null;
                 }
             }
             ++i;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         return false;
@@ -264,8 +234,6 @@ public class Jesus extends qMIe
         boolean b;
         if (entity.posY >= blockPos.getY()) {
             b = true;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         else {
@@ -282,14 +250,10 @@ public class Jesus extends qMIe
         double n;
         if (b) {
             n = 0.03;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         else if (aite(entity)) {
             n = 0.2;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         else {
@@ -304,13 +268,9 @@ public class Jesus extends qMIe
                     return true;
                 }
                 ++j;
-                if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                    throw null;
                 }
             }
             ++i;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         return false;
@@ -333,13 +293,9 @@ public class Jesus extends qMIe
                     return true;
                 }
                 ++j;
-                if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                    throw null;
                 }
             }
             ++i;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         return false;
@@ -352,8 +308,6 @@ public class Jesus extends qMIe
         int n5 = n;
         if (Wrapper.mc.player.motionX > 0.009999999776482582) {
             n2 = 0;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         else if (Wrapper.mc.player.motionX < -0.009999999776482582) {
@@ -361,8 +315,6 @@ public class Jesus extends qMIe
         }
         if (Wrapper.mc.player.motionZ > 0.009999999776482582) {
             n3 = 0;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         else if (Wrapper.mc.player.motionZ < -0.009999999776482582) {
@@ -382,20 +334,12 @@ public class Jesus extends qMIe
                 while (k <= floor6) {
                     if (Wrapper.mc.world.getBlockState(new BlockPos(i, j, k)).getBlock() instanceof BlockLiquid && !Wrapper.mc.player.isInsideOfMaterial(Material.LAVA) && !Wrapper.mc.player.isInsideOfMaterial(Material.WATER)) {
                         return true;
-                    }
                     ++k;
-                    if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                        throw null;
-                    }
                 }
                 ++j;
-                if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                    throw null;
                 }
             }
             ++i;
-            if (Jesus.\u200d\u2008\u2001\u200f\u2007\u200a) {
-                throw null;
             }
         }
         return false;

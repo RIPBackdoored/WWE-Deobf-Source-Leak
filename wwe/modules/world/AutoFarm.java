@@ -197,18 +197,12 @@ public class AutoFarm extends qMIe
                         vector3f = new Vector3f((float)n6, (float)n7, (float)n8);
                     }
                     --n5;
-                    if (AutoFarm.\u200e\u2004\u2000) {
-                        throw null;
                     }
                 }
                 ++n4;
-                if (AutoFarm.\u200e\u2004\u2000) {
-                    throw null;
                 }
             }
             --n3;
-            if (AutoFarm.\u200e\u2004\u2000) {
-                throw null;
             }
         }
         return vector3f;
@@ -232,18 +226,12 @@ public class AutoFarm extends qMIe
                         vector3f = new Vector3f((float)n6, (float)n7, (float)n8);
                     }
                     --n5;
-                    if (AutoFarm.\u200e\u2004\u2000) {
-                        throw null;
                     }
                 }
                 ++n4;
-                if (AutoFarm.\u200e\u2004\u2000) {
-                    throw null;
                 }
             }
             --n3;
-            if (AutoFarm.\u200e\u2004\u2000) {
-                throw null;
             }
         }
         return vector3f;
@@ -269,17 +257,12 @@ public class AutoFarm extends qMIe
                             n2 = n9;
                             vector3f = new Vector3f((float)n6, (float)n7, (float)n8);
                         }
-                        if (AutoFarm.\u200e\u2004\u2000) {
-                            throw null;
                         }
                     }
                     else if (blockState.getBlock() instanceof BlockReed) {
                         if (Wrapper.mc.world.getBlockState(new BlockPos(n6, n7 + 1, n8)).getBlock() instanceof BlockReed && !(Wrapper.mc.world.getBlockState(new BlockPos(n6, n7 - 2, n8)).getBlock() instanceof BlockReed)) {
                             n2 = n9;
                             vector3f = new Vector3f((float)n6, n7 + 1.0f, (float)n8);
-                            if (AutoFarm.\u200e\u2004\u2000) {
-                                throw null;
-                            }
                         }
                     }
                     else if (blockState.getBlock() instanceof BlockNetherWart) {
@@ -291,18 +274,12 @@ public class AutoFarm extends qMIe
                         }
                     }
                     --n5;
-                    if (AutoFarm.\u200e\u2004\u2000) {
-                        throw null;
                     }
                 }
                 ++n4;
-                if (AutoFarm.\u200e\u2004\u2000) {
-                    throw null;
                 }
             }
             --n3;
-            if (AutoFarm.\u200e\u2004\u2000) {
-                throw null;
             }
         }
         return vector3f;
@@ -330,18 +307,12 @@ public class AutoFarm extends qMIe
                         }
                     }
                     --n5;
-                    if (AutoFarm.\u200e\u2004\u2000) {
-                        throw null;
                     }
                 }
                 ++n4;
-                if (AutoFarm.\u200e\u2004\u2000) {
-                    throw null;
                 }
             }
             --n3;
-            if (AutoFarm.\u200e\u2004\u2000) {
-                throw null;
             }
         }
         return vector3f;
@@ -382,8 +353,6 @@ public class AutoFarm extends qMIe
         boolean b;
         if (blockState.getBlock() != Blocks.AIR && blockState.getBlock() instanceof BlockCrops) {
             b = true;
-            if (AutoFarm.\u200e\u2004\u2000) {
-                throw null;
             }
         }
         else {

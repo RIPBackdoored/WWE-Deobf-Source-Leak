@@ -43,22 +43,15 @@ public class XsCz
                             if (Character.isDigit(s.charAt(i))) {
                                 if (++i < length && Character.isDigit(s.charAt(i))) {
                                     ++i;
-                                    if (XsCz.\u200b) {
-                                        throw null;
-                                    }
                                 }
                             }
                             else {
                                 --i;
-                                if (XsCz.\u200b) {
-                                    throw null;
                                 }
                             }
                         }
                         else {
                             --i;
-                            if (XsCz.\u200b) {
-                                throw null;
                             }
                         }
                     }
@@ -66,16 +59,12 @@ public class XsCz
             }
             else if (char1 == '\u000f') {
                 ++i;
-                if (XsCz.\u200b) {
-                    throw null;
                 }
             }
             else {
                 sb.append(char1);
                 ++i;
             }
-            if (XsCz.\u200b) {
-                throw null;
             }
         }
         return sb.toString();
@@ -89,8 +78,6 @@ public class XsCz
             final char char1 = s.charAt(i);
             if (char1 != '\u000f' && char1 != '\u0002' && char1 != '\u001f') {
                 if (char1 == '\u0016') {
-                    if (XsCz.\u200b) {
-                        throw null;
                     }
                 }
                 else {
@@ -98,8 +85,6 @@ public class XsCz
                 }
             }
             ++i;
-            if (XsCz.\u200b) {
-                throw null;
             }
         }
         return sb.toString();

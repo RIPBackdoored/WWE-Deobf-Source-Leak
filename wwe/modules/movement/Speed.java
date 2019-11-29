@@ -74,9 +74,6 @@ public class Speed extends qMIe
             double n3;
             if (Wrapper.mc.player.ticksExisted % 2 == 0) {
                 n3 = 2.1;
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else {
                 n3 = 1.3;
@@ -105,16 +102,13 @@ public class Speed extends qMIe
                     player.motionX *= 1.0;
                     final EntityPlayerSP player2 = Wrapper.mc.player;
                     player2.motionZ *= 1.0;
-                }
                 if (this.mLMb == 4 || this.mLMb == 5 || this.mLMb == 7) {
                     final EntityPlayerSP player3 = Wrapper.mc.player;
                     player3.motionX *= 1.1;
                     final EntityPlayerSP player4 = Wrapper.mc.player;
                     player4.motionZ *= 1.1;
-                }
                 if (this.mLMb == 7) {
                     this.mLMb = 0;
-                }
             }
         }
         if (this.mode.OnGi().equalsIgnoreCase("Tomato")) {
@@ -125,9 +119,6 @@ public class Speed extends qMIe
             boolean xntm;
             if (!Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().grow(0.0625, 0.0, 0.0625)).isEmpty()) {
                 xntm = true;
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else {
                 xntm = false;
@@ -153,10 +144,6 @@ public class Speed extends qMIe
                     Wrapper.mc.player.setVelocity(array[0] * i, 0.0, array[1] * i);
                     this.XNep(array[0] * i, 0.0, array[1] * i);
                     ++i;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
             }
         }
     }
@@ -176,7 +163,6 @@ public class Speed extends qMIe
                     final double n = 0.4;
                     player.motionY = n;
                     sfUx.XNxu = n;
-                }
                 this.BEIG = eabb();
                 this.PQas(sfUx, 1.0f);
             }
@@ -192,9 +178,6 @@ public class Speed extends qMIe
             if (this.mLMb == 1 && (Wrapper.mc.player.movementInput.moveForward != 0.0f || Wrapper.mc.player.movementInput.moveStrafe != 0.0f)) {
                 this.mLMb = 2;
                 this.BEIG = 1.35 * eabb() - 0.01;
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else if (this.mLMb == 2 && Wrapper.mc.player.onGround) {
                 this.mLMb = 3;
@@ -202,22 +185,14 @@ public class Speed extends qMIe
                     Wrapper.mc.player.motionY = 0.4;
                     sfUx.XNxu = 0.4;
                     this.BEIG *= 2.149;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
             }
             else if (this.mLMb == 3) {
                 this.mLMb = 4;
                 this.BEIG = this.dAcM - 0.66 * (this.dAcM - eabb());
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else {
                 if (Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().offset(0.0, Wrapper.mc.player.motionY, 0.0)).size() > 0 || Wrapper.mc.player.collidedVertically) {
                     this.mLMb = 1;
-                }
                 this.BEIG = this.dAcM - this.dAcM / 159.0;
             }
             this.BEIG = Math.max(this.BEIG, eabb());
@@ -234,9 +209,6 @@ public class Speed extends qMIe
             if (this.mLMb == 1 && (Wrapper.mc.player.movementInput.moveForward != 0.0f || Wrapper.mc.player.movementInput.moveStrafe != 0.0f)) {
                 this.mLMb = 2;
                 this.BEIG = 1.35 * eabb() - 0.01;
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else if (this.mLMb == 2 && Wrapper.mc.player.onGround) {
                 this.mLMb = 3;
@@ -244,22 +216,14 @@ public class Speed extends qMIe
                     Wrapper.mc.player.motionY = 0.4;
                     sfUx.XNxu = 0.4;
                     this.BEIG *= 2.149;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
             }
             else if (this.mLMb == 3) {
                 this.mLMb = 4;
                 this.BEIG = this.dAcM - 0.66 * (this.dAcM - eabb());
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else {
                 if (Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().offset(0.0, Wrapper.mc.player.motionY, 0.0)).size() > 0 || Wrapper.mc.player.collidedVertically) {
                     this.mLMb = 1;
-                }
                 this.BEIG = this.dAcM - this.dAcM / 159.0;
             }
             this.BEIG = Math.max(this.BEIG, eabb());
@@ -277,36 +241,21 @@ public class Speed extends qMIe
                     sfUx.XNxu -= 0.09316090325960147;
                     final EntityPlayerSP player7 = Wrapper.mc.player;
                     player7.posY -= 0.09316090325960147;
-                }
                 if (this.mLMb == 1) {
                     this.mLMb = 2;
                     this.BEIG = 1.38 * eabb() - 0.01;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else if (this.mLMb == 2 && Wrapper.mc.player.onGround) {
                     this.mLMb = 3;
                     Wrapper.mc.player.motionY = 0.399399995803833;
                     sfUx.XNxu = 0.399399995803833;
                     this.BEIG *= 2.149;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else if (this.mLMb == 3) {
                     this.mLMb = 4;
                     this.BEIG = this.dAcM - 0.66 * (this.dAcM - eabb());
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else {
                     if (Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().offset(0.0, Wrapper.mc.player.motionY, 0.0)).size() > 0 || Wrapper.mc.player.collidedHorizontally) {
                         this.mLMb = 1;
-                    }
                     this.BEIG = this.dAcM - this.dAcM / 159.0;
-                }
                 this.BEIG = Math.max(this.BEIG, eabb());
                 this.PQas(sfUx, 1.0f);
             }
@@ -324,7 +273,6 @@ public class Speed extends qMIe
                 if (this.NWrw.contains(cPacketPlayer)) {
                     this.NWrw.remove(cPacketPlayer);
                     return;
-                }
                 uqzS.Ggez(true);
             }
         }
@@ -337,13 +285,8 @@ public class Speed extends qMIe
             if (Wrapper.mc.player != null && Wrapper.mc.player.isEntityAlive() && Wrapper.mc.world.isBlockLoaded(new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ)) && !(Wrapper.mc.currentScreen instanceof GuiDownloadTerrain)) {
                 if (this.AdRJ <= 0) {
                     this.AdRJ = sPacketPlayerPosLook.getTeleportId();
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else {
                     lqJY.Ggez(true);
-                }
             }
         }
     }
@@ -365,8 +308,6 @@ public class Speed extends qMIe
         if (moveForward == 0.0 && moveStrafe == 0.0) {
             sfUx.VsNw = 0.0;
             sfUx.lcNE = 0.0;
-            if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                throw null;
             }
         }
         else {
@@ -376,48 +317,25 @@ public class Speed extends qMIe
                     int n3;
                     if (moveForward > 0.0) {
                         n3 = -45;
-                        if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                            throw null;
-                        }
-                    }
                     else {
                         n3 = 45;
-                    }
                     rotationYaw = n2 + n3;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else if (moveStrafe < 0.0) {
                     final float n4 = rotationYaw;
                     int n5;
                     if (moveForward > 0.0) {
                         n5 = 45;
-                        if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                            throw null;
-                        }
-                    }
                     else {
                         n5 = -45;
-                    }
                     rotationYaw = n4 + n5;
-                }
                 moveStrafe = 0.0f;
                 if (moveForward > 0.0) {
                     moveForward = n;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else if (moveForward < 0.0) {
                     moveForward = -n;
-                }
             }
             if (moveStrafe > 0.0) {
                 moveStrafe = n;
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else if (moveStrafe < 0.0) {
                 moveStrafe = -n;
@@ -436,8 +354,6 @@ public class Speed extends qMIe
         if (moveForward == 0.0 && moveStrafe == 0.0) {
             Wrapper.mc.player.motionX = 0.0;
             Wrapper.mc.player.motionZ = 0.0;
-            if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                throw null;
             }
         }
         else {
@@ -447,48 +363,25 @@ public class Speed extends qMIe
                     int n4;
                     if (moveForward > 0.0) {
                         n4 = -45;
-                        if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                            throw null;
-                        }
-                    }
                     else {
                         n4 = 45;
-                    }
                     rotationYaw = n3 + n4;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else if (moveStrafe < 0.0) {
                     final float n5 = rotationYaw;
                     int n6;
                     if (moveForward > 0.0) {
                         n6 = 45;
-                        if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                            throw null;
-                        }
-                    }
                     else {
                         n6 = -45;
-                    }
                     rotationYaw = n5 + n6;
-                }
                 moveStrafe = 0.0f;
                 if (moveForward > 0.0) {
                     moveForward = n2;
-                    if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                        throw null;
-                    }
-                }
                 else if (moveForward < 0.0) {
                     moveForward = -n2;
-                }
             }
             if (moveStrafe > 0.0) {
                 moveStrafe = n2;
-                if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                    throw null;
-                }
             }
             else if (moveStrafe < 0.0) {
                 moveStrafe = -n2;
@@ -512,8 +405,6 @@ public class Speed extends qMIe
         double eabb;
         if (Wrapper.mc.player == null) {
             eabb = 0.2873;
-            if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                throw null;
             }
         }
         else {
@@ -538,8 +429,6 @@ public class Speed extends qMIe
         double eabb;
         if (Wrapper.mc.player == null) {
             eabb = 0.2873;
-            if (Speed.\u200f\u2001\u200c\u200b\u200e\u2001\u2006) {
-                throw null;
             }
         }
         else {

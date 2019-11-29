@@ -59,14 +59,8 @@ public class AutoEat extends qMIe
             }
             if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemFood) {
                 if (Wrapper.mc.player.getHeldItemMainhand().getItem() == Items.GOLDEN_APPLE && this.useGapples.OnGi()) {
-                    if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                        throw null;
-                    }
                 }
                 else if (Wrapper.mc.player.getHeldItemMainhand().getItem() == Items.GOLDEN_APPLE && !this.useGapples.OnGi()) {
-                    if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                        throw null;
-                    }
                     return;
                 }
                 yYGD.rvRL(Wrapper.mc.gameSettings.keyBindUseItem, true);
@@ -97,12 +91,8 @@ public class AutoEat extends qMIe
                     return i;
                 }
                 ++i;
-                if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                    throw null;
                 }
             }
-            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                throw null;
             }
         }
         else {
@@ -112,22 +102,13 @@ public class AutoEat extends qMIe
                 Label_0259: {
                     if (!jjZz.cKMx(stackInSlot2) && stackInSlot2.getItem() instanceof ItemFood) {
                         if (stackInSlot2.getItem() == Items.GOLDEN_APPLE && this.useGapples.OnGi()) {
-                            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                                throw null;
-                            }
                         }
                         else if (stackInSlot2.getItem() == Items.GOLDEN_APPLE && !this.useGapples.OnGi()) {
-                            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                                throw null;
-                            }
                             break Label_0259;
                         }
                         return j;
-                    }
                 }
                 ++j;
-                if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                    throw null;
                 }
             }
         }
@@ -141,13 +122,9 @@ public class AutoEat extends qMIe
                     int n2;
                     if (k < 9) {
                         n2 = k + 36;
-                        if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                            throw null;
                         }
-                    }
                     else {
                         n2 = k;
-                    }
                     playerController.windowClick(n, n2, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                     Wrapper.mc.playerController.windowClick(0, 36 + Wrapper.mc.player.inventory.currentItem, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                     final PlayerControllerMP playerController2 = Wrapper.mc.playerController;
@@ -155,23 +132,15 @@ public class AutoEat extends qMIe
                     int n4;
                     if (k < 9) {
                         n4 = k + 36;
-                        if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                            throw null;
                         }
-                    }
                     else {
                         n4 = k;
-                    }
                     playerController2.windowClick(n3, n4, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                     return Wrapper.mc.player.inventory.currentItem;
                 }
                 ++k;
-                if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                    throw null;
                 }
             }
-            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                throw null;
             }
         }
         else {
@@ -181,14 +150,8 @@ public class AutoEat extends qMIe
                 Label_0795: {
                     if (!jjZz.cKMx(stackInSlot4) && stackInSlot4.getItem() instanceof ItemFood) {
                         if (stackInSlot4.getItem() == Items.GOLDEN_APPLE && this.useGapples.OnGi()) {
-                            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                                throw null;
-                            }
                         }
                         else if (stackInSlot4.getItem() == Items.GOLDEN_APPLE && !this.useGapples.OnGi()) {
-                            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                                throw null;
-                            }
                             break Label_0795;
                         }
                         final PlayerControllerMP playerController3 = Wrapper.mc.playerController;
@@ -196,9 +159,6 @@ public class AutoEat extends qMIe
                         int n6;
                         if (l < 9) {
                             n6 = l + 36;
-                            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                                throw null;
-                            }
                         }
                         else {
                             n6 = l;
@@ -210,20 +170,14 @@ public class AutoEat extends qMIe
                         int n8;
                         if (l < 9) {
                             n8 = l + 36;
-                            if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                                throw null;
-                            }
                         }
                         else {
                             n8 = l;
                         }
                         playerController4.windowClick(n7, n8, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                         return Wrapper.mc.player.inventory.currentItem;
-                    }
                 }
                 ++l;
-                if (AutoEat.\u2003\u2002\u2007\u2001\u200d\u2005\u2001\u200a\u2004) {
-                    throw null;
                 }
             }
         }

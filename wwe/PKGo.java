@@ -18,13 +18,8 @@ public class PKGo
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 PKGo.PtUQ.add(UUID.fromString(line));
-                if (PKGo.\u200e) {
-                    throw null;
-                }
             }
             bufferedReader.close();
-            if (PKGo.\u200e) {
-                throw null;
             }
         }
         catch (Exception ex) {}

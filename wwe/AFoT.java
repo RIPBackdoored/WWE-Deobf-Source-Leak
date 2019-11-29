@@ -65,18 +65,9 @@ public final class wwe/AFoT
                     final int[] array5 = array3[n2];
                     System.arraycopy(array5, 0, array2, n3, array5.length);
                     n3 += array5.length;
-                    if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (n2 == qJjm) {
-                    if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                        throw null;
-                    }
-                    if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
@@ -88,19 +79,11 @@ public final class wwe/AFoT
                         System.arraycopy(array8, 0, array2, n3, array8.length);
                         n3 += array8.length;
                         array7[array6.length] = array3[n2][0];
-                        if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         array7[array6.length] = array6[0];
                         System.arraycopy(array7, 0, array2, n3, array7.length);
                         n3 += array7.length;
-                    }
                     wwe/eCpO.eCwX(this.oWXh, array7);
-                    if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -129,8 +112,6 @@ public final class wwe/AFoT
             System.arraycopy(array, i, array2, n10, tDzh);
             i += tDzh;
             n10 += n9;
-            if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                throw null;
             }
         }
         int n11 = n8;
@@ -138,8 +119,6 @@ public final class wwe/AFoT
             System.arraycopy(array, i, array2, n11, tDzh);
             i += tDzh;
             n11 += n9;
-            if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                throw null;
             }
         }
         int n12 = n7;
@@ -147,8 +126,6 @@ public final class wwe/AFoT
             System.arraycopy(array, i, array2, n12, tDzh);
             i += tDzh;
             n12 += n8;
-            if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                throw null;
             }
         }
         int n13 = tDzh;
@@ -156,8 +133,6 @@ public final class wwe/AFoT
             System.arraycopy(array, i, array2, n13, tDzh);
             i += tDzh;
             n13 += n7;
-            if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                throw null;
             }
         }
         return array2;
@@ -167,8 +142,6 @@ public final class wwe/AFoT
         int[] fxwC;
         if (kdJj.wwe/TAhz.Xkta(wwe/TAhz)) {
             fxwC = kdJj.wwe/TAhz.cozM(wwe/TAhz);
-            if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                throw null;
             }
         }
         else {
@@ -187,8 +160,6 @@ public final class wwe/AFoT
         System.arraycopy(this.iIgr, 0, ((DataBufferInt)kdJj.wwe/TAhz.BUYD(wwe/TAhz).getRaster().getDataBuffer()).getData(), 0, this.DOLo);
         if (kdJj.wwe/TAhz.DqRz(wwe/TAhz) == 2) {
             this.qLVc.clearRect(kdJj.wwe/TAhz.agUi(wwe/TAhz), kdJj.wwe/TAhz.YLVf(wwe/TAhz), kdJj.wwe/TAhz.tDzh(wwe/TAhz), kdJj.wwe/TAhz.YWtZ(wwe/TAhz));
-            if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                throw null;
             }
         }
         else if (kdJj.wwe/TAhz.DqRz(wwe/TAhz) == 3 && this.iIgr != null) {
@@ -225,8 +196,6 @@ public final class wwe/AFoT
                     this.eUwH(wwe/TAhz);
                 }
                 ++i;
-                if (wwe/AFoT.\u200d\u2004\u2005\u200d\u2003\u200b\u2003\u200f\u2004) {
-                    throw null;
                 }
             }
         }

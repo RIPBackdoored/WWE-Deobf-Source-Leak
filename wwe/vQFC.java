@@ -46,9 +46,6 @@ public class vQFC extends Thread
                     while ((line = this.aNdt.readLine()) != null) {
                         try {
                             this.EeiH.aFqa(line);
-                            if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                                throw null;
-                            }
                             continue;
                         }
                         catch (Throwable t) {
@@ -65,32 +62,19 @@ public class vQFC extends Thread
                                 this.EeiH.jgkl("### ");
                                 while (stringTokenizer.hasMoreTokens()) {
                                     this.EeiH.jgkl("### " + stringTokenizer.nextToken());
-                                    if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                                        throw null;
-                                    }
                                 }
                                 // monitorexit(this.EeiH)
-                                if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                                    throw null;
                                 }
-                            }
-                            if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                                throw null;
-                            }
                             continue;
                         }
                         break;
                     }
                     if (line == null) {}
-                    if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                        throw null;
                     }
                     continue;
                 }
                 catch (InterruptedIOException ex) {
                     this.CSeR("PING " + System.currentTimeMillis() / (0x5B490BCD3CEEE121L ^ 0x5B490BCD3CEEE2C9L));
-                    if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                        throw null;
                     }
                     continue;
                 }
@@ -99,8 +83,6 @@ public class vQFC extends Thread
         catch (Exception ex2) {
             try {
                 this.beAY.close();
-                if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                    throw null;
                 }
             }
             catch (Exception ex3) {}
@@ -116,8 +98,6 @@ public class vQFC extends Thread
         try {
             this.TUvu = true;
             this.beAY.close();
-            if (vQFC.\u2004\u2003\u2006\u2006\u2000\u200e\u2003\u200c) {
-                throw null;
             }
         }
         catch (Exception ex) {}

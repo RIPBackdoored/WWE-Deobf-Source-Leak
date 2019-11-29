@@ -54,15 +54,9 @@ public class SWNL
     public static void SnYv(final Boolean b, final Boolean b2, final Boolean b3) {
         if (b && !b2 && !b3) {
             GL11.glColor3f(145.0f, 0.0f, 255.0f);
-            if (SWNL.\u2008\u2002\u200d) {
-                throw null;
-            }
         }
         else if (!b && b2 && !b3) {
             GL11.glColor3f(255.0f, 0.0f, 0.0f);
-            if (SWNL.\u2008\u2002\u200d) {
-                throw null;
-            }
         }
         else if (!b && !b2 && b3) {
             GL11.glColor3f(1.0f, 0.7f, 0.0f);

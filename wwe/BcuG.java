@@ -18,15 +18,10 @@ public class BcuG extends HAxG
             if (array[0].equalsIgnoreCase("clear")) {
                 PathFinder.LpTn.clear();
                 HAxG.TuzD("Clearing path finder");
-                if (BcuG.\u2001\u200f\u2005\u200b\u200a\u2005) {
-                    throw null;
-                }
             }
             else {
                 HAxG.TuzD(this.ZlRY());
             }
-            if (BcuG.\u2001\u200f\u2005\u200b\u200a\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {

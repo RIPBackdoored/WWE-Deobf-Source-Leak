@@ -33,9 +33,6 @@ public class BoatFly extends qMIe
         if (!this.boats.OnGi()) {
             if (Wrapper.mc.player.getRidingEntity() != null && Wrapper.mc.gameSettings.keyBindJump.isKeyDown()) {
                 Wrapper.mc.player.getRidingEntity().motionY = this.speed.OnGi() / 10.0;
-                if (BoatFly.\u2001\u2007) {
-                    throw null;
-                }
             }
         }
         else if (Wrapper.mc.player.getRidingEntity() != null && Wrapper.mc.player.getRidingEntity() instanceof EntityBoat) {

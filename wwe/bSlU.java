@@ -168,17 +168,11 @@ public class bSlU extends GuiScreen
                 bSlU.Qina.ADFS = false;
                 bSlU.Qina.kKMJ = true;
                 bSlU.Qina.MUAZ = false;
-                if (bSlU.\u200b\u200b\u2000\u2007\u2006) {
-                    throw null;
-                }
             }
             else if (!bSlU.Qina.ADFS && bSlU.Qina.kKMJ && !bSlU.Qina.MUAZ) {
                 bSlU.Qina.ADFS = false;
                 bSlU.Qina.kKMJ = false;
                 bSlU.Qina.MUAZ = true;
-                if (bSlU.\u200b\u200b\u2000\u2007\u2006) {
-                    throw null;
-                }
             }
             else if (!bSlU.Qina.ADFS && !bSlU.Qina.kKMJ && bSlU.Qina.MUAZ) {
                 bSlU.Qina.ADFS = true;

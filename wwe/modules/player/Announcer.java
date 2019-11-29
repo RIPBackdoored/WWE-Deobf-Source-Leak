@@ -100,9 +100,6 @@ public class Announcer extends qMIe
         final Iterator<xbUc.wwe/xbUc> iterator = this.objE.iterator();
         while (iterator.hasNext()) {
             iterator.next().uffc.gCgh();
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         if (Wrapper.mc.player.getActiveHand() != null) {
             (this.yEUX.NhFM = new ArrayList()).add(new xbUc.wwe/xbUc("!object1", Wrapper.mc.player.getHeldItem(Wrapper.mc.player.getActiveHand()).getDisplayName()));
@@ -110,13 +107,8 @@ public class Announcer extends qMIe
             boolean b;
             if (Wrapper.mc.gameSettings.keyBindUseItem.isKeyDown() && Wrapper.mc.player.isHandActive() && Wrapper.mc.player.getHeldItem(Wrapper.mc.player.getActiveHand()).getItem() instanceof ItemFood) {
                 b = true;
-                if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                    throw null;
-                }
-            }
             else {
                 b = false;
-            }
             yeux.leSX(b);
             this.yEUX.NhFM = null;
             (this.DHdQ.NhFM = new ArrayList()).add(new xbUc.wwe/xbUc("!object1", Wrapper.mc.player.getHeldItem(Wrapper.mc.player.getActiveHand()).getDisplayName()));
@@ -124,13 +116,8 @@ public class Announcer extends qMIe
             boolean b2;
             if (Wrapper.mc.gameSettings.keyBindUseItem.isKeyDown() && Wrapper.mc.player.isHandActive() && !(Wrapper.mc.player.getHeldItem(Wrapper.mc.player.getActiveHand()).getItem() instanceof ItemFood)) {
                 b2 = true;
-                if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                    throw null;
-                }
-            }
             else {
                 b2 = false;
-            }
             dHdQ.leSX(b2);
             this.DHdQ.NhFM = null;
         }
@@ -156,9 +143,6 @@ public class Announcer extends qMIe
         String s2;
         if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemBlock) {
             s2 = "block";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             s2 = "item";
@@ -169,9 +153,6 @@ public class Announcer extends qMIe
         boolean b;
         if (n == Wrapper.mc.gameSettings.keyBindDrop.getKeyCode() && !(Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemAir)) {
             b = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -182,9 +163,6 @@ public class Announcer extends qMIe
         boolean b2;
         if (n == Wrapper.mc.gameSettings.keyBindChat.getKeyCode()) {
             b2 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b2 = false;
@@ -194,9 +172,6 @@ public class Announcer extends qMIe
         boolean b3;
         if (n == Wrapper.mc.gameSettings.keyBindCommand.getKeyCode()) {
             b3 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b3 = false;
@@ -206,9 +181,6 @@ public class Announcer extends qMIe
         boolean b4;
         if (n == Wrapper.mc.gameSettings.keyBindFullscreen.getKeyCode()) {
             b4 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b4 = false;
@@ -218,9 +190,6 @@ public class Announcer extends qMIe
         boolean b5;
         if (n == 1) {
             b5 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b5 = false;
@@ -230,9 +199,6 @@ public class Announcer extends qMIe
         boolean b6;
         if (n == Wrapper.mc.gameSettings.keyBindInventory.getKeyCode()) {
             b6 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b6 = false;
@@ -242,9 +208,6 @@ public class Announcer extends qMIe
         boolean b7;
         if (n == Wrapper.mc.gameSettings.keyBindPlayerList.getKeyCode()) {
             b7 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b7 = false;
@@ -254,9 +217,6 @@ public class Announcer extends qMIe
         boolean b8;
         if (n == Wrapper.mc.gameSettings.keyBindScreenshot.getKeyCode()) {
             b8 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b8 = false;
@@ -268,9 +228,6 @@ public class Announcer extends qMIe
         String displayName;
         if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemAir) {
             displayName = "Nothing";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             displayName = Wrapper.mc.player.getHeldItemMainhand().getDisplayName();
@@ -281,9 +238,6 @@ public class Announcer extends qMIe
         String displayName2;
         if (Wrapper.mc.player.getHeldItemOffhand().getItem() instanceof ItemAir) {
             displayName2 = "Nothing";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             displayName2 = Wrapper.mc.player.getHeldItemOffhand().getDisplayName();
@@ -293,9 +247,6 @@ public class Announcer extends qMIe
         boolean b9;
         if (n == Wrapper.mc.gameSettings.keyBindSwapHands.getKeyCode()) {
             b9 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b9 = false;
@@ -306,9 +257,6 @@ public class Announcer extends qMIe
         boolean b10;
         if (n == Wrapper.mc.gameSettings.keyBindSneak.getKeyCode()) {
             b10 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b10 = false;
@@ -317,21 +265,12 @@ public class Announcer extends qMIe
         String s5;
         if (Wrapper.mc.gameSettings.thirdPersonView == 0) {
             s5 = "third person";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else if (Wrapper.mc.gameSettings.thirdPersonView == 1) {
             s5 = "second person";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else if (Wrapper.mc.gameSettings.thirdPersonView == 2) {
             s5 = "first person";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             s5 = "idk";
@@ -341,9 +280,6 @@ public class Announcer extends qMIe
         boolean b11;
         if (n == Wrapper.mc.gameSettings.keyBindTogglePerspective.getKeyCode()) {
             b11 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b11 = false;
@@ -353,9 +289,6 @@ public class Announcer extends qMIe
         boolean b12;
         if (n == Wrapper.mc.gameSettings.keyBindJump.getKeyCode()) {
             b12 = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b12 = false;
@@ -371,9 +304,6 @@ public class Announcer extends qMIe
         String displayName;
         if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemAir) {
             displayName = "Nothing";
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             displayName = Wrapper.mc.player.getHeldItemMainhand().getDisplayName();
@@ -416,9 +346,6 @@ public class Announcer extends qMIe
         boolean b;
         if (Wrapper.mc.objectMouseOver.getBlockPos() != null && !(Wrapper.mc.world.getBlockState(Wrapper.mc.objectMouseOver.getBlockPos()).getBlock() instanceof BlockAir)) {
             b = true;
-            if (Announcer.\u2003\u2006\u2003\u2005\u2005\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             b = false;

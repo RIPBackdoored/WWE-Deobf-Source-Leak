@@ -13,9 +13,6 @@ public class PbYr extends HAxG
     public void lpzH(final String s, final String[] array) {
         try {
             hSNE.lyvR(this);
-            if (PbYr.\u200c\u2003\u2001\u200a\u2002\u200e\u200e\u200b\u200e) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             this.kVjF(ex);

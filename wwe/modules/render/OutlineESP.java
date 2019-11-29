@@ -49,9 +49,6 @@ public class OutlineESP extends qMIe
     public static void uuKQ(final float n) {
         for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
             if (entity == Wrapper.mc.getRenderViewEntity()) {
-                if (OutlineESP.\u2008\u200f\u2004) {
-                    throw null;
-                }
                 continue;
             }
             else {
@@ -69,10 +66,6 @@ public class OutlineESP extends qMIe
                     entityRenderObject.doRender(entity, n2 - yYGD.onRX(), n3 - yYGD.UuJK(), n4 - yYGD.LkVR(), entity.rotationYaw, n);
                     OutlineESP.krOE = false;
                     OutlineESP.feQE = false;
-                }
-                if (OutlineESP.\u2008\u200f\u2004) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -81,9 +74,6 @@ public class OutlineESP extends qMIe
     public static void mmPS(final float n) {
         for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
             if (entity == Wrapper.mc.getRenderViewEntity()) {
-                if (OutlineESP.\u2008\u200f\u2004) {
-                    throw null;
-                }
                 continue;
             }
             else {
@@ -98,35 +88,18 @@ public class OutlineESP extends qMIe
                     final double n4 = entity.lastTickPosZ + (entity.posZ - entity.lastTickPosZ) * n;
                     if (entity instanceof EntityAnimal || entity instanceof EntityVillager) {
                         GL11.glColor3f(0.0f, 230.0f, 255.0f);
-                        if (OutlineESP.\u2008\u200f\u2004) {
-                            throw null;
-                        }
                     }
                     else if (entity instanceof EntityMob || entity instanceof EntityWither) {
                         Tracers.oisD(new Color(-14124001));
-                        if (OutlineESP.\u2008\u200f\u2004) {
-                            throw null;
-                        }
                     }
                     else if (entity instanceof EntityPlayer) {
                         if (vlwv.Zqnd().UsVJ(entity.getName())) {
                             Tracers.oisD(JIfG.JzFV(0x3A9F7B9E704B419DL ^ 0x3A9F7B9E704B419CL, 1.0f));
-                            if (OutlineESP.\u2008\u200f\u2004) {
-                                throw null;
-                            }
-                        }
                         else {
                             GL11.glColor3f(1.0f, 0.0f, 0.0f);
-                            if (OutlineESP.\u2008\u200f\u2004) {
-                                throw null;
-                            }
-                        }
                     }
                     else if (entity instanceof EntityEnderCrystal) {
                         Tracers.oisD(new Color(-65340));
-                        if (OutlineESP.\u2008\u200f\u2004) {
-                            throw null;
-                        }
                     }
                     else {
                         GL11.glColor3f(1.0f, 1.0f, 0.0f);
@@ -136,10 +109,6 @@ public class OutlineESP extends qMIe
                     entityRenderObject.doRender(entity, n2 - yYGD.onRX(), n3 - yYGD.UuJK(), n4 - yYGD.LkVR(), entity.rotationYaw, n);
                     OutlineESP.krOE = false;
                     OutlineESP.feQE = false;
-                }
-                if (OutlineESP.\u2008\u200f\u2004) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -155,10 +124,8 @@ public class OutlineESP extends qMIe
             for (final EntityPlayer next : Wrapper.mc.world.loadedEntityList) {
                 if (this.players.OnGi() && next instanceof EntityPlayer) {
                     next.setGlowing(true);
-                }
                 if (this.crystals.OnGi() && next instanceof EntityEnderCrystal) {
                     ((EntityEnderCrystal)next).setGlowing(true);
-                }
                 if (this.animals.OnGi()) {
                     if (next instanceof EntityAnimal) {
                         ((EntityAnimal)next).setGlowing(true);
@@ -166,7 +133,6 @@ public class OutlineESP extends qMIe
                     if (next instanceof EntityVillager) {
                         ((EntityVillager)next).setGlowing(true);
                     }
-                }
                 if (this.monsters.OnGi()) {
                     if (next instanceof EntityMob) {
                         ((EntityMob)next).setGlowing(true);
@@ -174,13 +140,8 @@ public class OutlineESP extends qMIe
                     if (next instanceof EntityWither) {
                         ((EntityWither)next).setGlowing(true);
                     }
-                }
                 if (this.everyThing.OnGi() && next instanceof Entity) {
                     ((Entity)next).setGlowing(true);
-                }
-                if (OutlineESP.\u2008\u200f\u2004) {
-                    throw null;
-                }
             }
         }
         if (this.mode.OnGi().equalsIgnoreCase("Outline")) {
@@ -207,8 +168,6 @@ public class OutlineESP extends qMIe
             if (next instanceof Entity) {
                 next.setGlowing(false);
             }
-            if (OutlineESP.\u2008\u200f\u2004) {
-                throw null;
             }
         }
         super.qBmy();

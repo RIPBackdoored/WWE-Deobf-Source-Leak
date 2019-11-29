@@ -21,9 +21,6 @@ public class CjbW
         boolean b;
         if (this.RPJv.indexOf(64) >= 0) {
             b = true;
-            if (CjbW.\u200b\u2008) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -35,9 +32,6 @@ public class CjbW
         boolean b;
         if (this.RPJv.indexOf(43) >= 0) {
             b = true;
-            if (CjbW.\u200b\u2008) {
-                throw null;
-            }
         }
         else {
             b = false;

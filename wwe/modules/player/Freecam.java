@@ -53,9 +53,6 @@ public class Freecam extends qMIe
         }
         if (Wrapper.mc.player.moveForward != 0.0f || Wrapper.mc.player.moveStrafing != 0.0f) {
             this.SkaT(this.speed.OnGi());
-            if (Freecam.\u200c\u2007) {
-                throw null;
-            }
         }
         else {
             Wrapper.mc.player.motionX = 0.0;
@@ -79,26 +76,16 @@ public class Freecam extends qMIe
             boolean pnwc;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 pnwc = true;
-                if (Freecam.\u200c\u2007) {
-                    throw null;
-                }
-            }
             else {
                 pnwc = false;
-            }
             this.pNWC = pnwc;
             if (Wrapper.mc.player.getRidingEntity() == null) {
                 this.pecf = Wrapper.mc.player.posX;
                 this.lcOQ = Wrapper.mc.player.posY;
                 this.tGVQ = Wrapper.mc.player.posZ;
-                if (Freecam.\u200c\u2007) {
-                    throw null;
-                }
-            }
             else {
                 this.vxgH = Wrapper.mc.player.getRidingEntity();
                 Wrapper.mc.player.dismountRidingEntity();
-            }
             this.TgZu = Wrapper.mc.player.rotationPitch;
             this.iGUX = Wrapper.mc.player.rotationYaw;
             (this.iAxr = new EntityOtherPlayerMP((World)Wrapper.mc.world, Wrapper.mc.getSession().getProfile())).copyLocationAndAnglesFrom((Entity)Wrapper.mc.player);
@@ -135,7 +122,6 @@ public class Freecam extends qMIe
             player.motionX = motionX;
             if (this.pNWC) {
                 Wrapper.mc.player.startRiding(this.vxgH, true);
-            }
         }
         Wrapper.mc.renderGlobal.loadRenderers();
         super.qBmy();
@@ -169,10 +155,6 @@ public class Freecam extends qMIe
             if (n2 == 0.0 && n3 == 0.0) {
                 Wrapper.mc.player.motionX = 0.0;
                 Wrapper.mc.player.motionZ = 0.0;
-                if (Freecam.\u200c\u2007) {
-                    throw null;
-                }
-            }
             else {
                 if (n2 != 0.0) {
                     if (n3 > 0.0) {
@@ -180,16 +162,11 @@ public class Freecam extends qMIe
                         int n5;
                         if (n2 > 0.0) {
                             n5 = -45;
-                            if (Freecam.\u200c\u2007) {
-                                throw null;
-                            }
                         }
                         else {
                             n5 = 45;
                         }
                         rotationYaw = n4 + n5;
-                        if (Freecam.\u200c\u2007) {
-                            throw null;
                         }
                     }
                     else if (n3 < 0.0) {
@@ -197,9 +174,6 @@ public class Freecam extends qMIe
                         int n7;
                         if (n2 > 0.0) {
                             n7 = 45;
-                            if (Freecam.\u200c\u2007) {
-                                throw null;
-                            }
                         }
                         else {
                             n7 = -45;
@@ -209,17 +183,13 @@ public class Freecam extends qMIe
                     n3 = 0.0;
                     if (n2 > 0.0) {
                         n2 = 1.0;
-                        if (Freecam.\u200c\u2007) {
-                            throw null;
                         }
                     }
                     else if (n2 < 0.0) {
                         n2 = -1.0;
                     }
-                }
                 Wrapper.mc.player.motionX = n2 * n * Math.cos(Math.toRadians(rotationYaw + 90.0f)) + n3 * n * Math.sin(Math.toRadians(rotationYaw + 90.0f));
                 Wrapper.mc.player.motionZ = n2 * n * Math.sin(Math.toRadians(rotationYaw + 90.0f)) - n3 * n * Math.cos(Math.toRadians(rotationYaw + 90.0f));
-            }
         }
     }
     

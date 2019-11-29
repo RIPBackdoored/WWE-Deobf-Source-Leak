@@ -28,9 +28,6 @@ public static class wwe/DLei
         boolean b;
         if (this.nLvH && this.uffc.QOXG(this.HKtP.delay.OnGi() * 1000.0)) {
             b = true;
-            if (wwe/DLei.\u2001\u200c\u2002\u200f\u200a\u2002\u2005\u2009\u2001) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -51,11 +48,7 @@ public static class wwe/DLei
                     final xbUc.wwe/DLei wwe/DLei = this.NhFM.get(i);
                     replaceAll = replaceAll.replaceAll(wwe/DLei.Plsy, wwe/DLei.JWSl);
                     ++i;
-                    if (xbUc.wwe/DLei.\u2001\u200c\u2002\u200f\u200a\u2002\u2005\u2009\u2001) {
-                        throw null;
-                    }
                 }
-            }
             Wrapper.mc.player.sendChatMessage(replaceAll);
             this.ZHsM();
         }

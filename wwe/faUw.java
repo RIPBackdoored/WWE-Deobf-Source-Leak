@@ -36,13 +36,8 @@ public class faUw extends GuiScreen
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 this.tHbn.add(line);
-                if (faUw.\u200b\u2002) {
-                    throw null;
-                }
             }
             bufferedReader.close();
-            if (faUw.\u200b\u2002) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -54,8 +49,6 @@ public class faUw extends GuiScreen
         while (iterator.hasNext()) {
             this.tTLQ.add(new XOnZ(this, iterator.next(), this.width / 2 - n2 / 2, n, n2, 10));
             n += 12;
-            if (faUw.\u200b\u2002) {
-                throw null;
             }
         }
         this.addButton(new GuiButton(0, this.width / 2 - 53, this.height - 25, 50, 20, "Back"));
@@ -67,14 +60,10 @@ public class faUw extends GuiScreen
     public void func_73863_a(final int n, final int n2, final float n3) {
         if (this.tTLQ.size() < (this.height - 70) / 12) {
             this.rvwt = 0;
-            if (faUw.\u200b\u2002) {
-                throw null;
             }
         }
         else if (this.rvwt > 0) {
             this.rvwt = 0;
-            if (faUw.\u200b\u2002) {
-                throw null;
             }
         }
         else if (Math.abs(this.rvwt) > this.tTLQ.size() * 12 - (this.height - 70)) {
@@ -87,8 +76,6 @@ public class faUw extends GuiScreen
         while (i < this.tTLQ.size()) {
             this.tTLQ.get(i).SLyu(n, n2, n3);
             ++i;
-            if (faUw.\u200b\u2002) {
-                throw null;
             }
         }
         GL11.glDisable(3089);
@@ -110,18 +97,11 @@ public class faUw extends GuiScreen
             if (lPyl.Fpdu) {
                 if (this.LPyl == lPyl) {
                     this.LPyl = null;
-                    if (faUw.\u200b\u2002) {
-                        throw null;
-                    }
-                }
                 else {
                     this.LPyl = lPyl;
-                }
                 return;
             }
             ++i;
-            if (faUw.\u200b\u2002) {
-                throw null;
             }
         }
         this.LPyl = null;
@@ -164,10 +144,6 @@ public class faUw extends GuiScreen
                 if (this.yHeb.getText().isEmpty() || s.toLowerCase().contains(this.yHeb.getText().toLowerCase())) {
                     this.tTLQ.add(new XOnZ(this, s, this.width / 2 - n3 / 2, n2, n3, 10));
                     n2 += 12;
-                }
-                if (faUw.\u200b\u2002) {
-                    throw null;
-                }
             }
         }
     }

@@ -56,9 +56,6 @@ public class XdhZ
         int n4;
         if (this.HSDz.size() <= 5) {
             n4 = this.HSDz.size() * 12;
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
         else {
             n4 = 60;
@@ -86,13 +83,8 @@ public class XdhZ
             int n10;
             if (this.fzpE) {
                 n10 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
-                if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                    throw null;
-                }
-            }
             else {
                 n10 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
-            }
             gnNa.wQYt(n6, n7, n8, n9, n10);
             XybC.eTim("Load", (float)(this.OsiI + 3), (float)(this.zzJD + this.ooJc + n5 + 4), -1);
             final float n11 = (float)(this.OsiI + this.zipv - 27);
@@ -102,13 +94,8 @@ public class XdhZ
             int n15;
             if (this.yasy) {
                 n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
-                if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                    throw null;
-                }
-            }
             else {
                 n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
-            }
             gnNa.wQYt(n11, n12, n13, n14, n15);
             XybC.eTim("-", (float)(this.OsiI + this.zipv - 25), (float)(this.zzJD + this.ooJc + n5 + 4), -1);
             final float n16 = (float)(this.OsiI + this.zipv - 12);
@@ -118,13 +105,8 @@ public class XdhZ
             int n20;
             if (this.fwwC) {
                 n20 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 215).getRGB();
-                if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                    throw null;
-                }
-            }
             else {
                 n20 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue(), 175).getRGB();
-            }
             gnNa.wQYt(n16, n17, n18, n19, n20);
             XybC.eTim("+", (float)(this.OsiI + this.zipv - 10), (float)(this.zzJD + this.ooJc + n5 + 4), -1);
             if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
@@ -132,19 +114,12 @@ public class XdhZ
                 final int scaleFactor = scaledResolution.getScaleFactor();
                 GL11.glScissor(0, (int)((scaledResolution.getScaledHeight_double() - this.zzJD - this.ooJc - 60.0) * scaleFactor), (int)(scaledResolution.getScaledWidth_double() * scaleFactor), 60 * scaleFactor);
                 GL11.glEnable(3089);
-            }
             if (!this.HSDz.isEmpty()) {
                 final Iterator<NoaN> iterator = this.HSDz.iterator();
                 while (iterator.hasNext()) {
                     iterator.next().SOOn();
-                    if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                        throw null;
-                    }
-                }
-            }
             if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 GL11.glDisable(3089);
-            }
         }
         GL11.glPopMatrix();
     }
@@ -160,23 +135,12 @@ public class XdhZ
             if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 if (this.HSDz.size() > 5) {
                     n4 = 60;
-                    if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                        throw null;
-                    }
-                }
                 else {
                     n4 = this.HSDz.size() * 12;
-                    if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                        throw null;
-                    }
-                }
-            }
             else {
                 n4 = this.HSDz.size() * 12;
-            }
             if (n2 < n3 + n4) {
                 return true;
-            }
         }
         return false;
     }
@@ -194,54 +158,31 @@ public class XdhZ
             boolean wmBz;
             if (!this.wMBz) {
                 wmBz = true;
-                if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                    throw null;
-                }
-            }
             else {
                 wmBz = false;
-            }
             this.wMBz = wmBz;
         }
         if (this.wMBz) {
             if (this.fwwC) {
                 Wrapper.mc.displayGuiScreen((GuiScreen)new IhAb());
-            }
             if (this.yasy && this.sILe != null) {
                 int i = 0;
                 while (i < vlwv.zkER.size()) {
                     final hfst hfst = vlwv.zkER.get(i);
                     if (hfst.kAWG == this.sILe.lALN) {
                         this.aFjO(hfst);
-                    }
                     ++i;
-                    if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                        throw null;
-                    }
-                }
-            }
             if (this.fzpE && this.sILe != null) {
                 try {
                     Wrapper.ypJK().eTCw(this.sILe.lALN);
                     Wrapper.ypJK().rXPb();
-                    if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                        throw null;
-                    }
-                }
                 catch (Exception ex) {
                     HAxG.TuzD("It appears something went wrong");
                     ex.printStackTrace();
-                }
-            }
             if (!this.HSDz.isEmpty()) {
                 final Iterator<NoaN> iterator = this.HSDz.iterator();
                 while (iterator.hasNext()) {
                     iterator.next().rVom(n, n2, n3);
-                    if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                        throw null;
-                    }
-                }
-            }
         }
     }
     
@@ -251,11 +192,7 @@ public class XdhZ
             if (hfst.kAWG == vlwv.zkER.get(i).kAWG) {
                 HAxG.TuzD("It appears that may already be a preset?");
                 return;
-            }
             ++i;
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
         vlwv.zkER.add(hfst);
         this.HSDz.add(new NoaN(hfst.kAWG, this, this.HSDz.size() * 12 + 13));
@@ -268,9 +205,6 @@ public class XdhZ
         vlwv.zkER.remove(hfst);
         try {
             FileUtils.deleteDirectory(new File(Wrapper.ypJK().oSNt.getAbsolutePath() + File.separator + this.sILe.lALN));
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
         catch (IOException ex) {
             ex.printStackTrace();
@@ -280,9 +214,6 @@ public class XdhZ
         while (i < vlwv.zkER.size()) {
             this.HSDz.add(new NoaN(vlwv.zkER.get(i).kAWG, this, this.HSDz.size() * 12 + 13));
             ++i;
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
     }
     
@@ -290,9 +221,6 @@ public class XdhZ
         boolean b;
         if (n >= n3 && n <= n4 && n2 >= n5 && n2 <= n6) {
             b = true;
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -307,9 +235,6 @@ public class XdhZ
             this.HSDz.get(i).jXta = jXta;
             jXta += 12;
             ++i;
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
     }
     
@@ -317,13 +242,8 @@ public class XdhZ
         if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("All")) {
             if (n < 0.0) {
                 this.zzJD -= 5;
-                if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                    throw null;
-                }
-            }
             else if (n > 0.0) {
                 this.zzJD += 5;
-            }
         }
         if (this.wMBz && this.jwvM) {
             this.QqND(n, true);
@@ -347,11 +267,7 @@ public class XdhZ
             final NoaN noaN = this.HSDz.get(i);
             if (i > Math.min(this.HSDz.size(), 5)) {
                 aUlY += 12;
-            }
             ++i;
-            if (XdhZ.\u2000\u200e\u2005\u2001\u200c\u200a) {
-                throw null;
-            }
         }
         if (this.AUlY > Math.abs(aUlY)) {
             this.AUlY = aUlY;

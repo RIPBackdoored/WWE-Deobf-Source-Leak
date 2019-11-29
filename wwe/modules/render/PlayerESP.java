@@ -41,16 +41,11 @@ public class PlayerESP extends qMIe
                     ((EntityLivingBase)entity).getHealth();
                     if (!vlwv.Zqnd().UsVJ(entity.getName())) {
                         this.oMUp(entity, n - yYGD.onRX(), n2 - yYGD.UuJK(), n3 - yYGD.LkVR(), 0.0f, 255.0f, 0.0f, 0.0f, -65536);
-                        if (PlayerESP.\u2009\u200d) {
-                            throw null;
-                        }
                     }
                     else {
                         this.oMUp(entity, n - yYGD.onRX(), n2 - yYGD.UuJK(), n3 - yYGD.LkVR(), 0.0f, 500.0f, 0.0f, 0.0f, KrtY.DnMA(0x7310BF81BB5B0BDCL ^ 0x7310BF81B0B0C9DCL, 1.0f).getRGB());
                     }
                 }
-                if (PlayerESP.\u2009\u200d) {
-                    throw null;
                 }
             }
         }
@@ -60,16 +55,11 @@ public class PlayerESP extends qMIe
                 if (entity2 != Wrapper.mc.player && entity2 != null && entity2 instanceof EntityPlayer) {
                     if (vlwv.Zqnd().UsVJ(entity2.getName())) {
                         BIIV.ITDu(entity2, JIfG.JzFV(0x91BFCEC00E7F7E0BL ^ 0x91BFCEC00E7F7E0AL, 1.0f));
-                        if (PlayerESP.\u2009\u200d) {
-                            throw null;
-                        }
                     }
                     else {
                         BIIV.ITDu(entity2, Color.red);
                     }
                 }
-                if (PlayerESP.\u2009\u200d) {
-                    throw null;
                 }
             }
         }

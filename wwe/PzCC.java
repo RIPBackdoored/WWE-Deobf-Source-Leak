@@ -76,16 +76,10 @@ public class PzCC
                 this.jneM = cKmJ.length();
                 if (this.jneM == (0x84AA0E3BAEF1CA15L ^ 0x84AA0E3BAEF1CA15L)) {
                     this.JqMb(cKmJ, false);
-                    if (PzCC.\u2007\u2000\u200e\u200f) {
-                        throw null;
-                    }
                 }
                 else {
                     this.jzFj.oYmD(this.NRtx, "DCC RESUME file.ext " + this.UxXV + " " + this.jneM);
                     this.pqmX.sWUQ(this);
-                    if (PzCC.\u2007\u2000\u200e\u200f) {
-                        throw null;
-                    }
                 }
             }
             else {
@@ -887,8 +881,6 @@ public class PzCC
         if (this.IAMl > (0x2F36F587DAD7BF2FL ^ 0x2F36F587DAD7BF2FL)) {
             try {
                 Thread.sleep(this.IAMl);
-                if (PzCC.\u2007\u2000\u200e\u200f) {
-                    throw null;
                 }
             }
             catch (InterruptedException ex) {}
@@ -923,8 +915,6 @@ public class PzCC
         boolean b;
         if (!this.ESZY()) {
             b = true;
-            if (PzCC.\u2007\u2000\u200e\u200f) {
-                throw null;
             }
         }
         else {
@@ -956,8 +946,6 @@ public class PzCC
     public void cnyH() {
         try {
             this.OBKu.close();
-            if (PzCC.\u2007\u2000\u200e\u200f) {
-                throw null;
             }
         }
         catch (Exception ex) {}

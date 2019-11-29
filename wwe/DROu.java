@@ -41,9 +41,6 @@ public class DROu extends Thread
             this.wilV = new ObjectOutputStream(this.ZnqM.getOutputStream());
             this.urgx = new ObjectInputStream(this.ZnqM.getInputStream());
             this.HzdM(new bWzb(Wrapper.mc.getSession().getUsername(), this.ZElF));
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             this.TTRL = "Couldent connect to the IRC server, probably down):";
@@ -78,9 +75,6 @@ public class DROu extends Thread
             this.wilV = new ObjectOutputStream(this.ZnqM.getOutputStream());
             this.urgx = new ObjectInputStream(this.ZnqM.getInputStream());
             this.HzdM(new bWzb(Wrapper.mc.getSession().getUsername(), this.ZElF));
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             this.TTRL = "Couldent connect to the IRC server, probably down):";
@@ -93,8 +87,6 @@ public class DROu extends Thread
     public void run() {
         do {
             this.eQYx();
-        } while (!DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008);
-        throw null;
     }
     
     public void eQYx() {
@@ -102,10 +94,6 @@ public class DROu extends Thread
             Thread.sleep(0x947F586853B6064CL ^ 0x947F586853B607B8L);
             if (this.JmLq()) {
                 this.hJoY();
-            }
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             this.TTRL = "Couldent connect to the IRC server, probably down): Error message 1";
@@ -124,17 +112,10 @@ public class DROu extends Thread
             if (list.size() >= 1) {
                 if ((int)list.get(list.size() - 1) == jtnJ.lfKR.ordinal()) {
                     XMTT.GAPX((ArrayList<Object>)list);
-                    if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                        throw null;
-                    }
                 }
                 else if (list.get(list.size() - 1) == jtnJ.zEqJ.ordinal()) {
                     XMTT.OIIt((ArrayList<Object>)list);
                 }
-            }
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
     }
     
@@ -148,16 +129,9 @@ public class DROu extends Thread
                 while (i < length) {
                     list.add(array[i].get(emRf));
                     ++i;
-                    if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                        throw null;
-                    }
                 }
                 this.wilV.writeObject(list);
                 this.wilV.flush();
-            }
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -168,9 +142,6 @@ public class DROu extends Thread
         boolean b;
         if (this.ZnqM != null || this.urgx != null || this.wilV != null) {
             b = true;
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -182,19 +153,13 @@ public class DROu extends Thread
         try {
             if (this.ZnqM != null) {
                 this.ZnqM.close();
-            }
             this.ZnqM = null;
             if (this.wilV != null) {
                 this.wilV.close();
-            }
             this.wilV = null;
             if (this.urgx != null) {
                 this.urgx.close();
-            }
             this.urgx = null;
-            if (DROu.\u2009\u200a\u2009\u200e\u200d\u2002\u2000\u2008) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();

@@ -63,8 +63,6 @@ public class Tunneller extends qMIe
             if (!(Wrapper.mc.world.getBlockState(blockPos).getBlock() instanceof BlockAir)) {
                 list.add(blockPos);
             }
-            if (Tunneller.\u200c\u200d\u2007) {
-                throw null;
             }
         }
         for (final BlockPos blockPos2 : BlockPos.getAllInBox(this.TWkw(new BlockPos((Entity)Wrapper.mc.player).offset(Wrapper.mc.player.getHorizontalFacing(), 3).offset(EnumFacing.fromAngle((double)(Wrapper.mc.player.rotationYaw + 90.0f)), 1), new Vec3i(0, 1, 0)), this.TWkw(new BlockPos((Entity)Wrapper.mc.player).offset(Wrapper.mc.player.getHorizontalFacing(), 1).offset(EnumFacing.fromAngle((double)(Wrapper.mc.player.rotationYaw - 180.0f)), 4).offset(EnumFacing.fromAngle((double)(Wrapper.mc.player.rotationYaw - 90.0f)), 1), new Vec3i(0, 0, 0)))) {
@@ -74,16 +72,12 @@ public class Tunneller extends qMIe
                     list3.add(blockPos2);
                 }
             }
-            if (Tunneller.\u200c\u200d\u2007) {
-                throw null;
             }
         }
         for (final BlockPos blockPos3 : BlockPos.getAllInBox(this.TWkw(new BlockPos((Entity)Wrapper.mc.player).offset(EnumFacing.fromAngle(Wrapper.mc.player.rotationYaw - 180.0), 3), new Vec3i(0, 1, 0)), this.TWkw(new BlockPos((Entity)Wrapper.mc.player).offset(EnumFacing.fromAngle(Wrapper.mc.player.rotationYaw - 180.0), 1), new Vec3i(0, 0, 0)))) {
             if (Wrapper.mc.world.getBlockState(blockPos3).getBlock() instanceof BlockAir && FIwW.ecXb(blockPos3)) {
                 list2.add(blockPos3);
             }
-            if (Tunneller.\u200c\u200d\u2007) {
-                throw null;
             }
         }
         int n = -1;
@@ -92,29 +86,21 @@ public class Tunneller extends qMIe
             final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
             if (!jjZz.cKMx(stackInSlot) && stackInSlot.getItem() instanceof ItemBlock && Block.getBlockFromItem(stackInSlot.getItem()).getDefaultState().isFullCube()) {
                 n = i;
-                if (Tunneller.\u200c\u200d\u2007) {
-                    throw null;
                 }
                 break;
             }
             else {
                 ++i;
-                if (Tunneller.\u200c\u200d\u2007) {
-                    throw null;
                 }
                 continue;
             }
         }
         if ((this.fillLava.OnGi() || this.fillFlowingLava.OnGi()) && list3.size() > 0 && n != -1) {
             this.AUfX = 2;
-            if (Tunneller.\u200c\u200d\u2007) {
-                throw null;
             }
         }
         else if (this.fill.OnGi() && list2.size() > 0 && n != -1) {
             this.AUfX = 1;
-            if (Tunneller.\u200c\u200d\u2007) {
-                throw null;
             }
         }
         else {
@@ -124,8 +110,6 @@ public class Tunneller extends qMIe
             final Iterator<BlockPos> iterator4 = list3.iterator();
             if (iterator4.hasNext()) {
                 this.hEIf = iterator4.next().add(0, -1, 0);
-                if (Tunneller.\u200c\u200d\u2007) {
-                    throw null;
                 }
             }
             omqH.prFd = WFux.Goyn(this.hEIf)[0];
@@ -141,9 +125,6 @@ public class Tunneller extends qMIe
                         if (iTtI < n2) {
                             heIf = blockPos4;
                             n2 = iTtI;
-                            if (Tunneller.\u200c\u200d\u2007) {
-                                throw null;
-                            }
                         }
                     }
                     else {
@@ -152,14 +133,10 @@ public class Tunneller extends qMIe
                     }
                     this.hEIf = heIf;
                 }
-                if (Tunneller.\u200c\u200d\u2007) {
-                    throw null;
                 }
             }
             if (this.hEIf == null) {
                 Wrapper.mc.playerController.resetBlockRemoving();
-                if (Tunneller.\u200c\u200d\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -196,9 +173,6 @@ public class Tunneller extends qMIe
                         if (iTtI2 > n3) {
                             heIf2 = blockPos5;
                             n3 = iTtI2;
-                            if (Tunneller.\u200c\u200d\u2007) {
-                                throw null;
-                            }
                         }
                     }
                     else {
@@ -207,8 +181,6 @@ public class Tunneller extends qMIe
                     }
                     this.hEIf = heIf2;
                 }
-                if (Tunneller.\u200c\u200d\u2007) {
-                    throw null;
                 }
             }
             this.hEIf = this.hEIf.add(0, -1, 0);
@@ -238,15 +210,11 @@ public class Tunneller extends qMIe
                 final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
                 if (!jjZz.cKMx(stackInSlot) && stackInSlot.getItem() instanceof ItemBlock && Block.getBlockFromItem(stackInSlot.getItem()).getDefaultState().isFullCube()) {
                     currentItem2 = i;
-                    if (Tunneller.\u200c\u200d\u2007) {
-                        throw null;
                     }
                     break;
                 }
                 else {
                     ++i;
-                    if (Tunneller.\u200c\u200d\u2007) {
-                        throw null;
                     }
                     continue;
                 }
@@ -278,15 +246,11 @@ public class Tunneller extends qMIe
                 final ItemStack stackInSlot2 = Wrapper.mc.player.inventory.getStackInSlot(j);
                 if (!jjZz.cKMx(stackInSlot2) && stackInSlot2.getItem() instanceof ItemBlock && Block.getBlockFromItem(stackInSlot2.getItem()).getDefaultState().isFullCube()) {
                     currentItem4 = j;
-                    if (Tunneller.\u200c\u200d\u2007) {
-                        throw null;
                     }
                     break;
                 }
                 else {
                     ++j;
-                    if (Tunneller.\u200c\u200d\u2007) {
-                        throw null;
                     }
                     continue;
                 }

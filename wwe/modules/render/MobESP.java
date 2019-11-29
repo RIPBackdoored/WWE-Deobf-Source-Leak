@@ -24,8 +24,6 @@ public class MobESP extends qMIe
             if (entity instanceof EntityAnimal) {
                 BIIV.ITDu(entity, Color.green);
             }
-            if (MobESP.\u2002) {
-                throw null;
             }
         }
     }

@@ -27,9 +27,6 @@ public class XOnZ
         boolean fpdu;
         if (n >= this.Fsmm && n2 >= this.xuVN + this.CPIf.rvwt && n < this.Fsmm + this.qpSj && n2 < this.xuVN + this.dzqs + this.CPIf.rvwt && n2 < this.CPIf.height - 30 && n2 > 40) {
             fpdu = true;
-            if (XOnZ.\u2000\u2004) {
-                throw null;
-            }
         }
         else {
             fpdu = false;
@@ -43,9 +40,6 @@ public class XOnZ
         int rgb;
         if (this.CPIf.LPyl == this) {
             rgb = new Color(-1873784752).darker().getRGB();
-            if (XOnZ.\u2000\u2004) {
-                throw null;
-            }
         }
         else {
             rgb = -1873784752;

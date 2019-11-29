@@ -56,16 +56,10 @@ public class Scaffold extends qMIe
                 final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
                 if (!cKMx(stackInSlot) && (stackInSlot.getItem() instanceof ItemBlock || stackInSlot.getItem() instanceof ItemSlab)) {
                     n = i;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     ++i;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -77,20 +71,14 @@ public class Scaffold extends qMIe
             double n2;
             if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemBlock && !(Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemSlab)) {
                 n2 = 0.0;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemSlab) {
                 n2 = 0.5;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (!cKMx(Wrapper.mc.player.inventory.getStackInSlot(n)) && Wrapper.mc.player.inventory.getStackInSlot(n).getItem() instanceof ItemSlab) {
                 n2 = 0.5;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -104,8 +92,6 @@ public class Scaffold extends qMIe
             double n6;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 n6 = Wrapper.mc.player.getRidingEntity().posX + n4;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -115,8 +101,6 @@ public class Scaffold extends qMIe
             double n8;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 n8 = Wrapper.mc.player.getRidingEntity().posY + n3;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -126,8 +110,6 @@ public class Scaffold extends qMIe
             double n10;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 n10 = Wrapper.mc.player.getRidingEntity().posZ + n5;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -138,17 +120,12 @@ public class Scaffold extends qMIe
             BlockPos blockPos2;
             if (this.extend.OnGi()) {
                 blockPos2 = new BlockPos(n7, n9, n11);
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
                 double n12;
                 if (Wrapper.mc.player.getRidingEntity() != null) {
                     n12 = Wrapper.mc.player.getRidingEntity().posX;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     n12 = Wrapper.mc.player.posX;
@@ -156,9 +133,6 @@ public class Scaffold extends qMIe
                 double n13;
                 if (Wrapper.mc.player.getRidingEntity() != null) {
                     n13 = Wrapper.mc.player.getRidingEntity().posY + n3;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     n13 = Wrapper.mc.player.posY + n3;
@@ -166,9 +140,6 @@ public class Scaffold extends qMIe
                 double n14;
                 if (Wrapper.mc.player.getRidingEntity() != null) {
                     n14 = Wrapper.mc.player.getRidingEntity().posZ;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     n14 = Wrapper.mc.player.posZ;
@@ -183,31 +154,14 @@ public class Scaffold extends qMIe
                     final EnumFacing enumFacing = entry.getValue();
                     if (enumFacing == EnumFacing.UP) {
                         blockPos3 = blockPos3.add(0, -1, 0);
-                        if (Scaffold.\u2004\u2005\u2007) {
-                            throw null;
-                        }
-                    }
                     else if (enumFacing == EnumFacing.NORTH) {
                         blockPos3 = blockPos3.add(0, 0, 1);
-                        if (Scaffold.\u2004\u2005\u2007) {
-                            throw null;
-                        }
-                    }
                     else if (enumFacing == EnumFacing.SOUTH) {
                         blockPos3 = blockPos3.add(0, 0, -1);
-                        if (Scaffold.\u2004\u2005\u2007) {
-                            throw null;
-                        }
-                    }
                     else if (enumFacing == EnumFacing.EAST) {
                         blockPos3 = blockPos3.add(-1, 0, 0);
-                        if (Scaffold.\u2004\u2005\u2007) {
-                            throw null;
-                        }
-                    }
                     else if (enumFacing == EnumFacing.WEST) {
                         blockPos3 = blockPos3.add(1, 0, 0);
-                    }
                     omqH.prFd = WFux.Goyn(blockPos3)[0];
                     omqH.OjyD = WFux.Goyn(blockPos3)[1];
                 }
@@ -220,16 +174,10 @@ public class Scaffold extends qMIe
                 final ItemStack stackInSlot2 = Wrapper.mc.player.inventory.getStackInSlot(j);
                 if (!cKMx(stackInSlot2) && (stackInSlot2.getItem() instanceof ItemBlock || stackInSlot2.getItem() instanceof ItemSlab)) {
                     n15 = j;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     ++j;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -241,20 +189,14 @@ public class Scaffold extends qMIe
             double n16;
             if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemBlock && !(Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemSlab)) {
                 n16 = 1.0;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemSlab) {
                 n16 = 0.5;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (!cKMx(Wrapper.mc.player.inventory.getStackInSlot(n15)) && Wrapper.mc.player.inventory.getStackInSlot(n15).getItem() instanceof ItemSlab) {
                 n16 = 0.5;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -268,8 +210,6 @@ public class Scaffold extends qMIe
             double n20;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 n20 = Wrapper.mc.player.getRidingEntity().posX + n18;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -279,8 +219,6 @@ public class Scaffold extends qMIe
             double n22;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 n22 = Wrapper.mc.player.getRidingEntity().posY - n17;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -290,8 +228,6 @@ public class Scaffold extends qMIe
             double n24;
             if (Wrapper.mc.player.getRidingEntity() != null) {
                 n24 = Wrapper.mc.player.getRidingEntity().posZ + n19;
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -302,17 +238,12 @@ public class Scaffold extends qMIe
             BlockPos blockPos5;
             if (this.extend.OnGi()) {
                 blockPos5 = new BlockPos(n21, n23, n25);
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
                 double n26;
                 if (Wrapper.mc.player.getRidingEntity() != null) {
                     n26 = Wrapper.mc.player.getRidingEntity().posX;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     n26 = Wrapper.mc.player.posX;
@@ -320,9 +251,6 @@ public class Scaffold extends qMIe
                 double n27;
                 if (Wrapper.mc.player.getRidingEntity() != null) {
                     n27 = Wrapper.mc.player.getRidingEntity().posY - n17;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     n27 = Wrapper.mc.player.posY - n17;
@@ -330,9 +258,6 @@ public class Scaffold extends qMIe
                 double n28;
                 if (Wrapper.mc.player.getRidingEntity() != null) {
                     n28 = Wrapper.mc.player.getRidingEntity().posZ;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     n28 = Wrapper.mc.player.posZ;
@@ -357,26 +282,18 @@ public class Scaffold extends qMIe
             BlockPos blockPos = entry.getKey();
             if (entry.getValue() == EnumFacing.UP) {
                 blockPos = blockPos.add(0, -1, 0);
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (entry.getValue() == EnumFacing.NORTH) {
                 blockPos = blockPos.add(0, 0, 1);
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (entry.getValue() == EnumFacing.SOUTH) {
                 blockPos = blockPos.add(0, 0, -1);
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (entry.getValue() == EnumFacing.EAST) {
                 blockPos = blockPos.add(-1, 0, 0);
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else if (entry.getValue() == EnumFacing.WEST) {
@@ -389,16 +306,10 @@ public class Scaffold extends qMIe
                 final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
                 if (!cKMx(stackInSlot) && (stackInSlot.getItem() instanceof ItemBlock || stackInSlot.getItem() instanceof ItemSlab)) {
                     currentItem2 = i;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     ++i;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -430,8 +341,6 @@ public class Scaffold extends qMIe
             Wrapper.mc.playerController.processRightClickBlock(Wrapper.mc.player, Wrapper.mc.world, blockPos, (EnumFacing)entry.getValue(), new Vec3d(0.5, 0.5, 0.5), EnumHand.MAIN_HAND);
             if (this.noSwing.OnGi()) {
                 Wrapper.mc.player.connection.sendPacket((Packet)new CPacketAnimation(OffHand.txLa()));
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -450,16 +359,10 @@ public class Scaffold extends qMIe
                 final ItemStack stackInSlot2 = Wrapper.mc.player.inventory.getStackInSlot(j);
                 if (!cKMx(stackInSlot2) && (stackInSlot2.getItem() instanceof ItemBlock || stackInSlot2.getItem() instanceof ItemSlab)) {
                     currentItem4 = j;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     ++j;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -491,8 +394,6 @@ public class Scaffold extends qMIe
             Wrapper.mc.playerController.processRightClickBlock(Wrapper.mc.player, Wrapper.mc.world, (BlockPos)entry2.getKey(), (EnumFacing)entry2.getValue(), new Vec3d((double)entry2.getKey().getX(), (double)entry2.getKey().getY(), (double)entry2.getKey().getZ()), EnumHand.MAIN_HAND);
             if (this.noSwing.OnGi()) {
                 Wrapper.mc.player.connection.sendPacket((Packet)new CPacketAnimation(OffHand.txLa()));
-                if (Scaffold.\u2004\u2005\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -525,8 +426,6 @@ public class Scaffold extends qMIe
         boolean b;
         if (itemStack == null || itemStack.getItem() instanceof ItemAir) {
             b = true;
-            if (Scaffold.\u2004\u2005\u2007) {
-                throw null;
             }
         }
         else {
@@ -1653,84 +1552,51 @@ public class Scaffold extends qMIe
             while (vsNw != 0.0 && this.TypB(vsNw, -1.0, 0.0)) {
                 if (vsNw < n && vsNw >= -n) {
                     vsNw = 0.0;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (vsNw > 0.0) {
                     vsNw -= n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
                     vsNw += n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
             while (lcNE != 0.0 && this.TypB(0.0, -1.0, lcNE)) {
                 if (lcNE < n && lcNE >= -n) {
                     lcNE = 0.0;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (lcNE > 0.0) {
                     lcNE -= n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
                     lcNE += n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
             while (vsNw != 0.0 && lcNE != 0.0 && this.TypB(vsNw, -1.0, lcNE)) {
                 if (vsNw < n && vsNw >= -n) {
                     vsNw = 0.0;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else if (vsNw > 0.0) {
                     vsNw -= n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     vsNw += n;
                 }
                 if (lcNE < n && lcNE >= -n) {
                     lcNE = 0.0;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (lcNE > 0.0) {
                     lcNE -= n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
                     lcNE += n;
-                    if (Scaffold.\u2004\u2005\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }

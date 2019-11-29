@@ -36,9 +36,6 @@ public class PJxY
         while (i > 0) {
             PJxY.ZQOL[i] = PJxY.ZQOL[i - 1];
             --i;
-            if (PJxY.\u200c\u200c\u200c\u200d\u200c\u2003) {
-                throw null;
-            }
         }
         PJxY.ZQOL[0] = n2;
         double n3 = 0.0;
@@ -48,9 +45,6 @@ public class PJxY
         while (j < length) {
             n3 += zqol[j];
             ++j;
-            if (PJxY.\u200c\u200c\u200c\u200d\u200c\u2003) {
-                throw null;
-            }
         }
         double n4 = n3 / PJxY.ZQOL.length;
         if (n4 > 20.0) {

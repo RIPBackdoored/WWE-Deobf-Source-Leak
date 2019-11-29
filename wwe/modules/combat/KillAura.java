@@ -101,9 +101,6 @@ public class KillAura extends qMIe
     public void MtRB(final omqH omqH) {
         if (this.mode.OnGi().equalsIgnoreCase("Single")) {
             this.owgW("Kill Aura " + TextFormatting.DARK_GRAY + "Single");
-            if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                throw null;
-            }
         }
         else if (this.mode.OnGi().equalsIgnoreCase("Multi")) {
             this.owgW("Kill Aura " + TextFormatting.DARK_GRAY + "Multi");
@@ -122,10 +119,7 @@ public class KillAura extends qMIe
                         KillAura.oYbE = oYbE;
                     }
                 }
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
         }
         if (this.priority.OnGi().equalsIgnoreCase("Health")) {
             float health = -1.0f;
@@ -137,10 +131,7 @@ public class KillAura extends qMIe
                         KillAura.oYbE = oYbE2;
                     }
                 }
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
         }
         if (this.priority.OnGi().equalsIgnoreCase("Random")) {
             this.AWXn = new ArrayList<EntityLivingBase>();
@@ -151,10 +142,7 @@ public class KillAura extends qMIe
                         this.AWXn.add(entityLivingBase);
                     }
                 }
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
             KillAura.oYbE = this.AWXn.get(new Random().nextInt(this.AWXn.size()));
         }
         if (this.priority.OnGi().equalsIgnoreCase("None")) {
@@ -165,10 +153,7 @@ public class KillAura extends qMIe
                         KillAura.oYbE = oYbE3;
                     }
                 }
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
         }
         if (KillAura.oYbE == null || !FIwW.Bvtk(KillAura.oYbE, this.players.OnGi(), this.animals.OnGi(), this.mobs.OnGi(), this.invisibles.OnGi(), this.walls.OnGi(), this.range.OnGi())) {
             return;
@@ -182,9 +167,6 @@ public class KillAura extends qMIe
             omqH.OjyD = this.aADM((Entity)KillAura.oYbE, Float.MAX_VALUE, Float.MAX_VALUE)[1];
         }
         if (Wrapper.mc.player.getCooledAttackStrength(0.0f) == 1.0f) {
-            if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                throw null;
-            }
         }
         if (this.19Delay.OnGi()) {}
         if (!this.19Delay.OnGi()) {
@@ -192,7 +174,6 @@ public class KillAura extends qMIe
             if (this.Xijd.QOXG(1000.0 / this.cps.OnGi() - new Random().nextInt(4)) && this.rotationType.OnGi().equalsIgnoreCase("Snap")) {
                 omqH.prFd = this.aADM((Entity)KillAura.oYbE, Float.MAX_VALUE, Float.MAX_VALUE)[0];
                 omqH.OjyD = this.aADM((Entity)KillAura.oYbE, Float.MAX_VALUE, Float.MAX_VALUE)[1];
-            }
         }
         if (this.event.OnGi().equalsIgnoreCase("Pre")) {
             this.ioqL();
@@ -212,13 +193,9 @@ public class KillAura extends qMIe
             boolean b;
             if (Wrapper.mc.player.getCooledAttackStrength(0.0f) == 1.0f) {
                 b = true;
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
             else {
                 b = false;
-            }
             final boolean b2 = b;
             if (this.19Delay.OnGi() && b2) {
                 if (new Random().nextInt(100) < this.hitchance.OnGi()) {
@@ -228,10 +205,7 @@ public class KillAura extends qMIe
                     }
                 }
                 OffHand.LInL();
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
             else if (!this.19Delay.OnGi()) {
                 this.Xijd.gCgh();
                 if (this.Xijd.QOXG(1000.0 / this.cps.OnGi() - new Random().nextInt(4))) {
@@ -241,7 +215,6 @@ public class KillAura extends qMIe
                     OffHand.LInL();
                     Wrapper.mc.player.resetCooldown();
                 }
-            }
             for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
                 if (entity instanceof EntityLivingBase && FIwW.Bvtk((EntityLivingBase)entity, this.players.OnGi(), this.animals.OnGi(), this.mobs.OnGi(), this.invisibles.OnGi(), this.walls.OnGi(), this.range.OnGi()) && entity != KillAura.oYbE) {
                     if (this.19Delay.OnGi() && b2) {
@@ -252,8 +225,6 @@ public class KillAura extends qMIe
                             }
                         }
                         OffHand.LInL();
-                        if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                            throw null;
                         }
                     }
                     else if (!this.19Delay.OnGi()) {
@@ -267,24 +238,16 @@ public class KillAura extends qMIe
                         }
                     }
                 }
-                if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                    throw null;
                 }
-            }
             if (this.Xijd.QOXG(1000.0 / this.cps.OnGi() - new Random().nextInt(4))) {
                 this.Xijd.BBwj();
-            }
             if (this.19Delay.OnGi()) {}
         }
         if (this.19Delay.OnGi() && Wrapper.mc.player.getCooledAttackStrength(0.0f) == 1.0f) {
             if (new Random().nextInt(100) < this.hitchance.OnGi()) {
                 Wrapper.mc.playerController.attackEntity((EntityPlayer)Wrapper.mc.player, (Entity)KillAura.oYbE);
-            }
             OffHand.LInL();
             Wrapper.mc.player.resetCooldown();
-            if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                throw null;
-            }
         }
         else if (!this.19Delay.OnGi()) {
             this.Xijd.gCgh();
@@ -295,7 +258,6 @@ public class KillAura extends qMIe
                 OffHand.LInL();
                 Wrapper.mc.player.resetCooldown();
                 this.Xijd.BBwj();
-            }
         }
     }
     
@@ -323,9 +285,6 @@ public class KillAura extends qMIe
         if (entity instanceof EntityLivingBase) {
             final EntityLivingBase entityLivingBase = (EntityLivingBase)entity;
             n6 = entityLivingBase.posY + entityLivingBase.getEyeHeight() - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
-            if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                throw null;
-            }
         }
         else {
             n6 = (entity.getEntityBoundingBox().minY + entity.getEntityBoundingBox().maxY) / 2.0 - (Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight());
@@ -336,9 +295,6 @@ public class KillAura extends qMIe
         float n10;
         if (entity instanceof EntityPlayer) {
             n10 = n3;
-            if (KillAura.\u200a\u2003\u2001\u2008\u200b\u2009\u200f\u200b\u2004) {
-                throw null;
-            }
         }
         else {
             n10 = 0.0f;

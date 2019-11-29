@@ -46,8 +46,6 @@ public class Insulter extends qMIe
     public void LPxx() {
         try {
             Insulter.FIes = Wrapper.ypJK().MFbs();
-            if (Insulter.\u200a\u2005\u2001\u200a\u2000\u200a\u2001) {
-                throw null;
             }
         }
         catch (Exception ex) {

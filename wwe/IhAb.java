@@ -38,9 +38,6 @@ public class IhAb extends GuiScreen
             String text;
             if (this.qDyl.getText().isEmpty()) {
                 text = "no name";
-                if (IhAb.\u2006\u2001\u200f\u200f) {
-                    throw null;
-                }
             }
             else {
                 text = this.qDyl.getText();

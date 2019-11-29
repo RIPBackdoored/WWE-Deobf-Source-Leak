@@ -24,9 +24,6 @@ public class IcRI<T>
         boolean b;
         if (this.vaTl == wwe/NUxq.eFCi) {
             b = true;
-            if (IcRI.\u200e\u200b) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -38,9 +35,6 @@ public class IcRI<T>
         boolean b;
         if (this.vaTl == wwe/NUxq.QJpj) {
             b = true;
-            if (IcRI.\u200e\u200b) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -52,9 +46,6 @@ public class IcRI<T>
         boolean b;
         if (this.vaTl == wwe/NUxq.JdUb) {
             b = true;
-            if (IcRI.\u200e\u200b) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -68,9 +59,6 @@ public class IcRI<T>
         boolean b;
         if (vaTl == wwe/NUxq.bdnx) {
             b = true;
-            if (IcRI.\u200e\u200b) {
-                throw null;
-            }
         }
         else {
             b = false;

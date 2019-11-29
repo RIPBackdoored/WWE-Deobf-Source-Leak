@@ -25,9 +25,6 @@ public class MjBb
             if (System.nanoTime() / (0xB78EB0CD3642ED61L ^ 0xB78EB0CD364DAF21L) - tydl.UNSh > tydl.CeyA) {
                 final TYDL tydl2 = tydl;
                 tydl2.syPH -= 3;
-                if (MjBb.\u2002\u2007\u200c\u2002) {
-                    throw null;
-                }
             }
             else {
                 final TYDL tydl3 = tydl;
@@ -42,8 +39,6 @@ public class MjBb
             XybC.eTim(tydl.CmCq, (float)(n3 + 5), (float)(n4 + n2 + n / 2 - XybC.wKEb().FONT_HEIGHT / 2), -1);
             n2 -= 35;
             ++i;
-            if (MjBb.\u2002\u2007\u200c\u2002) {
-                throw null;
             }
         }
     }
@@ -57,8 +52,6 @@ public class MjBb
                 --i;
             }
             ++i;
-            if (MjBb.\u2002\u2007\u200c\u2002) {
-                throw null;
             }
         }
     }

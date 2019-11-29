@@ -24,22 +24,14 @@ public class heAY extends HAxG
                         InventoryCleaner.KtLJ.add(Item.getByNameOrId(s2));
                         HAxG.TuzD("Added " + s2 + " to inventory cleaner");
                         Wrapper.ypJK().iroC();
-                        if (heAY.\u2006\u2005\u2002\u200b\u200c\u2009\u2000) {
-                            throw null;
-                        }
                     }
                     else {
                         HAxG.TuzD("Is that a item?");
-                        if (heAY.\u2006\u2005\u2002\u200b\u200c\u2009\u2000) {
-                            throw null;
-                        }
                     }
                 }
                 else {
                     HAxG.TuzD("Thats already in the list");
                 }
-                if (heAY.\u2006\u2005\u2002\u200b\u200c\u2009\u2000) {
-                    throw null;
                 }
             }
             else if (this.wJNH(array[0])) {
@@ -48,22 +40,16 @@ public class heAY extends HAxG
                     InventoryCleaner.KtLJ.remove(Item.getByNameOrId(s3));
                     HAxG.TuzD("Removed " + s3 + " from inventory cleaner");
                     Wrapper.ypJK().iroC();
-                    if (heAY.\u2006\u2005\u2002\u200b\u200c\u2009\u2000) {
-                        throw null;
                     }
                 }
                 else {
                     HAxG.TuzD("That wasent add to inventory cleaner?");
                 }
-                if (heAY.\u2006\u2005\u2002\u200b\u200c\u2009\u2000) {
-                    throw null;
                 }
             }
             else {
                 HAxG.TuzD(this.ZlRY());
             }
-            if (heAY.\u2006\u2005\u2002\u200b\u200c\u2009\u2000) {
-                throw null;
             }
         }
         catch (Exception ex) {

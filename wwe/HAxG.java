@@ -39,9 +39,6 @@ public abstract class HAxG
         boolean b;
         if (s.equalsIgnoreCase("remove") || s.equalsIgnoreCase("rem") || s.equalsIgnoreCase("delete") || s.equalsIgnoreCase("del")) {
             b = true;
-            if (HAxG.\u2002\u2001\u2005\u2008\u200f\u2005\u2005\u2006) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -56,18 +53,10 @@ public abstract class HAxG
         while (i < ex.getStackTrace().length) {
             POsd(ex.getStackTrace()[i].toString());
             if (i >= 2) {
-                if (HAxG.\u2002\u2001\u2005\u2008\u200f\u2005\u2005\u2006) {
-                    throw null;
-                }
                 break;
-            }
             else {
                 ++i;
-                if (HAxG.\u2002\u2001\u2005\u2008\u200f\u2005\u2005\u2006) {
-                    throw null;
-                }
                 continue;
-            }
         }
     }
 }

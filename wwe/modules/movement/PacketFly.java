@@ -54,9 +54,6 @@ public class PacketFly extends qMIe
     public void oHiJ(final omqH omqH) {
         if (this.mode.OnGi().equalsIgnoreCase("Normal")) {
             this.owgW("Packet Fly " + TextFormatting.DARK_GRAY + "Normal");
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (this.mode.OnGi().equalsIgnoreCase("Fast")) {
             this.owgW("Packet Fly " + TextFormatting.DARK_GRAY + "Fast");
@@ -71,9 +68,6 @@ public class PacketFly extends qMIe
                 double doubleValue;
                 if (this.yMode.OnGi().equalsIgnoreCase("Y+")) {
                     doubleValue = this.yDistance.OnGi();
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     doubleValue = -this.yDistance.OnGi();
@@ -82,52 +76,33 @@ public class PacketFly extends qMIe
                 this.NWrw.add((CPacketPlayer)position);
                 Wrapper.mc.player.connection.sendPacket((Packet)position);
                 return;
-            }
             Wrapper.mc.player.setVelocity(0.0, 0.0, 0.0);
             double n2;
             if (Wrapper.mc.gameSettings.keyBindJump.isKeyDown()) {
                 double n;
                 if (Wrapper.mc.player.ticksExisted % 20 == 0) {
                     n = -0.03999999910593033;
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     n = 0.06199999898672104;
                 }
                 n2 = n;
-                if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                    throw null;
                 }
-            }
             else if (Wrapper.mc.gameSettings.keyBindSneak.isKeyDown()) {
                 n2 = -0.062;
-                if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                    throw null;
                 }
-            }
             else {
                 double n3;
                 if (Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().expand(-0.0625, -0.0625, -0.0625)).isEmpty()) {
                     if (Wrapper.mc.player.ticksExisted % 20 == 0) {
                         n3 = -0.03999999910593033;
-                        if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         n3 = 0.0;
-                        if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                 }
                 else {
                     n3 = 0.0;
                 }
                 n2 = n3;
-            }
             final double[] array = XWMI(this.speed.OnGi());
             if (!Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().grow(0.0625, 0.0, 0.0625)).isEmpty()) {
                 if (Wrapper.mc.gameSettings.keyBindJump.isKeyDown() || Wrapper.mc.gameSettings.keyBindSneak.isKeyDown()) {
@@ -138,13 +113,8 @@ public class PacketFly extends qMIe
                         Wrapper.mc.player.setVelocity(0.0, n2 * i, 0.0);
                         this.XNep(0.0, n2 * i, 0.0);
                         ++i;
-                        if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                 }
                 return;
-            }
             if (Wrapper.mc.gameSettings.keyBindJump.isKeyDown() || Wrapper.mc.gameSettings.keyBindSneak.isKeyDown() || Wrapper.mc.gameSettings.keyBindForward.isKeyDown() || Wrapper.mc.gameSettings.keyBindBack.isKeyDown() || Wrapper.mc.gameSettings.keyBindRight.isKeyDown() || Wrapper.mc.gameSettings.keyBindLeft.isKeyDown()) {
                 if (array[0] != 0.0 || n2 != 0.0 || array[1] != 0.0) {
                     if ((Wrapper.mc.player.movementInput.jump && (Wrapper.mc.player.moveStrafing != 0.0f || Wrapper.mc.player.moveForward != 0.0f)) || Wrapper.mc.player.movementInput.jump) {
@@ -155,39 +125,19 @@ public class PacketFly extends qMIe
                             Wrapper.mc.player.setVelocity(0.0, n2 * j, 0.0);
                             this.XNep(0.0, n2 * j, 0.0);
                             ++j;
-                            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                                throw null;
-                            }
-                        }
-                        if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         int k = 0;
                         while (k <= 2) {
                             Wrapper.mc.player.setVelocity(array[0] * k, n2 * k, array[1] * k);
                             this.XNep(array[0] * k, n2 * k, array[1] * k);
                             ++k;
-                            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                                throw null;
-                            }
-                        }
-                        if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                 }
-            }
             else if (Wrapper.mc.world.getCollisionBoxes((Entity)Wrapper.mc.player, Wrapper.mc.player.getEntityBoundingBox().expand(-0.0625, -0.0625, -0.0625)).isEmpty()) {
                 final EntityPlayerSP player = Wrapper.mc.player;
                 final double n4 = 0.0;
                 double n5;
                 if (Wrapper.mc.player.ticksExisted % 2 == 0) {
                     n5 = 0.03999999910593033;
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     n5 = -0.03999999910593033;
@@ -197,18 +147,11 @@ public class PacketFly extends qMIe
                 double n7;
                 if (Wrapper.mc.player.ticksExisted % 2 == 0) {
                     n7 = 0.03999999910593033;
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     n7 = -0.03999999910593033;
                 }
                 this.XNep(n6, n7, 0.0);
-            }
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (this.mode.OnGi().equalsIgnoreCase("Normal")) {
             final double n8 = XWMI(this.speed.OnGi())[0];
@@ -216,38 +159,25 @@ public class PacketFly extends qMIe
             double n10;
             if (Wrapper.mc.gameSettings.keyBindJump.isKeyDown()) {
                 n10 = 0.0624 * this.speed.OnGi();
-                if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                    throw null;
                 }
-            }
             else {
                 n10 = 0.0;
-            }
             double n11;
             if (Wrapper.mc.gameSettings.keyBindSneak.isKeyDown()) {
                 n11 = 0.0624 * this.speed.OnGi();
-                if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                    throw null;
                 }
-            }
             else {
                 n11 = 0.0;
-            }
             final double n12 = n10 - n11 * this.speed.OnGi();
             if (this.wait.OnGi()) {
                 this.Xijd.gCgh();
-                if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                    throw null;
                 }
-            }
             else {
                 this.Xijd.BBwj();
-            }
             Wrapper.mc.player.motionY = 0.0;
             Wrapper.mc.player.onGround = true;
             if (Wrapper.mc.gameSettings.keyBindSneak.isKeyDown()) {
                 this.Xijd.BBwj();
-            }
             if (this.wait.OnGi() && this.Xijd.QOXG(this.waitTime.OnGi() * 1000.0) && !Wrapper.mc.gameSettings.keyBindSneak.isKeyDown()) {
                 Wrapper.mc.player.connection.sendPacket((Packet)new CPacketPlayer.PositionRotation(Wrapper.mc.player.posX, Wrapper.mc.player.posY - 0.0624 * this.speed.OnGi(), Wrapper.mc.player.posZ, Wrapper.mc.player.rotationYaw, Wrapper.mc.player.rotationPitch, false));
                 final NetHandlerPlayClient connection = Wrapper.mc.player.connection;
@@ -256,9 +186,6 @@ public class PacketFly extends qMIe
                 double doubleValue2;
                 if (this.yMode.OnGi().equalsIgnoreCase("Y+")) {
                     doubleValue2 = this.yDistance.OnGi();
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     doubleValue2 = -this.yDistance.OnGi();
@@ -266,7 +193,6 @@ public class PacketFly extends qMIe
                 connection.sendPacket((Packet)new CPacketPlayer.PositionRotation(posX2, posY2 + doubleValue2, Wrapper.mc.player.posZ, Wrapper.mc.player.rotationYaw, Wrapper.mc.player.rotationPitch, true));
                 this.Xijd.BBwj();
                 return;
-            }
             if (Wrapper.mc.gameSettings.keyBindForward.isKeyDown() || Wrapper.mc.gameSettings.keyBindBack.isKeyDown() || Wrapper.mc.gameSettings.keyBindLeft.isKeyDown() || Wrapper.mc.gameSettings.keyBindRight.isKeyDown() || Wrapper.mc.gameSettings.keyBindSneak.isKeyDown() || Wrapper.mc.gameSettings.keyBindJump.isKeyDown()) {
                 if (this.wait.OnGi() && this.Xijd.QOXG(this.waitTime.OnGi() * 1000.0 - this.waitOffset.OnGi() * 100.0)) {
                     return;
@@ -278,15 +204,11 @@ public class PacketFly extends qMIe
                 double doubleValue3;
                 if (this.yMode.OnGi().equalsIgnoreCase("Y+")) {
                     doubleValue3 = this.yDistance.OnGi();
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     doubleValue3 = -this.yDistance.OnGi();
                 }
                 connection2.sendPacket((Packet)new CPacketPlayer.PositionRotation(n13, posY3 + doubleValue3, Wrapper.mc.player.posZ + n9, Wrapper.mc.player.rotationYaw, Wrapper.mc.player.rotationPitch, true));
-            }
         }
     }
     
@@ -295,7 +217,6 @@ public class PacketFly extends qMIe
         if (this.mode.OnGi().equalsIgnoreCase("Fast")) {
             if (uqzS.MYlK() instanceof CPacketPlayer && !(uqzS.MYlK() instanceof CPacketPlayer.Position)) {
                 uqzS.Ggez(true);
-            }
             if (uqzS.MYlK() instanceof CPacketPlayer) {
                 final CPacketPlayer cPacketPlayer = (CPacketPlayer)uqzS.MYlK();
                 if (this.NWrw.contains(cPacketPlayer)) {
@@ -303,7 +224,6 @@ public class PacketFly extends qMIe
                     return;
                 }
                 uqzS.Ggez(true);
-            }
         }
     }
     
@@ -314,14 +234,10 @@ public class PacketFly extends qMIe
             if (Wrapper.mc.player != null && Wrapper.mc.player.isEntityAlive() && Wrapper.mc.world.isBlockLoaded(new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ)) && !(Wrapper.mc.currentScreen instanceof GuiDownloadTerrain)) {
                 if (this.AdRJ <= 0) {
                     this.AdRJ = sPacketPlayerPosLook.getTeleportId();
-                    if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     lqJY.Ggez(true);
                 }
-            }
         }
     }
     
@@ -344,13 +260,9 @@ public class PacketFly extends qMIe
             double doubleValue;
             if (this.yMode.OnGi().equalsIgnoreCase("Y+")) {
                 doubleValue = this.yDistance.OnGi();
-                if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                    throw null;
                 }
-            }
             else {
                 doubleValue = -this.yDistance.OnGi();
-            }
             final CPacketPlayer.Position position = new CPacketPlayer.Position(posX, posY + doubleValue, Wrapper.mc.player.posZ, Wrapper.mc.player.onGround);
             this.NWrw.add((CPacketPlayer)position);
             Wrapper.mc.player.connection.sendPacket((Packet)position);
@@ -372,9 +284,6 @@ public class PacketFly extends qMIe
         double doubleValue;
         if (this.yMode.OnGi().equalsIgnoreCase("Y+")) {
             doubleValue = this.yDistance.OnGi();
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else {
             doubleValue = -this.yDistance.OnGi();
@@ -396,45 +305,27 @@ public class PacketFly extends qMIe
         final float cos = MathHelper.cos(Wrapper.mc.player.rotationYaw * 3.1415927f / 180.0f);
         if (yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n2 += 0.1f;
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (!yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n2 -= 0.1f;
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (!yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n3 += 0.1f;
         }
         if (!yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n3 -= 0.1f;
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n2 += 0.0624f;
             n3 += 0.0624f;
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n2 += 0.0624f;
             n3 -= 0.0624f;
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (!yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n2 -= 0.0624f;
             n3 += 0.0624f;
-            if (PacketFly.\u200d\u200a\u2006\u2003\u2007\u2003\u2003\u2007\u2004) {
-                throw null;
-            }
         }
         else if (!yYGD.dgWY(Wrapper.mc.gameSettings.keyBindForward) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindBack) && !yYGD.dgWY(Wrapper.mc.gameSettings.keyBindLeft) && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindRight)) {
             n2 -= 0.0624f;

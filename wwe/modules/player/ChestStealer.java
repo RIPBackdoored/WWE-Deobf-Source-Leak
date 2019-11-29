@@ -56,8 +56,6 @@ public class ChestStealer extends qMIe
                     }
                 }
                 ++i;
-                if (ChestStealer.\u200d) {
-                    throw null;
                 }
             }
             if (this.random.OnGi() && list.size() > 0 && this.Xijd.QOXG(this.delay.OnGi() * 1000.0)) {
@@ -85,8 +83,6 @@ public class ChestStealer extends qMIe
                     }
                 }
                 ++j;
-                if (ChestStealer.\u200d) {
-                    throw null;
                 }
             }
             if (this.random.OnGi() && list2.size() > 0 && this.Xijd.QOXG(this.delay.OnGi() * 1000.0)) {
@@ -106,8 +102,6 @@ public class ChestStealer extends qMIe
                 int n;
                 if (yYGD.sKEZ(guiScreenHorseInventory) instanceof EntityLlama) {
                     n = 2;
-                    if (ChestStealer.\u200d) {
-                        throw null;
                     }
                 }
                 else {
@@ -125,8 +119,6 @@ public class ChestStealer extends qMIe
                         }
                     }
                     ++k;
-                    if (ChestStealer.\u200d) {
-                        throw null;
                     }
                 }
                 if (this.random.OnGi() && list3.size() > 0 && this.Xijd.QOXG(this.delay.OnGi() * 1000.0)) {
@@ -155,8 +147,6 @@ public class ChestStealer extends qMIe
                 b = false;
             }
             ++i;
-            if (ChestStealer.\u200d) {
-                throw null;
             }
         }
         return b;
@@ -170,8 +160,6 @@ public class ChestStealer extends qMIe
                 b = false;
             }
             ++i;
-            if (ChestStealer.\u200d) {
-                throw null;
             }
         }
         return b;
@@ -182,8 +170,6 @@ public class ChestStealer extends qMIe
         int n;
         if (yYGD.sKEZ(guiScreenHorseInventory) instanceof EntityLlama) {
             n = 2;
-            if (ChestStealer.\u200d) {
-                throw null;
             }
         }
         else {
@@ -195,8 +181,6 @@ public class ChestStealer extends qMIe
                 b = false;
             }
             ++i;
-            if (ChestStealer.\u200d) {
-                throw null;
             }
         }
         return b;

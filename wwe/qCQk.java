@@ -28,15 +28,10 @@ public class qCQk extends HAxG
                     Wrapper.ypJK().TQyP();
                     if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
                         Wrapper.mc.renderGlobal.loadRenderers();
-                        if (qCQk.\u2003\u2008\u200d) {
-                            throw null;
-                        }
                     }
                 }
                 else {
                     HAxG.TuzD("Thats not a block?");
-                    if (qCQk.\u2003\u2008\u200d) {
-                        throw null;
                     }
                 }
             }
@@ -51,23 +46,16 @@ public class qCQk extends HAxG
                     Wrapper.ypJK().TQyP();
                     if (vlwv.hNxW.qHPF((Class<Xray>)jCBS.class).IuiN()) {
                         Wrapper.mc.renderGlobal.loadRenderers();
-                        if (qCQk.\u2003\u2008\u200d) {
-                            throw null;
-                        }
                     }
                 }
                 else {
                     HAxG.TuzD("Thats not a block?");
-                    if (qCQk.\u2003\u2008\u200d) {
-                        throw null;
                     }
                 }
             }
             else {
                 HAxG.TuzD(this.ZlRY());
             }
-            if (qCQk.\u2003\u2008\u200d) {
-                throw null;
             }
         }
         catch (Exception ex) {

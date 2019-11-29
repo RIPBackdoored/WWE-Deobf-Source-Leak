@@ -31,9 +31,6 @@ public class JImF extends GuiScreen
                 this.hmkw[n] = c;
                 ++n;
                 ++c;
-                if (JImF.\u200e\u2009\u200b\u2001\u2006) {
-                    throw null;
-                }
             }
             this.xooC = false;
         }
@@ -49,8 +46,6 @@ public class JImF extends GuiScreen
             }
             n2 += 54;
             ++i;
-            if (JImF.\u200e\u2009\u200b\u2001\u2006) {
-                throw null;
             }
         }
         hSNE.kduK(this);
@@ -72,8 +67,6 @@ public class JImF extends GuiScreen
         while (i < this.eNIQ.size()) {
             this.eNIQ.get(i).cVOn(n, n2, n3);
             ++i;
-            if (JImF.\u200e\u2009\u200b\u2001\u2006) {
-                throw null;
             }
         }
         super.drawScreen(n, n2, n3);
@@ -93,8 +86,6 @@ public class JImF extends GuiScreen
         final Iterator<EylK> iterator = this.eNIQ.iterator();
         while (iterator.hasNext()) {
             iterator.next().acXl(n, n2, n3);
-            if (JImF.\u200e\u2009\u200b\u2001\u2006) {
-                throw null;
             }
         }
         super.mouseClicked(n, n2, n3);
@@ -114,8 +105,6 @@ public class JImF extends GuiScreen
         boolean b;
         if (this.hmkw[n] != 'x' && this.hmkw[n] != 'o') {
             b = true;
-            if (JImF.\u200e\u2009\u200b\u2001\u2006) {
-                throw null;
             }
         }
         else {

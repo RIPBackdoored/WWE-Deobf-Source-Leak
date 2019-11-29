@@ -22,9 +22,6 @@ public class Gpxt extends GuiButton
             boolean hovered;
             if (n >= this.x && n2 >= this.y && n < this.x + this.width && n2 < this.y + this.height) {
                 hovered = true;
-                if (Gpxt.\u2005\u200c\u2005\u200e\u200f\u2009\u2003) {
-                    throw null;
-                }
             }
             else {
                 hovered = false;
@@ -37,16 +34,11 @@ public class Gpxt extends GuiButton
                 ++this.xQun;
                 if (this.xQun > 10) {
                     this.xQun = 10;
-                }
                 gnNa.Bdzq((float)this.x, (float)this.y, (float)(this.x + this.width), (float)(this.y + this.height), 2.0f, 16777215, new Color(255, 0, 0, this.fobH).getRGB(), this.xQun);
-                if (Gpxt.\u2005\u200c\u2005\u200e\u200f\u2009\u2003) {
-                    throw null;
-                }
             }
             else {
                 if (this.xQun > 0) {
                     --this.xQun;
-                }
                 gnNa.Bdzq((float)this.x, (float)this.y, (float)(this.x + this.width), (float)(this.y + this.height), 2.0f, 16777215, new Color(255, 255, 255, this.fobH).getRGB(), this.xQun);
             }
             this.mouseDragged(minecraft, n, n2);

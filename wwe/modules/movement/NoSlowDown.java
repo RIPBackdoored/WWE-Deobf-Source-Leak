@@ -31,9 +31,6 @@ public class NoSlowDown extends qMIe
             ItemStack itemStack;
             if (Wrapper.mc.player.getActiveHand().equals((Object)EnumHand.MAIN_HAND)) {
                 itemStack = Wrapper.mc.player.getHeldItemMainhand();
-                if (NoSlowDown.\u2004\u200c) {
-                    throw null;
-                }
             }
             else {
                 itemStack = Wrapper.mc.player.getHeldItemOffhand();
@@ -50,9 +47,6 @@ public class NoSlowDown extends qMIe
             ItemStack itemStack;
             if (Wrapper.mc.player.getActiveHand().equals((Object)EnumHand.MAIN_HAND)) {
                 itemStack = Wrapper.mc.player.getHeldItemMainhand();
-                if (NoSlowDown.\u2004\u200c) {
-                    throw null;
-                }
             }
             else {
                 itemStack = Wrapper.mc.player.getHeldItemOffhand();

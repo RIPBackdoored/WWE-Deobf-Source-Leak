@@ -42,9 +42,6 @@ public class AutoClicker extends qMIe
         }
         if (this.mode.OnGi().equalsIgnoreCase("Left")) {
             this.owgW("Auto Clicker " + TextFormatting.DARK_GRAY + "Left");
-            if (AutoClicker.\u2009\u2007\u2007\u2008\u200c\u2005\u200c\u2001) {
-                throw null;
-            }
         }
         else {
             this.owgW("Auto Clicker " + TextFormatting.DARK_GRAY + "Right");
@@ -55,18 +52,15 @@ public class AutoClicker extends qMIe
                 OffHand.LInL();
                 Wrapper.mc.player.resetCooldown();
                 return;
-            }
             if (this.mode.OnGi().equalsIgnoreCase("Left") && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindAttack) && Wrapper.mc.player.getCooledAttackStrength(0.0f) == 1.0f) {
                 if (Wrapper.mc.objectMouseOver != null && Wrapper.mc.objectMouseOver.entityHit instanceof EntityLivingBase) {
                     Wrapper.mc.playerController.attackEntity((EntityPlayer)Wrapper.mc.player, Wrapper.mc.objectMouseOver.entityHit);
                 }
                 OffHand.LInL();
                 Wrapper.mc.player.resetCooldown();
-            }
             if (this.mode.OnGi().equalsIgnoreCase("Right") && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindUseItem) && Wrapper.mc.player.getCooledAttackStrength(0.0f) == 1.0f) {
                 yYGD.AXbo();
                 Wrapper.mc.player.resetCooldown();
-            }
         }
         if (!this.19Delay.OnGi()) {
             final Random random = new Random();
@@ -78,7 +72,6 @@ public class AutoClicker extends qMIe
                 this.yXmg = random.nextBoolean();
                 this.pcWm = 0;
                 return;
-            }
             if (this.mode.OnGi().equalsIgnoreCase("Left") && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindAttack)) {
                 final double n = this.pcWm;
                 final double n2 = 20.0;
@@ -86,9 +79,6 @@ public class AutoClicker extends qMIe
                 double wDfv;
                 if (this.yXmg) {
                     wDfv = -this.wDfv;
-                    if (AutoClicker.\u2009\u2007\u2007\u2008\u200c\u2005\u200c\u2001) {
-                        throw null;
-                    }
                 }
                 else {
                     wDfv = this.wDfv;
@@ -98,15 +88,12 @@ public class AutoClicker extends qMIe
                     Wrapper.mc.player.resetCooldown();
                     if (Wrapper.mc.objectMouseOver != null && Wrapper.mc.objectMouseOver.entityHit instanceof EntityLivingBase) {
                         Wrapper.mc.playerController.attackEntity((EntityPlayer)Wrapper.mc.player, Wrapper.mc.objectMouseOver.entityHit);
-                    }
                     this.wDfv = Math.random() * 2.0;
                     this.yXmg = random.nextBoolean();
                     this.pcWm = 0;
                 }
-            }
             if (this.mode.OnGi().equalsIgnoreCase("Right") && yYGD.dgWY(Wrapper.mc.gameSettings.keyBindUseItem) && this.pcWm >= 20.0 / this.cps.OnGi()) {
                 yYGD.AXbo();
-            }
         }
     }
 }

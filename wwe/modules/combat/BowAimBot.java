@@ -47,8 +47,6 @@ public class BowAimBot extends qMIe
                         n = Wrapper.mc.player.getDistance((Entity)oYbE);
                     }
                 }
-                if (BowAimBot.\u2000\u2003\u2001\u200f\u200a\u2002\u200b\u2006) {
-                    throw null;
                 }
             }
             if (this.oYbE == null) {
@@ -64,8 +62,6 @@ public class BowAimBot extends qMIe
             if (this.rotations.OnGi().equalsIgnoreCase("Client")) {
                 Wrapper.mc.player.rotationYaw = prFd;
                 Wrapper.mc.player.rotationPitch = rotationPitch;
-                if (BowAimBot.\u2000\u2003\u2001\u200f\u200a\u2002\u200b\u2006) {
-                    throw null;
                 }
             }
             else {

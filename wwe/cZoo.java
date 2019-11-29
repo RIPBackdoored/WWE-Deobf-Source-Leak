@@ -18,9 +18,6 @@ public class cZoo
             while ((line = bufferedReader.readLine()) != null) {
                 sb.append(line);
                 sb.append(System.lineSeparator());
-                if (cZoo.\u2004\u2001\u2005\u2009) {
-                    throw null;
-                }
             }
             bufferedReader.close();
             if (Util.getOSType() != Util.EnumOS.WINDOWS) {

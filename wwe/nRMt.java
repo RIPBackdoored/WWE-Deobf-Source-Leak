@@ -31,9 +31,6 @@ public class nRMt
         boolean eEuE;
         if (n >= this.Xeln && n2 >= this.fsDF + this.RFpH.OOVQ && n < this.Xeln + this.mdjz && n2 < this.fsDF + this.LEEc + this.RFpH.OOVQ && n2 < this.RFpH.height - 30 && n2 > 40) {
             eEuE = true;
-            if (nRMt.\u200c\u2009\u2004\u2001\u200c) {
-                throw null;
-            }
         }
         else {
             eEuE = false;
@@ -46,9 +43,6 @@ public class nRMt
         int rgb;
         if (this.EEuE) {
             rgb = new Color(-1873784752).darker().getRGB();
-            if (nRMt.\u200c\u2009\u2004\u2001\u200c) {
-                throw null;
-            }
         }
         else {
             rgb = -1873784752;

@@ -79,9 +79,6 @@ public class XybC
             }
             if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom") && bozE.Jfgf != null) {
                 ijZl.sort(XybC::gvpI);
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
         }
         else {
@@ -101,14 +98,10 @@ public class XybC
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rects.OnGi() || vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).coolerRects.OnGi()) {
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                         gnNa.wQYt(0.0f, (float)(n - 1), (float)(4 + wKEb().getStringWidth(qmIe.Odlv())), (float)(n + 9), -1728053248);
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         gnNa.wQYt((float)(scaledResolution.getScaledWidth() - wKEb().getStringWidth(qmIe.Odlv()) - 4), (float)(n - 1), (float)scaledResolution.getScaledWidth(), (float)(n + 9), -1728053248);
                     }
-                }
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rects.OnGi()) {
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                         final double n3 = 0.0;
@@ -118,17 +111,9 @@ public class XybC
                         int uUxj;
                         if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                             uUxj = rgb;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             uUxj = qmIe.UUxj();
-                        }
                         gnNa.OKXQ(n3, n4, n5, n6, uUxj);
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         final double n7 = scaledResolution.getScaledWidth() - vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).rectslength.OnGi();
@@ -138,16 +123,10 @@ public class XybC
                         int uUxj2;
                         if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                             uUxj2 = rgb;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             uUxj2 = qmIe.UUxj();
-                        }
                         gnNa.OKXQ(n7, n8, n9, n10, uUxj2);
                     }
-                }
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                     final ArrayList<Integer[][]> list3 = list;
                     final Integer[][] array = new Integer[2][];
@@ -158,9 +137,6 @@ public class XybC
                     int n14;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n14 = 0;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n14 = 3;
@@ -174,9 +150,6 @@ public class XybC
                     int n18;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n18 = 9;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n18 = -9;
@@ -184,10 +157,7 @@ public class XybC
                     array3[n16] = n17 + n18;
                     array[n15] = array3;
                     list3.add(array);
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     final ArrayList<Integer[][]> list4 = list;
                     final Integer[][] array4 = new Integer[2][];
@@ -198,9 +168,6 @@ public class XybC
                     int n22;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
                         n22 = 0;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n22 = 3;
@@ -214,9 +181,6 @@ public class XybC
                     int n26;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
                         n26 = 9;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n26 = -9;
@@ -224,7 +188,6 @@ public class XybC
                     array6[n24] = n25 + n26;
                     array4[n23] = array6;
                     list4.add(array4);
-                }
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).oLhm()) {
                     final String odlv = qmIe.Odlv();
                     final float n27 = 3.0f;
@@ -232,18 +195,12 @@ public class XybC
                     int uUxj3;
                     if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                         uUxj3 = rgb;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         uUxj3 = qmIe.UUxj();
                     }
                     eTim(odlv, n27, n28, uUxj3);
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     final String odlv2 = qmIe.Odlv();
                     final float n29 = (float)(scaledResolution.getScaledWidth() - wKEb().getStringWidth(qmIe.Odlv()) - 2);
@@ -251,31 +208,21 @@ public class XybC
                     int uUxj4;
                     if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                         uUxj4 = rgb;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         uUxj4 = qmIe.UUxj();
                     }
                     eTim(odlv2, n29, n30, uUxj4);
-                }
                 list2.add(qmIe.UUxj());
                 int n31;
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                     n31 = n + 10;
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     n31 = n - 10;
-                }
                 n = n31;
                 ++n2;
             }
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         int scaledWidth = scaledResolution.getScaledWidth();
@@ -286,8 +233,6 @@ public class XybC
         int n33;
         if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
             n33 = 0;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else {
@@ -306,37 +251,25 @@ public class XybC
                 int n38;
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                     n38 = -1;
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     n38 = 6;
-                }
                 final int n39 = intValue + n38;
                 final int intValue2 = array8[1][0];
                 final int intValue3 = array8[1][1];
                 int n40;
                 if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                     n40 = 0;
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     n40 = 7;
-                }
                 final int n41 = intValue3 + n40;
                 int intValue4;
                 if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                     intValue4 = rgb2;
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     intValue4 = list2.get(n35);
-                }
                 Gui.drawRect(n37, n39, intValue2, n41, intValue4);
                 if (array7 != null) {
                     final int max = Math.max(array7[0], array8[1][0]);
@@ -347,9 +280,6 @@ public class XybC
                     int n43;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n43 = 0;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n43 = 8;
@@ -360,9 +290,6 @@ public class XybC
                     int n46;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).zDcj()) {
                         n46 = 0;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n46 = 5;
@@ -371,28 +298,17 @@ public class XybC
                     int n48;
                     if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                         n48 = rgb2;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else if (n36 == list.size() - 1) {
                         n48 = list2.get(n35);
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n48 = list2.get(n35 - 1);
                     }
                     Gui.drawRect(n42, n44, n45, n47, n48);
-                }
                 array7 = array8[1];
                 if (n35 + 1 != list2.size()) {
                     ++n35;
-                }
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
         }
     }
@@ -404,8 +320,6 @@ public class XybC
         boolean b;
         if (Wrapper.mc.player.isEntityAlive() && Wrapper.mc.player.isInsideOfMaterial(Material.WATER)) {
             b = true;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else {
@@ -417,16 +331,11 @@ public class XybC
         while (i >= 0) {
             final ItemStack itemStack = (ItemStack)Wrapper.mc.player.inventory.armorInventory.get(i);
             if (itemStack == null) {
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else {
                 list.add(itemStack);
             }
             --i;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         if (Wrapper.mc.player.getHeldItemMainhand() != null) {
@@ -452,15 +361,9 @@ public class XybC
             int n3;
             if (Wrapper.mc.playerController.getCurrentGameType() == GameType.CREATIVE) {
                 n3 = 42;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else if (b2 && Wrapper.mc.playerController.getCurrentGameType() != GameType.CREATIVE) {
                 n3 = 65;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else {
                 n3 = 55;
@@ -474,15 +377,9 @@ public class XybC
             int n5;
             if (Wrapper.mc.playerController.getCurrentGameType() == GameType.CREATIVE) {
                 n5 = 42;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else if (b2 && Wrapper.mc.playerController.getCurrentGameType() != GameType.CREATIVE) {
                 n5 = 65;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else {
                 n5 = 55;
@@ -497,8 +394,6 @@ public class XybC
             GlStateManager.scale(2.0f, 2.0f, 2.0f);
             GlStateManager.enableAlpha();
             GlStateManager.popMatrix();
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         GL11.glPopMatrix();
@@ -536,22 +431,12 @@ public class XybC
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
                         if (n6 > n4 + n3) {
                             n6 = n4 + n3;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (n6 < n4 - n3) {
                             n6 = n4 - n3;
-                        }
                         if (n7 > n5 + n3) {
                             n7 = n5 + n3;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (n7 < n5 - n3) {
                             n7 = n5 - n3;
-                        }
                     }
                     if (entity instanceof EntityPlayer) {
                         try {
@@ -562,26 +447,16 @@ public class XybC
                                 GL11.glTranslated((double)n6, (double)n7, 0.0);
                                 GL11.glRotated((double)(-Wrapper.mc.player.rotationYaw + 180.0f), 0.0, 0.0, -1.0);
                                 GL11.glTranslated((double)(-n6), (double)(-n7), 0.0);
-                            }
                             final GuiIngame ingameGUI = Wrapper.mc.ingameGUI;
                             GuiIngame.drawScaledCustomSizeModalRect(n6 - 6, n7 - 6, 8.0f, 8.0f, 8, 8, 12, 12, 64.0f, 64.0f);
                             if (((AbstractClientPlayer)entity).isWearing(EnumPlayerModelParts.HAT)) {
                                 final GuiIngame ingameGUI2 = Wrapper.mc.ingameGUI;
                                 GuiIngame.drawScaledCustomSizeModalRect(n6 - 6, n7 - 6, 40.0f, 8.0f, 8, 8, 12, 12, 64.0f, 64.0f);
-                            }
                             GL11.glPopMatrix();
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
                             break Label_1167;
-                        }
                         catch (Exception ex) {
                             ex.printStackTrace();
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
                             break Label_1167;
-                        }
                     }
                     final int n8 = 2;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Squares")) {
@@ -590,10 +465,7 @@ public class XybC
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Circles")) {
                         gnNa.oQBi(n6, n7, n8, this.JFLL(entity));
                     }
-                }
             }
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarChests.OnGi()) {
@@ -605,22 +477,12 @@ public class XybC
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarMode.OnGi().equalsIgnoreCase("Square")) {
                         if (n9 > n4 + n3) {
                             n9 = n4 + n3;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (n9 < n4 - n3) {
                             n9 = n4 - n3;
-                        }
                         if (n10 > n5 + n3) {
                             n10 = n5 + n3;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (n10 < n5 - n3) {
                             n10 = n5 - n3;
-                        }
                     }
                     final int n11 = 2;
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Squares")) {
@@ -631,25 +493,12 @@ public class XybC
                         int n16;
                         if (tileEntity instanceof TileEntityChest) {
                             n16 = -19968;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (tileEntity instanceof TileEntityEnderChest) {
                             n16 = -7274241;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (tileEntity instanceof TileEntityShulkerBox) {
                             n16 = -65536;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             n16 = -1;
-                        }
                         gnNa.wQYt(n12, n13, n14, n15, n16);
                     }
                     if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).radarEntities.OnGi().equalsIgnoreCase("Circles")) {
@@ -659,31 +508,14 @@ public class XybC
                         int n20;
                         if (tileEntity instanceof TileEntityChest) {
                             n20 = -19968;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (tileEntity instanceof TileEntityEnderChest) {
                             n20 = -7274241;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (tileEntity instanceof TileEntityShulkerBox) {
                             n20 = -65536;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             n20 = -1;
-                        }
                         gnNa.oQBi(n17, n18, n19, n20);
                     }
-                }
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
         }
         GL11.glPopMatrix();
@@ -757,16 +589,11 @@ public class XybC
             int n2;
             if (vlwv.hNxW.qHPF((Class<Hud>)Ijoo.class).arrayListMode.OnGi().equalsIgnoreCase("Top Right")) {
                 n2 = n - 10;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else {
                 n2 = n + 10;
             }
             n = n2;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
     }
@@ -2103,36 +1930,22 @@ public class XybC
         int n = 50;
         for (final Eiby eiby : list) {
             if (eiby == null) {
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
                 continue;
             }
             else {
                 if (eiby.gWym != null) {
                     eiby.gWym.Hrqs(n);
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     eTim(eiby.EMiZ, (float)(scaledResolution.getScaledWidth() / 2 - wKEb().getStringWidth(eiby.EMiZ) / 2), (float)n, eiby.wquB);
-                }
                 final int n2 = n;
                 int gsgl;
                 if (eiby.gWym != null) {
                     gsgl = eiby.gWym.Gsgl();
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     gsgl = 10;
-                }
                 n = n2 + gsgl;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -2144,9 +1957,6 @@ public class XybC
             int n;
             if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).IuiN()) {
                 n = nuRU(0x441E3A091259B80DL ^ 0x441E3A090F94DD0DL, 1.0f).getRGB();
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else {
                 n = vlwv.fomn.LvCB.JqMr().getRGB();
@@ -2263,89 +2073,52 @@ public class XybC
                         int n7 = 16;
                         if (entityPlayer.isPotionActive(MobEffects.POISON)) {
                             n7 += 36;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else if (entityPlayer.isPotionActive(MobEffects.WITHER)) {
                             n7 += 72;
-                        }
                         final int n8 = 0;
                         final int n9 = MathHelper.ceil((i + 1) / 10.0f) - 1;
                         final int n10 = n2 + i % 10 * 8;
                         int n11 = n3 - n9 * max + 8;
                         if (n5 <= 0 && i == n6) {
                             n11 -= 2;
-                        }
                         int n12 = 0;
                         if (Wrapper.mc.world.getWorldInfo().isHardcoreModeEnabled()) {
                             n12 = 5;
-                        }
                         Wrapper.mc.ingameGUI.drawTexturedModalRect(n10, n11, 16 + n8 * 9, 9 * n12, 9, 9);
                         if (n5 > 0) {
                             if (n5 == ceil && ceil % 2 == 1) {
                                 Wrapper.mc.ingameGUI.drawTexturedModalRect(n10, n11, n7 + 153, 9 * n12, 9, 9);
                                 --n5;
-                                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                    throw null;
-                                }
-                            }
                             else {
                                 Wrapper.mc.ingameGUI.drawTexturedModalRect(n10, n11, n7 + 144, 9 * n12, 9, 9);
                                 n5 -= 2;
-                                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                    throw null;
-                                }
-                            }
-                        }
                         else {
                             if (i * 2 + 1 < ceil2) {
                                 Wrapper.mc.ingameGUI.drawTexturedModalRect(n10, n11, n7 + 36, 9 * n12, 9, 9);
-                            }
                             if (i * 2 + 1 == ceil2) {
                                 Wrapper.mc.ingameGUI.drawTexturedModalRect(n10, n11, n7 + 45, 9 * n12, 9, 9);
-                            }
-                        }
                         --i;
-                        if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                            throw null;
-                        }
                     }
                     if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).names.OnGi()) {
                         int n13;
                         if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).coords.OnGi()) {
                             n13 = 10;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             n13 = 0;
-                        }
                         final int n14 = n13;
                         int n15;
                         if (entityPlayer.getAbsorptionAmount() >= 1.0f) {
                             n15 = 10;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             n15 = 0;
-                        }
                         eTim(entityPlayer.getName(), 55.0f, (float)(n3 - n14 - n15), -1);
                     }
                     if (vlwv.hNxW.qHPF((Class<CombatInfo>)fhLu.class).coords.OnGi()) {
                         int n16;
                         if (entityPlayer.getAbsorptionAmount() >= 1.0f) {
                             n16 = 10;
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         else {
                             n16 = 0;
-                        }
                         eTim("X:Y:Z: " + this.yOZV.format(entityPlayer.posX) + " " + this.yOZV.format(entityPlayer.posY) + " " + this.yOZV.format(entityPlayer.posZ), 55.0f, (float)(n3 - n16), -1);
                     }
                     n3 += 50;
@@ -2357,21 +2130,12 @@ public class XybC
                             if (((AbstractClientPlayer)entityPlayer).isWearing(EnumPlayerModelParts.HAT)) {
                                 final GuiIngame ingameGUI2 = Wrapper.mc.ingameGUI;
                                 GuiIngame.drawScaledCustomSizeModalRect(5, n3 - 63, 40.0f, 8.0f, 8, 8, 30, 30, 64.0f, 64.0f);
-                            }
                             Wrapper.mc.getTextureManager().bindTexture(resourceLocation);
-                            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                                throw null;
-                            }
-                        }
                         catch (Exception ex) {
                             ex.printStackTrace();
-                        }
                     }
-                }
             }
             GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
     }
@@ -2380,9 +2144,6 @@ public class XybC
         final HashMap<Object, Integer> hashMap = new HashMap<Object, Integer>();
         for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
             if (entity instanceof EntityPlayerSP) {
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
                 continue;
             }
             else {
@@ -2391,30 +2152,19 @@ public class XybC
                 if (entity instanceof EntityItem) {
                     name = "Item";
                     count = ((EntityItem)entity).getItem().getCount();
-                }
                 if (entity instanceof EntityEnderCrystal) {
                     name = "Ender Crystal";
-                }
                 if (entity instanceof EntityItemFrame) {
                     name = "Item Frame";
-                }
                 if (entity instanceof EntityPlayer) {
                     name = "Player";
-                }
                 int intValue;
                 if (hashMap.containsKey(name)) {
                     intValue = hashMap.get(name);
-                    if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                        throw null;
                     }
-                }
                 else {
                     intValue = 0;
-                }
                 hashMap.put(name, intValue + count);
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -2422,8 +2172,6 @@ public class XybC
         for (final Map.Entry<String, Integer> entry : hashMap.entrySet()) {
             eTim(entry.getKey() + ":" + entry.getValue(), (float)n, (float)n2, vlwv.fomn.JQor.JqMr().getRGB());
             n2 += 10;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
     }
@@ -2434,9 +2182,6 @@ public class XybC
             long pingToServer;
             if (Wrapper.mc.isSingleplayer()) {
                 pingToServer = (0xF70D3960F60CD94FL ^ 0xF70D3960F60CD94FL);
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
             else {
                 pingToServer = Wrapper.mc.getCurrentServerData().pingToServer;
@@ -2459,11 +2204,7 @@ public class XybC
             while (i < 11) {
                 if (Wrapper.mc.world.getBlockState(new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ).add(0, -i, 0)).getBlock() == Blocks.LAVA || Wrapper.mc.world.getBlockState(new BlockPos(Wrapper.mc.player.posX, Wrapper.mc.player.posY, Wrapper.mc.player.posZ).add(0, -i, 0)).getBlock() == Blocks.FLOWING_LAVA) {
                     return new Eiby("Lava Warning: Your in lava/:", -558050, null);
-                }
                 ++i;
-                if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                    throw null;
-                }
             }
         }
         return null;
@@ -2481,8 +2222,6 @@ public class XybC
         float n4;
         if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).mode.OnGi().equalsIgnoreCase("Up")) {
             n4 = (System.nanoTime() - n) / 1.0E10f % 1.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else {
@@ -2496,32 +2235,22 @@ public class XybC
         FontRenderer fontRenderer;
         if (b) {
             fontRenderer = bozE.dRQq;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (b2) {
             fontRenderer = bozE.SpUn;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (b3) {
             fontRenderer = bozE.VuaG;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (b4) {
             fontRenderer = bozE.gHdT;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (b5) {
             fontRenderer = bozE.Jfgf;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else {
@@ -2547,7 +2276,6 @@ public class XybC
             if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
                 if (bozE.Jfgf != null) {
                     return bozE.Jfgf;
-                }
                 HAxG.TuzD("It Appears you dident set a custom font yet, do .customfont NameOfFont");
                 vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.NdCc("Comfortaa");
             }
@@ -2560,32 +2288,22 @@ public class XybC
         float n4;
         if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
             n4 = 1.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
             n4 = 2.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
             n4 = 3.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
             n4 = 2.5f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
             n4 = (float)vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).height.OnGi().intValue();
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else {
@@ -2599,32 +2317,22 @@ public class XybC
         float n4;
         if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Comfortaa")) {
             n4 = 1.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Roboto")) {
             n4 = 2.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Cosmic Sans")) {
             n4 = 3.0f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Verdana")) {
             n4 = 2.5f;
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else if (vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).IuiN() && vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).font.OnGi().equalsIgnoreCase("Custom")) {
             n4 = (float)vlwv.hNxW.qHPF((Class<CustomFont>)krYX.class).height.OnGi().intValue();
-            if (XybC.\u2008\u200e\u200d\u2003\u2004\u2000\u200e\u2009) {
-                throw null;
             }
         }
         else {

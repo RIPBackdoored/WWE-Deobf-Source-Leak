@@ -79,8 +79,6 @@ public class LogOutSpot extends qMIe
                     this.leLj();
                 }
                 this.xbry();
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
             else if (Wrapper.mc.isSingleplayer()) {
@@ -103,16 +101,11 @@ public class LogOutSpot extends qMIe
                 Color color;
                 if (vlwv.Zqnd().UsVJ(yEmw.AAtC)) {
                     color = JIfG.JzFV(0xCC95F7606F75DD1BL ^ 0xCC95F7606F75DD1AL, 1.0f);
-                    if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else {
                     color = Color.red;
                 }
                 BIIV.yvCF(n, eqev, n2, n3, n4, n5, color);
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
         }
@@ -133,15 +126,11 @@ public class LogOutSpot extends qMIe
             final Iterator<NetworkPlayerInfo> iterator = list3.iterator();
             while (iterator.hasNext()) {
                 this.ZhER(iterator.next().getGameProfile());
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
             final Iterator<NetworkPlayerInfo> iterator2 = list2.iterator();
             while (iterator2.hasNext()) {
                 this.zNDT(iterator2.next().getGameProfile());
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
             LogOutSpot.XcYd = LogOutSpot.yFHA.size();
@@ -166,8 +155,6 @@ public class LogOutSpot extends qMIe
                 --i;
             }
             ++i;
-            if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                throw null;
             }
         }
     }
@@ -180,19 +167,12 @@ public class LogOutSpot extends qMIe
                     String s;
                     if (gameProfile.getName() == null) {
                         s = entityPlayer.getName();
-                        if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         s = gameProfile.getName();
-                    }
                     HAxG.TuzD(sb.append(s).append(" has logged out at, X: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getX()).append(TextFormatting.DARK_RED).append(" Y: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getY()).append(TextFormatting.DARK_RED).append(" Z: ").append(TextFormatting.DARK_RED).append(entityPlayer.getPosition().getZ()).toString());
                 }
                 LogOutSpot.zEsy.add(new YEmw(entityPlayer.posX, entityPlayer.posY, entityPlayer.posZ, entityPlayer.getName(), entityPlayer.getGameProfile().getId(), entityPlayer, new Date()));
             }
-            if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                throw null;
             }
         }
     }
@@ -202,8 +182,6 @@ public class LogOutSpot extends qMIe
         final Iterator<EntityPlayer> iterator = Wrapper.mc.world.playerEntities.iterator();
         while (iterator.hasNext()) {
             LogOutSpot.hKId.add(iterator.next());
-            if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                throw null;
             }
         }
     }
@@ -219,8 +197,6 @@ public class LogOutSpot extends qMIe
                 if (sPacketPlayerListItem.getAction() == SPacketPlayerListItem.Action.REMOVE_PLAYER) {
                     this.ZhER(addPlayerData.getProfile());
                 }
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
         }
@@ -246,8 +222,6 @@ public class LogOutSpot extends qMIe
     public void YdDJ(final YEmw yEmw) {
         GL11.glPushMatrix();
         if (Wrapper.mc.player.getDistance(yEmw.Yhqv, yEmw.EQEV, yEmw.YdCe) / 5.0 <= 2.0) {
-            if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                throw null;
             }
         }
         final double n = 0.016666668f * this.ErHT(yEmw);
@@ -275,8 +249,6 @@ public class LogOutSpot extends qMIe
                     GuiIngame.drawScaledCustomSizeModalRect(-73, -10, 40.0f, 8.0f, 8, 8, 30, 30, 64.0f, 64.0f);
                 }
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
             catch (Exception ex) {
@@ -291,8 +263,6 @@ public class LogOutSpot extends qMIe
         int n6;
         if (vlwv.Zqnd().UsVJ(yEmw.AAtC)) {
             n6 = -16711681;
-            if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                throw null;
             }
         }
         else {
@@ -315,8 +285,6 @@ public class LogOutSpot extends qMIe
                 if (iterator.next() != null) {
                     n7 -= 8;
                 }
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
             if (yEmw.egIB.getHeldItemMainhand() != null) {
@@ -334,18 +302,11 @@ public class LogOutSpot extends qMIe
                 if (itemStack != null) {
                     final ItemStack copy2 = itemStack.copy();
                     if (copy2 == null) {
-                        if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         this.IwxL(yEmw.egIB, copy2, n7, this.HHoe(yEmw.egIB));
                         n7 += 16;
-                    }
                 }
                 --i;
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
             if (yEmw.egIB.getHeldItemOffhand() != null) {
@@ -366,8 +327,6 @@ public class LogOutSpot extends qMIe
         float floatValue;
         if (Wrapper.mc.player.getDistance(yEmw.Yhqv, yEmw.EQEV, yEmw.YdCe) <= 2.0) {
             floatValue = this.nameTagSize.OnGi().floatValue();
-            if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                throw null;
             }
         }
         else {
@@ -418,13 +377,8 @@ public class LogOutSpot extends qMIe
                     String s;
                     if (enchantmentByID.isCurse()) {
                         s = TextFormatting.RED + enchantmentByID.getTranslatedName((int)short2).substring(11).substring(0, 1).toLowerCase();
-                        if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         s = enchantmentByID.getTranslatedName((int)short2).substring(0, 1).toLowerCase();
-                    }
                     final String string = s + short2;
                     GL11.glPushMatrix();
                     GL11.glScalef(0.9f, 0.9f, 0.0f);
@@ -435,8 +389,6 @@ public class LogOutSpot extends qMIe
                     n4 -= 10;
                 }
                 ++i;
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
         }
@@ -457,9 +409,6 @@ public class LogOutSpot extends qMIe
                 int n6 = 16;
                 if (entityPlayer.isPotionActive(MobEffects.POISON)) {
                     n6 += 36;
-                    if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                        throw null;
-                    }
                 }
                 else if (entityPlayer.isPotionActive(MobEffects.WITHER)) {
                     n6 += 72;
@@ -482,32 +431,20 @@ public class LogOutSpot extends qMIe
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         this.dOfv(n9, n10, n6 + 153, 9 * n11, 9, 9);
                         --n4;
-                        if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                     else {
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         this.dOfv(n9, n10, n6 + 144, 9 * n11, 9, 9);
                         n4 -= 2;
-                        if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                            throw null;
-                        }
-                    }
                 }
                 else {
                     if (i * 2 + 1 < ceil2) {
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         this.dOfv(n9, n10, n6 + 36, 9 * n11, 9, 9);
-                    }
                     if (i * 2 + 1 == ceil2) {
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         this.dOfv(n9, n10, n6 + 45, 9 * n11, 9, 9);
-                    }
                 }
                 --i;
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
             }
         }
@@ -544,14 +481,10 @@ public class LogOutSpot extends qMIe
             final BlockPos blockPos = new BlockPos(yEmw.Yhqv, yEmw.EQEV, yEmw.YdCe);
             if (wwe/BnvE.phME.getX() == blockPos.getX() && wwe/BnvE.phME.getY() == blockPos.getY() - 1 && wwe/BnvE.phME.getZ() == blockPos.getZ()) {
                 Wrapper.mc.displayGuiScreen((GuiScreen)new sSoG(yEmw));
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
                 break;
             }
             else {
-                if (LogOutSpot.\u200b\u2000\u200f\u2001\u2004\u2005\u2007\u2004) {
-                    throw null;
                 }
                 continue;
             }

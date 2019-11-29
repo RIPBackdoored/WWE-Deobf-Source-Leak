@@ -76,8 +76,6 @@ public class ChestESP extends qMIe
                 if (tileEntity instanceof TileEntityShulkerBox && this.shulkerbox.OnGi()) {
                     BIIV.zIBn(((TileEntityShulkerBox)tileEntity).getPos(), Color.pink, 1.0, 1.0);
                 }
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
             }
             for (final Entity entity : Wrapper.mc.world.loadedEntityList) {
@@ -93,17 +91,12 @@ public class ChestESP extends qMIe
                     Color color;
                     if (entityItemFrame.getDisplayedItem().isEmpty()) {
                         color = Color.RED;
-                        if (ChestESP.\u200b\u2009\u2001) {
-                            throw null;
-                        }
                     }
                     else {
                         color = Color.GREEN;
                     }
                     BIIV.KZGQ(entity2, color);
                 }
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
             }
         }
@@ -122,8 +115,6 @@ public class ChestESP extends qMIe
                 if (next instanceof TileEntityHopper && this.hopper.OnGi()) {
                     BIIV.zIBn(((TileEntityHopper)next).getPos(), Color.gray, 1.0, 1.0);
                 }
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
             }
             for (final Entity entity3 : Wrapper.mc.world.loadedEntityList) {
@@ -139,17 +130,12 @@ public class ChestESP extends qMIe
                     Color color2;
                     if (entityItemFrame2.getDisplayedItem().isEmpty()) {
                         color2 = Color.RED;
-                        if (ChestESP.\u200b\u2009\u2001) {
-                            throw null;
-                        }
                     }
                     else {
                         color2 = Color.GREEN;
                     }
                     BIIV.KZGQ(entity4, color2);
                 }
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
             }
         }
@@ -159,8 +145,6 @@ public class ChestESP extends qMIe
         RenderHelper.enableStandardItemLighting();
         for (final TileEntity tileEntity : Wrapper.mc.world.loadedTileEntityList) {
             if (!(tileEntity instanceof TileEntityChest) && !(tileEntity instanceof TileEntityEnderChest) && !(tileEntity instanceof TileEntityShulkerBox)) {
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
                 continue;
             }
@@ -169,8 +153,6 @@ public class ChestESP extends qMIe
                 GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
                 TileEntityRendererDispatcher.instance.render(tileEntity, tileEntity.getPos().getX() - yYGD.onRX(), tileEntity.getPos().getY() - yYGD.UuJK(), tileEntity.getPos().getZ() - yYGD.LkVR(), n);
                 GL11.glPopMatrix();
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
                 continue;
             }
@@ -181,36 +163,26 @@ public class ChestESP extends qMIe
         RenderHelper.enableStandardItemLighting();
         for (final TileEntity tileEntity : Wrapper.mc.world.loadedTileEntityList) {
             if (!(tileEntity instanceof TileEntityChest) && !(tileEntity instanceof TileEntityEnderChest) && !(tileEntity instanceof TileEntityShulkerBox)) {
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
                 continue;
             }
             else {
                 if (tileEntity instanceof TileEntityChest) {
                     GL11.glColor3f(1.0f, 0.7f, 0.0f);
-                    if (ChestESP.\u200b\u2009\u2001) {
-                        throw null;
                     }
                 }
                 else if (tileEntity instanceof TileEntityEnderChest) {
                     GL11.glColor3f(145.0f, 0.0f, 255.0f);
-                    if (ChestESP.\u200b\u2009\u2001) {
-                        throw null;
                     }
                 }
                 else if (tileEntity instanceof TileEntityShulkerBox) {
                     GL11.glColor3f(255.0f, 0.0f, 0.0f);
-                    if (ChestESP.\u200b\u2009\u2001) {
-                        throw null;
                     }
                 }
                 else {
                     GL11.glColor3f(1.0f, 1.0f, 1.0f);
                 }
                 TileEntityRendererDispatcher.instance.render(tileEntity, tileEntity.getPos().getX() - yYGD.onRX(), tileEntity.getPos().getY() - yYGD.UuJK(), tileEntity.getPos().getZ() - yYGD.LkVR(), n);
-                if (ChestESP.\u200b\u2009\u2001) {
-                    throw null;
                 }
                 continue;
             }
@@ -223,8 +195,6 @@ public class ChestESP extends qMIe
             if (tileEntityChest.adjacentChestXPos != null) {
                 if (tileEntityChest.getChestType() == BlockChest.Type.TRAP) {
                     BIIV.zIBn(tileEntityChest.getPos(), Color.red, 1.0, 2.0);
-                    if (ChestESP.\u200b\u2009\u2001) {
-                        throw null;
                     }
                 }
                 else {
@@ -234,8 +204,6 @@ public class ChestESP extends qMIe
             if (tileEntityChest.adjacentChestZPos != null) {
                 if (tileEntityChest.getChestType() == BlockChest.Type.TRAP) {
                     BIIV.zIBn(tileEntityChest.getPos(), Color.red, 2.0, 1.0);
-                    if (ChestESP.\u200b\u2009\u2001) {
-                        throw null;
                     }
                 }
                 else {
@@ -245,8 +213,6 @@ public class ChestESP extends qMIe
             if (tileEntityChest.adjacentChestZNeg == null && tileEntityChest.adjacentChestXNeg == null && tileEntityChest.adjacentChestXPos == null && tileEntityChest.adjacentChestZPos == null) {
                 if (tileEntityChest.getChestType() == BlockChest.Type.TRAP) {
                     BIIV.zIBn(tileEntityChest.getPos(), Color.red, 1.0, 1.0);
-                    if (ChestESP.\u200b\u2009\u2001) {
-                        throw null;
                     }
                 }
                 else {

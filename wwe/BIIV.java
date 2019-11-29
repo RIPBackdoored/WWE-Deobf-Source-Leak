@@ -701,9 +701,6 @@ public class BIIV
                 final float n13 = (float)(n12 * (n4 * 3.141592653589793 / n5));
                 GL11.glVertex2f((float)(Math.cos(n13) * n6), (float)(Math.sin(n13) * n6));
                 ++n12;
-                if (BIIV.\u2008) {
-                    throw null;
-                }
             }
             GL11.glEnd();
         }
@@ -714,9 +711,6 @@ public class BIIV
                 final float n15 = (float)(n14 * (n4 * 3.141592653589793 / n5));
                 GL11.glVertex2f((float)(Math.cos(n15) * -n6), (float)(Math.sin(n15) * -n6));
                 --n14;
-                if (BIIV.\u2008) {
-                    throw null;
-                }
             }
             GL11.glEnd();
         }
@@ -757,8 +751,6 @@ public class BIIV
             n13 = n11 * n13 - n12 * n14;
             n14 = n12 * n15 + n11 * n14;
             ++i;
-            if (BIIV.\u2008) {
-                throw null;
             }
         }
         GL11.glEnd();
@@ -787,8 +779,6 @@ public class BIIV
         while (i <= 360) {
             GL11.glVertex2d(n + Math.sin(i * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(i * 3.141592653589793 / 180.0) * n3);
             ++i;
-            if (BIIV.\u2008) {
-                throw null;
             }
         }
         GL11.glEnd();
@@ -962,8 +952,6 @@ public class BIIV
         int n7;
         if (b) {
             n7 = -1;
-            if (BIIV.\u2008) {
-                throw null;
             }
         }
         else {
@@ -1117,8 +1105,6 @@ public class BIIV
         double n13;
         if (n8 < 0) {
             n13 = n12;
-            if (BIIV.\u2008) {
-                throw null;
             }
         }
         else {

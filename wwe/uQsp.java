@@ -37,9 +37,6 @@ public class uQsp extends kUUQ
         int n8;
         if (this.vwqN) {
             n8 = new Color(15, 15, 15, 245).getRGB();
-            if (uQsp.\u200b\u200b\u2000\u2006) {
-                throw null;
-            }
         }
         else {
             n8 = new Color(15, 15, 15, 215).getRGB();
@@ -52,15 +49,9 @@ public class uQsp extends kUUQ
         double ipew;
         if (this.YSpD.OnGi() > this.YSpD.aYiG) {
             ipew = this.SvfS.rhHA.dedb;
-            if (uQsp.\u200b\u200b\u2000\u2006) {
-                throw null;
-            }
         }
         else if (this.YSpD.OnGi() < this.YSpD.LxxX) {
             ipew = 0.0;
-            if (uQsp.\u200b\u200b\u2000\u2006) {
-                throw null;
-            }
         }
         else {
             ipew = this.IPEW;
@@ -70,9 +61,6 @@ public class uQsp extends kUUQ
         int n15;
         if (this.vwqN) {
             n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).getRGB();
-            if (uQsp.\u200b\u200b\u2000\u2006) {
-                throw null;
-            }
         }
         else {
             n15 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
@@ -90,9 +78,6 @@ public class uQsp extends kUUQ
         boolean vwqN;
         if (this.jwHt(n, n2) || this.Usxi(n, n2)) {
             vwqN = true;
-            if (uQsp.\u200b\u200b\u2000\u2006) {
-                throw null;
-            }
         }
         else {
             vwqN = false;
@@ -107,13 +92,8 @@ public class uQsp extends kUUQ
         if (this.banq) {
             if (n3 == 0.0) {
                 this.YSpD.NdCc(this.YSpD.LxxX);
-                if (uQsp.\u200b\u200b\u2000\u2006) {
-                    throw null;
-                }
-            }
             else {
                 this.YSpD.NdCc(JDXJ(n3 / 88.0 * (aYiG - lxxX) + lxxX, 2));
-            }
         }
     }
     

@@ -45,9 +45,6 @@ public class ssGO extends GuiScreen
         String s;
         if (qdlI.bppf) {
             s = TextFormatting.GREEN + "True";
-            if (ssGO.\u2007\u200b) {
-                throw null;
-            }
         }
         else {
             s = TextFormatting.RED + "False";
@@ -64,35 +61,20 @@ public class ssGO extends GuiScreen
         if (guiButton.id == 2 && Desktop.isDesktopSupported()) {
             try {
                 Desktop.getDesktop().browse(new URI("https://discord.gg/QWcrZwP"));
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             catch (URISyntaxException ex) {
                 ex.printStackTrace();
-            }
         }
         if (guiButton.id == 3 && Desktop.isDesktopSupported()) {
             try {
                 Desktop.getDesktop().browse(new URI("https://www.youtube.com/channel/UCJGCNPEjvsCn0FKw3zso0TA"));
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             catch (URISyntaxException ex2) {
                 ex2.printStackTrace();
-            }
         }
         if (guiButton.id == 5 && Desktop.isDesktopSupported()) {
             try {
                 Desktop.getDesktop().browse(new URI("https://reddit.com/r/WWEClient"));
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             catch (URISyntaxException ex3) {
                 ex3.printStackTrace();
-            }
         }
         if (guiButton.id == 6) {
             Wrapper.mc.displayGuiScreen((GuiScreen)new eSDC(this));
@@ -107,13 +89,8 @@ public class ssGO extends GuiScreen
             boolean bppf;
             if (!qdlI.bppf) {
                 bppf = true;
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             else {
                 bppf = false;
-            }
             qdlI.bppf = bppf;
             Wrapper.ypJK().OsgT();
             this.buttonList.clear();
@@ -124,13 +101,8 @@ public class ssGO extends GuiScreen
             Object o;
             if (ssGO.jMLq) {
                 o = new qdlI();
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             else {
                 o = new GuiMainMenu();
-            }
             mc.displayGuiScreen((GuiScreen)o);
         }
     }
@@ -141,13 +113,8 @@ public class ssGO extends GuiScreen
             Object o;
             if (ssGO.jMLq) {
                 o = new qdlI();
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             else {
                 o = new GuiMainMenu();
-            }
             mc.displayGuiScreen((GuiScreen)o);
         }
     }
@@ -156,27 +123,16 @@ public class ssGO extends GuiScreen
         if (srcFile != null) {
             try {
                 FileUtils.copyFile(srcFile, new File(Wrapper.ypJK().XeLH + File.separator + "Custom Image.png"));
-                if (ssGO.\u2007\u200b) {
-                    throw null;
-                }
-            }
             catch (IOException ex) {
                 ex.printStackTrace();
-            }
             final ResourceLocation mpCo = FIwW.MPCo(new File(Wrapper.ypJK().XeLH + File.separator + "Custom Image.png"));
             if (mpCo != null) {
                 if (qdlI.JTTe.size() > qdlI.GHWo) {
                     qdlI.JTTe.set(qdlI.JTTe.size() - 1, mpCo);
-                    if (ssGO.\u2007\u200b) {
-                        throw null;
-                    }
-                }
                 else {
                     qdlI.JTTe.add(mpCo);
-                }
                 qdlI.kbXN = qdlI.JTTe.size() - 1;
                 Wrapper.ypJK().OsgT();
-            }
         }
     }
     

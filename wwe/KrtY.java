@@ -14,9 +14,6 @@ public class KrtY
         float n4;
         if (vlwv.hNxW.qHPF((Class<ColorList>)VWdz.class).mode.OnGi().equalsIgnoreCase("Up")) {
             n4 = (System.nanoTime() - n) / 1.0E10f % 1.0f;
-            if (KrtY.\u2007) {
-                throw null;
-            }
         }
         else {
             n4 = (System.nanoTime() + n) / 1.0E10f % 1.0f;
@@ -29,7 +26,6 @@ public class KrtY
         try {
             if (s.equalsIgnoreCase("rainbow")) {
                 return DnMA(0x7676E61C28D8B3C2L ^ 0x7676E61C28D8B3C2L, 1.0f).getRGB();
-            }
             return Integer.parseInt(s, 16);
         }
         catch (NumberFormatException ex) {

@@ -15,8 +15,6 @@ public class YRhC extends HAxG
             if (hAxG != this) {
                 HAxG.CuSq(hAxG.thqu() + " " + TextFormatting.DARK_GRAY + "-" + TextFormatting.DARK_RED + " " + hAxG.UiIp(), "https://wweclient.com/documentation/commands/" + hAxG.thqu() + ".php");
             }
-            if (YRhC.\u200f\u200a\u200e\u2003) {
-                throw null;
             }
         }
     }

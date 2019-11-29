@@ -56,8 +56,6 @@ public class fIdW extends GuiScreen
     public void func_146284_a(final GuiButton guiButton) {
         try {
             super.actionPerformed(guiButton);
-            if (fIdW.\u2007\u2007\u2007\u2004\u2006\u2009\u2005\u200b) {
-                throw null;
             }
         }
         catch (IOException ex) {
@@ -77,15 +75,11 @@ public class fIdW extends GuiScreen
                                 yYGD.VHzJ(uhdS);
                             }
                             wGez.PrrU.EMav = "";
-                            if (fIdW.\u2007\u2007\u2007\u2004\u2006\u2009\u2005\u200b) {
-                                throw null;
                             }
                             break Label_0172;
                         }
                         catch (Exception ex2) {
                             this.EMav = "".concat("§cBad Login §7(").concat(aRkr.dcDV()).concat(")");
-                            if (fIdW.\u2007\u2007\u2007\u2004\u2006\u2009\u2005\u200b) {
-                                throw null;
                             }
                             break Label_0172;
                         }
@@ -93,8 +87,6 @@ public class fIdW extends GuiScreen
                     yYGD.VHzJ(exyI.cadX(aRkr.dcDV()));
                     wGez.PrrU.EMav = "";
                 }
-                if (fIdW.\u2007\u2007\u2007\u2004\u2006\u2009\u2005\u200b) {
-                    throw null;
                 }
             }
             catch (Exception ex3) {}
@@ -104,8 +96,6 @@ public class fIdW extends GuiScreen
                 final GuiYesNo guiYesNo = new GuiYesNo((GuiYesNoCallback)this, "Delete the alt: \"" + wGez.VkYf.get(this.JvDn.zFMV()).dcDV() + "\"?", "", "Delete", "Cancel", this.JvDn.zFMV());
                 this.CVhq = true;
                 this.mc.displayGuiScreen((GuiScreen)guiYesNo);
-                if (fIdW.\u2007\u2007\u2007\u2004\u2006\u2009\u2005\u200b) {
-                    throw null;
                 }
             }
             catch (Exception ex4) {}

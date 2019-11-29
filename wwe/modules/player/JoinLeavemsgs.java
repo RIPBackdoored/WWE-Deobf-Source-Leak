@@ -30,9 +30,6 @@ public class JoinLeavemsgs extends qMIe
         if (Wrapper.mc.player != null) {
             if (Wrapper.mc.player.ticksExisted % 10 == 0) {
                 this.leLj();
-                if (JoinLeavemsgs.\u2009\u2002\u2008\u2007\u2003) {
-                    throw null;
-                }
             }
             else if (Wrapper.mc.isSingleplayer()) {
                 this.GDVp();
@@ -63,16 +60,10 @@ public class JoinLeavemsgs extends qMIe
             final Iterator<NetworkPlayerInfo> iterator = list2.iterator();
             while (iterator.hasNext()) {
                 this.PWeW(iterator.next());
-                if (JoinLeavemsgs.\u2009\u2002\u2008\u2007\u2003) {
-                    throw null;
-                }
             }
             final Iterator<NetworkPlayerInfo> iterator2 = list3.iterator();
             while (iterator2.hasNext()) {
                 this.tjiB(iterator2.next());
-                if (JoinLeavemsgs.\u2009\u2002\u2008\u2007\u2003) {
-                    throw null;
-                }
             }
             JoinLeavemsgs.XcYd = JoinLeavemsgs.yFHA.size();
             this.guhH();
@@ -88,8 +79,6 @@ public class JoinLeavemsgs extends qMIe
     protected void PWeW(final NetworkPlayerInfo networkPlayerInfo) {
         try {
             JoinLeavemsgs.BOOX = Wrapper.ypJK().jRoj(networkPlayerInfo);
-            if (JoinLeavemsgs.\u2009\u2002\u2008\u2007\u2003) {
-                throw null;
             }
         }
         catch (IOException ex) {
@@ -101,8 +90,6 @@ public class JoinLeavemsgs extends qMIe
     protected void tjiB(final NetworkPlayerInfo networkPlayerInfo) {
         try {
             JoinLeavemsgs.EmRl = Wrapper.ypJK().Nprd(networkPlayerInfo);
-            if (JoinLeavemsgs.\u2009\u2002\u2008\u2007\u2003) {
-                throw null;
             }
         }
         catch (IOException ex) {

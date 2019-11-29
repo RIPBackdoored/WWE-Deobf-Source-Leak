@@ -31,43 +31,25 @@ public class fwEt
         if (this.zMeL == 0) {
             if (this.xGMZ.kEZV.getText().isEmpty()) {
                 fwsb = 0;
-                if (fwEt.\u2004\u200e) {
-                    throw null;
-                }
             }
             else {
                 fwsb = Integer.parseInt(this.xGMZ.kEZV.getText());
-                if (fwEt.\u2004\u200e) {
-                    throw null;
-                }
             }
         }
         else if (this.zMeL == 1) {
             if (this.xGMZ.ZxjL.getText().isEmpty()) {
                 fwsb = 0;
-                if (fwEt.\u2004\u200e) {
-                    throw null;
-                }
             }
             else {
                 fwsb = Integer.parseInt(this.xGMZ.ZxjL.getText());
-                if (fwEt.\u2004\u200e) {
-                    throw null;
-                }
             }
         }
         else if (this.zMeL == 2) {
             if (this.xGMZ.namX.getText().isEmpty()) {
                 fwsb = 0;
-                if (fwEt.\u2004\u200e) {
-                    throw null;
-                }
             }
             else {
                 fwsb = Integer.parseInt(this.xGMZ.namX.getText());
-                if (fwEt.\u2004\u200e) {
-                    throw null;
-                }
             }
         }
         else {
@@ -77,8 +59,6 @@ public class fwEt
         boolean ruZA;
         if (this.KoCN(n, n2) || this.Hmup(n, n2)) {
             ruZA = true;
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else {
@@ -93,28 +73,19 @@ public class fwEt
             if (n4 == 0.0) {
                 if (this.zMeL == 0) {
                     this.xGMZ.kEZV.setText("0");
-                }
                 if (this.zMeL == 1) {
                     this.xGMZ.ZxjL.setText("0");
-                }
                 if (this.zMeL == 2) {
                     this.xGMZ.namX.setText("0");
-                    if (fwEt.\u2004\u200e) {
-                        throw null;
-                    }
-                }
             }
             else {
                 final double tkVp = TKVp(n4 / 255.0 * (n6 - n5) + n5, 2);
                 if (this.zMeL == 0) {
                     this.xGMZ.kEZV.setText((int)tkVp + "");
-                }
                 if (this.zMeL == 1) {
                     this.xGMZ.ZxjL.setText((int)tkVp + "");
-                }
                 if (this.zMeL == 2) {
                     this.xGMZ.namX.setText((int)tkVp + "");
-                }
             }
         }
         final int aXth = this.aXth;
@@ -124,8 +95,6 @@ public class fwEt
         int n9;
         if (this.ruZA) {
             n9 = new Color(15, 15, 15, 245).getRGB();
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else {
@@ -139,14 +108,10 @@ public class fwEt
         double lCzq;
         if (this.FWSB > 255) {
             lCzq = 255.0;
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else if (this.FWSB < 0) {
             lCzq = 0.0;
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else {
@@ -157,20 +122,14 @@ public class fwEt
         int n14;
         if (this.zMeL == 0) {
             n14 = -65536;
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else if (this.zMeL == 1) {
             n14 = -16711936;
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else if (this.zMeL == 2) {
             n14 = -16776961;
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else {
@@ -183,20 +142,14 @@ public class fwEt
         String s;
         if (this.zMeL == 0) {
             s = "Red";
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else if (this.zMeL == 1) {
             s = "Green";
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else if (this.zMeL == 2) {
             s = "Blue";
-            if (fwEt.\u2004\u200e) {
-                throw null;
             }
         }
         else {

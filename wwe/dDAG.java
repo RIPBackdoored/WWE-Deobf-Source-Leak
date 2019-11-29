@@ -20,9 +20,6 @@ public class dDAG extends GuiButton
             boolean hovered;
             if (n >= this.x && n2 >= this.y && n < this.x + this.width && n2 < this.y + this.height) {
                 hovered = true;
-                if (dDAG.\u2004\u200f) {
-                    throw null;
-                }
             }
             else {
                 hovered = false;

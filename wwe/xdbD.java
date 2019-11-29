@@ -21,15 +21,9 @@ public class xdbD extends HAxG
             for (final qMIe qmIe2 : vlwv.hNxW.ijZl) {
                 if (qmIe2.czUH().replace(" ", "_").equalsIgnoreCase(array[0])) {
                     qmIe = qmIe2;
-                    if (xdbD.\u2002\u200c\u2007\u200b\u2002\u2005\u2000\u2007\u200f) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
-                    if (xdbD.\u2002\u200c\u2007\u200b\u2002\u2005\u2000\u2007\u200f) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -37,15 +31,11 @@ public class xdbD extends HAxG
                 qmIe.hzzk(Keyboard.getKeyIndex(array[1].toUpperCase()));
                 HAxG.TuzD(qmIe.czUH() + " bound to: " + Keyboard.getKeyName(qmIe.APjp()));
                 Wrapper.ypJK().hUMI();
-                if (xdbD.\u2002\u200c\u2007\u200b\u2002\u2005\u2000\u2007\u200f) {
-                    throw null;
                 }
             }
             else {
                 HAxG.TuzD("Thats not a module?");
             }
-            if (xdbD.\u2002\u200c\u2007\u200b\u2002\u2005\u2000\u2007\u200f) {
-                throw null;
             }
         }
         catch (Exception ex) {

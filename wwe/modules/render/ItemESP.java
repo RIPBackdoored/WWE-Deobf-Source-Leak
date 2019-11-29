@@ -28,16 +28,11 @@ public class ItemESP extends qMIe
             if (entity instanceof EntityItem || entity instanceof EntityArrow) {
                 if (this.rainbow.OnGi()) {
                     BIIV.ITDu(entity, JIfG.JzFV(0x9E6822DD07024A02L ^ 0x9E6822DD07024A03L, 1.0f));
-                    if (ItemESP.\u2003\u2000\u2008\u2003\u2008) {
-                        throw null;
-                    }
                 }
                 else {
                     BIIV.ITDu(entity, Color.red);
                 }
             }
-            if (ItemESP.\u2003\u2000\u2008\u2003\u2008) {
-                throw null;
             }
         }
     }

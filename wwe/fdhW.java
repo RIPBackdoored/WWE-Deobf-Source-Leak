@@ -20,17 +20,11 @@ public class fdhW extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.CfSS) {
-                if (fdhW.\u2007) {
-                    throw null;
-                }
                 continue;
             }
             else {
                 this.buttonList.add(new GuiButton(this.buttonList.size(), this.width / 2 - 100, this.height / 4 + n, rcmd.cpTz));
                 n += 25;
-                if (fdhW.\u2007) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -42,23 +36,14 @@ public class fdhW extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.CfSS) {
-                if (fdhW.\u2007) {
-                    throw null;
-                }
                 continue;
             }
             else if (guiButton.id == n) {
                 this.mc.displayGuiScreen((GuiScreen)new oBqx(rcmd));
-                if (fdhW.\u2007) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++n;
-                if (fdhW.\u2007) {
-                    throw null;
-                }
                 continue;
             }
         }

@@ -60,9 +60,6 @@ public class qdlI extends GuiScreen
         float n4;
         if (this.veXh) {
             n4 = (System.nanoTime() / (0x7A8B0A87ADB2E38EL ^ 0x7A8B0A87ADBDA1CEL) - this.ovZE) / 1500.0f;
-            if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                throw null;
-            }
         }
         else {
             n4 = 1.0f;
@@ -79,9 +76,6 @@ public class qdlI extends GuiScreen
         float n9;
         if (this.veXh) {
             n9 = (float)MathHelper.ceil(MathHelper.clamp(n5, 0.0f, 1.0f));
-            if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                throw null;
-            }
         }
         else {
             n9 = 1.0f;
@@ -98,9 +92,6 @@ public class qdlI extends GuiScreen
                 int kbXN;
                 if (qdlI.kbXN >= qdlI.JTTe.size() - 1) {
                     kbXN = 0;
-                    if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                        throw null;
-                    }
                 }
                 else {
                     kbXN = qdlI.kbXN + 1;
@@ -108,7 +99,6 @@ public class qdlI extends GuiScreen
                 qdlI.kbXN = kbXN;
                 Wrapper.ypJK().OsgT();
                 this.tPWM = true;
-            }
             this.mc.getTextureManager().bindTexture((ResourceLocation)qdlI.JTTe.get(qdlI.kbXN));
             Gui.drawModalRectWithCustomSizedTexture(0, 0, 0.0f, 0.0f, scaledResolution.getScaledWidth(), scaledResolution.getScaledHeight(), (float)scaledResolution.getScaledWidth(), (float)scaledResolution.getScaledHeight());
             final int n12 = ((int)this.qSYb.KBDH() - 5000) * this.width / 1000;
@@ -118,19 +108,12 @@ public class qdlI extends GuiScreen
                 int n13;
                 if (qdlI.kbXN == 0) {
                     n13 = qdlI.JTTe.size() - 1;
-                    if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                        throw null;
-                    }
                 }
                 else {
                     n13 = qdlI.kbXN - 1;
                 }
                 textureManager.bindTexture((ResourceLocation)jtTe.get(n13));
                 Gui.drawModalRectWithCustomSizedTexture(0 - n12, 0, 0.0f, 0.0f, scaledResolution.getScaledWidth(), scaledResolution.getScaledHeight(), (float)scaledResolution.getScaledWidth(), (float)scaledResolution.getScaledHeight());
-            }
-            if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                throw null;
-            }
         }
         else {
             this.mc.getTextureManager().bindTexture((ResourceLocation)qdlI.JTTe.get(qdlI.kbXN));
@@ -147,9 +130,6 @@ public class qdlI extends GuiScreen
         int n15;
         if (n14 < 1) {
             n15 = 5;
-            if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                throw null;
-            }
         }
         else {
             n15 = n14;
@@ -178,18 +158,12 @@ public class qdlI extends GuiScreen
         drawRect(this.width, 0, this.width - 20, 20, new Color(255, 0, 0, n16).getRGB());
         for (final GuiButton guiButton : this.buttonList) {
             if (!(guiButton instanceof Gpxt)) {
-                if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                    throw null;
                 }
                 continue;
-            }
             else {
                 ((Gpxt)guiButton).fobH = fobH;
-                if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                    throw null;
                 }
                 continue;
-            }
         }
         super.drawScreen(n, n2, n3);
     }
@@ -198,13 +172,9 @@ public class qdlI extends GuiScreen
         if (n > this.width - 20 && n < this.width && n2 > 0 && n2 < 20) {
             if (qdlI.kbXN + 1 >= qdlI.JTTe.size()) {
                 qdlI.kbXN = 0;
-                if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                    throw null;
                 }
-            }
             else {
                 ++qdlI.kbXN;
-            }
             Wrapper.ypJK().OsgT();
             this.mc.getSoundHandler().playSound((ISound)PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0f));
         }
@@ -212,28 +182,20 @@ public class qdlI extends GuiScreen
             if (Desktop.isDesktopSupported()) {
                 try {
                     Desktop.getDesktop().browse(new URI("https://wweclient.com"));
-                    if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                        throw null;
-                    }
                 }
                 catch (Exception ex) {
                     ex.printStackTrace();
                 }
-            }
             this.mc.getSoundHandler().playSound((ISound)PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0f));
         }
         if (qdlI.WFhU && n > this.width / 2 - bozE.SPev.getStringWidth("Update available at wweclient.com or wweclient.com") / 2 && n < this.width / 2 + bozE.SPev.getStringWidth("Update available at wweclient.com or wweclient.com") / 2 && n2 > this.height - this.height / 8 - 4 + this.height / 13 && n2 < this.height - this.height / 8 - 4 + this.height / 13 + 11) {
             if (Desktop.isDesktopSupported()) {
                 try {
                     Desktop.getDesktop().browse(new URI("https://wweclient.com"));
-                    if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                        throw null;
-                    }
                 }
                 catch (Exception ex2) {
                     ex2.printStackTrace();
                 }
-            }
             this.mc.getSoundHandler().playSound((ISound)PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0f));
         }
         super.mouseClicked(n, n2, n3);
@@ -275,18 +237,12 @@ public class qdlI extends GuiScreen
         while (i < qdlI.JTTe.size()) {
             if (n == Keyboard.getKeyIndex(i + 1 + "")) {
                 kbXN = i;
-                if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                    throw null;
                 }
                 break;
-            }
             else {
                 ++i;
-                if (qdlI.\u2004\u2004\u200d\u200d\u200b\u2006\u2002) {
-                    throw null;
                 }
                 continue;
-            }
         }
         if (kbXN != -1) {
             qdlI.kbXN = kbXN;

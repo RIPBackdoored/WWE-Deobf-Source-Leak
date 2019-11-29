@@ -21,9 +21,6 @@ public class rJxT extends GuiScreen
         int n2 = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.UyOo) {
-                if (rJxT.\u2004\u2005) {
-                    throw null;
-                }
                 continue;
             }
             else {
@@ -32,25 +29,13 @@ public class rJxT extends GuiScreen
                 int n3;
                 if (n2 != 0) {
                     n3 = this.width / 2 + 2;
-                    if (rJxT.\u2004\u2005) {
-                        throw null;
-                    }
-                }
                 else {
                     n3 = this.width / 2 - 100;
-                }
                 buttonList.add(new GuiButton(size, n3, this.height / 4 + n, 98, 20, rcmd.cpTz));
                 if (n2 != 0) {
                     n += 25;
-                }
                 final int n4 = 1;
-                if (rJxT.\u2004\u2005) {
-                    throw null;
-                }
                 n2 = n4;
-                if (rJxT.\u2004\u2005) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -67,20 +52,13 @@ public class rJxT extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.UyOo) {
-                if (rJxT.\u2004\u2005) {
-                    throw null;
-                }
                 continue;
             }
             else {
                 if (guiButton.id == n) {
                     this.mc.displayGuiScreen((GuiScreen)new oBqx(rcmd));
                     return;
-                }
                 ++n;
-                if (rJxT.\u2004\u2005) {
-                    throw null;
-                }
                 continue;
             }
         }

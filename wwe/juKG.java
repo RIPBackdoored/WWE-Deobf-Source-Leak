@@ -28,8 +28,6 @@ public class juKG extends GuiScreen
             if (block != Blocks.AIR) {
                 block.getSubBlocks((CreativeTabs)null, create);
             }
-            if (juKG.\u2000\u200c\u2003\u200a) {
-                throw null;
             }
         }
         int n4 = 0;
@@ -48,8 +46,6 @@ public class juKG extends GuiScreen
                 n6 += 20;
                 n4 = n7;
             }
-            if (juKG.\u2000\u200c\u2003\u200a) {
-                throw null;
             }
         }
         super.drawScreen(n, n2, n3);

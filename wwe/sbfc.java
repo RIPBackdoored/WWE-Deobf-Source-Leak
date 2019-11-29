@@ -15,9 +15,6 @@ public class sbfc
         boolean b;
         if (this.Pjvt - this.alqC >= n) {
             b = true;
-            if (sbfc.\u200c\u200b\u2001\u2009) {
-                throw null;
-            }
         }
         else {
             b = false;

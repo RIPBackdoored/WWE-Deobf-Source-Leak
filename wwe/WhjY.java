@@ -35,9 +35,6 @@ public class WhjY extends HAxG
                 finI.CQIZ = finI.noHS;
                 Wrapper.ypJK().VvWw();
                 ++i;
-                if (WhjY.\u2006\u200f\u200d\u200b\u2005\u2007) {
-                    throw null;
-                }
             }
             final hEGx prNz5 = vlwv.pRNz;
             final XdhZ aTlJ3 = hEGx.aTlJ;
@@ -62,8 +59,6 @@ public class WhjY extends HAxG
                 return;
             }
             ++j;
-            if (WhjY.\u2006\u200f\u200d\u200b\u2005\u2007) {
-                throw null;
             }
         }
     }

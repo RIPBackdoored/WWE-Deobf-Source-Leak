@@ -148,8 +148,6 @@ public class eOnJ
                 return qmIe;
             }
             ++i;
-            if (eOnJ.\u2008\u2001\u2007) {
-                throw null;
             }
         }
         return null;
@@ -163,8 +161,6 @@ public class eOnJ
                 return (T)qmIe;
             }
             ++i;
-            if (eOnJ.\u2008\u2001\u2007) {
-                throw null;
             }
         }
         return null;
@@ -175,8 +171,6 @@ public class eOnJ
         while (i < this.xRen().size()) {
             this.xRen().get(i).OgHM();
             ++i;
-            if (eOnJ.\u2008\u2001\u2007) {
-                throw null;
             }
         }
     }

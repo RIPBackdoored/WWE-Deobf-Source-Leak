@@ -47,8 +47,6 @@ public class AutoLog extends qMIe
                 Wrapper.mc.player.connection.getNetworkManager().closeChannel((ITextComponent)this.QQsS("Aborting mission, Ender crystal " + Wrapper.mc.player.getDistance(entity) + " away from you"));
                 vlwv.hNxW.qHPF((Class<AutoLog>)YQHE.class).GDVp();
             }
-            if (AutoLog.\u2003\u200a\u200c\u200f\u2002\u2003\u200d) {
-                throw null;
             }
         }
     }

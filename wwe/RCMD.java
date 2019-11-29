@@ -35,9 +35,6 @@ public class RCMD
         Color color;
         if (new Color(this.zlwQ, this.elYg, this.Kbjh) == null) {
             color = new Color(this.RzMj, this.IzwG, this.YzNk);
-            if (RCMD.\u2007\u200e\u2002\u2005) {
-                throw null;
-            }
         }
         else {
             color = new Color(this.zlwQ, this.elYg, this.Kbjh);

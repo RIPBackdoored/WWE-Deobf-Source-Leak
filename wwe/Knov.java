@@ -20,17 +20,11 @@ public class Knov extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.bOQy) {
-                if (Knov.\u2003\u2002\u200d) {
-                    throw null;
-                }
                 continue;
             }
             else {
                 this.buttonList.add(new GuiButton(this.buttonList.size(), this.width / 2 - 100, this.height / 4 + n, rcmd.cpTz));
                 n += 25;
-                if (Knov.\u2003\u2002\u200d) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -42,23 +36,14 @@ public class Knov extends GuiScreen
         int n = 0;
         for (final RCMD rcmd : vlwv.fomn.JNkz) {
             if (rcmd.VhuH != DlwW.bOQy) {
-                if (Knov.\u2003\u2002\u200d) {
-                    throw null;
-                }
                 continue;
             }
             else if (guiButton.id == n) {
                 this.mc.displayGuiScreen((GuiScreen)new oBqx(rcmd));
-                if (Knov.\u2003\u2002\u200d) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++n;
-                if (Knov.\u2003\u2002\u200d) {
-                    throw null;
-                }
                 continue;
             }
         }

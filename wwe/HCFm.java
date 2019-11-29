@@ -27,9 +27,6 @@ public class HCFm extends GuiScreen
         String s;
         if (this.QpRj.STEn.wgqj) {
             s = TextFormatting.RED + "true";
-            if (HCFm.\u200a\u2008\u200a\u2006\u2007\u2000\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         else {
             s = TextFormatting.GREEN + "false";
@@ -52,13 +49,8 @@ public class HCFm extends GuiScreen
             boolean wgqj;
             if (!this.QpRj.STEn.wgqj) {
                 wgqj = true;
-                if (HCFm.\u200a\u2008\u200a\u2006\u2007\u2000\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             else {
                 wgqj = false;
-            }
             stEn.wgqj = wgqj;
             this.buttonList.clear();
             this.initGui();
@@ -76,9 +68,6 @@ public class HCFm extends GuiScreen
     public void func_73876_c() {
         if (this.QpRj.STEn.wgqj) {
             this.CVbk.setEnabled(false);
-            if (HCFm.\u200a\u2008\u200a\u2006\u2007\u2000\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         else {
             this.CVbk.setEnabled(true);

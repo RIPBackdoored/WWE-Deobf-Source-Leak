@@ -28,9 +28,6 @@ public class Deoo
         boolean vufk;
         if (n >= this.rjpj && n2 >= this.kWmF + this.BFKa.VgRj && n < this.rjpj + this.lyAE && n2 < this.kWmF + this.iSaV + this.BFKa.VgRj && n2 < this.BFKa.height - 30 && n2 > 40) {
             vufk = true;
-            if (Deoo.\u200e\u2000\u200f\u2007\u2006\u2004\u2007) {
-                throw null;
-            }
         }
         else {
             vufk = false;
@@ -44,9 +41,6 @@ public class Deoo
         int rgb;
         if (this.BFKa.wtTS == this) {
             rgb = new Color(-1873784752).darker().getRGB();
-            if (Deoo.\u200e\u2000\u200f\u2007\u2006\u2004\u2007) {
-                throw null;
-            }
         }
         else {
             rgb = -1873784752;

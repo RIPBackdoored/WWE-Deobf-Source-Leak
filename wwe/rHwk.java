@@ -36,9 +36,6 @@ public class rHwk extends GuiScreen
         if (guiButton.id == 10) {
             if (Wrapper.mc.world != null) {
                 Wrapper.mc.displayGuiScreen((GuiScreen)new GuiIngameMenu());
-                if (rHwk.\u2005) {
-                    throw null;
-                }
             }
             else {
                 Wrapper.mc.displayGuiScreen((GuiScreen)new ssGO());

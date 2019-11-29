@@ -37,9 +37,6 @@ public class EntitySpeed extends qMIe
             if (moveForward == 0.0 && moveStrafe == 0.0) {
                 yYGD.AXSL((Entity)Wrapper.mc.player).motionX = 0.0;
                 yYGD.AXSL((Entity)Wrapper.mc.player).motionZ = 0.0;
-                if (EntitySpeed.\u200a\u200f\u200c\u200a\u200c\u200d\u200f\u2003\u2009) {
-                    throw null;
-                }
             }
             else {
                 if (moveForward != 0.0) {
@@ -48,16 +45,11 @@ public class EntitySpeed extends qMIe
                         int n2;
                         if (moveForward > 0.0) {
                             n2 = -45;
-                            if (EntitySpeed.\u200a\u200f\u200c\u200a\u200c\u200d\u200f\u2003\u2009) {
-                                throw null;
-                            }
                         }
                         else {
                             n2 = 45;
                         }
                         rotationYaw = n + n2;
-                        if (EntitySpeed.\u200a\u200f\u200c\u200a\u200c\u200d\u200f\u2003\u2009) {
-                            throw null;
                         }
                     }
                     else if (moveStrafe < 0.0) {
@@ -65,9 +57,6 @@ public class EntitySpeed extends qMIe
                         int n4;
                         if (moveForward > 0.0) {
                             n4 = 45;
-                            if (EntitySpeed.\u200a\u200f\u200c\u200a\u200c\u200d\u200f\u2003\u2009) {
-                                throw null;
-                            }
                         }
                         else {
                             n4 = -45;
@@ -77,23 +66,16 @@ public class EntitySpeed extends qMIe
                     moveStrafe = 0.0f;
                     if (moveForward > 0.0) {
                         moveForward = 1.0f;
-                        if (EntitySpeed.\u200a\u200f\u200c\u200a\u200c\u200d\u200f\u2003\u2009) {
-                            throw null;
                         }
                     }
                     else if (moveForward < 0.0) {
                         moveForward = -1.0f;
                     }
-                }
                 if (moveStrafe > 0.0) {
                     moveStrafe = 1.0f;
-                    if (EntitySpeed.\u200a\u200f\u200c\u200a\u200c\u200d\u200f\u2003\u2009) {
-                        throw null;
                     }
-                }
                 else if (moveStrafe < 0.0) {
                     moveStrafe = -1.0f;
-                }
                 yYGD.AXSL((Entity)Wrapper.mc.player).motionX = moveForward * this.speed.OnGi() * Math.cos(Math.toRadians(rotationYaw + 90.0f)) + moveStrafe * this.speed.OnGi() * Math.sin(Math.toRadians(rotationYaw + 90.0f));
                 yYGD.AXSL((Entity)Wrapper.mc.player).motionZ = moveForward * this.speed.OnGi() * Math.sin(Math.toRadians(rotationYaw + 90.0f)) - moveStrafe * this.speed.OnGi() * Math.cos(Math.toRadians(rotationYaw + 90.0f));
             }

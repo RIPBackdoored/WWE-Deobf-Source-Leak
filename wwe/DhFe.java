@@ -48,9 +48,6 @@ public class DhFe
         String trim2;
         if (contains) {
             trim2 = trim.split(" ")[0];
-            if (DhFe.\u2004\u2008\u200d\u2007\u200d) {
-                throw null;
-            }
         }
         else {
             trim2 = trim.trim();
@@ -59,9 +56,6 @@ public class DhFe
         String[] array;
         if (contains) {
             array = trim.substring(s2.length()).trim().split(" ");
-            if (DhFe.\u2004\u2008\u200d\u2007\u200d) {
-                throw null;
-            }
         }
         else {
             array = new String[0];
@@ -70,17 +64,9 @@ public class DhFe
         for (final HAxG hAxG : DhFe.ACXD) {
             if (hAxG.thqu().trim().equalsIgnoreCase(s2.trim())) {
                 hAxG.lpzH(trim, array2);
-                if (DhFe.\u2004\u2008\u200d\u2007\u200d) {
-                    throw null;
-                }
                 break;
-            }
             else {
-                if (DhFe.\u2004\u2008\u200d\u2007\u200d) {
-                    throw null;
-                }
                 continue;
-            }
         }
         HAxG.TuzD("Invalid command. Try .help for a list of commands.");
     }

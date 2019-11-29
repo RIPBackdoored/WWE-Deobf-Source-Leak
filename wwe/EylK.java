@@ -30,9 +30,6 @@ public class EylK
             String s;
             if (this.rMNe.hmkw[this.CuIi] == 'x') {
                 s = "X";
-                if (EylK.\u200a\u200c\u200a\u2001\u200a\u2000\u200f) {
-                    throw null;
-                }
             }
             else {
                 s = "O";
@@ -47,9 +44,6 @@ public class EylK
             int rgb;
             if (this.rMNe.hmkw[this.CuIi] == 'x') {
                 rgb = -65536;
-                if (EylK.\u200a\u200c\u200a\u2001\u200a\u2000\u200f) {
-                    throw null;
-                }
             }
             else {
                 rgb = Color.blue.getRGB();
@@ -69,8 +63,6 @@ public class EylK
         boolean b;
         if (n > this.YuJW && n < this.YuJW + this.ogHC && n2 > this.IaUa && n2 < this.IaUa + this.ogHC) {
             b = true;
-            if (EylK.\u200a\u200c\u200a\u2001\u200a\u2000\u200f) {
-                throw null;
             }
         }
         else {

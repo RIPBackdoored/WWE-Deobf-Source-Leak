@@ -23,9 +23,6 @@ public class MCF extends qMIe
                 vlwv.Zqnd().kDXm(name, name);
                 HAxG.TuzD("Added " + TextFormatting.DARK_RED + name + TextFormatting.DARK_RED + " to friend" + TextFormatting.DARK_RED + "s list");
                 Wrapper.ypJK().pRVY();
-                if (MCF.\u2001\u200d\u200f\u200d\u2004\u200d\u2007\u200e) {
-                    throw null;
-                }
             }
             else {
                 vlwv.Zqnd().bSEt(name);

@@ -103,9 +103,6 @@ public class vlwv
         final Iterator<qMIe> iterator = vlwv.hNxW.xRen().iterator();
         while (iterator.hasNext()) {
             iterator.next().qHNm();
-            if (vlwv.\u2005) {
-                throw null;
-            }
         }
     }
     
@@ -129,20 +126,12 @@ public class vlwv
             if (responseCode == 302 || responseCode == 301) {
                 httpURLConnection = (HttpURLConnection)new URL(httpURLConnection.getHeaderField("Location")).openConnection();
                 httpURLConnection.setRequestProperty("User-Agent", "WWE CLIENT BEST CLIENT USER-AGENT FOR CURRENT USERS");
-            }
             final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 uPqc.add(line);
-                if (vlwv.\u2005) {
-                    throw null;
-                }
-            }
             bufferedReader.close();
             vlwv.uPqc = uPqc;
-            if (vlwv.\u2005) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -153,9 +142,6 @@ public class vlwv
         boolean b;
         if (StringUtils.stripControlCodes(s).equalsIgnoreCase("IKnowImEZ") || StringUtils.stripControlCodes(s).equalsIgnoreCase("THEREALWWEFAN231") || StringUtils.stripControlCodes(s).equalsIgnoreCase("WWEClient")) {
             b = true;
-            if (vlwv.\u2005) {
-                throw null;
-            }
         }
         else {
             b = false;

@@ -57,8 +57,6 @@ public class AutoTool extends qMIe
                 }
             }
             ++i;
-            if (AutoTool.\u2007\u2000\u200c\u200d) {
-                throw null;
             }
         }
         return n2;

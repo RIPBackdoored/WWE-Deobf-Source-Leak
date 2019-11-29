@@ -32,15 +32,9 @@ public class NoaN extends kUUQ
         int n5;
         if (this.TUnV.sILe == this) {
             n5 = new Color(vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).red.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).green.OnGi().intValue(), vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).blue.OnGi().intValue()).darker().getRGB();
-            if (NoaN.\u2005) {
-                throw null;
-            }
         }
         else if (!this.Pynf) {
             n5 = new Color(15, 15, 15, 215).getRGB();
-            if (NoaN.\u2005) {
-                throw null;
-            }
         }
         else {
             n5 = new Color(15, 15, 15, 245).getRGB();
@@ -59,13 +53,8 @@ public class NoaN extends kUUQ
         if (this.Pynf) {
             if (this.TUnV.sILe == this) {
                 this.TUnV.sILe = null;
-                if (NoaN.\u2005) {
-                    throw null;
-                }
-            }
             else {
                 this.TUnV.sILe = this;
-            }
         }
     }
     

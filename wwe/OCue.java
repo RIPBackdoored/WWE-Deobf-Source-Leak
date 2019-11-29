@@ -23,9 +23,6 @@ public class OCue extends EntityOtherPlayerMP
             this.experience = entityPlayer.experience;
             this.setScore(entityPlayer.getScore());
             this.teleportDirection = entityPlayer.getTeleportDirection();
-            if (OCue.\u2002\u2007\u2008) {
-                throw null;
-            }
         }
         else if (this.world.getGameRules().getBoolean("keepInventory") || entityPlayer.isSpectator()) {
             this.inventory.copyInventory(entityPlayer.inventory);

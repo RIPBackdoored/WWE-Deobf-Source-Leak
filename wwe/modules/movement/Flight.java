@@ -64,8 +64,6 @@ public class Flight extends qMIe
                     Wrapper.mc.player.setPosition(Wrapper.mc.player.posX, Wrapper.mc.player.posY - 1.0E-9, Wrapper.mc.player.posZ);
                 }
                 ++i;
-                if (Flight.\u2003\u200d\u2004\u2006\u2000) {
-                    throw null;
                 }
             }
         }

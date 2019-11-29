@@ -32,9 +32,6 @@ public class BxVd extends GuiScreen
             this.XIGs.add(new nRMt(this, s, this.width / 2 - XybC.wKEb().getStringWidth(s) / 2 - 2, n, XybC.wKEb().getStringWidth(s) + 4, 10));
             n += 12;
             ++i;
-            if (BxVd.\u2006) {
-                throw null;
-            }
         }
         (this.VZxu = new GuiTextField(0, Wrapper.fontRenderer, this.width / 2 - 100, 10, 200, 20)).setFocused(true);
         super.initGui();
@@ -43,15 +40,9 @@ public class BxVd extends GuiScreen
     public void func_73863_a(final int n, final int n2, final float n3) {
         if (this.VLJq < (this.height - 70) / 12) {
             this.OOVQ = 0;
-            if (BxVd.\u2006) {
-                throw null;
-            }
         }
         else if (this.OOVQ > 0) {
             this.OOVQ = 0;
-            if (BxVd.\u2006) {
-                throw null;
-            }
         }
         else if (Math.abs(this.OOVQ) > this.VLJq * 12 - (this.height - 70)) {
             this.OOVQ = -(this.VLJq * 12 - (this.height - 70));
@@ -65,9 +56,6 @@ public class BxVd extends GuiScreen
         while (i < this.XIGs.size()) {
             this.XIGs.get(i).pHsd(n, n2, n3);
             ++i;
-            if (BxVd.\u2006) {
-                throw null;
-            }
         }
         GL11.glDisable(3089);
         GL11.glPopMatrix();
@@ -85,9 +73,6 @@ public class BxVd extends GuiScreen
         while (i < this.XIGs.size()) {
             this.XIGs.get(i).FTwg(n, n2, n3);
             ++i;
-            if (BxVd.\u2006) {
-                throw null;
-            }
         }
         this.VZxu.mouseClicked(n, n2, n3);
         super.mouseClicked(n, n2, n3);
@@ -113,10 +98,7 @@ public class BxVd extends GuiScreen
                     ++vlJq;
                 }
                 ++i;
-                if (BxVd.\u2006) {
-                    throw null;
                 }
-            }
             this.VLJq = vlJq;
         }
         super.keyTyped(c, n);
@@ -129,10 +111,7 @@ public class BxVd extends GuiScreen
             while (i < this.XIGs.size()) {
                 this.XIGs.get(i).kybB(dWheel);
                 ++i;
-                if (BxVd.\u2006) {
-                    throw null;
                 }
-            }
             this.OOVQ -= MathHelper.clamp(dWheel, 3, -3) * 10;
         }
         super.handleMouseInput();

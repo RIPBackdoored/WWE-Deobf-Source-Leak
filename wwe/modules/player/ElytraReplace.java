@@ -34,9 +34,6 @@ public class ElytraReplace extends qMIe
                     int n2;
                     if (i < 9) {
                         n2 = i + 36;
-                        if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n2 = i;
@@ -44,15 +41,11 @@ public class ElytraReplace extends qMIe
                     playerController.windowClick(n, n2, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                     Wrapper.mc.playerController.windowClick(0, 6, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                     Wrapper.mc.player.connection.sendPacket((Packet)new CPacketEntityAction((Entity)Wrapper.mc.player, CPacketEntityAction.Action.START_FALL_FLYING));
-                    if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                        throw null;
                     }
                     break;
                 }
                 else {
                     ++i;
-                    if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                        throw null;
                     }
                     continue;
                 }
@@ -69,24 +62,17 @@ public class ElytraReplace extends qMIe
                     int n4;
                     if (j < 9) {
                         n4 = j + 36;
-                        if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                            throw null;
-                        }
                     }
                     else {
                         n4 = j;
                     }
                     playerController2.windowClick(n3, n4, 0, ClickType.PICKUP, (EntityPlayer)Wrapper.mc.player);
                     Wrapper.mc.player.connection.sendPacket((Packet)new CPacketEntityAction((Entity)Wrapper.mc.player, CPacketEntityAction.Action.START_FALL_FLYING));
-                    if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                        throw null;
                     }
                     break;
                 }
                 else {
                     ++j;
-                    if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                        throw null;
                     }
                     continue;
                 }
@@ -101,8 +87,6 @@ public class ElytraReplace extends qMIe
             int n3;
             if (n < 9) {
                 n3 = n + 36;
-                if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                    throw null;
                 }
             }
             else {
@@ -115,8 +99,6 @@ public class ElytraReplace extends qMIe
             int n5;
             if (n < 9) {
                 n5 = n + 36;
-                if (ElytraReplace.\u200a\u2009\u200b\u200f\u200a\u2009) {
-                    throw null;
                 }
             }
             else {

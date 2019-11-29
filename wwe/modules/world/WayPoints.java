@@ -30,8 +30,6 @@ public class WayPoints extends qMIe
             if (xssq.MUAZ) {
                 BIIV.nieu(xssq.Nehz, xssq.rnCG.getColorComponentValues()[0], xssq.rnCG.getColorComponentValues()[1], xssq.rnCG.getColorComponentValues()[2]);
             }
-            if (WayPoints.\u200f\u200b\u2003\u200b\u2008\u200d\u200e\u2007) {
-                throw null;
             }
         }
     }
@@ -42,8 +40,6 @@ public class WayPoints extends qMIe
             if (xssq.Nehz.getX() == wwe/BnvE.phME.getX() && xssq.Nehz.getZ() == wwe/BnvE.phME.getZ()) {
                 Wrapper.mc.displayGuiScreen((GuiScreen)new bSlU(xssq));
             }
-            if (WayPoints.\u200f\u200b\u2003\u200b\u2008\u200d\u200e\u2007) {
-                throw null;
             }
         }
     }

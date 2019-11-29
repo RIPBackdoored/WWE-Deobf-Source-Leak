@@ -21,9 +21,6 @@ public class bdJV extends GuiButton
             boolean hovered;
             if (n >= this.x && n2 >= this.y && n < this.x + this.width && n2 < this.y + this.height) {
                 hovered = true;
-                if (bdJV.\u2007\u200f\u2002\u2001\u200e\u200b\u2002) {
-                    throw null;
-                }
             }
             else {
                 hovered = false;

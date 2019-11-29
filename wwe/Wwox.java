@@ -27,9 +27,6 @@ public class Wwox extends GuiScreen
         final Iterator<Kdwt> iterator = vlwv.kXkt.CkvS.iterator();
         while (iterator.hasNext()) {
             iterator.next().TRqF = this;
-            if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                throw null;
-            }
         }
         (this.xSlq = new GuiTextField(1, this.fontRenderer, this.width / 2 / 2, this.height - 25, this.width / 2, 20)).setMaxStringLength(500);
         this.addButton(new GuiButton(1, this.width - 55, 5, 50, 20, "Friends"));
@@ -47,9 +44,6 @@ public class Wwox extends GuiScreen
         if (this.inUT == null) {
             this.xSlq.setEnabled(false);
             this.buttonList.get(4).enabled = false;
-            if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                throw null;
-            }
         }
         else {
             this.xSlq.setEnabled(true);
@@ -65,9 +59,6 @@ public class Wwox extends GuiScreen
         while (i < vlwv.kXkt.CkvS.size()) {
             vlwv.kXkt.CkvS.get(i).FDgX(n, n2, n3);
             ++i;
-            if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                throw null;
-            }
         }
         GL11.glDisable(3089);
         GL11.glPopMatrix();
@@ -87,15 +78,11 @@ public class Wwox extends GuiScreen
                     if (Wrapper.fontRenderer.getStringWidth(s) > stringWidth) {
                         stringWidth = Wrapper.fontRenderer.getStringWidth(s);
                     }
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
                 int n5;
                 if (iZvY.JYtN != null) {
                     n5 = 39 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 14;
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
                 else {
@@ -116,8 +103,6 @@ public class Wwox extends GuiScreen
                 int n15;
                 if (iZvY.JYtN != null) {
                     n15 = -1;
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
                 else {
@@ -128,8 +113,6 @@ public class Wwox extends GuiScreen
                 int n16;
                 if (iZvY.JYtN != null) {
                     n16 = -16777216;
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
                 else {
@@ -145,9 +128,6 @@ public class Wwox extends GuiScreen
                     int n18;
                     if (iZvY.JYtN != null) {
                         n18 = n17;
-                        if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                            throw null;
-                        }
                     }
                     else {
                         n18 = this.width - 55 - stringWidth - 4;
@@ -156,9 +136,6 @@ public class Wwox extends GuiScreen
                     int n20;
                     if (iZvY.JYtN != null) {
                         n20 = -16777216;
-                        if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                            throw null;
-                        }
                     }
                     else {
                         n20 = -1;
@@ -166,24 +143,16 @@ public class Wwox extends GuiScreen
                     fontRenderer.drawString(s3, n18, n19, n20);
                     n7 += 10;
                     ++k;
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
                 ++j;
-                if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                    throw null;
                 }
-            }
             GL11.glDisable(3089);
             GL11.glPopMatrix();
         }
         boolean qNrw;
         if (n >= 4 && n <= 39 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 3 && n2 >= 50 && n2 <= this.height - 30) {
             qNrw = true;
-            if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                throw null;
-            }
         }
         else {
             qNrw = false;
@@ -192,9 +161,6 @@ public class Wwox extends GuiScreen
         boolean kwXH;
         if (n >= 39 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 8 && n <= this.height - 30 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 3 && n2 >= 50 && n2 <= this.height - 30) {
             kwXH = true;
-            if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                throw null;
-            }
         }
         else {
             kwXH = false;
@@ -220,17 +186,11 @@ public class Wwox extends GuiScreen
             if (n >= inUT.ByAc - 1 && n < inUT.ByAc + 35 + Wrapper.fontRenderer.getStringWidth("O") * 16 + 3 && n2 >= inUT.AzOt - 1 && n2 < inUT.AzOt + 31) {
                 this.inUT = inUT;
                 this.xSlq.setText("");
-                if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                    throw null;
                 }
                 break;
-            }
             else {
-                if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                    throw null;
                 }
                 continue;
-            }
         }
         this.xSlq.mouseClicked(n, n2, n3);
         super.mouseClicked(n, n2, n3);
@@ -242,30 +202,20 @@ public class Wwox extends GuiScreen
             if (eventDWheel > 0 && vlwv.kXkt.CkvS.get(0).AzOt <= new ScaledResolution(Wrapper.mc).getScaledHeight() - 75) {
                 for (final Kdwt kdwt : vlwv.kXkt.CkvS) {
                     kdwt.AzOt += 10;
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
-            }
             if (eventDWheel < 0 && vlwv.kXkt.CkvS.get(vlwv.kXkt.CkvS.size() - 1).AzOt >= 50) {
                 for (final Kdwt kdwt2 : vlwv.kXkt.CkvS) {
                     kdwt2.AzOt -= 10;
-                    if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                        throw null;
                     }
                 }
-                if (Wwox.\u200c\u2005\u200a\u2003\u2001\u200a\u200d) {
-                    throw null;
                 }
-            }
         }
         else if (this.kwXH) {
             if (eventDWheel > 0) {
                 this.eYUY += 10;
-            }
             if (eventDWheel < 0) {
                 this.eYUY -= 10;
-            }
         }
         super.handleMouseInput();
     }

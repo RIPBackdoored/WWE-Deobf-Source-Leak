@@ -47,8 +47,6 @@ static final class wwe/eCpO
         while (i >= 0) {
             this.eZqR[i][0] = array[i];
             --i;
-            if (wwe/eCpO.\u2007\u200d) {
-                throw null;
             }
         }
         this.eZqR[kdJj.wwe/TAhz.FHnS(wwe/TAhz)] = new int[] { kdJj.wwe/TAhz.FHnS(wwe/TAhz) };

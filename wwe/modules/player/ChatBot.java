@@ -43,9 +43,6 @@ public class ChatBot extends qMIe
             String replaceFirst;
             if (this.mode.OnGi().equalsIgnoreCase("<name>")) {
                 replaceFirst = stripControlCodes.trim().substring(0, stripControlCodes.indexOf(">")).replaceFirst("<", "");
-                if (ChatBot.\u200c\u2000\u2006) {
-                    throw null;
-                }
             }
             else {
                 replaceFirst = stripControlCodes.trim().split(":")[0];
@@ -54,9 +51,6 @@ public class ChatBot extends qMIe
             String s2;
             if (this.mode.OnGi().equalsIgnoreCase("<name>")) {
                 s2 = stripControlCodes.trim().substring(stripControlCodes.indexOf(">"), stripControlCodes.length()).replaceFirst("> ", "");
-                if (ChatBot.\u200c\u2000\u2006) {
-                    throw null;
-                }
             }
             else {
                 s2 = stripControlCodes.trim().split(":")[1].replaceFirst(" ", "");
@@ -72,10 +66,6 @@ public class ChatBot extends qMIe
                 if (s3.startsWith("-" + wwe/UUBS.vMpJ)) {
                     Wrapper.mc.player.sendChatMessage(wwe/UUBS.SfQz[new Random().nextInt(wwe/UUBS.SfQz.length)].replaceAll("!object1", s));
                     return;
-                }
-                if (ChatBot.\u200c\u2000\u2006) {
-                    throw null;
-                }
             }
             if (s3.equalsIgnoreCase("-help")) {
                 Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.iNhF.xlWb[new Random().nextInt(UUBS.wwe/UUBS.iNhF.xlWb.length)].replaceAll("!object1", s));
@@ -101,18 +91,11 @@ public class ChatBot extends qMIe
                 for (final NetworkPlayerInfo networkPlayerInfo : Wrapper.mc.player.connection.getPlayerInfoMap()) {
                     if (networkPlayerInfo.getGameProfile().getName().equals(s)) {
                         Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.yGLD.xlWb[new Random().nextInt(UUBS.wwe/UUBS.yGLD.xlWb.length)].replaceAll("!object1", networkPlayerInfo.getResponseTime() + ""));
-                        if (ChatBot.\u200c\u2000\u2006) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
-                        if (ChatBot.\u200c\u2000\u2006) {
-                            throw null;
-                        }
                         continue;
                     }
-                }
                 return;
             }
             if (s3.contains("-ping ")) {
@@ -124,25 +107,14 @@ public class ChatBot extends qMIe
                         b = true;
                         name = networkPlayerInfo2.getGameProfile().getName();
                         n = networkPlayerInfo2.getResponseTime();
-                        if (ChatBot.\u200c\u2000\u2006) {
-                            throw null;
-                        }
                         break;
                     }
                     else {
-                        if (ChatBot.\u200c\u2000\u2006) {
-                            throw null;
-                        }
                         continue;
                     }
-                }
                 if (b) {
                     Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.OHcM.xlWb[new Random().nextInt(UUBS.wwe/UUBS.OHcM.xlWb.length)].replaceAll("!object1", name).replaceAll("!object2", n + ""));
                     return;
-                }
-                if (ChatBot.\u200c\u2000\u2006) {
-                    throw null;
-                }
             }
             else {
                 if (s3.equalsIgnoreCase("-worstping")) {
@@ -152,14 +124,9 @@ public class ChatBot extends qMIe
                         if (n2 < networkPlayerInfo3.getResponseTime()) {
                             n2 = networkPlayerInfo3.getResponseTime();
                             name2 = networkPlayerInfo3.getGameProfile().getName();
-                        }
-                        if (ChatBot.\u200c\u2000\u2006) {
-                            throw null;
-                        }
                     }
                     Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.xwDq.xlWb[new Random().nextInt(UUBS.wwe/UUBS.xwDq.xlWb.length)].replaceAll("!object1", name2).replaceAll("!object2", n2 + ""));
                     return;
-                }
                 if (s3.equalsIgnoreCase("-bestping")) {
                     long n3 = 0x1149B25282957A24L ^ 0x6EB64DAD7D6A85DBL;
                     String name3 = "";
@@ -167,26 +134,18 @@ public class ChatBot extends qMIe
                         if (n3 > networkPlayerInfo4.getResponseTime()) {
                             n3 = networkPlayerInfo4.getResponseTime();
                             name3 = networkPlayerInfo4.getGameProfile().getName();
-                        }
-                        if (ChatBot.\u200c\u2000\u2006) {
-                            throw null;
-                        }
                     }
                     Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.LtQS.xlWb[new Random().nextInt(UUBS.wwe/UUBS.LtQS.xlWb.length)].replaceAll("!object1", name3).replaceAll("!object2", n3 + ""));
                     return;
-                }
                 if (s3.equalsIgnoreCase("-randomping")) {
                     final NetworkPlayerInfo networkPlayerInfo5 = (NetworkPlayerInfo)Wrapper.mc.player.connection.getPlayerInfoMap().toArray()[new Random().nextInt(Wrapper.mc.player.connection.getPlayerInfoMap().size())];
                     Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.DFPB.xlWb[new Random().nextInt(UUBS.wwe/UUBS.DFPB.xlWb.length)].replaceAll("!object1", networkPlayerInfo5.getGameProfile().getName()).replaceAll("!object2", networkPlayerInfo5.getResponseTime() + ""));
                     return;
-                }
                 if (s3.equalsIgnoreCase(Wrapper.mc.getSession().getUsername()) && !s.equalsIgnoreCase(Wrapper.mc.getSession().getUsername())) {
                     Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.ADwi.xlWb[new Random().nextInt(UUBS.wwe/UUBS.ADwi.xlWb.length)].replaceAll("!object1", s));
                     return;
-                }
                 if (s3.startsWith("-")) {
                     Wrapper.mc.player.sendChatMessage(UUBS.wwe/UUBS.MHTz.xlWb[new Random().nextInt(UUBS.wwe/UUBS.MHTz.xlWb.length)].replaceAll("!object1", s));
-                }
             }
         }
     }

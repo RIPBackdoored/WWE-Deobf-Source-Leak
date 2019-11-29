@@ -387,8 +387,6 @@ public class iroq
         synchronized (this.OSIP) {
             this.OSIP.addElement(pzCC);
             // monitorexit(this.OSIP)
-            if (iroq.\u2007\u200a) {
-                throw null;
             }
         }
     }

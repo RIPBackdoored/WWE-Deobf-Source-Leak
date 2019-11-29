@@ -48,9 +48,6 @@ public class gbIL extends GuiScreen
             File iekf;
             if (this.WpCa) {
                 iekf = this.ucGA;
-                if (gbIL.\u2005\u200d\u2007) {
-                    throw null;
-                }
             }
             else {
                 iekf = gbIL.yUUB;
@@ -67,8 +64,6 @@ public class gbIL extends GuiScreen
         while (iterator.hasNext()) {
             this.ocWe.add(new KkoX(this, new ScaledResolution(Wrapper.mc).getScaledWidth() / 2 - 125, n, iterator.next()));
             n += 10;
-            if (gbIL.\u2005\u200d\u2007) {
-                throw null;
             }
         }
         super.initGui();
@@ -93,8 +88,6 @@ public class gbIL extends GuiScreen
         while (i < this.ocWe.size()) {
             this.ocWe.get(i).Fgbt(n, n2, n3);
             ++i;
-            if (gbIL.\u2005\u200d\u2007) {
-                throw null;
             }
         }
         GL11.glDisable(3089);
@@ -119,16 +112,10 @@ public class gbIL extends GuiScreen
         int i = 0;
         while (i < this.ocWe.size()) {
             if (this.ocWe.get(i).IxcR(n, n2, n3)) {
-                if (gbIL.\u2005\u200d\u2007) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++i;
-                if (gbIL.\u2005\u200d\u2007) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -145,10 +132,6 @@ public class gbIL extends GuiScreen
                 if (this.fbVi.getText().isEmpty() || file.getName().toLowerCase().contains(this.fbVi.getText().toLowerCase()) || file.getName().toLowerCase().replaceAll(" ", "").contains(this.fbVi.getText().toLowerCase())) {
                     this.ocWe.add(new KkoX(this, new ScaledResolution(Wrapper.mc).getScaledWidth() / 2 - 125, n2, file));
                     n2 += 10;
-                }
-                if (gbIL.\u2005\u200d\u2007) {
-                    throw null;
-                }
             }
         }
         if (n == 1) {
@@ -175,16 +158,11 @@ public class gbIL extends GuiScreen
             final File file2 = array[i];
             if (file2.isDirectory()) {
                 list.add(file2);
-                if (gbIL.\u2005\u200d\u2007) {
-                    throw null;
-                }
             }
             else if (file2.isFile()) {
                 list2.add(file2);
             }
             ++i;
-            if (gbIL.\u2005\u200d\u2007) {
-                throw null;
             }
         }
         list.addAll(list2);
@@ -203,18 +181,10 @@ public class gbIL extends GuiScreen
             while (i < this.ocWe.size()) {
                 final KkoX kkoX = this.ocWe.get(i);
                 if (kkoX.mxzj != null) {
-                    if (gbIL.\u2005\u200d\u2007) {
-                        throw null;
-                    }
-                }
                 else {
                     final KkoX kkoX2 = kkoX;
                     kkoX2.VEXW -= clamp * 10;
-                }
                 ++i;
-                if (gbIL.\u2005\u200d\u2007) {
-                    throw null;
-                }
             }
         }
         super.handleMouseInput();

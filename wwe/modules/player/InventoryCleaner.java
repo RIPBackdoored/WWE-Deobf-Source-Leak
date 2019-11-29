@@ -60,9 +60,6 @@ public class InventoryCleaner extends qMIe
         boolean b;
         if (!slot.getStack().equals(Wrapper.mc.player.getHeldItemMainhand())) {
             b = true;
-            if (InventoryCleaner.\u2002\u200d\u200d\u2008\u200d\u2007\u2000) {
-                throw null;
-            }
         }
         else {
             b = false;

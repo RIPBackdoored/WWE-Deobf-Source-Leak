@@ -64,16 +64,11 @@ public class FancyChat extends qMIe
                     final char c = array[i];
                     if (c >= '!' && c <= '\u0080' && !"(){}[]|".contains(Character.toString(c))) {
                         s = String.valueOf(s) + new String(Character.toChars(c + '\ufee0'));
-                        if (FancyChat.\u2002\u2004\u2003\u2009\u2001\u2001\u200d\u2005\u2004) {
-                            throw null;
-                        }
                     }
                     else {
                         s = String.valueOf(s) + c;
                     }
                     ++i;
-                    if (FancyChat.\u2002\u2004\u2003\u2009\u2001\u2001\u200d\u2005\u2004) {
-                        throw null;
                     }
                 }
                 yYGD.NyBC((CPacketChatMessage)uqzS.MYlK(), s);
@@ -88,17 +83,12 @@ public class FancyChat extends qMIe
                     char c2;
                     if (Character.isUpperCase(array2[j])) {
                         c2 = Character.toLowerCase(array2[j]);
-                        if (FancyChat.\u2002\u2004\u2003\u2009\u2001\u2001\u200d\u2005\u2004) {
-                            throw null;
-                        }
                     }
                     else {
                         c2 = Character.toUpperCase(array2[j]);
                     }
                     array3[n] = c2;
                     j += 2;
-                    if (FancyChat.\u2002\u2004\u2003\u2009\u2001\u2001\u200d\u2005\u2004) {
-                        throw null;
                     }
                 }
                 yYGD.NyBC((CPacketChatMessage)uqzS.MYlK(), new String(array2));

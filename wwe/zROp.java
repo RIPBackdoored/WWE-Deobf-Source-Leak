@@ -25,16 +25,10 @@ public class zROp extends GuiScreen
             final cJGk cjGk2 = vlwv.kXkt.SoAu.get(i);
             if (cjGk2.URwX.equals(Wrapper.mc.getSession().getUsername())) {
                 cjGk = cjGk2;
-                if (zROp.\u200c\u2006\u200b\u200d\u200c\u2003\u200d\u2003\u2005) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++i;
-                if (zROp.\u200c\u2006\u200b\u200d\u200c\u2003\u200d\u2003\u2005) {
-                    throw null;
-                }
                 continue;
             }
         }

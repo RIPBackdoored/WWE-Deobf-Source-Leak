@@ -25,84 +25,51 @@ public class SafeWalk extends qMIe
             while (vsNw != 0.0 && this.TypB(vsNw, -1.0, 0.0)) {
                 if (vsNw < n && vsNw >= -n) {
                     vsNw = 0.0;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (vsNw > 0.0) {
                     vsNw -= n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
                     vsNw += n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
             }
             while (lcNE != 0.0 && this.TypB(0.0, -1.0, lcNE)) {
                 if (lcNE < n && lcNE >= -n) {
                     lcNE = 0.0;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (lcNE > 0.0) {
                     lcNE -= n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
                     lcNE += n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
             }
             while (vsNw != 0.0 && lcNE != 0.0 && this.TypB(vsNw, -1.0, lcNE)) {
                 if (vsNw < n && vsNw >= -n) {
                     vsNw = 0.0;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                 }
                 else if (vsNw > 0.0) {
                     vsNw -= n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                 }
                 else {
                     vsNw += n;
                 }
                 if (lcNE < n && lcNE >= -n) {
                     lcNE = 0.0;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (lcNE > 0.0) {
                     lcNE -= n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
                     lcNE += n;
-                    if (SafeWalk.\u200f\u2001\u2006\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
             }

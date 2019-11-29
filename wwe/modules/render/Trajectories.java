@@ -32,9 +32,6 @@ public class Trajectories extends qMIe
         float n4;
         if (b) {
             n4 = 1.0f;
-            if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             n4 = 0.4f;
@@ -57,14 +54,10 @@ public class Trajectories extends qMIe
             float n15 = (n14 * n14 + n14 * 2.0f) / 3.0f;
             if (n15 > 1.0f || n15 <= 0.1f) {
                 n15 = 1.0f;
-            }
             final float n16 = n15 * 3.0f;
             n17 = n11 * n16;
             n18 = n12 * n16;
             n19 = n13 * n16;
-            if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             n17 = (float)(n11 * 1.5);
@@ -86,21 +79,12 @@ public class Trajectories extends qMIe
         double n20;
         if (b) {
             n20 = 0.05;
-            if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                throw null;
-            }
         }
         else if (currentItem.getItem() instanceof ItemPotion) {
             n20 = 0.4;
-            if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                throw null;
-            }
         }
         else if (currentItem.getItem() instanceof ItemFishingRod) {
             n20 = 0.15;
-            if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                throw null;
-            }
         }
         else {
             n20 = 0.03;
@@ -121,18 +105,10 @@ public class Trajectories extends qMIe
             n19 *= (float)0.999;
             n18 = n22 - (float)(n21 * 0.1);
             if (Wrapper.mc.world.rayTraceBlocks(vec3d, new Vec3d(n, n2, n3)) != null) {
-                if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                    throw null;
-                }
                 break;
-            }
             else {
                 ++i;
-                if (Trajectories.\u2006\u2007\u2002\u200e\u2006\u2004\u200c\u2003\u2007) {
-                    throw null;
-                }
                 continue;
-            }
         }
         GL11.glEnd();
         final double n23 = n - yYGD.onRX();

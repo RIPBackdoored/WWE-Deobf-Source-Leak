@@ -19,13 +19,8 @@ public class IDwi
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 IDwi.dJfQ.add(line);
-                if (IDwi.\u2003\u2008\u2000\u200e\u2009\u2009\u200a\u2009) {
-                    throw null;
-                }
             }
             bufferedReader.close();
-            if (IDwi.\u2003\u2008\u2000\u200e\u2009\u2009\u200a\u2009) {
-                throw null;
             }
         }
         catch (Exception ex) {}

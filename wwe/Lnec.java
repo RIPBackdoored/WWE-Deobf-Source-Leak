@@ -125,9 +125,6 @@ public class Lnec
         boolean mnmo;
         if (n >= this.XMpd && n <= this.XMpd + 100 && n2 >= this.ZwCC && n2 <= this.ZwCC + 100) {
             mnmo = true;
-            if (Lnec.\u2000\u200d\u2006\u200d\u2005\u200f\u200e\u200b) {
-                throw null;
-            }
         }
         else {
             mnmo = false;
@@ -144,10 +141,7 @@ public class Lnec
                 if (Wrapper.fontRenderer.getStringWidth(s) > stringWidth) {
                     stringWidth = Wrapper.fontRenderer.getStringWidth(s);
                 }
-                if (Lnec.\u2000\u200d\u2006\u200d\u2005\u200f\u200e\u200b) {
-                    throw null;
                 }
-            }
             gnNa.NOOc();
             final int xMpd = this.XMpd;
             final int n4 = this.ZwCC - 5;
@@ -156,13 +150,9 @@ public class Lnec
             int n7;
             if (dDuY.size() == 1) {
                 n7 = 0;
-                if (Lnec.\u2000\u200d\u2006\u200d\u2005\u200f\u200e\u200b) {
-                    throw null;
                 }
-            }
             else {
                 n7 = (dDuY.size() - 1) * 10;
-            }
             gnNa.AVqM(xMpd, n4, n5, n6 - n7, 3.0f, dDuY.size(), new Color(56, 54, 54).getRGB());
             gnNa.uCta();
             int i = 0;
@@ -175,22 +165,13 @@ public class Lnec
                 int n10;
                 if (dDuY.size() == 1) {
                     n10 = 0;
-                    if (Lnec.\u2000\u200d\u2006\u200d\u2005\u200f\u200e\u200b) {
-                        throw null;
-                    }
                 }
                 else {
                     n10 = (dDuY.size() - 1) * 10;
                 }
                 fontRenderer.drawStringWithShadow(s3, n8, (float)(n9 - n10 + i * 10), -1);
                 ++i;
-                if (Lnec.\u2000\u200d\u2006\u200d\u2005\u200f\u200e\u200b) {
-                    throw null;
                 }
-            }
-            if (Lnec.\u2000\u200d\u2006\u200d\u2005\u200f\u200e\u200b) {
-                throw null;
-            }
         }
         else {
             this.gYaC = 0;

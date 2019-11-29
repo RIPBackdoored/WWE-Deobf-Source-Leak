@@ -72,9 +72,6 @@ public class FIwW
                         Wrapper.mc.getRenderItem().renderItemAndEffectIntoGUI((ItemStack)withSize.get(i), n + i % 9 * 18, n3 * 18 + (i / 9 + 1) * 18 + n2 + 1);
                         Wrapper.mc.getRenderItem().renderItemOverlays(Wrapper.fontRenderer, (ItemStack)withSize.get(i), n + i % 9 * 18, n3 * 18 + (i / 9 + 1) * 18 + n2 + 1);
                         ++i;
-                        if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                            throw null;
-                        }
                     }
                     GlStateManager.scale(1.0f, 1.0f, 1.0f);
                     RenderHelper.disableStandardItemLighting();
@@ -88,8 +85,6 @@ public class FIwW
                     GL11.glPopMatrix();
                 }
             }
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         else {
@@ -139,8 +134,6 @@ public class FIwW
             if (!yYGD.PZBQ().keySet().contains(new ResourceLocation(s))) {
                 Wrapper.mc.world.loadData((Class)MapData.class, s);
             }
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         catch (Exception ex) {}
@@ -194,8 +187,6 @@ public class FIwW
             if (file != null && file.exists()) {
                 return dkaH(ImageIO.read(file), file.getName());
             }
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         catch (Exception ex) {
@@ -231,8 +222,6 @@ public class FIwW
         while (i < s.length()) {
             list.add(s.substring(i, Math.min(s.length(), i + n)));
             i += n;
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         return list;
@@ -244,8 +233,6 @@ public class FIwW
             if (s2.length() > s.length()) {
                 s = s2;
             }
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         return s;
@@ -255,8 +242,6 @@ public class FIwW
         boolean b;
         if (Wrapper.mc.world.rayTraceBlocks(new Vec3d(Wrapper.mc.player.posX, Wrapper.mc.player.posY + Wrapper.mc.player.getEyeHeight(), Wrapper.mc.player.posZ), new Vec3d((double)blockPos.getX(), (double)blockPos.getY(), (double)blockPos.getZ())) == null) {
             b = true;
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         else {
@@ -277,23 +262,17 @@ public class FIwW
             final Vec3i directionVec = array[i].getDirectionVec();
             array2[i] = add.add(new Vec3d(center.x * directionVec.getX(), center.y * directionVec.getY(), center.z * directionVec.getZ()));
             ++i;
-            if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                throw null;
             }
         }
         int j = 0;
         while (j < array.length) {
             if (Wrapper.mc.world.rayTraceBlocks(vec3d, array2[j], false, true, false) == null) {
                 enumFacing = array[j];
-                if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                    throw null;
                 }
                 break;
             }
             else {
                 ++j;
-                if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                    throw null;
                 }
                 continue;
             }
@@ -304,15 +283,11 @@ public class FIwW
             while (k < array.length) {
                 if (vec3d.squareDistanceTo(array2[k]) < squareDistanceTo) {
                     enumFacing = array[k];
-                    if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                        throw null;
                     }
                     break;
                 }
                 else {
                     ++k;
-                    if (FIwW.\u2008\u200c\u2001\u2002\u200c\u2000\u2008) {
-                        throw null;
                     }
                     continue;
                 }

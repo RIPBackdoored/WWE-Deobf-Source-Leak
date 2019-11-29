@@ -41,9 +41,6 @@ public class xhCH
         boolean mnrb;
         if (n > n4 && n < n4 + n6 && n2 > n5 && n2 < n5 + n7) {
             mnrb = true;
-            if (xhCH.\u2003\u2002\u2005\u2001\u200e) {
-                throw null;
-            }
         }
         else {
             mnrb = false;
@@ -59,9 +56,6 @@ public class xhCH
         int n16;
         if (this.Mnrb) {
             n16 = 255;
-            if (xhCH.\u2003\u2002\u2005\u2001\u200e) {
-                throw null;
-            }
         }
         else {
             n16 = 75;
@@ -85,10 +79,7 @@ public class xhCH
                 }
                 n17 += 10;
                 ++i;
-                if (xhCH.\u2003\u2002\u2005\u2001\u200e) {
-                    throw null;
                 }
-            }
             GL11.glDisable(3089);
             GL11.glPopMatrix();
         }
@@ -108,13 +99,9 @@ public class xhCH
             boolean jrKm;
             if (!this.JrKm) {
                 jrKm = true;
-                if (xhCH.\u2003\u2002\u2005\u2001\u200e) {
-                    throw null;
                 }
-            }
             else {
                 jrKm = false;
-            }
             this.JrKm = jrKm;
             Wrapper.mc.getSoundHandler().playSound((ISound)PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0f));
         }
@@ -133,27 +120,18 @@ public class xhCH
                 final String s2 = this.lPrK.get(i);
                 if (n > n9 && n < n9 + 10 && n2 > n11 + xhCH.xmQB && n2 < n11 + 10 + xhCH.xmQB && n2 < n6 - 3) {
                     s = s2;
-                    if (xhCH.\u2003\u2002\u2005\u2001\u200e) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     if (i % 10 == 9) {
                         n11 += 10;
                         n9 = n10;
-                    }
                     n9 += 10;
                     ++i;
-                    if (xhCH.\u2003\u2002\u2005\u2001\u200e) {
-                        throw null;
-                    }
                     continue;
                 }
-            }
             if (s != null) {
                 this.cLyU.signText[n4] = (ITextComponent)new TextComponentString(this.cLyU.signText[n4].getUnformattedComponentText() + s);
-            }
         }
     }
     

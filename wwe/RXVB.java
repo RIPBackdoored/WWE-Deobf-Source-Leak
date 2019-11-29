@@ -17,8 +17,6 @@ public class RXVB
                 b = true;
             }
             bufferedReader.close();
-            if (RXVB.\u200a\u2006\u2002\u200f\u200e\u2006) {
-                throw null;
             }
         }
         catch (Exception ex) {}

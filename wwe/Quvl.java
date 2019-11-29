@@ -25,21 +25,12 @@ public class Quvl extends rfyb
         this.jtNl(Quvl.WrQX);
         try {
             this.qMNW("irc.mibbit.net", 6667);
-            if (Quvl.\u2001\u2001\u2008\u2007\u2002\u200d\u2001\u2004) {
-                throw null;
-            }
         }
         catch (woMI woMI) {
             woMI.printStackTrace();
-            if (Quvl.\u2001\u2001\u2008\u2007\u2002\u200d\u2001\u2004) {
-                throw null;
-            }
         }
         catch (IOException ex) {
             ex.printStackTrace();
-            if (Quvl.\u2001\u2001\u2008\u2007\u2002\u200d\u2001\u2004) {
-                throw null;
-            }
         }
         catch (ltaQ ltaQ) {
             ltaQ.printStackTrace();

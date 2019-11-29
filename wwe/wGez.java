@@ -61,9 +61,6 @@ public class wGez
             while ((line = bufferedReader.readLine()) != null) {
                 sb.append(line);
                 sb.append('\r');
-                if (wGez.\u200d) {
-                    throw null;
-                }
             }
             bufferedReader.close();
             return sb.toString();
@@ -104,9 +101,6 @@ public class wGez
             while ((line = bufferedReader.readLine()) != null) {
                 sb.append(line);
                 sb.append('\r');
-                if (wGez.\u200d) {
-                    throw null;
-                }
             }
             bufferedReader.close();
             return sb.toString();

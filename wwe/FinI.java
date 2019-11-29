@@ -128,9 +128,6 @@ public class FinI
             final Iterator<ohwW> iterator = this.UfJC.iterator();
             while (iterator.hasNext()) {
                 iterator.next().kUCc(n, n2, n3);
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
         }
         if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
@@ -147,22 +144,10 @@ public class FinI
                 if (ohwW.xecA && this.iWnD) {
                     gnNa.dYaT(2.0f, (float)(scaledResolution.getScaledHeight() - 13), (float)(XybC.wKEb().getStringWidth("  " + ohwW.lJcE.GDCZ()) + 2), (float)(scaledResolution.getScaledHeight() + 19), 1.0f, new Color(15, 15, 15).getRGB(), -1);
                     XybC.eTim(ohwW.lJcE.GDCZ(), 6.0f, (float)(scaledResolution.getScaledHeight() - 10), -1);
-                    if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                        throw null;
-                    }
-                }
                 else if (ohwW.fzNA && this.iWnD && !ohwW.znxP.isEmpty()) {
                     final Iterator<kUUQ> iterator3 = ohwW.znxP.iterator();
                     while (iterator3.hasNext()) {
                         iterator3.next().Lrih(n, n2, n3, scaledResolution);
-                        if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                            throw null;
-                        }
-                    }
-                }
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
         }
     }
@@ -178,9 +163,6 @@ public class FinI
         if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("All")) {
             if (n < 0.0) {
                 this.CQIZ -= 5;
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
             else if (n > 0.0) {
                 this.CQIZ += 5;
@@ -210,15 +192,12 @@ public class FinI
                         if (kuuq instanceof nzoK) {
                             n3 += 12;
                             ((nzoK)kuuq).jXta = yQtC + n3;
-                        }
                         if (kuuq instanceof uQsp) {
                             n3 += 12;
                             ((uQsp)kuuq).jXta = yQtC + n3;
-                        }
                         if (kuuq instanceof RwuA) {
                             n3 += 12;
                             ((RwuA)kuuq).jXta = yQtC + n3;
-                        }
                         if (kuuq instanceof kmYZ) {
                             n3 += 12;
                             ((kmYZ)kuuq).jXta = yQtC + n3;
@@ -240,39 +219,23 @@ public class FinI
                                         ((RwuA)kuuq2).jXta = yQtC + n3;
                                         n4 += 12;
                                     }
-                                    if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                                        throw null;
                                     }
                                 }
                                 yQtC += ((kmYZ)kuuq).BAIk.DxzD.size() * 12;
                                 n3 -= n4;
                             }
-                        }
                         if (kuuq instanceof XwHe) {
                             n3 += 12;
                             ((XwHe)kuuq).jXta = yQtC + n3;
-                        }
                         if (kuuq instanceof IhNF) {
                             n3 += 12;
                             ((IhNF)kuuq).jXta = yQtC + n3;
-                        }
                         if (kuuq instanceof BiVj) {
                             n3 += 12;
                             ((BiVj)kuuq).jXta = yQtC + n3;
-                        }
-                        if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                            throw null;
-                        }
-                    }
                     yQtC += ohwW.znxP.size() * 12;
-                }
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
             ++i;
-            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                throw null;
             }
         }
     }
@@ -287,8 +250,6 @@ public class FinI
         boolean b;
         if (n >= this.kVnf && n <= this.kVnf + this.dedb && n2 >= this.CQIZ && n2 < this.CQIZ + this.vjbx) {
             b = true;
-            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                throw null;
             }
         }
         else {
@@ -308,23 +269,12 @@ public class FinI
                         ++n3;
                         if (((kmYZ)kuuq).BAIk.OnGi()) {
                             n3 += ((kmYZ)kuuq).BAIk.DxzD.size();
-                            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                                throw null;
                             }
-                        }
-                    }
                     else {
                         ++n3;
-                    }
-                    if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                        throw null;
-                    }
-                }
             }
             ++n3;
             ++i;
-            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                throw null;
             }
         }
         if (n >= this.kVnf && n <= this.kVnf + this.dedb && n2 >= this.CQIZ) {
@@ -333,24 +283,15 @@ public class FinI
             int n6;
             if (!this.aBNN) {
                 n6 = 0;
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
             else if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 n6 = 20;
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
             else {
                 n6 = n3;
             }
             if (n2 < n4 + n5 * n6) {
                 final boolean b = true;
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
                 return b;
             }
         }
@@ -368,23 +309,12 @@ public class FinI
                         ++n3;
                         if (((kmYZ)kuuq).BAIk.OnGi()) {
                             n3 += ((kmYZ)kuuq).BAIk.DxzD.size();
-                            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                                throw null;
                             }
-                        }
-                    }
                     else {
                         ++n3;
-                    }
-                    if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                        throw null;
-                    }
-                }
             }
             ++n3;
             ++i;
-            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                throw null;
             }
         }
         if (n >= this.kVnf && n <= this.kVnf + this.dedb && n2 >= this.CQIZ + this.vjbx) {
@@ -393,18 +323,12 @@ public class FinI
             int n6;
             if (vlwv.hNxW.qHPF((Class<Gui>)PAPd.class).scrolling.OnGi().equalsIgnoreCase("Normal")) {
                 n6 = 20;
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
             }
             else {
                 n6 = n3;
             }
             if (n2 < n4 + n5 * n6) {
                 final boolean b = true;
-                if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                    throw null;
-                }
                 return b;
             }
         }
@@ -433,36 +357,22 @@ public class FinI
                 for (final kUUQ kuuq : ohwW.znxP) {
                     if (kuuq instanceof nzoK) {
                         n += 12;
-                    }
                     if (kuuq instanceof uQsp) {
                         n += 12;
-                    }
                     if (kuuq instanceof RwuA) {
                         n += 12;
-                    }
                     if (kuuq instanceof kmYZ) {
                         n += 12;
                         if (((kmYZ)kuuq).BAIk.OnGi()) {
                             n += ((kmYZ)kuuq).BAIk.DxzD.size() * 12;
-                        }
-                    }
                     if (kuuq instanceof XwHe) {
                         n += 12;
-                    }
                     if (kuuq instanceof IhNF) {
                         n += 12;
-                    }
                     if (kuuq instanceof BiVj) {
                         n += 12;
-                    }
-                    if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                        throw null;
-                    }
-                }
             }
             ++i;
-            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                throw null;
             }
         }
         int n2 = (this.UfJC.size() - 20) * 12;
@@ -472,25 +382,13 @@ public class FinI
                     if (!(kuuq2 instanceof kmYZ)) {
                         n2 += 12;
                         n -= 12;
-                        if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                            throw null;
-                        }
-                    }
                     else if (kuuq2 instanceof kmYZ) {
                         n2 += 12;
                         n -= 12;
                         if (((kmYZ)kuuq2).BAIk.OnGi()) {
                             n2 += ((kmYZ)kuuq2).BAIk.DxzD.size() * 12;
                             n -= ((kmYZ)kuuq2).BAIk.DxzD.size() * 12;
-                        }
-                    }
-                    if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                        throw null;
-                    }
-                }
             }
-            if (FinI.\u200e\u200c\u2006\u2007\u2006\u2009\u200f\u200d\u200d) {
-                throw null;
             }
         }
         final int max = Math.max(n, n2);

@@ -25,9 +25,6 @@ public class XMTT
         final MinecraftSessionService minecraftSessionService = new YggdrasilAuthenticationService(Proxy.NO_PROXY, UUID.randomUUID().toString()).createMinecraftSessionService();
         try {
             minecraftSessionService.joinServer(Wrapper.mc.getSession().getProfile(), Wrapper.mc.getSession().getToken(), string);
-            if (XMTT.\u200c) {
-                throw null;
-            }
         }
         catch (AuthenticationException ex) {
             System.out.println("We have a AuthenticationException exeption but were not going print it, changed are, its a invalid token");
@@ -39,9 +36,6 @@ public class XMTT
         final Iterator<Object> iterator = list.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
-            if (XMTT.\u200c) {
-                throw null;
-            }
         }
     }
 }

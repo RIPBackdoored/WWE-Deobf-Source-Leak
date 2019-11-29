@@ -362,9 +362,6 @@ public class gnNa
         while (i <= 360) {
             GL11.glVertex2d(n + Math.sin(i * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(i * 3.141592653589793 / 180.0) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
     }
@@ -378,9 +375,6 @@ public class gnNa
         while (i <= 360) {
             GL11.glVertex2d(n + Math.sin(i * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(i * 3.141592653589793 / 180.0) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         GL11.glDisable(2848);
@@ -397,9 +391,6 @@ public class gnNa
         while (i <= 360) {
             GL11.glVertex2d(n + Math.sin(i * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(i * 3.141592653589793 / 180.0) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         GL11.glDisable(2848);
@@ -415,9 +406,6 @@ public class gnNa
         while (i <= 360) {
             GL11.glVertex2d(n + Math.sin(i * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(i * 3.141592653589793 / 180.0) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         zwAE(n5);
@@ -430,9 +418,6 @@ public class gnNa
         while (j <= 360) {
             GL11.glVertex2d(n + Math.sin(j * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(j * 3.141592653589793 / 180.0) * n3);
             ++j;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         GL11.glEnable(3553);
@@ -467,9 +452,6 @@ public class gnNa
         while (i <= 360) {
             GL11.glVertex2d(n + Math.sin(i * 3.141592653589793 / 180.0) * n3, n2 + Math.cos(i * 3.141592653589793 / 180.0) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         GL11.glDisable(2848);
@@ -494,9 +476,6 @@ public class gnNa
         float n13;
         if (n6 == 0.0f) {
             n13 = 1.0f;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         else {
             n13 = n6;
@@ -510,9 +489,6 @@ public class gnNa
             final double n15 = 6.283185307179586 * i / n14;
             GL11.glVertex2d(n + Math.sin(n15) * n3, n2 + Math.cos(n15) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         GL11.glDisable(3042);
@@ -542,9 +518,6 @@ public class gnNa
         float n12;
         if (n5 == 0.0f) {
             n12 = 1.0f;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         else {
             n12 = n5;
@@ -557,9 +530,6 @@ public class gnNa
             final double n14 = 6.283185307179586 * i / n13;
             GL11.glVertex2d(n + Math.sin(n14) * n3, n2 + Math.cos(n14) * n3);
             ++i;
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         GL11.glEnd();
         GL11.glDisable(3042);
@@ -608,20 +578,12 @@ public class gnNa
             while (i <= 180) {
                 GL11.glVertex2d(n - Math.sin(i * 3.141592653589793 / 180.0) * n5, n2 + n5 - Math.cos(i * 3.141592653589793 / 180.0) * n5);
                 ++i;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int j = 0;
             while (j <= 180) {
                 GL11.glVertex2d(n - Math.sin(j * 3.141592653589793 / 180.0) * n5, n4 - n5 - Math.cos(j * 3.141592653589793 / 180.0) * n5);
                 ++j;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             ccoU(n3 + n5, (float)(n2 + 4), (float)n3, (float)(n2 - 4 + n6 * 10));
             GL11.glBegin(9);
@@ -629,24 +591,13 @@ public class gnNa
             while (k <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(k * 3.141592653589793 / 180.0) * n5, n2 + n5 + Math.cos(k * 3.141592653589793 / 180.0) * n5);
                 ++k;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int l = 0;
             while (l <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(l * 3.141592653589793 / 180.0) * n5, n4 - n5 + Math.cos(l * 3.141592653589793 / 180.0) * n5);
                 ++l;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         else {
             GL11.glBegin(9);
@@ -654,20 +605,12 @@ public class gnNa
             while (n8 <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(n8 * 3.141592653589793 / 180.0) * n5, n2 - (n2 - n4) / 2 + Math.cos(n8 * 3.141592653589793 / 180.0) * n5);
                 ++n8;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int n9 = 0;
             while (n9 <= 180) {
                 GL11.glVertex2d(n - Math.sin(n9 * 3.141592653589793 / 180.0) * n5, n2 - (n2 - n4) / 2 - Math.cos(n9 * 3.141592653589793 / 180.0) * n5);
                 ++n9;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
         }
         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
@@ -695,20 +638,12 @@ public class gnNa
             while (i <= 180) {
                 GL11.glVertex2d(n - Math.sin(i * 3.141592653589793 / 180.0) * n5, n2 - n6 * 10 + n5 - Math.cos(i * 3.141592653589793 / 180.0) * n5);
                 ++i;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int j = 0;
             while (j <= 180) {
                 GL11.glVertex2d(n - Math.sin(j * 3.141592653589793 / 180.0) * n5, n4 + n6 * 10 - n5 - Math.cos(j * 3.141592653589793 / 180.0) * n5);
                 ++j;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             ccoU(n3 + n5, (float)(n2 - n6 * 10 + 4), (float)n3, (float)(n2 + 3 - n6 * 10 - 4 + n6 * 10));
             GL11.glBegin(9);
@@ -716,24 +651,13 @@ public class gnNa
             while (k <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(k * 3.141592653589793 / 180.0) * n5, n2 - n6 * 10 + n5 + Math.cos(k * 3.141592653589793 / 180.0) * n5);
                 ++k;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int l = 0;
             while (l <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(l * 3.141592653589793 / 180.0) * n5, n4 + n6 * 10 - n5 + Math.cos(l * 3.141592653589793 / 180.0) * n5);
                 ++l;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
-            if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                throw null;
-            }
         }
         else {
             ++n4;
@@ -743,20 +667,12 @@ public class gnNa
             while (n8 <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(n8 * 3.141592653589793 / 180.0) * n5, n2 + 1 - (n2 - n4) + Math.cos(n8 * 3.141592653589793 / 180.0) * n5);
                 ++n8;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int n9 = 0;
             while (n9 <= 180) {
                 GL11.glVertex2d(n3 + Math.sin(n9 * 3.141592653589793 / 180.0) * n5, n2 + 10 - n5 - (n2 - n4) + Math.cos(n9 * 3.141592653589793 / 180.0) * n5);
                 ++n9;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             ccoU(n3 + n5, (float)(n2 - 10 + 3), (float)n3, (float)(n2 + 3 - 10 - 4 + 10));
             GL11.glBegin(9);
@@ -764,20 +680,12 @@ public class gnNa
             while (n10 <= 180) {
                 GL11.glVertex2d(n - Math.sin(n10 * 3.141592653589793 / 180.0) * n5, n2 - 1 - n5 - (n2 - n4) / 2 - Math.cos(n10 * 3.141592653589793 / 180.0) * n5);
                 ++n10;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
             GL11.glBegin(9);
             int n11 = 0;
             while (n11 <= 180) {
                 GL11.glVertex2d(n - Math.sin(n11 * 3.141592653589793 / 180.0) * n5, n2 + 5 - n5 - (n2 - n4) / 2 - Math.cos(n11 * 3.141592653589793 / 180.0) * n5);
                 ++n11;
-                if (gnNa.\u2005\u2008\u2004\u200b\u200f\u200b\u2000\u2007) {
-                    throw null;
-                }
-            }
             GL11.glEnd();
         }
         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);

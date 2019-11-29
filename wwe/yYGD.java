@@ -117,9 +117,6 @@ public class yYGD
             yYGD.SguM = BwxQ(BlockNote.class, "INSTRUMENTS", "field_176434_a");
             yYGD.chLR = BwxQ(GuiScreenHorseInventory.class, "horseInventory", "field_147029_w");
             yYGD.leJD = BwxQ(GuiScreenHorseInventory.class, "horseEntity", "field_147034_x");
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -136,20 +133,11 @@ public class yYGD
                 declaredField.setAccessible(true);
                 yYGD.TvMi.setInt(declaredField, declaredField.getModifiers() & 0xFFFFFFEF);
                 return declaredField;
-            }
             catch (NoSuchFieldException ex) {
                 FMLLog.log.info("unable to find field: " + s);
-                if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                    throw null;
-                }
-            }
             catch (IllegalAccessException ex2) {
                 FMLLog.log.info("unable to make field changeable!");
-            }
             ++i;
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         throw new IllegalStateException("Field with names: " + array + " not found!");
     }
@@ -163,15 +151,10 @@ public class yYGD
                 final Method declaredMethod = clazz.getDeclaredMethod(s, (Class[])array2);
                 declaredMethod.setAccessible(true);
                 return declaredMethod;
-            }
             catch (NoSuchMethodException ex) {
                 FMLLog.log.info("unable to find method: " + s);
                 ++i;
-                if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                    throw null;
-                }
                 continue;
-            }
             break;
         }
         throw new IllegalStateException("Method with names: " + array + " not found!");
@@ -250,9 +233,6 @@ public class yYGD
     public static void AXbo() {
         try {
             yYGD.uwun.invoke(Wrapper.mc, new Object[0]);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -273,9 +253,6 @@ public class yYGD
     public static void rvRL(final KeyBinding keyBinding, final boolean b) {
         try {
             yYGD.WoEU.set(keyBinding, b);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -286,9 +263,6 @@ public class yYGD
     public static void gcRV(final CPacketPlayer cPacketPlayer, final float n) {
         try {
             yYGD.ldBn.set(cPacketPlayer, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -299,9 +273,6 @@ public class yYGD
     public static void ZNGm(final CPacketPlayer cPacketPlayer, final float n) {
         try {
             yYGD.EXAg.set(cPacketPlayer, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -312,9 +283,6 @@ public class yYGD
     public static void eyrN(final SPacketPlayerPosLook sPacketPlayerPosLook, final float n) {
         try {
             yYGD.dkBj.set(sPacketPlayerPosLook, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -325,9 +293,6 @@ public class yYGD
     public static void YsmX(final SPacketPlayerPosLook sPacketPlayerPosLook, final float n) {
         try {
             yYGD.Fxwb.set(sPacketPlayerPosLook, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -348,9 +313,6 @@ public class yYGD
     public static void YyXM(final CPacketPlayer cPacketPlayer, final boolean b) {
         try {
             yYGD.GCRA.set(cPacketPlayer, b);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -361,9 +323,6 @@ public class yYGD
     public static void wtIT(final int n) {
         try {
             yYGD.YQVA.set(Wrapper.mc, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -374,9 +333,6 @@ public class yYGD
     public static void olBF(final float n) {
         try {
             yYGD.MxtI.set(Wrapper.mc.player, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -397,9 +353,6 @@ public class yYGD
     public static void wcsa(final float n) {
         try {
             yYGD.PqBx.set(Wrapper.mc.playerController, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -420,9 +373,6 @@ public class yYGD
     public static void hSxp(final int n) {
         try {
             yYGD.swXu.set(Wrapper.mc.playerController, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -463,9 +413,6 @@ public class yYGD
     public static void Sgwm(final SPacketExplosion sPacketExplosion, final float n) {
         try {
             yYGD.QzaI.set(sPacketExplosion, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -476,9 +423,6 @@ public class yYGD
     public static void UPvs(final SPacketExplosion sPacketExplosion, final float n) {
         try {
             yYGD.mRhX.set(sPacketExplosion, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -489,9 +433,6 @@ public class yYGD
     public static void yMfH(final SPacketExplosion sPacketExplosion, final float n) {
         try {
             yYGD.TRgG.set(sPacketExplosion, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -512,9 +453,6 @@ public class yYGD
     public static void NXja(final CPacketPlayer cPacketPlayer, final double n) {
         try {
             yYGD.tDsP.set(cPacketPlayer, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -535,9 +473,6 @@ public class yYGD
     public static void sXuu(final CPacketVehicleMove cPacketVehicleMove, final double n) {
         try {
             yYGD.nbcg.set(cPacketVehicleMove, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -548,9 +483,6 @@ public class yYGD
     public static void VHzJ(final Session session) {
         try {
             yYGD.iouz.set(Wrapper.mc, session);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -581,9 +513,6 @@ public class yYGD
     public static void MNva(final GuiButton guiButton, final boolean b) {
         try {
             yYGD.ehGs.set(guiButton, b);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -604,9 +533,6 @@ public class yYGD
     public static void gyHE(final boolean b) {
         try {
             yYGD.jOQD.set(Wrapper.mc.player, b);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -617,9 +543,6 @@ public class yYGD
     public static void MEtD(final int n) {
         try {
             yYGD.zoaL.set(Wrapper.mc.player, n);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -630,9 +553,6 @@ public class yYGD
     public static void WRdN(final CPacketUpdateSign cPacketUpdateSign, final String[] array) {
         try {
             yYGD.DqJB.set(cPacketUpdateSign, array);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -643,9 +563,6 @@ public class yYGD
     public static void NyBC(final CPacketChatMessage cPacketChatMessage, final String s) {
         try {
             yYGD.eNKp.set(cPacketChatMessage, s);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -726,9 +643,6 @@ public class yYGD
     static {
         try {
             (yYGD.TvMi = Field.class.getDeclaredField("modifiers")).setAccessible(true);
-            if (yYGD.\u2009\u2008\u2005\u200a\u2007) {
-                throw null;
-            }
         }
         catch (Exception ex) {}
     }

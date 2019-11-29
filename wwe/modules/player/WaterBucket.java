@@ -34,16 +34,10 @@ public class WaterBucket extends qMIe
                 final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
                 if (!jjZz.cKMx(stackInSlot) && stackInSlot.getItem().equals(Items.WATER_BUCKET)) {
                     currentItem2 = i;
-                    if (WaterBucket.\u2003\u2001) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     ++i;
-                    if (WaterBucket.\u2003\u2001) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -78,8 +72,6 @@ public class WaterBucket extends qMIe
                 return true;
             }
             ++i;
-            if (WaterBucket.\u2003\u2001) {
-                throw null;
             }
         }
         return false;

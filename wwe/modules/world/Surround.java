@@ -49,16 +49,10 @@ public class Surround extends qMIe
             final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
             if (!jjZz.cKMx(stackInSlot) && stackInSlot.getItem() instanceof ItemBlock && Block.getBlockFromItem(stackInSlot.getItem()).getDefaultState().isFullBlock()) {
                 n = i;
-                if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++i;
-                if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -71,30 +65,15 @@ public class Surround extends qMIe
             if (Wrapper.mc.world.getBlockState(heIf).getBlock() != null && Wrapper.mc.world.getBlockState(new BlockPos(heIf.getX(), heIf.getY() + 1, heIf.getZ())).getBlock() instanceof BlockAir && Wrapper.mc.world.getEntitiesWithinAABB((Class)Entity.class, new AxisAlignedBB(heIf.add(0, 1, 0))).isEmpty()) {
                 if (Wrapper.mc.world.getBlockState(heIf.down()).getBlock() instanceof BlockAir) {
                     this.hEIf = heIf.down().down();
-                    if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                        throw null;
-                    }
                     break;
-                }
                 else if (Wrapper.mc.world.getBlockState(heIf).getBlock() instanceof BlockAir) {
                     this.hEIf = heIf.down();
-                    if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                        throw null;
-                    }
                     break;
-                }
                 else {
                     this.hEIf = heIf;
-                    if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                        throw null;
-                    }
                     break;
-                }
             }
             else {
-                if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -134,16 +113,10 @@ public class Surround extends qMIe
             final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
             if (!jjZz.cKMx(stackInSlot) && stackInSlot.getItem() instanceof ItemBlock && Block.getBlockFromItem(stackInSlot.getItem()).getDefaultState().isFullBlock()) {
                 currentItem2 = i;
-                if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                    throw null;
-                }
                 break;
             }
             else {
                 ++i;
-                if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -151,8 +124,6 @@ public class Surround extends qMIe
             return;
         }
         if (Wrapper.mc.player.getHeldItemMainhand().getItem() instanceof ItemBlock) {
-            if (Surround.\u200d\u2003\u2001\u2008\u2002\u200b\u200a\u2003) {
-                throw null;
             }
         }
         else {

@@ -60,9 +60,6 @@ public class NameTags extends qMIe
         if (Wrapper.mc.world != null && this.HrbU == null) {
             try {
                 this.HrbU = new RenderItem(Wrapper.mc.renderEngine, yYGD.Cisv(), (ItemColors)null);
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
             catch (NullPointerException ex) {}
         }
@@ -73,10 +70,7 @@ public class NameTags extends qMIe
                 final double n3 = entityPlayer.lastTickPosZ + (entityPlayer.posZ - entityPlayer.lastTickPosZ) * yYGD.XgOL().renderPartialTicks - yYGD.LkVR();
                 if (!entityPlayer.getName().startsWith("Body #")) {
                     this.gzqM(entityPlayer, n, n2, n3);
-                }
             }
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
     }
@@ -85,8 +79,6 @@ public class NameTags extends qMIe
         GL11.glPushMatrix();
         final String wzxj = this.wzxj((EntityLivingBase)entityPlayer);
         if (Wrapper.mc.player.getDistance((Entity)entityPlayer) / 5.0 <= 2.0) {
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         final double n4 = 0.01666666753590107 * this.ACyO((EntityLivingBase)entityPlayer);
@@ -128,10 +120,7 @@ public class NameTags extends qMIe
                 final int tagCount = itemStack.getEnchantmentTagList().tagCount();
                 if (tagCount > n7) {
                     n7 = tagCount;
-                }
             }
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         if (this.potions.OnGi()) {
@@ -140,9 +129,6 @@ public class NameTags extends qMIe
             int n9;
             if (list.isEmpty()) {
                 n9 = 20;
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
             else {
                 n9 = -20 - n7 * 8;
@@ -158,9 +144,6 @@ public class NameTags extends qMIe
             int n11;
             if (this.head.OnGi()) {
                 n11 = -30;
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
             else {
                 n11 = 0;
@@ -174,9 +157,6 @@ public class NameTags extends qMIe
             int n13;
             if (this.head.OnGi()) {
                 n13 = -20;
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
             else {
                 n13 = 0;
@@ -192,11 +172,7 @@ public class NameTags extends qMIe
                 if (((AbstractClientPlayer)entityPlayer).isWearing(EnumPlayerModelParts.HAT)) {
                     final GuiIngame ingameGUI2 = Wrapper.mc.ingameGUI;
                     GuiIngame.drawScaledCustomSizeModalRect(-73, -10, 40.0f, 8.0f, 8, 8, 30, 30, 64.0f, 64.0f);
-                }
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
             catch (Exception ex) {
                 ex.printStackTrace();
@@ -219,8 +195,6 @@ public class NameTags extends qMIe
             if (iterator2.next() != null) {
                 n14 -= 8;
             }
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         if (entityPlayer.getHeldItemMainhand() != null) {
@@ -238,28 +212,17 @@ public class NameTags extends qMIe
             if (itemStack2 != null) {
                 final ItemStack copy2 = itemStack2.copy();
                 if (copy2 == null) {
-                    if (NameTags.\u2001\u200b) {
-                        throw null;
-                    }
-                }
                 else {
                     if (copy2.hasEffect() && (copy2.getItem() instanceof ItemTool || copy2.getItem() instanceof ItemArmor)) {
                         if (this.stackSize.OnGi()) {
-                            if (NameTags.\u2001\u200b) {
-                                throw null;
-                            }
                         }
                         else {
                             copy2.setCount(1);
                         }
-                    }
                     this.IwxL(entityPlayer, copy2, n14, this.HHoe(entityPlayer));
                     n14 += 16;
-                }
             }
             --i;
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         if (entityPlayer.getHeldItemOffhand() != null) {
@@ -267,13 +230,8 @@ public class NameTags extends qMIe
             final ItemStack copy3 = entityPlayer.getHeldItemOffhand().copy();
             if (copy3.hasEffect() && (copy3.getItem() instanceof ItemTool || copy3.getItem() instanceof ItemArmor)) {
                 if (this.stackSize.OnGi()) {
-                    if (NameTags.\u2001\u200b) {
-                        throw null;
-                    }
-                }
                 else {
                     copy3.setCount(1);
-                }
             }
             this.IwxL(entityPlayer, copy3, n14, this.HHoe(entityPlayer));
             n14 += 8;
@@ -313,14 +271,10 @@ public class NameTags extends qMIe
         int responseTime;
         if (entityLivingBase.getUniqueID() == null) {
             responseTime = 0;
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         else if (Wrapper.mc.player.connection.getPlayerInfo(entityLivingBase.getUniqueID()) == null) {
             responseTime = 0;
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         else {
@@ -331,8 +285,6 @@ public class NameTags extends qMIe
         String string;
         if (this.ping.OnGi()) {
             string = " " + n + "ms";
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         else {
@@ -345,8 +297,6 @@ public class NameTags extends qMIe
         double doubleValue;
         if (Wrapper.mc.player.getDistance((Entity)entityLivingBase) <= 2.0f) {
             doubleValue = this.size.OnGi();
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
         else {
@@ -399,13 +349,9 @@ public class NameTags extends qMIe
                     String s;
                     if (enchantmentByID.isCurse()) {
                         s = TextFormatting.RED + enchantmentByID.getTranslatedName((int)short2).substring(11).substring(0, 1).toLowerCase();
-                        if (NameTags.\u2001\u200b) {
-                            throw null;
                         }
-                    }
                     else {
                         s = enchantmentByID.getTranslatedName((int)short2).substring(0, 1).toLowerCase();
-                    }
                     final String string = s + short2;
                     GL11.glPushMatrix();
                     GL11.glScalef(0.9f, 0.9f, 0.0f);
@@ -414,11 +360,7 @@ public class NameTags extends qMIe
                     GL11.glPopMatrix();
                     n3 += 8;
                     n4 -= 10;
-                }
                 ++i;
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
         }
     }
@@ -438,24 +380,17 @@ public class NameTags extends qMIe
                 int n6 = 16;
                 if (entityPlayer.isPotionActive(MobEffects.POISON)) {
                     n6 += 36;
-                    if (NameTags.\u2001\u200b) {
-                        throw null;
-                    }
-                }
                 else if (entityPlayer.isPotionActive(MobEffects.WITHER)) {
                     n6 += 72;
-                }
                 final int n7 = 0;
                 final int n8 = MathHelper.ceil((i + 1) / 10.0f) - 1;
                 final int n9 = n + i % 10 * 8;
                 int n10 = n2 - n8 * max;
                 if (n4 <= 0 && i == n5) {
                     n10 -= 2;
-                }
                 int n11 = 0;
                 if (Wrapper.mc.world.getWorldInfo().isHardcoreModeEnabled()) {
                     n11 = 5;
-                }
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                 wAtb(n9, n10, 16 + n7 * 9, 9 * n11, 9, 9);
                 if (n4 > 0) {
@@ -463,33 +398,20 @@ public class NameTags extends qMIe
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         wAtb(n9, n10, n6 + 153, 9 * n11, 9, 9);
                         --n4;
-                        if (NameTags.\u2001\u200b) {
-                            throw null;
                         }
-                    }
                     else {
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         wAtb(n9, n10, n6 + 144, 9 * n11, 9, 9);
                         n4 -= 2;
-                        if (NameTags.\u2001\u200b) {
-                            throw null;
                         }
-                    }
-                }
                 else {
                     if (i * 2 + 1 < ceil2) {
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         wAtb(n9, n10, n6 + 36, 9 * n11, 9, 9);
-                    }
                     if (i * 2 + 1 == ceil2) {
                         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
                         wAtb(n9, n10, n6 + 45, 9 * n11, 9, 9);
-                    }
-                }
                 --i;
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
         }
     }
@@ -547,9 +469,6 @@ public class NameTags extends qMIe
                 wAtb(n - 10, n2 - 10 - n3 * 20, 0 + statusIconIndex % 8 * 18, 198 + statusIconIndex / 8 * 18, 18, 18);
                 Wrapper.fontRenderer.drawStringWithShadow(potionDurationString, (float)(n + 12), (float)(n2 - 4 - n3 * 20), potion.getLiquidColor());
                 GL11.glPopMatrix();
-                if (NameTags.\u2001\u200b) {
-                    throw null;
-                }
             }
             else {
                 GlStateManager.pushMatrix();
@@ -558,8 +477,6 @@ public class NameTags extends qMIe
                 Wrapper.fontRenderer.drawStringWithShadow(potionDurationString, (float)(n + 12), (float)(n2 - 4 - n3 * 20), potion.getLiquidColor());
                 GL11.glPopMatrix();
             }
-            if (NameTags.\u2001\u200b) {
-                throw null;
             }
         }
     }

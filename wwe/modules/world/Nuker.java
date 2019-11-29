@@ -94,16 +94,12 @@ public class Nuker extends qMIe
                 }
                 list.add(blockPos);
             }
-            if (Nuker.\u200c) {
-                throw null;
             }
         }
         double distance = 100.0;
         BlockPos blockPos2 = null;
         for (final BlockPos blockPos3 : list) {
             if (blockPos3.getX() == MathHelper.floor(Wrapper.mc.player.posX) && blockPos3.getY() <= MathHelper.floor(Wrapper.mc.player.posY) && blockPos3.getZ() == MathHelper.floor(Wrapper.mc.player.posZ) && list.size() > this.down.OnGi()) {
-                if (Nuker.\u200c) {
-                    throw null;
                 }
                 continue;
             }
@@ -114,15 +110,9 @@ public class Nuker extends qMIe
                         if (this.allBlocks.OnGi()) {
                             if (this.mode.OnGi().equalsIgnoreCase("Creative")) {
                                 this.bGhe.add(blockPos3);
-                                if (Nuker.\u200c) {
-                                    throw null;
-                                }
                             }
                             else {
                                 blockPos2 = blockPos3;
-                                if (Nuker.\u200c) {
-                                    throw null;
-                                }
                             }
                         }
                         else if (!this.allBlocks.OnGi()) {
@@ -132,37 +122,22 @@ public class Nuker extends qMIe
                                         break Label_1259;
                                     }
                                     if (Wrapper.mc.world.getBlockState(blockPos3).getBlock() instanceof BlockBush) {
-                                        if (Nuker.\u200c) {
-                                            throw null;
-                                        }
                                         break Label_1259;
                                     }
-                                }
                                 if (this.hopper.OnGi()) {
                                     if (Wrapper.mc.world.getBlockState(blockPos3).getBlock() instanceof BlockHopper) {
                                         break Label_1259;
                                     }
                                     if (Wrapper.mc.world.getBlockState(blockPos3).getBlock() instanceof BlockShulkerBox) {
-                                        if (Nuker.\u200c) {
-                                            throw null;
-                                        }
                                         break Label_1259;
                                     }
-                                }
                                 if (this.bed.OnGi() && Wrapper.mc.world.getBlockState(blockPos3).getBlock() instanceof BlockBed) {
-                                    if (Nuker.\u200c) {
-                                        throw null;
                                     }
-                                }
                                 else if (!Nuker.mTio.contains(Wrapper.mc.world.getBlockState(blockPos3).getBlock())) {
                                     break Label_1304;
-                                }
                             }
                             if (this.mode.OnGi().equalsIgnoreCase("Creative")) {
                                 this.bGhe.add(blockPos3);
-                                if (Nuker.\u200c) {
-                                    throw null;
-                                }
                             }
                             else {
                                 blockPos2 = blockPos3;
@@ -170,8 +145,6 @@ public class Nuker extends qMIe
                         }
                     }
                 }
-                if (Nuker.\u200c) {
-                    throw null;
                 }
                 continue;
             }
@@ -180,8 +153,6 @@ public class Nuker extends qMIe
         if (this.bGhe.isEmpty()) {
             if (this.mode.OnGi().equalsIgnoreCase("Survival")) {
                 Wrapper.mc.playerController.resetBlockRemoving();
-                if (Nuker.\u200c) {
-                    throw null;
                 }
             }
         }
@@ -205,8 +176,6 @@ public class Nuker extends qMIe
                     Wrapper.mc.playerController.onPlayerDamageBlock(new BlockPos(this.bGhe.get(0).getX(), this.bGhe.get(0).getY(), this.bGhe.get(0).getZ()), fWlE);
                     OffHand.LInL();
                 }
-                if (Nuker.\u200c) {
-                    throw null;
                 }
             }
             else if (this.mode.OnGi().equalsIgnoreCase("Creative") && !this.bGhe.isEmpty()) {
@@ -221,8 +190,6 @@ public class Nuker extends qMIe
                         Wrapper.mc.playerController.onPlayerDamageBlock(new BlockPos(blockPos.getX(), blockPos.getY(), blockPos.getZ()), fWlE2);
                         OffHand.LInL();
                     }
-                    if (Nuker.\u200c) {
-                        throw null;
                     }
                 }
             }
@@ -244,8 +211,6 @@ public class Nuker extends qMIe
             final Iterator<BlockPos> iterator = this.bGhe.iterator();
             while (iterator.hasNext()) {
                 BIIV.TGTO(iterator.next(), Color.RED, 1.0, 1.0);
-                if (Nuker.\u200c) {
-                    throw null;
                 }
             }
         }

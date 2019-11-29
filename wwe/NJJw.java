@@ -50,8 +50,6 @@ public class NJJw extends GuiScreen
             if (kulu.smZj()) {
                 yYGD.VHzJ(kulu.sEFp());
             }
-            if (NJJw.\u2002\u200a\u200d\u2008\u200f) {
-                throw null;
             }
         }
         else if (guiButton.id == 2) {
@@ -81,9 +79,6 @@ public class NJJw extends GuiScreen
             while ((line = bufferedReader.readLine()) != null) {
                 sb.append(line);
                 sb.append('\r');
-                if (NJJw.\u2002\u200a\u200d\u2008\u200f) {
-                    throw null;
-                }
             }
             bufferedReader.close();
             return sb.toString();
@@ -106,9 +101,6 @@ public class NJJw extends GuiScreen
             if (this.eYsx.isFocused()) {
                 this.eYsx.setFocused(false);
                 this.PFfH.iCKJ(true);
-                if (NJJw.\u2002\u200a\u200d\u2008\u200f) {
-                    throw null;
-                }
             }
             else if (this.PFfH.mIOc()) {
                 this.eYsx.setFocused(false);
@@ -131,8 +123,6 @@ public class NJJw extends GuiScreen
         try {
             this.eYsx.drawTextBox();
             this.PFfH.zJhX();
-            if (NJJw.\u2002\u200a\u200d\u2008\u200f) {
-                throw null;
             }
         }
         catch (Exception ex) {

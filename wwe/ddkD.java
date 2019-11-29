@@ -26,14 +26,10 @@ public class ddkD extends HAxG
                     Nuker.mTio.add(Block.getBlockFromName(array[1]));
                     HAxG.TuzD("Added " + array[1] + " to the nuker list");
                     Wrapper.ypJK().pRYs();
-                    if (ddkD.\u2009\u2004\u2004\u2007\u200e) {
-                        throw null;
                     }
                 }
                 else {
                     HAxG.TuzD("Thats not a block?");
-                    if (ddkD.\u2009\u2004\u2004\u2007\u200e) {
-                        throw null;
                     }
                 }
             }
@@ -46,22 +42,16 @@ public class ddkD extends HAxG
                     Nuker.mTio.remove(Block.getBlockFromName(array[1]));
                     HAxG.TuzD("Removed " + array[1] + " from the nuker list");
                     Wrapper.ypJK().pRYs();
-                    if (ddkD.\u2009\u2004\u2004\u2007\u200e) {
-                        throw null;
                     }
                 }
                 else {
                     HAxG.TuzD("Thats not a block?");
-                    if (ddkD.\u2009\u2004\u2004\u2007\u200e) {
-                        throw null;
                     }
                 }
             }
             else {
                 HAxG.TuzD(this.ZlRY());
             }
-            if (ddkD.\u2009\u2004\u2004\u2007\u200e) {
-                throw null;
             }
         }
         catch (Exception ex) {

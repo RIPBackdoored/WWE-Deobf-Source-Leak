@@ -92,9 +92,6 @@ public class Elytra extends qMIe
                     }
                     if (this.eXQk + this.accelerateStart.OnGi() > this.accelerateMax.OnGi()) {
                         this.eXQk = this.accelerateMax.OnGi();
-                        if (Elytra.\u2008\u200c\u2006) {
-                            throw null;
-                        }
                     }
                     else {
                         this.eXQk += this.accelerateStart.OnGi();
@@ -104,8 +101,6 @@ public class Elytra extends qMIe
                 float flySpeed;
                 if (this.accelerate.OnGi()) {
                     flySpeed = (float)this.eXQk / 10.0f;
-                    if (Elytra.\u2008\u200c\u2006) {
-                        throw null;
                     }
                 }
                 else {
@@ -125,9 +120,6 @@ public class Elytra extends qMIe
                     }
                     if (this.eXQk + this.accelerateStart.OnGi() > this.accelerateMax.OnGi()) {
                         this.eXQk = this.accelerateMax.OnGi();
-                        if (Elytra.\u2008\u200c\u2006) {
-                            throw null;
-                        }
                     }
                     else {
                         this.eXQk += this.accelerateStart.OnGi();
@@ -137,8 +129,6 @@ public class Elytra extends qMIe
                 float flySpeed2;
                 if (this.accelerate.OnGi()) {
                     flySpeed2 = (float)this.eXQk / 10.0f;
-                    if (Elytra.\u2008\u200c\u2006) {
-                        throw null;
                     }
                 }
                 else {
@@ -201,8 +191,6 @@ public class Elytra extends qMIe
                     sfUx.XNxu = -0.10000000149011612;
                     sfUx.VsNw = 0.0;
                     sfUx.lcNE = 0.0;
-                    if (Elytra.\u2008\u200c\u2006) {
-                        throw null;
                     }
                 }
                 else if (Wrapper.mc.player != null) {
@@ -213,9 +201,6 @@ public class Elytra extends qMIe
                     if (moveForward == 0.0 && moveStrafe == 0.0) {
                         sfUx.VsNw = 0.0;
                         sfUx.lcNE = 0.0;
-                        if (Elytra.\u2008\u200c\u2006) {
-                            throw null;
-                        }
                     }
                     else {
                         if (moveForward != 0.0) {
@@ -224,16 +209,11 @@ public class Elytra extends qMIe
                                 int n2;
                                 if (moveForward > 0.0) {
                                     n2 = -45;
-                                    if (Elytra.\u2008\u200c\u2006) {
-                                        throw null;
-                                    }
                                 }
                                 else {
                                     n2 = 45;
                                 }
                                 rotationYaw = n + n2;
-                                if (Elytra.\u2008\u200c\u2006) {
-                                    throw null;
                                 }
                             }
                             else if (moveStrafe < 0.0) {
@@ -241,9 +221,6 @@ public class Elytra extends qMIe
                                 int n4;
                                 if (moveForward > 0.0) {
                                     n4 = 45;
-                                    if (Elytra.\u2008\u200c\u2006) {
-                                        throw null;
-                                    }
                                 }
                                 else {
                                     n4 = -45;
@@ -253,23 +230,16 @@ public class Elytra extends qMIe
                             moveStrafe = 0.0f;
                             if (moveForward > 0.0) {
                                 moveForward = 1.0f;
-                                if (Elytra.\u2008\u200c\u2006) {
-                                    throw null;
                                 }
                             }
                             else if (moveForward < 0.0) {
                                 moveForward = -1.0f;
                             }
-                        }
                         if (moveStrafe > 0.0) {
                             moveStrafe = 1.0f;
-                            if (Elytra.\u2008\u200c\u2006) {
-                                throw null;
                             }
-                        }
                         else if (moveStrafe < 0.0) {
                             moveStrafe = -1.0f;
-                        }
                         sfUx.XNxu = 0.0;
                         sfUx.VsNw = moveForward * this.speed.OnGi() * Math.cos(Math.toRadians(rotationYaw + 90.0f)) + moveStrafe * this.speed.OnGi() * Math.sin(Math.toRadians(rotationYaw + 90.0f));
                         sfUx.lcNE = moveForward * this.speed.OnGi() * Math.sin(Math.toRadians(rotationYaw + 90.0f)) - moveStrafe * this.speed.OnGi() * Math.cos(Math.toRadians(rotationYaw + 90.0f));

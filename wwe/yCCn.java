@@ -56,16 +56,12 @@ public class yCCn extends GuiScreen
                 if (wwe/WkII.cCcA == this.vKBT) {
                     Wrapper.mc.getSoundHandler().playSound((ISound)PositionedSoundRecord.getMasterRecord((SoundEvent)yYGD.VVcl(Blocks.NOTEBLOCK).get(wwe/WkII.eEsY), (float)Math.pow(2.0, (wwe/WkII.fljR - 12) / 12.0)));
                 }
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             for (final ajLR.wwe/ABpb wwe/ABpb : this.duNU.nOsS) {
                 if (wwe/ABpb.RZpY == this.vKBT) {
                     HAxG.TuzD(wwe/ABpb.MSAn);
                 }
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             ++this.vKBT;
@@ -93,8 +89,6 @@ public class yCCn extends GuiScreen
             if (wwe/WkII.cCcA > cCcA) {
                 cCcA = wwe/WkII.cCcA;
             }
-            if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                throw null;
             }
         }
         drawRect(n4 + 2, n5 + 20, n6 - 2, n5 + 30, -16777216);
@@ -103,8 +97,6 @@ public class yCCn extends GuiScreen
         while (iterator2.hasNext()) {
             final int n8 = abs * iterator2.next().RZpY / (cCcA - 1);
             drawRect(n4 + 2 + n8, n5 + 20, n4 + 2 + n8 + 2, n5 + 30, -16711936);
-            if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                throw null;
             }
         }
         int n9 = 0;
@@ -181,8 +173,6 @@ public class yCCn extends GuiScreen
                     RenderHelper.disableStandardItemLighting();
                     n12 += 15;
                 }
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
         }
@@ -211,8 +201,6 @@ public class yCCn extends GuiScreen
             if (wwe/WkII.cCcA > cCcA) {
                 cCcA = wwe/WkII.cCcA;
             }
-            if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                throw null;
             }
         }
         for (final ajLR.wwe/ABpb nnWu : this.duNU.nOsS) {
@@ -227,8 +215,6 @@ public class yCCn extends GuiScreen
                 this.addButton(new GuiButton(7, this.width / 2 - Wrapper.fontRenderer.getStringWidth("Hide Lyric Box") / 2, n5 + 94, 75, 20, "Hide Lyric Box"));
                 return;
             }
-            if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                throw null;
             }
         }
         if (n >= n4 + 2 && n < n6 - 2 && n2 >= n5 + 20 && n2 < n5 + 30) {
@@ -254,9 +240,6 @@ public class yCCn extends GuiScreen
                     if (this.duNU.nOsS != null && this.duNU.nOsS.get(i) == this.nnWu) {
                         this.actionPerformed((GuiButton)this.buttonList.get(6));
                         --i;
-                        if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                            throw null;
-                        }
                     }
                     else {
                         this.duNU.nOsS.remove(i);
@@ -264,8 +247,6 @@ public class yCCn extends GuiScreen
                     }
                 }
                 ++i;
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             Wrapper.ypJK().HLif(this.aDPv.getName().substring(0, this.aDPv.getName().lastIndexOf(".")), this.duNU, true);
@@ -277,8 +258,6 @@ public class yCCn extends GuiScreen
             boolean xZpr;
             if (!this.XZpr) {
                 xZpr = true;
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -288,8 +267,6 @@ public class yCCn extends GuiScreen
             String displayString;
             if (this.XZpr) {
                 displayString = "Pause";
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -314,8 +291,6 @@ public class yCCn extends GuiScreen
             int int1;
             if (this.cMST == null || this.cMST.getText().isEmpty() || this.cMST.getText().equals("")) {
                 int1 = 0;
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             else {
@@ -328,8 +303,6 @@ public class yCCn extends GuiScreen
             int int2;
             if (this.gJOx == null || this.gJOx.getText().isEmpty() || this.gJOx.getText().equals("")) {
                 int2 = 0;
-                if (yCCn.\u200e\u2006\u200d\u200b\u2002\u2007) {
-                    throw null;
                 }
             }
             else {

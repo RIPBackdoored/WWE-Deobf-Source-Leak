@@ -38,8 +38,6 @@ public class Sprint extends qMIe
                 if (Wrapper.mc.player.movementInput.moveForward <= 0.0f) {
                     return;
                 }
-                if (Sprint.\u2007\u2007\u200c) {
-                    throw null;
                 }
             }
             else if (Wrapper.mc.player.movementInput.moveForward == 0.0f && Wrapper.mc.player.movementInput.moveStrafe == 0.0f) {
@@ -53,8 +51,6 @@ public class Sprint extends qMIe
         boolean b;
         if (Wrapper.mc.player.getFoodStats().getFoodLevel() > 6) {
             b = true;
-            if (Sprint.\u2007\u2007\u200c) {
-                throw null;
             }
         }
         else {

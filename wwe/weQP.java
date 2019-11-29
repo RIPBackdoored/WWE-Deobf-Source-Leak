@@ -37,9 +37,6 @@ public class weQP extends GuiScreen
         try {
             this.QpcW.drawTextBox();
             this.fMxz.zJhX();
-            if (weQP.\u2001\u200f) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -52,9 +49,6 @@ public class weQP extends GuiScreen
         this.fMxz.iqZX(n, n2, n3);
         try {
             super.mouseClicked(n, n2, n3);
-            if (weQP.\u2001\u200f) {
-                throw null;
-            }
         }
         catch (IOException ex) {
             ex.printStackTrace();
@@ -68,14 +62,9 @@ public class weQP extends GuiScreen
             if (this.QpcW.isFocused()) {
                 this.QpcW.setFocused(false);
                 this.fMxz.iCKJ(true);
-                if (weQP.\u2001\u200f) {
-                    throw null;
-                }
-            }
             else {
                 this.QpcW.setFocused(true);
                 this.fMxz.iCKJ(false);
-            }
         }
         if (c == '\r') {
             this.actionPerformed((GuiButton)this.buttonList.get(0));
@@ -91,8 +80,6 @@ public class weQP extends GuiScreen
                         if (!wGez.VkYf.contains(aRkr)) {
                             wGez.VkYf.add(aRkr);
                         }
-                        if (weQP.\u2001\u200f) {
-                            throw null;
                         }
                     }
                     else {
@@ -101,16 +88,10 @@ public class weQP extends GuiScreen
                             wGez.VkYf.add(aRkr2);
                         }
                     }
-                }
                 Wrapper.ypJK().dheG();
                 Wrapper.mc.displayGuiScreen(this.BWUL);
-                if (weQP.\u2001\u200f) {
-                    throw null;
-                }
-            }
             else if (guiButton.id == 2) {
                 Wrapper.mc.displayGuiScreen(this.BWUL);
-            }
         }
     }
     

@@ -129,9 +129,6 @@ public class OWQp
                 final int n = this.ilNa - 2;
                 if (n > 0) {
                     this.pZHj = this.PJIE(n - 1);
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     this.pZHj = null;
@@ -144,13 +141,8 @@ public class OWQp
                     Color color;
                     if (this.nFzZ) {
                         color = new Color(0, 0, 0, 0);
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         color = new Color(this.HlEL);
-                    }
                     graphics.setColor(color);
                     graphics.setComposite(AlphaComposite.Src);
                     graphics.fill(this.jprO);
@@ -169,25 +161,15 @@ public class OWQp
                     switch (++n2) {
                         case 2: {
                             n4 = 4;
-                            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                throw null;
-                            }
                             break;
-                        }
                         case 3: {
                             n4 = 2;
                             n3 = 4;
-                            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                throw null;
-                            }
                             break;
-                        }
                         case 4: {
                             n4 = 1;
                             n3 = 2;
                             break;
-                        }
-                    }
                 }
                 n5 = n4;
                 n4 += n3;
@@ -205,16 +187,10 @@ public class OWQp
                     final int n10 = this.bZMR[this.KwHG[n9++] & 0xFF];
                     if (n10 != 0) {
                         array[j] = n10;
-                    }
                     ++j;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
             }
             ++i;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
     }
@@ -240,9 +216,6 @@ public class OWQp
                 this.DYtw();
                 if (this.ilNa < 0) {
                     this.QnZa = 1;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
             }
         }
@@ -251,8 +224,6 @@ public class OWQp
         }
         try {
             pZdE.close();
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {}
@@ -271,9 +242,6 @@ public class OWQp
                 this.DYtw();
                 if (this.ilNa < 0) {
                     this.QnZa = 1;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
             }
         }
@@ -282,8 +250,6 @@ public class OWQp
         }
         try {
             inputStream.close();
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {}
@@ -296,16 +262,12 @@ public class OWQp
             lowerCase = lowerCase.trim().toLowerCase();
             if (lowerCase.indexOf("file:") >= 0 || lowerCase.indexOf(":/") > 0) {
                 this.pZdE = new BufferedInputStream(new URL(lowerCase).openStream());
-                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                    throw null;
                 }
             }
             else {
                 this.pZdE = new BufferedInputStream(new FileInputStream(lowerCase));
             }
             this.QnZa = this.SKXs(this.pZdE);
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {
@@ -341,8 +303,6 @@ public class OWQp
             this.joLf[i] = 0;
             this.chpz[i] = (byte)i;
             ++i;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         final int n9 = 0;
@@ -356,9 +316,6 @@ public class OWQp
             if (n13 < n7) {
                 int avyp = this.Avyp();
                 if (avyp <= 0) {
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
@@ -367,9 +324,6 @@ public class OWQp
                     n13 += 8;
                     ++n15;
                     --avyp;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -381,9 +335,6 @@ public class OWQp
                     break;
                 }
                 if (k == n4) {
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else if (k == n3) {
@@ -391,18 +342,12 @@ public class OWQp
                     n8 = (1 << n7) - 1;
                     n5 = n3 + 2;
                     n6 = n;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (n6 == n) {
                     this.qPUo[n11++] = this.chpz[k];
                     n6 = k;
                     n12 = k;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
@@ -410,22 +355,13 @@ public class OWQp
                     if ((n16 = k) == n5) {
                         this.qPUo[n11++] = (byte)n12;
                         k = n6;
-                    }
                     while (k > n3) {
                         this.qPUo[n11++] = this.chpz[k];
                         k = this.joLf[k];
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
-                    }
                     n12 = (this.chpz[k] & 0xFF);
                     if (n5 >= 4096) {
                         this.qPUo[n11++] = (byte)n12;
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                     else {
                         this.qPUo[n11++] = (byte)n12;
                         this.joLf[n5] = (short)n6;
@@ -433,16 +369,11 @@ public class OWQp
                         if ((++n5 & n8) == 0x0 && n5 < 4096) {
                             ++n7;
                             n8 += n5;
-                        }
                         n6 = n16;
                         --n11;
                         this.KwHG[n10++] = this.qPUo[n11];
                         ++j;
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                 }
             }
         }
@@ -450,8 +381,6 @@ public class OWQp
         while (l < n2) {
             this.KwHG[l] = 0;
             ++l;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
     }
@@ -460,8 +389,6 @@ public class OWQp
         boolean b;
         if (this.QnZa != 0) {
             b = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -482,8 +409,6 @@ public class OWQp
         int read = 0;
         try {
             read = this.pZdE.read();
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {
@@ -500,21 +425,11 @@ public class OWQp
                 while (i < this.AJbw) {
                     final int read = this.pZdE.read(this.WAvL, i, this.AJbw - i);
                     if (read == -1) {
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     else {
                         i += read;
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                 }
-                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                    throw null;
                 }
             }
             catch (IOException ex) {}
@@ -532,15 +447,11 @@ public class OWQp
         int read = 0;
         try {
             read = this.pZdE.read(array2);
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {}
         if (read < n2) {
             this.QnZa = 1;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -549,8 +460,6 @@ public class OWQp
             int n3 = 0;
             while (i < n) {
                 array[i++] = (0xFF000000 | (array2[n3++] & 0xFF) << 16 | (array2[n3++] & 0xFF) << 8 | (array2[n3++] & 0xFF));
-                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                    throw null;
                 }
             }
         }
@@ -563,20 +472,12 @@ public class OWQp
                 switch (this.YLMR()) {
                     case 44: {
                         this.DBPp();
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     case 33: {
                         switch (this.YLMR()) {
                             case 249: {
                                 this.YonV();
-                                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                    throw null;
-                                }
                                 break Label_0301;
-                            }
                             case 255: {
                                 this.Avyp();
                                 String string = "";
@@ -584,56 +485,26 @@ public class OWQp
                                 while (i < 11) {
                                     string += (char)this.WAvL[i];
                                     ++i;
-                                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                        throw null;
-                                    }
-                                }
                                 if (string.equals("NETSCAPE2.0")) {
                                     this.RcKH();
-                                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                        throw null;
-                                    }
                                     break Label_0301;
-                                }
                                 else {
                                     this.kfxo();
-                                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                        throw null;
-                                    }
                                     break Label_0301;
-                                }
                                 break;
-                            }
                             default: {
                                 this.kfxo();
-                                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                    throw null;
-                                }
                                 break Label_0301;
-                            }
-                        }
                         break;
-                    }
                     case 59: {
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     case 0: {
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     default: {
                         this.QnZa = 1;
                         break;
-                    }
                 }
             }
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
     }
@@ -648,8 +519,6 @@ public class OWQp
         boolean nFzZ;
         if ((ylmr & 0x1) != 0x0) {
             nFzZ = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -667,8 +536,6 @@ public class OWQp
         while (i < 6) {
             string += (char)this.YLMR();
             ++i;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         if (!string.startsWith("GIF")) {
@@ -691,8 +558,6 @@ public class OWQp
         boolean bvVp;
         if ((ylmr & 0x80) != 0x0) {
             bvVp = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -702,8 +567,6 @@ public class OWQp
         boolean flOr;
         if ((ylmr & 0x40) != 0x0) {
             flOr = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -714,8 +577,6 @@ public class OWQp
         if (this.bVVp) {
             this.bfRV = this.OWRK(this.LzOG);
             this.bZMR = this.bfRV;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -757,8 +618,6 @@ public class OWQp
         boolean rbLZ;
         if ((ylmr & 0x80) != 0x0) {
             rbLZ = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -817,9 +676,6 @@ public class OWQp
                 final int n = this.ilNa - 2;
                 if (n > 0) {
                     this.pZHj = this.PJIE(n - 1);
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
                 else {
                     this.pZHj = null;
@@ -832,13 +688,8 @@ public class OWQp
                     Color color;
                     if (this.nFzZ) {
                         color = new Color(0, 0, 0, 0);
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
-                    }
                     else {
                         color = new Color(this.HlEL);
-                    }
                     graphics.setColor(color);
                     graphics.setComposite(AlphaComposite.Src);
                     graphics.fill(this.jprO);
@@ -857,25 +708,15 @@ public class OWQp
                     switch (++n2) {
                         case 2: {
                             n4 = 4;
-                            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                throw null;
-                            }
                             break;
-                        }
                         case 3: {
                             n4 = 2;
                             n3 = 4;
-                            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                throw null;
-                            }
                             break;
-                        }
                         case 4: {
                             n4 = 1;
                             n3 = 2;
                             break;
-                        }
-                    }
                 }
                 n5 = n4;
                 n4 += n3;
@@ -893,16 +734,10 @@ public class OWQp
                     final int n10 = this.bZMR[this.KwHG[n9++] & 0xFF];
                     if (n10 != 0) {
                         array[j] = n10;
-                    }
                     ++j;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
             }
             ++i;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
     }
@@ -928,9 +763,6 @@ public class OWQp
                 this.DYtw();
                 if (this.ilNa < 0) {
                     this.QnZa = 1;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
             }
         }
@@ -939,8 +771,6 @@ public class OWQp
         }
         try {
             pZdE.close();
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {}
@@ -959,9 +789,6 @@ public class OWQp
                 this.DYtw();
                 if (this.ilNa < 0) {
                     this.QnZa = 1;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                 }
             }
         }
@@ -970,8 +797,6 @@ public class OWQp
         }
         try {
             inputStream.close();
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {}
@@ -984,16 +809,12 @@ public class OWQp
             lowerCase = lowerCase.trim().toLowerCase();
             if (lowerCase.indexOf("file:") >= 0 || lowerCase.indexOf(":/") > 0) {
                 this.pZdE = new BufferedInputStream(new URL(lowerCase).openStream());
-                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                    throw null;
                 }
             }
             else {
                 this.pZdE = new BufferedInputStream(new FileInputStream(lowerCase));
             }
             this.QnZa = this.SKXs(this.pZdE);
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {
@@ -1029,8 +850,6 @@ public class OWQp
             this.joLf[i] = 0;
             this.chpz[i] = (byte)i;
             ++i;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         final int n9 = 0;
@@ -1044,9 +863,6 @@ public class OWQp
             if (n13 < n7) {
                 int avyp = this.Avyp();
                 if (avyp <= 0) {
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
@@ -1055,9 +871,6 @@ public class OWQp
                     n13 += 8;
                     ++n15;
                     --avyp;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
             }
@@ -1069,9 +882,6 @@ public class OWQp
                     break;
                 }
                 if (k == n4) {
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     break;
                 }
                 else if (k == n3) {
@@ -1079,18 +889,12 @@ public class OWQp
                     n8 = (1 << n7) - 1;
                     n5 = n3 + 2;
                     n6 = n;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else if (n6 == n) {
                     this.qPUo[n11++] = this.chpz[k];
                     n6 = k;
                     n12 = k;
-                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                        throw null;
-                    }
                     continue;
                 }
                 else {
@@ -1098,22 +902,13 @@ public class OWQp
                     if ((n16 = k) == n5) {
                         this.qPUo[n11++] = (byte)n12;
                         k = n6;
-                    }
                     while (k > n3) {
                         this.qPUo[n11++] = this.chpz[k];
                         k = this.joLf[k];
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
-                    }
                     n12 = (this.chpz[k] & 0xFF);
                     if (n5 >= 4096) {
                         this.qPUo[n11++] = (byte)n12;
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                     else {
                         this.qPUo[n11++] = (byte)n12;
                         this.joLf[n5] = (short)n6;
@@ -1121,16 +916,11 @@ public class OWQp
                         if ((++n5 & n8) == 0x0 && n5 < 4096) {
                             ++n7;
                             n8 += n5;
-                        }
                         n6 = n16;
                         --n11;
                         this.KwHG[n10++] = this.qPUo[n11];
                         ++j;
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                 }
             }
         }
@@ -1138,8 +928,6 @@ public class OWQp
         while (l < n2) {
             this.KwHG[l] = 0;
             ++l;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
     }
@@ -1148,8 +936,6 @@ public class OWQp
         boolean b;
         if (this.QnZa != 0) {
             b = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -1170,8 +956,6 @@ public class OWQp
         int read = 0;
         try {
             read = this.pZdE.read();
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {
@@ -1188,21 +972,11 @@ public class OWQp
                 while (i < this.AJbw) {
                     final int read = this.pZdE.read(this.WAvL, i, this.AJbw - i);
                     if (read == -1) {
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     else {
                         i += read;
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         continue;
-                    }
                 }
-                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                    throw null;
                 }
             }
             catch (IOException ex) {}
@@ -1220,15 +994,11 @@ public class OWQp
         int read = 0;
         try {
             read = this.pZdE.read(array2);
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         catch (IOException ex) {}
         if (read < n2) {
             this.QnZa = 1;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -1237,8 +1007,6 @@ public class OWQp
             int n3 = 0;
             while (i < n) {
                 array[i++] = (0xFF000000 | (array2[n3++] & 0xFF) << 16 | (array2[n3++] & 0xFF) << 8 | (array2[n3++] & 0xFF));
-                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                    throw null;
                 }
             }
         }
@@ -1251,20 +1019,12 @@ public class OWQp
                 switch (this.YLMR()) {
                     case 44: {
                         this.DBPp();
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     case 33: {
                         switch (this.YLMR()) {
                             case 249: {
                                 this.YonV();
-                                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                    throw null;
-                                }
                                 break Label_0301;
-                            }
                             case 255: {
                                 this.Avyp();
                                 String string = "";
@@ -1272,56 +1032,26 @@ public class OWQp
                                 while (i < 11) {
                                     string += (char)this.WAvL[i];
                                     ++i;
-                                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                        throw null;
-                                    }
-                                }
                                 if (string.equals("NETSCAPE2.0")) {
                                     this.RcKH();
-                                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                        throw null;
-                                    }
                                     break Label_0301;
-                                }
                                 else {
                                     this.kfxo();
-                                    if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                        throw null;
-                                    }
                                     break Label_0301;
-                                }
                                 break;
-                            }
                             default: {
                                 this.kfxo();
-                                if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                                    throw null;
-                                }
                                 break Label_0301;
-                            }
-                        }
                         break;
-                    }
                     case 59: {
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     case 0: {
-                        if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                            throw null;
-                        }
                         break;
-                    }
                     default: {
                         this.QnZa = 1;
                         break;
-                    }
                 }
             }
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
     }
@@ -1336,8 +1066,6 @@ public class OWQp
         boolean nFzZ;
         if ((ylmr & 0x1) != 0x0) {
             nFzZ = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -1355,8 +1083,6 @@ public class OWQp
         while (i < 6) {
             string += (char)this.YLMR();
             ++i;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         if (!string.startsWith("GIF")) {
@@ -1379,8 +1105,6 @@ public class OWQp
         boolean bvVp;
         if ((ylmr & 0x80) != 0x0) {
             bvVp = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -1390,8 +1114,6 @@ public class OWQp
         boolean flOr;
         if ((ylmr & 0x40) != 0x0) {
             flOr = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -1402,8 +1124,6 @@ public class OWQp
         if (this.bVVp) {
             this.bfRV = this.OWRK(this.LzOG);
             this.bZMR = this.bfRV;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {
@@ -1445,8 +1165,6 @@ public class OWQp
         boolean rbLZ;
         if ((ylmr & 0x80) != 0x0) {
             rbLZ = true;
-            if (OWQp.\u2008\u200e\u2001\u200a\u2002\u2005\u2009\u2007) {
-                throw null;
             }
         }
         else {

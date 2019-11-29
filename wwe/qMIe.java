@@ -85,9 +85,6 @@ public class qMIe
         if (b) {
             this.LPxx();
             this.QSVB = true;
-            if (qMIe.\u200c) {
-                throw null;
-            }
         }
         else {
             this.qBmy();
@@ -99,9 +96,6 @@ public class qMIe
         boolean b;
         if (!this.IuiN()) {
             b = true;
-            if (qMIe.\u200c) {
-                throw null;
-            }
         }
         else {
             b = false;
@@ -155,9 +149,6 @@ public class qMIe
         boolean b;
         if (!this.yKHz) {
             b = true;
-            if (qMIe.\u200c) {
-                throw null;
-            }
         }
         else {
             b = false;

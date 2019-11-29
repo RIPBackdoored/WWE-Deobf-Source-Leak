@@ -36,24 +36,16 @@ public class ItemSaver extends qMIe
                 final ItemStack stackInSlot = Wrapper.mc.player.inventory.getStackInSlot(i);
                 if (stackInSlot.getItem() instanceof ItemAir || !stackInSlot.isItemDamaged() || stackInSlot.getMaxDamage() - stackInSlot.getItemDamage() > this.durabilityamount.OnGi()) {
                     currentItem = i;
-                    if (ItemSaver.\u200a\u2006\u2003\u2000\u2000\u2005\u2006) {
-                        throw null;
-                    }
                     break;
                 }
                 else {
                     ++i;
-                    if (ItemSaver.\u200a\u2006\u2003\u2000\u2000\u2005\u2006) {
-                        throw null;
-                    }
                     continue;
                 }
             }
             if (currentItem == -1) {
                 HAxG.TuzD("Couldent find any slots with more then " + ((IcRI<Object>)this.durabilityamount).OnGi() + " durability, throwing current item out");
                 Wrapper.mc.player.dropItem(false);
-                if (ItemSaver.\u200a\u2006\u2003\u2000\u2000\u2005\u2006) {
-                    throw null;
                 }
             }
             else {

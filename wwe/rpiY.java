@@ -20,15 +20,9 @@ public class rpiY
         for (final LdXC ldXC : this.padc) {
             if (ldXC.CjlP().equalsIgnoreCase(s) || ldXC.ugqf().equalsIgnoreCase(s)) {
                 this.padc.remove(ldXC);
-                if (rpiY.\u2005\u2008) {
-                    throw null;
-                }
                 break;
             }
             else {
-                if (rpiY.\u2005\u2008) {
-                    throw null;
-                }
                 continue;
             }
         }
@@ -39,10 +33,6 @@ public class rpiY
             for (final LdXC ldXC : this.padc) {
                 if (ldXC.CjlP().equalsIgnoreCase(s)) {
                     return ldXC.ugqf();
-                }
-                if (rpiY.\u2005\u2008) {
-                    throw null;
-                }
             }
         }
         return null;
@@ -54,15 +44,9 @@ public class rpiY
         while (iterator.hasNext()) {
             if (iterator.next().CjlP().equalsIgnoreCase(StringUtils.stripControlCodes(s))) {
                 b = true;
-                if (rpiY.\u2005\u2008) {
-                    throw null;
-                }
                 break;
             }
             else {
-                if (rpiY.\u2005\u2008) {
-                    throw null;
-                }
                 continue;
             }
         }

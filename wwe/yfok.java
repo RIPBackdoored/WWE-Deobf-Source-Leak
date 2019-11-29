@@ -51,16 +51,10 @@ public class yfok
         if (this.xBKh.getSize() <= 43) {
             this.duIW = 512;
             this.jcBM = 512;
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         else if (this.xBKh.getSize() <= 91) {
             this.duIW = 1024;
             this.jcBM = 1024;
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         else {
             this.duIW = 2048;
@@ -85,28 +79,19 @@ public class yfok
                 bXnb = 0;
                 hkwu += qkaV;
                 qkaV = 0;
-            }
             wwe/ohSY.bXnb = bXnb;
             wwe/ohSY.hkwu = hkwu;
             if (wwe/ohSY.QkaV > this.RtnK) {
                 this.RtnK = wwe/ohSY.QkaV;
-            }
             if (wwe/ohSY.QkaV > qkaV) {
                 qkaV = wwe/ohSY.QkaV;
-            }
             this.zrQr[i] = wwe/ohSY;
             graphics2D.drawImage(fmBz, bXnb, hkwu, null);
             bXnb += wwe/ohSY.luLZ;
             ++i;
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         try {
             this.gZhT = TextureUtil.uploadTextureImageAllocate(TextureUtil.glGenTextures(), bufferedImage, true, true);
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         catch (NullPointerException ex) {
             ex.printStackTrace();
@@ -117,9 +102,6 @@ public class yfok
         final Graphics2D graphics2D = (Graphics2D)new BufferedImage(1, 1, 2).getGraphics();
         if (b) {
             graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         else {
             graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_OFF);
@@ -138,9 +120,6 @@ public class yfok
         final Graphics2D graphics2D2 = (Graphics2D)bufferedImage.getGraphics();
         if (b) {
             graphics2D2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         else {
             graphics2D2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_OFF);
@@ -154,9 +133,6 @@ public class yfok
     public void nhAI(final char c, final float n, final float n2) throws ArrayIndexOutOfBoundsException {
         try {
             this.vyUQ(n, n2, (float)this.zrQr[c].luLZ, (float)this.zrQr[c].QkaV, (float)this.zrQr[c].bXnb, (float)this.zrQr[c].hkwu, (float)this.zrQr[c].luLZ, (float)this.zrQr[c].QkaV);
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -202,11 +178,7 @@ public class yfok
                 this.CzpU(color);
                 this.nhAI(char1, (float)n, (float)n2);
                 n += this.zrQr[char1].luLZ - this.ZvdZ;
-            }
             ++i;
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         GL11.glPopMatrix();
     }
@@ -223,11 +195,7 @@ public class yfok
         while (i < length) {
             if (array[i] == '\n') {
                 ++n;
-            }
             ++i;
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         return (this.RtnK - this.ZvdZ) / 2 * n;
     }
@@ -245,11 +213,7 @@ public class yfok
             final char c = array[i];
             if (c < this.zrQr.length && c >= '\0') {
                 n += this.zrQr[c].luLZ - this.ZvdZ;
-            }
             ++i;
-            if (yfok.\u2005\u2003\u200b\u200a) {
-                throw null;
-            }
         }
         return n / 2;
     }

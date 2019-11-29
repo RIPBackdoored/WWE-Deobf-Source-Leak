@@ -42,15 +42,11 @@ public class cIhE extends Thread
                 this.uycj.jgkl("*** Ident reply sent: " + string);
                 bufferedWriter.close();
             }
-            if (cIhE.\u2002\u2006\u200d\u2005) {
-                throw null;
             }
         }
         catch (Exception ex) {}
         try {
             this.zhJf.close();
-            if (cIhE.\u2002\u2006\u200d\u2005) {
-                throw null;
             }
         }
         catch (Exception ex2) {}

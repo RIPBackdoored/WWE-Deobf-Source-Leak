@@ -55,16 +55,11 @@ public class sSoG extends GuiScreen
             while (i >= 0) {
                 final ItemStack itemStack = (ItemStack)this.Zytq.egIB.inventory.armorInventory.get(i);
                 if (itemStack == null) {
-                    if (sSoG.\u2006\u200c\u200a\u2002\u200c) {
-                        throw null;
-                    }
                 }
                 else {
                     list.add(itemStack);
                 }
                 --i;
-                if (sSoG.\u2006\u200c\u200a\u2002\u200c) {
-                    throw null;
                 }
             }
             if (this.Zytq.egIB.getHeldItemMainhand() != null) {
@@ -107,9 +102,6 @@ public class sSoG extends GuiScreen
                             String s;
                             if (enchantmentByID.isCurse()) {
                                 s = TextFormatting.RED + enchantmentByID.getTranslatedName((int)short2).substring(11).substring(0, 1).toLowerCase();
-                                if (sSoG.\u2006\u200c\u200a\u2002\u200c) {
-                                    throw null;
-                                }
                             }
                             else {
                                 s = enchantmentByID.getTranslatedName((int)short2).substring(0, 1).toLowerCase();
@@ -122,13 +114,8 @@ public class sSoG extends GuiScreen
                             n7 -= 10;
                         }
                         ++j;
-                        if (sSoG.\u2006\u200c\u200a\u2002\u200c) {
-                            throw null;
                         }
-                    }
                 }
-                if (sSoG.\u2006\u200c\u200a\u2002\u200c) {
-                    throw null;
                 }
             }
             GL11.glPopMatrix();

@@ -62,8 +62,6 @@ public class Search extends qMIe
             if (entry.getKey() == Wrapper.mc.world.getBlockState(blockPos).getBlock()) {
                 return entry.getValue();
             }
-            if (Search.\u2000\u2003\u200d\u2007\u200f\u2003\u2008\u200a) {
-                throw null;
             }
         }
         return new Color(255, 255, 255);
@@ -78,23 +76,16 @@ public class Search extends qMIe
                 final double n3 = vector3f.getZ() - yYGD.LkVR();
                 if (Wrapper.mc.player.getDistance((double)vector3f.getX(), (double)vector3f.getY(), (double)vector3f.getZ()) <= 128.0) {
                     if (!Search.Hxmz.containsKey(Wrapper.mc.world.getBlockState(new BlockPos((double)vector3f.getX(), (double)vector3f.getY(), (double)vector3f.getZ())).getBlock())) {
-                        if (Search.\u2000\u2003\u200d\u2007\u200f\u2003\u2008\u200a) {
-                            throw null;
-                        }
                         continue;
                     }
                     else {
                         if (this.tracer.OnGi()) {
                             this.OTTy(n, n2, n3, this.ywJw(vector3f.getX(), vector3f.getY(), vector3f.getZ()));
-                        }
                         if (this.esp.OnGi()) {
                             BIIV.zIBn(new BlockPos((double)vector3f.getX(), (double)vector3f.getY(), (double)vector3f.getZ()), this.ywJw(vector3f.getX(), vector3f.getY(), vector3f.getZ()), 1.0, 1.0);
-                        }
                     }
                 }
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-                if (Search.\u2000\u2003\u200d\u2007\u200f\u2003\u2008\u200a) {
-                    throw null;
                 }
             }
         }

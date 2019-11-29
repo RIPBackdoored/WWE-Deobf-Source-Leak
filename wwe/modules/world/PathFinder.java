@@ -47,9 +47,6 @@ public class PathFinder extends qMIe
     public void CRUW(final RTIo rtIo) {
         for (final Chunk chunk : PathFinder.LpTn) {
             BIIV.Xfgz(chunk.x * 16, 0, chunk.z * 16);
-            if (PathFinder.\u2005\u2005\u200c\u200e\u2007) {
-                throw null;
-            }
         }
     }
     
@@ -91,10 +88,7 @@ public class PathFinder extends qMIe
                     PathFinder.LpTn.remove(i);
                 }
                 ++i;
-                if (PathFinder.\u2005\u2005\u200c\u200e\u2007) {
-                    throw null;
                 }
-            }
         }
     }
     

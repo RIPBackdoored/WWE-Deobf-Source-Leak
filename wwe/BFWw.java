@@ -25,14 +25,9 @@ public class BFWw extends Thread
                 bufferedWriter.write(substring + "\r\n");
                 bufferedWriter.flush();
                 rfyb.jgkl(">>>" + substring);
-                if (BFWw.\u2004\u2006\u2001\u200e\u2001\u200a\u200f) {
-                    throw null;
-                }
             }
             catch (Exception ex) {}
             // monitorexit(bufferedWriter)
-            if (BFWw.\u2004\u2006\u2001\u200e\u2001\u200a\u200f) {
-                throw null;
             }
         }
     }
@@ -45,13 +40,7 @@ public class BFWw extends Thread
                 final String s = (String)this.PjNM.uFcI();
                 if (s != null) {
                     this.dSmT.qOaH(s);
-                    if (BFWw.\u2004\u2006\u2001\u200e\u2001\u200a\u200f) {
-                        throw null;
-                    }
                     continue;
-                }
-            } while (!BFWw.\u2004\u2006\u2001\u200e\u2001\u200a\u200f);
-            throw null;
         }
         catch (InterruptedException ex) {}
     }

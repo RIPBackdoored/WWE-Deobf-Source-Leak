@@ -51,8 +51,6 @@ public class kmYZ extends kUUQ
         int n8;
         if (this.vwqN) {
             n8 = new Color(15, 15, 15, 245).getRGB();
-            if (kmYZ.\u200b\u2008) {
-                throw null;
             }
         }
         else {
@@ -66,8 +64,6 @@ public class kmYZ extends kUUQ
         int n13;
         if (this.vwqN) {
             n13 = new Color(15, 15, 15, 245).getRGB();
-            if (kmYZ.\u200b\u2008) {
-                throw null;
             }
         }
         else {
@@ -86,9 +82,6 @@ public class kmYZ extends kUUQ
             final Iterator<kUUQ> iterator = this.CYJH.iterator();
             while (iterator.hasNext()) {
                 iterator.next().JyWl(n, n2, n3);
-                if (kmYZ.\u200b\u2008) {
-                    throw null;
-                }
             }
         }
     }
@@ -102,9 +95,6 @@ public class kmYZ extends kUUQ
             final Iterator<kUUQ> iterator = this.CYJH.iterator();
             while (iterator.hasNext()) {
                 iterator.next().QdjS(n, n2);
-                if (kmYZ.\u200b\u2008) {
-                    throw null;
-                }
             }
         }
     }
@@ -116,9 +106,6 @@ public class kmYZ extends kUUQ
             boolean b;
             if (!this.BAIk.OnGi()) {
                 b = true;
-                if (kmYZ.\u200b\u2008) {
-                    throw null;
-                }
             }
             else {
                 b = false;
@@ -129,9 +116,6 @@ public class kmYZ extends kUUQ
             final Iterator<kUUQ> iterator = this.CYJH.iterator();
             while (iterator.hasNext()) {
                 iterator.next().rVom(n, n2, n3);
-                if (kmYZ.\u200b\u2008) {
-                    throw null;
-                }
             }
         }
     }
@@ -142,9 +126,6 @@ public class kmYZ extends kUUQ
             final Iterator<kUUQ> iterator = this.CYJH.iterator();
             while (iterator.hasNext()) {
                 iterator.next().XrGT(n, n2, n3);
-                if (kmYZ.\u200b\u2008) {
-                    throw null;
-                }
             }
         }
     }
