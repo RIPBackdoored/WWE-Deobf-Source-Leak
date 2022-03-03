@@ -20,8 +20,8 @@ public class Elytra extends qMIe
     public ModeValue mode;
     public NumberValue speed;
     public BooleanValue accelerate;
+    public NumberValue accelerateSpeed;
     public NumberValue accelerateStart;
-    public NumberValue PZrO;
     public NumberValue accelerateMax;
     
     public Elytra() {
@@ -41,7 +41,7 @@ public class Elytra extends qMIe
         this.mode = new ModeValue("Mode", this, "Current mode for the module", "Normal", list);
         this.speed = new NumberValue("Speed", this, "Speed when elytra flying", 1.5, 0.0, 10.0);
         this.accelerate = new BooleanValue("Accelerate", this, "Goes faster over time depending on settings(Vanilla, and Packet)", false);
-        this.accelerateStart = new NumberValue("Accelerate Speed", this, "How fast you accelerate", 0.1, 0.1, 1.0);
+        this.accelerateSpeed = new NumberValue("Accelerate Speed", this, "How fast you accelerate", 0.1, 0.1, 1.0);
         this.accelerateStart = new NumberValue("Accelerate Start", this, "How fast you start before you accelerate", 0.5, 0.1, 2.0);
         this.accelerateMax = new NumberValue("Accelerate Max", this, "How fast you go when you stop accelerating", 2.5, 1.0, 3.5);
     }
@@ -88,7 +88,7 @@ public class Elytra extends qMIe
                 Wrapper.mc.player.capabilities.isFlying = true;
                 if (this.accelerate.OnGi()) {
                     if (Wrapper.mc.player.movementInput.moveForward == 0.0f && Wrapper.mc.player.movementInput.moveStrafe == 0.0f) {
-                        this.eXQk = this.PZrO.OnGi();
+                        this.eXQk = this.accelerateSpeed.OnGi();
                     }
                     if (this.eXQk + this.accelerateStart.OnGi() > this.accelerateMax.OnGi()) {
                         this.eXQk = this.accelerateMax.OnGi();
@@ -116,7 +116,7 @@ public class Elytra extends qMIe
                 Wrapper.mc.player.capabilities.isFlying = true;
                 if (this.accelerate.OnGi()) {
                     if (Wrapper.mc.player.movementInput.moveForward == 0.0f && Wrapper.mc.player.movementInput.moveStrafe == 0.0f) {
-                        this.eXQk = this.PZrO.OnGi();
+                        this.eXQk = this.accelerateSpeed.OnGi();
                     }
                     if (this.eXQk + this.accelerateStart.OnGi() > this.accelerateMax.OnGi()) {
                         this.eXQk = this.accelerateMax.OnGi();
